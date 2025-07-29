@@ -1,0 +1,13 @@
+server:
+  port: 8000
+
+spring:
+  cloud:
+    gateway:
+      server:
+        webflux:
+          routes:
+            - id: staff
+              uri: http://127.0.0.1:8001
+              predicates:
+                - Path=/staff/**
