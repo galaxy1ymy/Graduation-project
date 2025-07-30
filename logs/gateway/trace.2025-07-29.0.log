@@ -1,0 +1,332 @@
+2025-07-29 16:35:50.045 [background-preinit] INFO  org.hibernate.validator.internal.util.Version [] - HV000001: Hibernate Validator 8.0.2.Final
+2025-07-29 16:35:50.086 [main] INFO  com.example.gateway.config.GatewayApplication [] - Starting GatewayApplication using Java 17.0.11 with PID 12276 (D:\Java\springbootProject\employee\employee\gateway\target\classes started by lenovo in D:\Java\springbootProject\employee\employee)
+2025-07-29 16:35:50.088 [main] INFO  com.example.gateway.config.GatewayApplication [] - No active profile set, falling back to 1 default profile: "default"
+2025-07-29 16:35:50.772 [main] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=8058e496-293a-37b4-b278-37fb707b18b8
+2025-07-29 16:35:51.115 [main] WARN  o.s.c.g.c.GatewayClassPathWarningAutoConfiguration [] - 
+
+**********************************************************
+
+The artifact spring-cloud-gateway-server is deprecated. It will be removed in the next major release. Please add spring-cloud-gateway-server-webflux dependency.
+
+**********************************************************
+
+
+2025-07-29 16:35:51.723 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [After]
+2025-07-29 16:35:51.724 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Before]
+2025-07-29 16:35:51.724 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Between]
+2025-07-29 16:35:51.724 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Cookie]
+2025-07-29 16:35:51.724 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Header]
+2025-07-29 16:35:51.724 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Host]
+2025-07-29 16:35:51.724 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Method]
+2025-07-29 16:35:51.724 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Path]
+2025-07-29 16:35:51.724 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Query]
+2025-07-29 16:35:51.724 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [ReadBody]
+2025-07-29 16:35:51.724 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [RemoteAddr]
+2025-07-29 16:35:51.724 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-07-29 16:35:51.724 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Weight]
+2025-07-29 16:35:51.725 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-07-29 16:35:52.207 [main] WARN  o.s.c.g.s.w.s.StarterDeprecatedAutoConfiguration [] - 
+
+**********************************************************
+
+spring-cloud-starter-gateway is deprecated. It will be removed in the next major release. Please use spring-cloud-starter-gateway-server-webflux instead.
+
+**********************************************************
+
+
+2025-07-29 16:35:52.441 [main] INFO  o.s.boot.web.embedded.netty.NettyWebServer [] - Netty started on port 8000 (http)
+2025-07-29 16:35:52.913 [main] INFO  com.example.gateway.config.GatewayApplication [] - Started GatewayApplication in 3.542 seconds (process running for 4.59)
+2025-07-29 16:35:52.916 [main] INFO  com.example.gateway.config.GatewayApplication [] - 启动成功！！
+2025-07-29 16:35:52.916 [main] INFO  com.example.gateway.config.GatewayApplication [] - 网关地址: 	http://127.0.0.1:8000
+2025-07-29 16:36:32.353 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.netty.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-29 16:36:32.356 [netty-shutdown] INFO  o.s.boot.web.embedded.netty.GracefulShutdown [] - Graceful shutdown complete
+2025-07-29 16:36:40.219 [background-preinit] INFO  org.hibernate.validator.internal.util.Version [] - HV000001: Hibernate Validator 8.0.2.Final
+2025-07-29 16:36:40.264 [main] INFO  com.example.gateway.config.GatewayApplication [] - Starting GatewayApplication using Java 17.0.11 with PID 26336 (D:\Java\springbootProject\employee\employee\gateway\target\classes started by lenovo in D:\Java\springbootProject\employee\employee)
+2025-07-29 16:36:40.265 [main] INFO  com.example.gateway.config.GatewayApplication [] - No active profile set, falling back to 1 default profile: "default"
+2025-07-29 16:36:41.013 [main] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=d1449ce5-4c0b-3361-9062-0f59899d0635
+2025-07-29 16:36:41.442 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8000 (http)
+2025-07-29 16:36:41.454 [main] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8000"]
+2025-07-29 16:36:41.455 [main] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
+2025-07-29 16:36:41.456 [main] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-07-29 16:36:41.534 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] [] - Initializing Spring embedded WebApplicationContext
+2025-07-29 16:36:41.534 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 1123 ms
+2025-07-29 16:36:41.651 [main] WARN  o.s.c.g.c.GatewayClassPathWarningAutoConfiguration [] - 
+
+**********************************************************
+
+The artifact spring-cloud-gateway-server is deprecated. It will be removed in the next major release. Please add spring-cloud-gateway-server-webflux dependency.
+
+**********************************************************
+
+
+2025-07-29 16:36:41.653 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cloud.gateway.config.GatewayClassPathWarningAutoConfiguration$SpringMvcFoundOnClasspathConfiguration': Failed to instantiate [org.springframework.cloud.gateway.config.GatewayClassPathWarningAutoConfiguration$SpringMvcFoundOnClasspathConfiguration]: Constructor threw exception
+2025-07-29 16:36:41.655 [main] INFO  org.apache.catalina.core.StandardService [] - Stopping service [Tomcat]
+2025-07-29 16:36:41.669 [main] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger [] - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-07-29 16:36:41.689 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter [] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Spring MVC found on classpath, which is incompatible with Spring Cloud Gateway.
+
+Action:
+
+Please set spring.main.web-application-type=reactive or remove spring-boot-starter-web dependency.
+
+2025-07-29 16:37:09.776 [background-preinit] INFO  org.hibernate.validator.internal.util.Version [] - HV000001: Hibernate Validator 8.0.2.Final
+2025-07-29 16:37:09.816 [main] INFO  com.example.gateway.config.GatewayApplication [] - Starting GatewayApplication using Java 17.0.11 with PID 26496 (D:\Java\springbootProject\employee\employee\gateway\target\classes started by lenovo in D:\Java\springbootProject\employee\employee)
+2025-07-29 16:37:09.816 [main] INFO  com.example.gateway.config.GatewayApplication [] - No active profile set, falling back to 1 default profile: "default"
+2025-07-29 16:37:10.457 [main] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=d1449ce5-4c0b-3361-9062-0f59899d0635
+2025-07-29 16:37:10.815 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8000 (http)
+2025-07-29 16:37:10.826 [main] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8000"]
+2025-07-29 16:37:10.828 [main] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
+2025-07-29 16:37:10.828 [main] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-07-29 16:37:10.907 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] [] - Initializing Spring embedded WebApplicationContext
+2025-07-29 16:37:10.907 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 963 ms
+2025-07-29 16:37:11.038 [main] WARN  o.s.c.g.c.GatewayClassPathWarningAutoConfiguration [] - 
+
+**********************************************************
+
+The artifact spring-cloud-gateway-server is deprecated. It will be removed in the next major release. Please add spring-cloud-gateway-server-webflux dependency.
+
+**********************************************************
+
+
+2025-07-29 16:37:11.040 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cloud.gateway.config.GatewayClassPathWarningAutoConfiguration$SpringMvcFoundOnClasspathConfiguration': Failed to instantiate [org.springframework.cloud.gateway.config.GatewayClassPathWarningAutoConfiguration$SpringMvcFoundOnClasspathConfiguration]: Constructor threw exception
+2025-07-29 16:37:11.043 [main] INFO  org.apache.catalina.core.StandardService [] - Stopping service [Tomcat]
+2025-07-29 16:37:11.058 [main] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger [] - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-07-29 16:37:11.085 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter [] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Spring MVC found on classpath, which is incompatible with Spring Cloud Gateway.
+
+Action:
+
+Please set spring.main.web-application-type=reactive or remove spring-boot-starter-web dependency.
+
+2025-07-29 16:37:55.580 [background-preinit] INFO  org.hibernate.validator.internal.util.Version [] - HV000001: Hibernate Validator 8.0.2.Final
+2025-07-29 16:37:55.619 [main] INFO  com.example.gateway.config.GatewayApplication [] - Starting GatewayApplication using Java 17.0.11 with PID 7232 (D:\Java\springbootProject\employee\employee\gateway\target\classes started by lenovo in D:\Java\springbootProject\employee\employee)
+2025-07-29 16:37:55.619 [main] INFO  com.example.gateway.config.GatewayApplication [] - No active profile set, falling back to 1 default profile: "default"
+2025-07-29 16:37:56.242 [main] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=d1449ce5-4c0b-3361-9062-0f59899d0635
+2025-07-29 16:37:56.602 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8000 (http)
+2025-07-29 16:37:56.615 [main] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8000"]
+2025-07-29 16:37:56.617 [main] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
+2025-07-29 16:37:56.617 [main] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-07-29 16:37:56.700 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] [] - Initializing Spring embedded WebApplicationContext
+2025-07-29 16:37:56.700 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 965 ms
+2025-07-29 16:37:56.811 [main] WARN  o.s.c.g.c.GatewayClassPathWarningAutoConfiguration [] - 
+
+**********************************************************
+
+The artifact spring-cloud-gateway-server is deprecated. It will be removed in the next major release. Please add spring-cloud-gateway-server-webflux dependency.
+
+**********************************************************
+
+
+2025-07-29 16:37:56.813 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cloud.gateway.config.GatewayClassPathWarningAutoConfiguration$SpringMvcFoundOnClasspathConfiguration': Failed to instantiate [org.springframework.cloud.gateway.config.GatewayClassPathWarningAutoConfiguration$SpringMvcFoundOnClasspathConfiguration]: Constructor threw exception
+2025-07-29 16:37:56.816 [main] INFO  org.apache.catalina.core.StandardService [] - Stopping service [Tomcat]
+2025-07-29 16:37:56.835 [main] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger [] - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-07-29 16:37:56.852 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter [] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Spring MVC found on classpath, which is incompatible with Spring Cloud Gateway.
+
+Action:
+
+Please set spring.main.web-application-type=reactive or remove spring-boot-starter-web dependency.
+
+2025-07-29 16:38:28.186 [background-preinit] INFO  org.hibernate.validator.internal.util.Version [] - HV000001: Hibernate Validator 8.0.2.Final
+2025-07-29 16:38:28.225 [main] INFO  com.example.gateway.config.GatewayApplication [] - Starting GatewayApplication using Java 17.0.11 with PID 3748 (D:\Java\springbootProject\employee\employee\gateway\target\classes started by lenovo in D:\Java\springbootProject\employee\employee)
+2025-07-29 16:38:28.226 [main] INFO  com.example.gateway.config.GatewayApplication [] - No active profile set, falling back to 1 default profile: "default"
+2025-07-29 16:38:28.857 [main] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=8058e496-293a-37b4-b278-37fb707b18b8
+2025-07-29 16:38:29.237 [main] WARN  o.s.c.g.c.GatewayClassPathWarningAutoConfiguration [] - 
+
+**********************************************************
+
+The artifact spring-cloud-gateway-server is deprecated. It will be removed in the next major release. Please add spring-cloud-gateway-server-webflux dependency.
+
+**********************************************************
+
+
+2025-07-29 16:38:29.665 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [After]
+2025-07-29 16:38:29.666 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Before]
+2025-07-29 16:38:29.666 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Between]
+2025-07-29 16:38:29.666 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Cookie]
+2025-07-29 16:38:29.666 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Header]
+2025-07-29 16:38:29.666 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Host]
+2025-07-29 16:38:29.666 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Method]
+2025-07-29 16:38:29.666 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Path]
+2025-07-29 16:38:29.666 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Query]
+2025-07-29 16:38:29.666 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [ReadBody]
+2025-07-29 16:38:29.666 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [RemoteAddr]
+2025-07-29 16:38:29.666 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-07-29 16:38:29.666 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Weight]
+2025-07-29 16:38:29.666 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-07-29 16:38:30.075 [main] WARN  o.s.c.g.s.w.s.StarterDeprecatedAutoConfiguration [] - 
+
+**********************************************************
+
+spring-cloud-starter-gateway is deprecated. It will be removed in the next major release. Please use spring-cloud-starter-gateway-server-webflux instead.
+
+**********************************************************
+
+
+2025-07-29 16:38:30.322 [main] INFO  o.s.boot.web.embedded.netty.NettyWebServer [] - Netty started on port 8000 (http)
+2025-07-29 16:38:30.885 [main] INFO  com.example.gateway.config.GatewayApplication [] - Started GatewayApplication in 3.532 seconds (process running for 4.328)
+2025-07-29 16:38:30.888 [main] INFO  com.example.gateway.config.GatewayApplication [] - 启动成功！！
+2025-07-29 16:38:30.889 [main] INFO  com.example.gateway.config.GatewayApplication [] - 网关地址: 	http://127.0.0.1:8000
+2025-07-29 16:53:42.201 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.netty.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-29 16:53:42.205 [netty-shutdown] INFO  o.s.boot.web.embedded.netty.GracefulShutdown [] - Graceful shutdown complete
+2025-07-29 16:53:47.712 [background-preinit] INFO  org.hibernate.validator.internal.util.Version [] - HV000001: Hibernate Validator 8.0.2.Final
+2025-07-29 16:53:47.755 [restartedMain] INFO  com.example.gateway.config.GatewayApplication [] - Starting GatewayApplication using Java 17.0.11 with PID 15792 (D:\Java\springbootProject\employee\employee\gateway\target\classes started by lenovo in D:\Java\springbootProject\employee\employee)
+2025-07-29 16:53:47.756 [restartedMain] INFO  com.example.gateway.config.GatewayApplication [] - No active profile set, falling back to 1 default profile: "default"
+2025-07-29 16:53:47.902 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-07-29 16:53:47.902 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-07-29 16:53:48.594 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=998bc70f-38dd-37d1-9a4d-1bf40e559bd7
+2025-07-29 16:53:49.138 [restartedMain] WARN  o.s.c.g.c.GatewayClassPathWarningAutoConfiguration [] - 
+
+**********************************************************
+
+The artifact spring-cloud-gateway-server is deprecated. It will be removed in the next major release. Please add spring-cloud-gateway-server-webflux dependency.
+
+**********************************************************
+
+
+2025-07-29 16:53:49.610 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [After]
+2025-07-29 16:53:49.611 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Before]
+2025-07-29 16:53:49.611 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Between]
+2025-07-29 16:53:49.611 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Cookie]
+2025-07-29 16:53:49.611 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Header]
+2025-07-29 16:53:49.611 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Host]
+2025-07-29 16:53:49.611 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Method]
+2025-07-29 16:53:49.611 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Path]
+2025-07-29 16:53:49.611 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Query]
+2025-07-29 16:53:49.611 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [ReadBody]
+2025-07-29 16:53:49.611 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [RemoteAddr]
+2025-07-29 16:53:49.611 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-07-29 16:53:49.612 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Weight]
+2025-07-29 16:53:49.612 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-07-29 16:53:49.784 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - Unable to start LiveReload server
+2025-07-29 16:53:50.163 [restartedMain] WARN  o.s.c.g.s.w.s.StarterDeprecatedAutoConfiguration [] - 
+
+**********************************************************
+
+spring-cloud-starter-gateway is deprecated. It will be removed in the next major release. Please use spring-cloud-starter-gateway-server-webflux instead.
+
+**********************************************************
+
+
+2025-07-29 16:53:50.465 [restartedMain] INFO  o.s.boot.web.embedded.netty.NettyWebServer [] - Netty started on port 8000 (http)
+2025-07-29 16:53:50.970 [restartedMain] INFO  com.example.gateway.config.GatewayApplication [] - Started GatewayApplication in 4.084 seconds (process running for 5.12)
+2025-07-29 16:53:50.973 [restartedMain] WARN  o.s.c.g.c.GatewayServerWebfluxPropertiesMigrationListener [] - 
+The use of configuration keys that have been renamed was found in the environment:
+
+Property source 'Config resource 'class path resource [application.yaml]' via location 'optional:classpath:/'':
+	Key: spring.cloud.gateway.routes[0].id
+		Line: 8
+		Replacement: spring.cloud.gateway.server.webflux.routes[0].id
+	Key: spring.cloud.gateway.routes[0].uri
+		Line: 9
+		Replacement: spring.cloud.gateway.server.webflux.routes[0].uri
+	Key: spring.cloud.gateway.routes[0].predicates[0]
+		Line: 11
+		Replacement: spring.cloud.gateway.server.webflux.routes[0].predicates[0]
+
+
+Each configuration key has been temporarily mapped to its replacement for your convenience. To silence this warning, please update your configuration to use the new keys.
+
+2025-07-29 16:53:50.975 [restartedMain] INFO  com.example.gateway.config.GatewayApplication [] - 启动成功！！
+2025-07-29 16:53:50.975 [restartedMain] INFO  com.example.gateway.config.GatewayApplication [] - 网关地址: 	http://127.0.0.1:8000
+2025-07-29 16:55:00.644 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.netty.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-29 16:55:00.646 [netty-shutdown] INFO  o.s.boot.web.embedded.netty.GracefulShutdown [] - Graceful shutdown complete
+2025-07-29 16:55:04.250 [background-preinit] INFO  org.hibernate.validator.internal.util.Version [] - HV000001: Hibernate Validator 8.0.2.Final
+2025-07-29 16:55:04.299 [restartedMain] INFO  com.example.gateway.config.GatewayApplication [] - Starting GatewayApplication using Java 17.0.11 with PID 7752 (D:\Java\springbootProject\employee\employee\gateway\target\classes started by lenovo in D:\Java\springbootProject\employee\employee)
+2025-07-29 16:55:04.300 [restartedMain] INFO  com.example.gateway.config.GatewayApplication [] - No active profile set, falling back to 1 default profile: "default"
+2025-07-29 16:55:04.438 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-07-29 16:55:04.438 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-07-29 16:55:05.132 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=998bc70f-38dd-37d1-9a4d-1bf40e559bd7
+2025-07-29 16:55:05.479 [restartedMain] WARN  o.s.c.g.c.GatewayClassPathWarningAutoConfiguration [] - 
+
+**********************************************************
+
+The artifact spring-cloud-gateway-server is deprecated. It will be removed in the next major release. Please add spring-cloud-gateway-server-webflux dependency.
+
+**********************************************************
+
+
+2025-07-29 16:55:05.899 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [After]
+2025-07-29 16:55:05.899 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Before]
+2025-07-29 16:55:05.899 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Between]
+2025-07-29 16:55:05.899 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Cookie]
+2025-07-29 16:55:05.899 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Header]
+2025-07-29 16:55:05.899 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Host]
+2025-07-29 16:55:05.899 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Method]
+2025-07-29 16:55:05.899 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Path]
+2025-07-29 16:55:05.899 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Query]
+2025-07-29 16:55:05.899 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [ReadBody]
+2025-07-29 16:55:05.899 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [RemoteAddr]
+2025-07-29 16:55:05.899 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-07-29 16:55:05.899 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Weight]
+2025-07-29 16:55:05.899 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-07-29 16:55:06.033 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - Unable to start LiveReload server
+2025-07-29 16:55:06.272 [restartedMain] WARN  o.s.c.g.s.w.s.StarterDeprecatedAutoConfiguration [] - 
+
+**********************************************************
+
+spring-cloud-starter-gateway is deprecated. It will be removed in the next major release. Please use spring-cloud-starter-gateway-server-webflux instead.
+
+**********************************************************
+
+
+2025-07-29 16:55:06.548 [restartedMain] INFO  o.s.boot.web.embedded.netty.NettyWebServer [] - Netty started on port 8000 (http)
+2025-07-29 16:55:07.013 [restartedMain] INFO  com.example.gateway.config.GatewayApplication [] - Started GatewayApplication in 3.515 seconds (process running for 4.589)
+2025-07-29 16:55:07.016 [restartedMain] INFO  com.example.gateway.config.GatewayApplication [] - 启动成功！！
+2025-07-29 16:55:07.016 [restartedMain] INFO  com.example.gateway.config.GatewayApplication [] - 网关地址: 	http://127.0.0.1:8000
+2025-07-29 16:56:05.396 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.netty.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-29 16:56:05.398 [netty-shutdown] INFO  o.s.boot.web.embedded.netty.GracefulShutdown [] - Graceful shutdown complete
+2025-07-29 16:56:12.308 [background-preinit] INFO  org.hibernate.validator.internal.util.Version [] - HV000001: Hibernate Validator 8.0.2.Final
+2025-07-29 16:56:12.348 [restartedMain] INFO  com.example.gateway.config.GatewayApplication [] - Starting GatewayApplication using Java 17.0.11 with PID 28460 (D:\Java\springbootProject\employee\employee\gateway\target\classes started by lenovo in D:\Java\springbootProject\employee\employee)
+2025-07-29 16:56:12.350 [restartedMain] INFO  com.example.gateway.config.GatewayApplication [] - No active profile set, falling back to 1 default profile: "default"
+2025-07-29 16:56:12.470 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-07-29 16:56:12.470 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-07-29 16:56:13.147 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=3fe1d1b5-2bed-3b9e-b9ed-abdf029ce510
+2025-07-29 16:56:14.080 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [After]
+2025-07-29 16:56:14.080 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Before]
+2025-07-29 16:56:14.080 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Between]
+2025-07-29 16:56:14.080 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Cookie]
+2025-07-29 16:56:14.080 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Header]
+2025-07-29 16:56:14.080 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Host]
+2025-07-29 16:56:14.080 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Method]
+2025-07-29 16:56:14.080 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Path]
+2025-07-29 16:56:14.080 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Query]
+2025-07-29 16:56:14.080 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [ReadBody]
+2025-07-29 16:56:14.080 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [RemoteAddr]
+2025-07-29 16:56:14.081 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-07-29 16:56:14.081 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Weight]
+2025-07-29 16:56:14.081 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-07-29 16:56:14.253 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - Unable to start LiveReload server
+2025-07-29 16:56:14.764 [restartedMain] INFO  o.s.boot.web.embedded.netty.NettyWebServer [] - Netty started on port 8000 (http)
+2025-07-29 16:56:15.328 [restartedMain] INFO  com.example.gateway.config.GatewayApplication [] - Started GatewayApplication in 3.747 seconds (process running for 4.681)
+2025-07-29 16:56:15.333 [restartedMain] INFO  com.example.gateway.config.GatewayApplication [] - 启动成功！！
+2025-07-29 16:56:15.334 [restartedMain] INFO  com.example.gateway.config.GatewayApplication [] - 网关地址: 	http://127.0.0.1:8000
+2025-07-29 16:57:49.478 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.netty.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-29 16:57:49.481 [netty-shutdown] INFO  o.s.boot.web.embedded.netty.GracefulShutdown [] - Graceful shutdown complete

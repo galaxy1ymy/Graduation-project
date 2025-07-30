@@ -1,0 +1,287 @@
+2025-07-29 15:30:39.086 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 12132 (D:\Java\springbootProject\employee\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee\employee)
+2025-07-29 15:30:39.092 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
+2025-07-29 15:30:39.148 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-07-29 15:30:39.148 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-07-29 15:30:39.836 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=62249537-61b2-3bc5-94b6-23aa23d41cc4
+2025-07-29 15:30:40.268 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
+2025-07-29 15:30:40.283 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
+2025-07-29 15:30:40.285 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
+2025-07-29 15:30:40.285 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-07-29 15:30:40.363 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
+2025-07-29 15:30:40.363 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 1213 ms
+2025-07-29 15:30:40.691 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - LiveReload server is running on port 35729
+2025-07-29 15:30:40.993 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Starting ProtocolHandler ["http-nio-8001"]
+2025-07-29 15:30:41.011 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat started on port 8001 (http) with context path '/staff'
+2025-07-29 15:30:41.238 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - Started StaffApplication in 3.213 seconds (process running for 4.397)
+2025-07-29 15:30:41.242 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - 启动成功！！
+2025-07-29 15:30:41.242 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello
+2025-07-29 15:31:00.132 [http-nio-8001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-29 15:31:00.132 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet [] - Initializing Servlet 'dispatcherServlet'
+2025-07-29 15:31:00.133 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet [] - Completed initialization in 1 ms
+2025-07-29 16:02:39.463 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [] - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-07-29 16:02:39.466 [Thread-6] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-29 16:02:39.467 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Pausing ProtocolHandler ["http-nio-8001"]
+2025-07-29 16:02:39.909 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Graceful shutdown complete
+2025-07-29 16:02:39.910 [Thread-6] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Stopping ProtocolHandler ["http-nio-8001"]
+2025-07-29 16:02:40.243 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 12132 (D:\Java\springbootProject\employee\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee\employee)
+2025-07-29 16:02:40.245 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
+2025-07-29 16:02:40.363 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=62249537-61b2-3bc5-94b6-23aa23d41cc4
+2025-07-29 16:02:40.403 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
+2025-07-29 16:02:40.405 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
+2025-07-29 16:02:40.405 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
+2025-07-29 16:02:40.405 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-07-29 16:02:40.440 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
+2025-07-29 16:02:40.440 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 193 ms
+2025-07-29 16:02:40.497 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - LiveReload server is running on port 35729
+2025-07-29 16:02:40.725 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Starting ProtocolHandler ["http-nio-8001"]
+2025-07-29 16:02:40.729 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat started on port 8001 (http) with context path '/staff'
+2025-07-29 16:02:40.949 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - Started StaffApplication in 0.993 seconds (process running for 1924.107)
+2025-07-29 16:02:40.950 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [] - Condition evaluation unchanged
+2025-07-29 16:02:40.951 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - 启动成功！！
+2025-07-29 16:02:40.951 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello
+2025-07-29 16:03:06.212 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [] - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-07-29 16:03:06.213 [Thread-9] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-29 16:03:06.214 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Pausing ProtocolHandler ["http-nio-8001"]
+2025-07-29 16:03:06.789 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Graceful shutdown complete
+2025-07-29 16:03:06.790 [Thread-9] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Stopping ProtocolHandler ["http-nio-8001"]
+2025-07-29 16:03:07.339 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 12132 (D:\Java\springbootProject\employee\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee\employee)
+2025-07-29 16:03:07.339 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
+2025-07-29 16:03:07.443 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=62249537-61b2-3bc5-94b6-23aa23d41cc4
+2025-07-29 16:03:07.473 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
+2025-07-29 16:03:07.473 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
+2025-07-29 16:03:07.475 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
+2025-07-29 16:03:07.475 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-07-29 16:03:07.507 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
+2025-07-29 16:03:07.508 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 166 ms
+2025-07-29 16:03:07.556 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - LiveReload server is running on port 35729
+2025-07-29 16:03:07.827 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Starting ProtocolHandler ["http-nio-8001"]
+2025-07-29 16:03:07.833 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat started on port 8001 (http) with context path '/staff'
+2025-07-29 16:03:08.109 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - Started StaffApplication in 1.268 seconds (process running for 1951.268)
+2025-07-29 16:03:08.110 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [] - Condition evaluation unchanged
+2025-07-29 16:03:08.111 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - 启动成功！！
+2025-07-29 16:03:08.111 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello
+2025-07-29 16:06:58.752 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [] - Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2025-07-29 16:06:58.755 [Thread-15] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-29 16:06:58.756 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Pausing ProtocolHandler ["http-nio-8001"]
+2025-07-29 16:06:59.861 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Graceful shutdown complete
+2025-07-29 16:06:59.862 [Thread-15] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Stopping ProtocolHandler ["http-nio-8001"]
+2025-07-29 16:07:00.466 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 12132 (D:\Java\springbootProject\employee\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee\employee)
+2025-07-29 16:07:00.467 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
+2025-07-29 16:07:00.739 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=04feae82-4910-3ad0-97df-36380adfcf04
+2025-07-29 16:07:00.800 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
+2025-07-29 16:07:00.801 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
+2025-07-29 16:07:00.801 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
+2025-07-29 16:07:00.802 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-07-29 16:07:00.868 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
+2025-07-29 16:07:00.868 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 398 ms
+2025-07-29 16:07:00.972 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - LiveReload server is running on port 35729
+2025-07-29 16:07:01.390 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Starting ProtocolHandler ["http-nio-8001"]
+2025-07-29 16:07:01.395 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat started on port 8001 (http) with context path '/staff'
+2025-07-29 16:07:01.658 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - Started StaffApplication in 1.741 seconds (process running for 2184.816)
+2025-07-29 16:07:01.659 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [] - Condition evaluation unchanged
+2025-07-29 16:07:01.659 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - 启动成功！！
+2025-07-29 16:07:01.660 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello
+2025-07-29 16:07:11.927 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [] - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-07-29 16:07:11.929 [Thread-21] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-29 16:07:11.929 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Pausing ProtocolHandler ["http-nio-8001"]
+2025-07-29 16:07:12.838 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Graceful shutdown complete
+2025-07-29 16:07:12.839 [Thread-21] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Stopping ProtocolHandler ["http-nio-8001"]
+2025-07-29 16:07:13.273 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 12132 (D:\Java\springbootProject\employee\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee\employee)
+2025-07-29 16:07:13.273 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
+2025-07-29 16:07:13.474 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=62249537-61b2-3bc5-94b6-23aa23d41cc4
+2025-07-29 16:07:13.527 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
+2025-07-29 16:07:13.528 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
+2025-07-29 16:07:13.528 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
+2025-07-29 16:07:13.528 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-07-29 16:07:13.588 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
+2025-07-29 16:07:13.588 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 311 ms
+2025-07-29 16:07:13.674 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - LiveReload server is running on port 35729
+2025-07-29 16:07:14.392 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Starting ProtocolHandler ["http-nio-8001"]
+2025-07-29 16:07:14.399 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat started on port 8001 (http) with context path '/staff'
+2025-07-29 16:07:14.861 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - Started StaffApplication in 1.947 seconds (process running for 2198.019)
+2025-07-29 16:07:14.862 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [] - Condition evaluation unchanged
+2025-07-29 16:07:14.863 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - 启动成功！！
+2025-07-29 16:07:14.863 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello
+2025-07-29 16:07:15.092 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [] - Restarting due to 2 class path changes (2 additions, 0 deletions, 0 modifications)
+2025-07-29 16:07:15.093 [Thread-27] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-29 16:07:15.094 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Pausing ProtocolHandler ["http-nio-8001"]
+2025-07-29 16:07:15.737 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Graceful shutdown complete
+2025-07-29 16:07:15.738 [Thread-27] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Stopping ProtocolHandler ["http-nio-8001"]
+2025-07-29 16:07:16.008 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 12132 (D:\Java\springbootProject\employee\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee\employee)
+2025-07-29 16:07:16.009 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
+2025-07-29 16:07:16.088 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=62249537-61b2-3bc5-94b6-23aa23d41cc4
+2025-07-29 16:07:16.114 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
+2025-07-29 16:07:16.114 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
+2025-07-29 16:07:16.115 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
+2025-07-29 16:07:16.115 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-07-29 16:07:16.143 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
+2025-07-29 16:07:16.144 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 133 ms
+2025-07-29 16:07:16.178 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - LiveReload server is running on port 35729
+2025-07-29 16:07:16.431 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Starting ProtocolHandler ["http-nio-8001"]
+2025-07-29 16:07:16.435 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat started on port 8001 (http) with context path '/staff'
+2025-07-29 16:07:16.669 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - Started StaffApplication in 0.888 seconds (process running for 2199.827)
+2025-07-29 16:07:16.670 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [] - Condition evaluation unchanged
+2025-07-29 16:07:16.670 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - 启动成功！！
+2025-07-29 16:07:16.670 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello
+2025-07-29 16:16:31.599 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [] - Restarting due to 3 class path changes (0 additions, 2 deletions, 1 modification)
+2025-07-29 16:16:31.600 [Thread-33] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-29 16:16:31.601 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Pausing ProtocolHandler ["http-nio-8001"]
+2025-07-29 16:16:32.138 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Graceful shutdown complete
+2025-07-29 16:16:32.138 [Thread-33] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Stopping ProtocolHandler ["http-nio-8001"]
+2025-07-29 16:16:32.509 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 12132 (D:\Java\springbootProject\employee\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee\employee)
+2025-07-29 16:16:32.510 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
+2025-07-29 16:16:32.624 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=62249537-61b2-3bc5-94b6-23aa23d41cc4
+2025-07-29 16:16:32.661 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
+2025-07-29 16:16:32.662 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
+2025-07-29 16:16:32.663 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
+2025-07-29 16:16:32.663 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-07-29 16:16:32.697 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
+2025-07-29 16:16:32.697 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 186 ms
+2025-07-29 16:16:32.750 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - LiveReload server is running on port 35729
+2025-07-29 16:16:33.029 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Starting ProtocolHandler ["http-nio-8001"]
+2025-07-29 16:16:33.034 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat started on port 8001 (http) with context path '/staff'
+2025-07-29 16:16:33.361 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - Started StaffApplication in 1.186 seconds (process running for 2756.52)
+2025-07-29 16:16:33.363 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [] - Condition evaluation unchanged
+2025-07-29 16:16:33.364 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - 启动成功！！
+2025-07-29 16:16:33.365 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello
+2025-07-29 16:16:34.163 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [] - Restarting due to 2 class path changes (2 additions, 0 deletions, 0 modifications)
+2025-07-29 16:16:34.165 [Thread-39] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-29 16:16:34.166 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Pausing ProtocolHandler ["http-nio-8001"]
+2025-07-29 16:16:34.693 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Graceful shutdown complete
+2025-07-29 16:16:34.693 [Thread-39] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Stopping ProtocolHandler ["http-nio-8001"]
+2025-07-29 16:16:35.079 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 12132 (D:\Java\springbootProject\employee\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee\employee)
+2025-07-29 16:16:35.079 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
+2025-07-29 16:16:35.167 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=62249537-61b2-3bc5-94b6-23aa23d41cc4
+2025-07-29 16:16:35.194 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
+2025-07-29 16:16:35.194 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
+2025-07-29 16:16:35.194 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
+2025-07-29 16:16:35.194 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-07-29 16:16:35.223 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
+2025-07-29 16:16:35.223 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 143 ms
+2025-07-29 16:16:35.254 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - LiveReload server is running on port 35729
+2025-07-29 16:16:35.480 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Starting ProtocolHandler ["http-nio-8001"]
+2025-07-29 16:16:35.484 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat started on port 8001 (http) with context path '/staff'
+2025-07-29 16:16:35.691 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - Started StaffApplication in 0.959 seconds (process running for 2758.85)
+2025-07-29 16:16:35.693 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [] - Condition evaluation unchanged
+2025-07-29 16:16:35.693 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - 启动成功！！
+2025-07-29 16:16:35.693 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello
+2025-07-29 16:17:38.428 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [] - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-07-29 16:17:38.429 [Thread-45] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-29 16:17:38.430 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Pausing ProtocolHandler ["http-nio-8001"]
+2025-07-29 16:17:38.999 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Graceful shutdown complete
+2025-07-29 16:17:38.999 [Thread-45] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Stopping ProtocolHandler ["http-nio-8001"]
+2025-07-29 16:17:39.425 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 12132 (D:\Java\springbootProject\employee\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee\employee)
+2025-07-29 16:17:39.425 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
+2025-07-29 16:17:39.566 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=62249537-61b2-3bc5-94b6-23aa23d41cc4
+2025-07-29 16:17:39.595 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
+2025-07-29 16:17:39.596 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
+2025-07-29 16:17:39.596 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
+2025-07-29 16:17:39.596 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-07-29 16:17:39.633 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
+2025-07-29 16:17:39.633 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 206 ms
+2025-07-29 16:17:39.676 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - LiveReload server is running on port 35729
+2025-07-29 16:17:40.079 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Starting ProtocolHandler ["http-nio-8001"]
+2025-07-29 16:17:40.086 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat started on port 8001 (http) with context path '/staff'
+2025-07-29 16:17:40.357 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - Started StaffApplication in 1.316 seconds (process running for 2823.515)
+2025-07-29 16:17:40.358 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [] - Condition evaluation unchanged
+2025-07-29 16:17:40.358 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - 启动成功！！
+2025-07-29 16:17:40.359 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello
+2025-07-29 16:18:31.410 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-29 16:18:31.788 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Graceful shutdown complete
+2025-07-29 16:18:35.080 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 1004 (D:\Java\springbootProject\employee\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee\employee)
+2025-07-29 16:18:35.083 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
+2025-07-29 16:18:35.126 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-07-29 16:18:35.126 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-07-29 16:18:35.729 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=373532cd-44c5-3e8f-a201-f55e99ea71f0
+2025-07-29 16:18:36.358 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
+2025-07-29 16:18:36.379 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
+2025-07-29 16:18:36.383 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
+2025-07-29 16:18:36.383 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-07-29 16:18:36.476 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
+2025-07-29 16:18:36.477 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 1350 ms
+2025-07-29 16:18:36.947 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - LiveReload server is running on port 35729
+2025-07-29 16:18:37.247 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Starting ProtocolHandler ["http-nio-8001"]
+2025-07-29 16:18:37.269 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat started on port 8001 (http) with context path '/staff'
+2025-07-29 16:18:37.536 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - Started StaffApplication in 3.235 seconds (process running for 4.395)
+2025-07-29 16:18:37.540 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - 启动成功！！
+2025-07-29 16:18:37.541 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello
+2025-07-29 16:19:27.263 [http-nio-8001-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-29 16:19:27.264 [http-nio-8001-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet [] - Initializing Servlet 'dispatcherServlet'
+2025-07-29 16:19:27.265 [http-nio-8001-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet [] - Completed initialization in 1 ms
+2025-07-29 16:19:27.293 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
+2025-07-29 16:19:27.294 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://127.0.0.1:8001/staff/hello org.apache.catalina.connector.RequestFacade@7543a80
+2025-07-29 16:19:27.294 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 类名方法: controller.com.example.employee.staff.StaffController.hello
+2025-07-29 16:19:27.294 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 远程地址：127.0.0.1
+2025-07-29 16:19:27.329 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 请求参数: []
+2025-07-29 16:19:27.331 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 返回结果: "Hello World!"
+2025-07-29 16:19:27.331 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：38 ms -------------
+2025-07-29 16:26:03.257 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [] - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-07-29 16:26:03.261 [Thread-6] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-29 16:26:03.263 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Pausing ProtocolHandler ["http-nio-8001"]
+2025-07-29 16:26:04.321 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Graceful shutdown complete
+2025-07-29 16:26:04.322 [Thread-6] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Stopping ProtocolHandler ["http-nio-8001"]
+2025-07-29 16:26:05.008 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 1004 (D:\Java\springbootProject\employee\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee\employee)
+2025-07-29 16:26:05.008 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
+2025-07-29 16:26:05.399 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=373532cd-44c5-3e8f-a201-f55e99ea71f0
+2025-07-29 16:26:05.591 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
+2025-07-29 16:26:05.593 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
+2025-07-29 16:26:05.594 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
+2025-07-29 16:26:05.594 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-07-29 16:26:05.675 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
+2025-07-29 16:26:05.676 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 662 ms
+2025-07-29 16:26:05.996 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - LiveReload server is running on port 35729
+2025-07-29 16:26:06.484 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Starting ProtocolHandler ["http-nio-8001"]
+2025-07-29 16:26:06.493 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat started on port 8001 (http) with context path '/staff'
+2025-07-29 16:26:07.284 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - Started StaffApplication in 2.872 seconds (process running for 454.143)
+2025-07-29 16:26:07.291 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [] - Condition evaluation unchanged
+2025-07-29 16:26:07.293 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - 启动成功！！
+2025-07-29 16:26:07.296 [restartedMain] INFO  config.com.example.employee.staff.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello
+2025-07-29 16:53:35.181 [http-nio-8001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-29 16:53:35.181 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet [] - Initializing Servlet 'dispatcherServlet'
+2025-07-29 16:53:35.182 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet [] - Completed initialization in 1 ms
+2025-07-29 16:53:35.184 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
+2025-07-29 16:53:35.184 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://127.0.0.1:8001/staff/hello org.apache.catalina.connector.RequestFacade@6ca5cdaa
+2025-07-29 16:53:35.184 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 类名方法: controller.com.example.employee.staff.StaffController.hello
+2025-07-29 16:53:35.184 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 远程地址：127.0.0.1
+2025-07-29 16:53:35.184 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 请求参数: []
+2025-07-29 16:53:35.185 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 返回结果: "Hello World!"
+2025-07-29 16:53:35.185 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：2 ms -------------
+2025-07-29 16:57:49.281 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-29 16:57:49.713 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Graceful shutdown complete
+2025-07-30 17:33:59.522 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 24408 (D:\Java\springbootProject\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee)
+2025-07-30 17:33:59.524 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
+2025-07-30 17:33:59.569 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-07-30 17:33:59.570 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-07-30 17:34:00.356 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=11ca3d44-15e6-3489-9bf5-ea68b09d77fa
+2025-07-30 17:34:00.999 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
+2025-07-30 17:34:01.016 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
+2025-07-30 17:34:01.017 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
+2025-07-30 17:34:01.018 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-07-30 17:34:01.097 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
+2025-07-30 17:34:01.097 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 1527 ms
+2025-07-30 17:34:02.013 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - Unable to start LiveReload server
+2025-07-30 17:34:02.389 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Starting ProtocolHandler ["http-nio-8001"]
+2025-07-30 17:34:02.415 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat started on port 8001 (http) with context path '/staff'
+2025-07-30 17:34:02.730 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Started StaffApplication in 4.112 seconds (process running for 5.117)
+2025-07-30 17:34:02.732 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 启动成功！！
+2025-07-30 17:34:02.734 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello
+2025-07-30 17:34:15.002 [http-nio-8001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-30 17:34:15.002 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet [] - Initializing Servlet 'dispatcherServlet'
+2025-07-30 17:34:15.003 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet [] - Completed initialization in 0 ms
+2025-07-30 17:34:15.034 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
+2025-07-30 17:34:15.035 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://127.0.0.1:8001/staff/staff/count org.apache.catalina.connector.RequestFacade@3e8bc379
+2025-07-30 17:34:15.035 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.count
+2025-07-30 17:34:15.035 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 远程地址：127.0.0.1
+2025-07-30 17:34:15.087 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 请求参数: []
+2025-07-30 17:34:15.123 [http-nio-8001-exec-1] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Starting...
+2025-07-30 17:34:15.396 [http-nio-8001-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool [] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@68f2a5d9
+2025-07-30 17:34:15.397 [http-nio-8001-exec-1] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Start completed.
+2025-07-30 17:34:15.441 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 返回结果: 0
+2025-07-30 17:34:15.442 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：409 ms -------------
+2025-07-30 17:34:17.334 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
+2025-07-30 17:34:17.334 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://127.0.0.1:8001/staff/staff/count org.apache.catalina.connector.RequestFacade@5097eec5
+2025-07-30 17:34:17.335 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.count
+2025-07-30 17:34:17.335 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 远程地址：127.0.0.1
+2025-07-30 17:34:17.335 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 请求参数: []
+2025-07-30 17:34:17.337 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 返回结果: 0
+2025-07-30 17:34:17.337 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：3 ms -------------
