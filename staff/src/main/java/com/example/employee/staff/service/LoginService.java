@@ -1,5 +1,7 @@
 package com.example.employee.staff.service;
 
+import com.example.common.exception.BusinessException;
+import com.example.common.exception.BusinessExceptionEnum;
 import com.example.employee.staff.domain.Login;
 import com.example.employee.staff.mapper.LoginMapper;
 import com.example.employee.staff.req.StaffLoginReq;
@@ -17,10 +19,10 @@ public class LoginService {
         String password = req.getPassword();
         Login login = loginMapper.selectByPrimaryKey(jobNumber);
         if (login == null) {
-            throw new RuntimeException("用户不存在");
+            throw new BusinessException(BusinessExceptionEnum.STAFF_JOBNUMBER_NULL);
         }
         if (!login.getPassword().equals(password)) {
-            throw new RuntimeException("密码错误");
+            throw new BusinessException(BusinessExceptionEnum.STAFF_PASSWORD_ERROR);
         }
         return login;
     }
