@@ -4,6 +4,7 @@ import com.example.common.resp.CommonResp;
 import com.example.employee.staff.domain.Login;
 import com.example.employee.staff.req.StaffLoginReq;
 import com.example.employee.staff.service.LoginService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -16,7 +17,7 @@ public class LoginController {
     private LoginService loginService;
 
     @PostMapping("/login")
-    public CommonResp<Login> login(@RequestBody StaffLoginReq req){
+    public CommonResp<Login> login(@Valid  @RequestBody StaffLoginReq req){
         Login login = loginService.login(req);
         return new CommonResp<>(login) ;
     }

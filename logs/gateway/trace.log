@@ -25,3 +25,28 @@
 2025-08-25 15:26:13.511 [restartedMain] INFO  com.example.gateway.config.GatewayApplication [] - 网关地址: 	http://127.0.0.1:8000
 2025-08-25 16:43:13.276 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.netty.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
 2025-08-25 16:43:13.332 [netty-shutdown] INFO  o.s.boot.web.embedded.netty.GracefulShutdown [] - Graceful shutdown complete
+2025-08-25 16:48:31.889 [background-preinit] INFO  org.hibernate.validator.internal.util.Version [] - HV000001: Hibernate Validator 8.0.2.Final
+2025-08-25 16:48:31.952 [restartedMain] INFO  com.example.gateway.config.GatewayApplication [] - Starting GatewayApplication using Java 17.0.11 with PID 30396 (D:\Java\springbootProject\employee\gateway\target\classes started by lenovo in D:\Java\springbootProject\employee)
+2025-08-25 16:48:31.954 [restartedMain] INFO  com.example.gateway.config.GatewayApplication [] - No active profile set, falling back to 1 default profile: "default"
+2025-08-25 16:48:32.148 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-25 16:48:32.149 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-25 16:48:32.712 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=3fe1d1b5-2bed-3b9e-b9ed-abdf029ce510
+2025-08-25 16:48:33.777 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [After]
+2025-08-25 16:48:33.777 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Before]
+2025-08-25 16:48:33.777 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Between]
+2025-08-25 16:48:33.777 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Cookie]
+2025-08-25 16:48:33.777 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Header]
+2025-08-25 16:48:33.777 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Host]
+2025-08-25 16:48:33.778 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Method]
+2025-08-25 16:48:33.778 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Path]
+2025-08-25 16:48:33.778 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Query]
+2025-08-25 16:48:33.778 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [ReadBody]
+2025-08-25 16:48:33.778 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [RemoteAddr]
+2025-08-25 16:48:33.778 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-08-25 16:48:33.778 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Weight]
+2025-08-25 16:48:33.778 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-08-25 16:48:34.034 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - Unable to start LiveReload server
+2025-08-25 16:48:34.565 [restartedMain] INFO  o.s.boot.web.embedded.netty.NettyWebServer [] - Netty started on port 8000 (http)
+2025-08-25 16:48:35.131 [restartedMain] INFO  com.example.gateway.config.GatewayApplication [] - Started GatewayApplication in 4.138 seconds (process running for 5.51)
+2025-08-25 16:48:35.135 [restartedMain] INFO  com.example.gateway.config.GatewayApplication [] - 启动成功！！
+2025-08-25 16:48:35.135 [restartedMain] INFO  com.example.gateway.config.GatewayApplication [] - 网关地址: 	http://127.0.0.1:8000
