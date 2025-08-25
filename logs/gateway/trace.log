@@ -1,25 +1,25 @@
-2025-07-30 17:33:47.736 [background-preinit] INFO  org.hibernate.validator.internal.util.Version [] - HV000001: Hibernate Validator 8.0.2.Final
-2025-07-30 17:33:47.799 [restartedMain] INFO  com.example.gateway.config.GatewayApplication [] - Starting GatewayApplication using Java 17.0.11 with PID 9448 (D:\Java\springbootProject\employee\gateway\target\classes started by lenovo in D:\Java\springbootProject\employee)
-2025-07-30 17:33:47.800 [restartedMain] INFO  com.example.gateway.config.GatewayApplication [] - No active profile set, falling back to 1 default profile: "default"
-2025-07-30 17:33:47.960 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-07-30 17:33:47.960 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-07-30 17:33:48.693 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=3fe1d1b5-2bed-3b9e-b9ed-abdf029ce510
-2025-07-30 17:33:49.854 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [After]
-2025-07-30 17:33:49.854 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Before]
-2025-07-30 17:33:49.854 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Between]
-2025-07-30 17:33:49.854 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Cookie]
-2025-07-30 17:33:49.854 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Header]
-2025-07-30 17:33:49.854 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Host]
-2025-07-30 17:33:49.854 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Method]
-2025-07-30 17:33:49.855 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Path]
-2025-07-30 17:33:49.855 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Query]
-2025-07-30 17:33:49.855 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [ReadBody]
-2025-07-30 17:33:49.855 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [RemoteAddr]
-2025-07-30 17:33:49.855 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
-2025-07-30 17:33:49.855 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Weight]
-2025-07-30 17:33:49.855 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [CloudFoundryRouteService]
-2025-07-30 17:33:50.057 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - LiveReload server is running on port 35729
-2025-07-30 17:33:50.663 [restartedMain] INFO  o.s.boot.web.embedded.netty.NettyWebServer [] - Netty started on port 8000 (http)
-2025-07-30 17:33:51.400 [restartedMain] INFO  com.example.gateway.config.GatewayApplication [] - Started GatewayApplication in 4.56 seconds (process running for 5.619)
-2025-07-30 17:33:51.403 [restartedMain] INFO  com.example.gateway.config.GatewayApplication [] - 启动成功！！
-2025-07-30 17:33:51.404 [restartedMain] INFO  com.example.gateway.config.GatewayApplication [] - 网关地址: 	http://127.0.0.1:8000
+2025-08-25 15:26:09.911 [background-preinit] INFO  org.hibernate.validator.internal.util.Version [] - HV000001: Hibernate Validator 8.0.2.Final
+2025-08-25 15:26:09.967 [restartedMain] INFO  com.example.gateway.config.GatewayApplication [] - Starting GatewayApplication using Java 17.0.11 with PID 29820 (D:\Java\springbootProject\employee\gateway\target\classes started by lenovo in D:\Java\springbootProject\employee)
+2025-08-25 15:26:09.968 [restartedMain] INFO  com.example.gateway.config.GatewayApplication [] - No active profile set, falling back to 1 default profile: "default"
+2025-08-25 15:26:10.108 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-25 15:26:10.108 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-25 15:26:10.824 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=3fe1d1b5-2bed-3b9e-b9ed-abdf029ce510
+2025-08-25 15:26:11.923 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [After]
+2025-08-25 15:26:11.923 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Before]
+2025-08-25 15:26:11.923 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Between]
+2025-08-25 15:26:11.924 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Cookie]
+2025-08-25 15:26:11.924 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Header]
+2025-08-25 15:26:11.924 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Host]
+2025-08-25 15:26:11.924 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Method]
+2025-08-25 15:26:11.924 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Path]
+2025-08-25 15:26:11.924 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Query]
+2025-08-25 15:26:11.924 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [ReadBody]
+2025-08-25 15:26:11.924 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [RemoteAddr]
+2025-08-25 15:26:11.924 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-08-25 15:26:11.924 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Weight]
+2025-08-25 15:26:11.924 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-08-25 15:26:12.124 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - LiveReload server is running on port 35729
+2025-08-25 15:26:12.848 [restartedMain] INFO  o.s.boot.web.embedded.netty.NettyWebServer [] - Netty started on port 8000 (http)
+2025-08-25 15:26:13.506 [restartedMain] INFO  com.example.gateway.config.GatewayApplication [] - Started GatewayApplication in 4.689 seconds (process running for 6.011)
+2025-08-25 15:26:13.510 [restartedMain] INFO  com.example.gateway.config.GatewayApplication [] - 启动成功！！
+2025-08-25 15:26:13.511 [restartedMain] INFO  com.example.gateway.config.GatewayApplication [] - 网关地址: 	http://127.0.0.1:8000

@@ -192,6 +192,76 @@ public class StaffExample {
             return (Criteria) this;
         }
 
+        public Criteria andJobNumberIsNull() {
+            addCriterion("job_number is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andJobNumberIsNotNull() {
+            addCriterion("job_number is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andJobNumberEqualTo(String value) {
+            addCriterion("job_number =", value, "jobNumber");
+            return (Criteria) this;
+        }
+
+        public Criteria andJobNumberNotEqualTo(String value) {
+            addCriterion("job_number <>", value, "jobNumber");
+            return (Criteria) this;
+        }
+
+        public Criteria andJobNumberGreaterThan(String value) {
+            addCriterion("job_number >", value, "jobNumber");
+            return (Criteria) this;
+        }
+
+        public Criteria andJobNumberGreaterThanOrEqualTo(String value) {
+            addCriterion("job_number >=", value, "jobNumber");
+            return (Criteria) this;
+        }
+
+        public Criteria andJobNumberLessThan(String value) {
+            addCriterion("job_number <", value, "jobNumber");
+            return (Criteria) this;
+        }
+
+        public Criteria andJobNumberLessThanOrEqualTo(String value) {
+            addCriterion("job_number <=", value, "jobNumber");
+            return (Criteria) this;
+        }
+
+        public Criteria andJobNumberLike(String value) {
+            addCriterion("job_number like", value, "jobNumber");
+            return (Criteria) this;
+        }
+
+        public Criteria andJobNumberNotLike(String value) {
+            addCriterion("job_number not like", value, "jobNumber");
+            return (Criteria) this;
+        }
+
+        public Criteria andJobNumberIn(List<String> values) {
+            addCriterion("job_number in", values, "jobNumber");
+            return (Criteria) this;
+        }
+
+        public Criteria andJobNumberNotIn(List<String> values) {
+            addCriterion("job_number not in", values, "jobNumber");
+            return (Criteria) this;
+        }
+
+        public Criteria andJobNumberBetween(String value1, String value2) {
+            addCriterion("job_number between", value1, value2, "jobNumber");
+            return (Criteria) this;
+        }
+
+        public Criteria andJobNumberNotBetween(String value1, String value2) {
+            addCriterion("job_number not between", value1, value2, "jobNumber");
+            return (Criteria) this;
+        }
+
         public Criteria andNameIsNull() {
             addCriterion("`name` is null");
             return (Criteria) this;
@@ -532,63 +602,133 @@ public class StaffExample {
             return (Criteria) this;
         }
 
-        public Criteria andDepartmentIdIsNull() {
-            addCriterion("department_id is null");
+        public Criteria andAddressIsNull() {
+            addCriterion("address is null");
             return (Criteria) this;
         }
 
-        public Criteria andDepartmentIdIsNotNull() {
-            addCriterion("department_id is not null");
+        public Criteria andAddressIsNotNull() {
+            addCriterion("address is not null");
             return (Criteria) this;
         }
 
-        public Criteria andDepartmentIdEqualTo(Long value) {
-            addCriterion("department_id =", value, "departmentId");
+        public Criteria andAddressEqualTo(String value) {
+            addCriterion("address =", value, "address");
             return (Criteria) this;
         }
 
-        public Criteria andDepartmentIdNotEqualTo(Long value) {
-            addCriterion("department_id <>", value, "departmentId");
+        public Criteria andAddressNotEqualTo(String value) {
+            addCriterion("address <>", value, "address");
             return (Criteria) this;
         }
 
-        public Criteria andDepartmentIdGreaterThan(Long value) {
-            addCriterion("department_id >", value, "departmentId");
+        public Criteria andAddressGreaterThan(String value) {
+            addCriterion("address >", value, "address");
             return (Criteria) this;
         }
 
-        public Criteria andDepartmentIdGreaterThanOrEqualTo(Long value) {
-            addCriterion("department_id >=", value, "departmentId");
+        public Criteria andAddressGreaterThanOrEqualTo(String value) {
+            addCriterion("address >=", value, "address");
             return (Criteria) this;
         }
 
-        public Criteria andDepartmentIdLessThan(Long value) {
-            addCriterion("department_id <", value, "departmentId");
+        public Criteria andAddressLessThan(String value) {
+            addCriterion("address <", value, "address");
             return (Criteria) this;
         }
 
-        public Criteria andDepartmentIdLessThanOrEqualTo(Long value) {
-            addCriterion("department_id <=", value, "departmentId");
+        public Criteria andAddressLessThanOrEqualTo(String value) {
+            addCriterion("address <=", value, "address");
             return (Criteria) this;
         }
 
-        public Criteria andDepartmentIdIn(List<Long> values) {
-            addCriterion("department_id in", values, "departmentId");
+        public Criteria andAddressLike(String value) {
+            addCriterion("address like", value, "address");
             return (Criteria) this;
         }
 
-        public Criteria andDepartmentIdNotIn(List<Long> values) {
-            addCriterion("department_id not in", values, "departmentId");
+        public Criteria andAddressNotLike(String value) {
+            addCriterion("address not like", value, "address");
             return (Criteria) this;
         }
 
-        public Criteria andDepartmentIdBetween(Long value1, Long value2) {
-            addCriterion("department_id between", value1, value2, "departmentId");
+        public Criteria andAddressIn(List<String> values) {
+            addCriterion("address in", values, "address");
             return (Criteria) this;
         }
 
-        public Criteria andDepartmentIdNotBetween(Long value1, Long value2) {
-            addCriterion("department_id not between", value1, value2, "departmentId");
+        public Criteria andAddressNotIn(List<String> values) {
+            addCriterion("address not in", values, "address");
+            return (Criteria) this;
+        }
+
+        public Criteria andAddressBetween(String value1, String value2) {
+            addCriterion("address between", value1, value2, "address");
+            return (Criteria) this;
+        }
+
+        public Criteria andAddressNotBetween(String value1, String value2) {
+            addCriterion("address not between", value1, value2, "address");
+            return (Criteria) this;
+        }
+
+        public Criteria andDepartmentIsNull() {
+            addCriterion("department is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andDepartmentIsNotNull() {
+            addCriterion("department is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andDepartmentEqualTo(Long value) {
+            addCriterion("department =", value, "department");
+            return (Criteria) this;
+        }
+
+        public Criteria andDepartmentNotEqualTo(Long value) {
+            addCriterion("department <>", value, "department");
+            return (Criteria) this;
+        }
+
+        public Criteria andDepartmentGreaterThan(Long value) {
+            addCriterion("department >", value, "department");
+            return (Criteria) this;
+        }
+
+        public Criteria andDepartmentGreaterThanOrEqualTo(Long value) {
+            addCriterion("department >=", value, "department");
+            return (Criteria) this;
+        }
+
+        public Criteria andDepartmentLessThan(Long value) {
+            addCriterion("department <", value, "department");
+            return (Criteria) this;
+        }
+
+        public Criteria andDepartmentLessThanOrEqualTo(Long value) {
+            addCriterion("department <=", value, "department");
+            return (Criteria) this;
+        }
+
+        public Criteria andDepartmentIn(List<Long> values) {
+            addCriterion("department in", values, "department");
+            return (Criteria) this;
+        }
+
+        public Criteria andDepartmentNotIn(List<Long> values) {
+            addCriterion("department not in", values, "department");
+            return (Criteria) this;
+        }
+
+        public Criteria andDepartmentBetween(Long value1, Long value2) {
+            addCriterion("department between", value1, value2, "department");
+            return (Criteria) this;
+        }
+
+        public Criteria andDepartmentNotBetween(Long value1, Long value2) {
+            addCriterion("department not between", value1, value2, "department");
             return (Criteria) this;
         }
 

@@ -43,7 +43,6 @@
             <artifactId>hutool-all</artifactId>
             <version>5.8.24</version>
         </dependency>
-<<<<<<< HEAD
 
         <!-- 集成mybatis -->
         <dependency>
@@ -55,8 +54,7 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
-=======
->>>>>>> ffb236f472abca80f60ef7bf648a0e6e2fa8a25c
+
     </dependencies>
 
 </project>

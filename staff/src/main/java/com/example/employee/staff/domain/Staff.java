@@ -5,6 +5,8 @@ import java.util.Date;
 public class Staff {
     private Long id;
 
+    private String jobNumber;
+
     private String name;
 
     private String gender;
@@ -15,7 +17,9 @@ public class Staff {
 
     private String email;
 
-    private Long departmentId;
+    private String address;
+
+    private Long department;
 
     private Long position;
 
@@ -33,6 +37,14 @@ public class Staff {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public String getJobNumber() {
+        return jobNumber;
+    }
+
+    public void setJobNumber(String jobNumber) {
+        this.jobNumber = jobNumber;
     }
 
     public String getName() {
@@ -75,12 +87,20 @@ public class Staff {
         this.email = email;
     }
 
-    public Long getDepartmentId() {
-        return departmentId;
+    public String getAddress() {
+        return address;
     }
 
-    public void setDepartmentId(Long departmentId) {
-        this.departmentId = departmentId;
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public Long getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(Long department) {
+        this.department = department;
     }
 
     public Long getPosition() {
@@ -130,12 +150,14 @@ public class Staff {
         sb.append(" [");
         sb.append("Hash = ").append(hashCode());
         sb.append(", id=").append(id);
+        sb.append(", jobNumber=").append(jobNumber);
         sb.append(", name=").append(name);
         sb.append(", gender=").append(gender);
         sb.append(", age=").append(age);
         sb.append(", phone=").append(phone);
         sb.append(", email=").append(email);
-        sb.append(", departmentId=").append(departmentId);
+        sb.append(", address=").append(address);
+        sb.append(", department=").append(department);
         sb.append(", position=").append(position);
         sb.append(", hireDate=").append(hireDate);
         sb.append(", status=").append(status);

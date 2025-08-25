@@ -2,9 +2,8 @@ package com.example.employee.staff.mapper;
 
 import com.example.employee.staff.domain.Staff;
 import com.example.employee.staff.domain.StaffExample;
-import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
+import org.apache.ibatis.annotations.Param;
 
 public interface StaffMapper {
     long countByExample(StaffExample example);
