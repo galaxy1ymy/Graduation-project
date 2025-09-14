@@ -1,0 +1,11 @@
+/* 去掉浏览器默认 margin/padding */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* 全局字体、背景 */
+body {
+    font-family: 'Microsoft YaHei', Arial, sans-serif;
+}
