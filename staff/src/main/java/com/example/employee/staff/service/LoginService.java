@@ -13,6 +13,8 @@ public class LoginService {
 
     @Autowired
     private LoginMapper loginMapper;
+   /* @Autowired
+    private StaffMapper staffMapper;*/
 
     public Login login(StaffLoginReq  req) {
         Long jobNumber = req.getJobNumber();
@@ -26,5 +28,13 @@ public class LoginService {
         }
         return login;
     }
+
+    /*public String getNameByJobNumber(String jobNumber) {
+        StaffExample example = new StaffExample();
+        example.createCriteria().andJobNumberEqualTo(jobNumber);
+
+        List<Staff> list = staffMapper.selectByExample(example);
+        return list.isEmpty() ? null : list.get(0).getName();
+    }*/
 
 }

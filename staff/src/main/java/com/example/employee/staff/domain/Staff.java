@@ -19,9 +19,9 @@ public class Staff {
 
     private String address;
 
-    private Long department;
+    private String department;
 
-    private Long position;
+    private String position;
 
     private Date hireDate;
 
@@ -95,19 +95,19 @@ public class Staff {
         this.address = address;
     }
 
-    public Long getDepartment() {
+    public String getDepartment() {
         return department;
     }
 
-    public void setDepartment(Long department) {
+    public void setDepartment(String department) {
         this.department = department;
     }
 
-    public Long getPosition() {
+    public String getPosition() {
         return position;
     }
 
-    public void setPosition(Long position) {
+    public void setPosition(String position) {
         this.position = position;
     }
 

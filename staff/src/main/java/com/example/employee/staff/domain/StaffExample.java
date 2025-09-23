@@ -682,52 +682,62 @@ public class StaffExample {
             return (Criteria) this;
         }
 
-        public Criteria andDepartmentEqualTo(Long value) {
+        public Criteria andDepartmentEqualTo(String value) {
             addCriterion("department =", value, "department");
             return (Criteria) this;
         }
 
-        public Criteria andDepartmentNotEqualTo(Long value) {
+        public Criteria andDepartmentNotEqualTo(String value) {
             addCriterion("department <>", value, "department");
             return (Criteria) this;
         }
 
-        public Criteria andDepartmentGreaterThan(Long value) {
+        public Criteria andDepartmentGreaterThan(String value) {
             addCriterion("department >", value, "department");
             return (Criteria) this;
         }
 
-        public Criteria andDepartmentGreaterThanOrEqualTo(Long value) {
+        public Criteria andDepartmentGreaterThanOrEqualTo(String value) {
             addCriterion("department >=", value, "department");
             return (Criteria) this;
         }
 
-        public Criteria andDepartmentLessThan(Long value) {
+        public Criteria andDepartmentLessThan(String value) {
             addCriterion("department <", value, "department");
             return (Criteria) this;
         }
 
-        public Criteria andDepartmentLessThanOrEqualTo(Long value) {
+        public Criteria andDepartmentLessThanOrEqualTo(String value) {
             addCriterion("department <=", value, "department");
             return (Criteria) this;
         }
 
-        public Criteria andDepartmentIn(List<Long> values) {
+        public Criteria andDepartmentLike(String value) {
+            addCriterion("department like", value, "department");
+            return (Criteria) this;
+        }
+
+        public Criteria andDepartmentNotLike(String value) {
+            addCriterion("department not like", value, "department");
+            return (Criteria) this;
+        }
+
+        public Criteria andDepartmentIn(List<String> values) {
             addCriterion("department in", values, "department");
             return (Criteria) this;
         }
 
-        public Criteria andDepartmentNotIn(List<Long> values) {
+        public Criteria andDepartmentNotIn(List<String> values) {
             addCriterion("department not in", values, "department");
             return (Criteria) this;
         }
 
-        public Criteria andDepartmentBetween(Long value1, Long value2) {
+        public Criteria andDepartmentBetween(String value1, String value2) {
             addCriterion("department between", value1, value2, "department");
             return (Criteria) this;
         }
 
-        public Criteria andDepartmentNotBetween(Long value1, Long value2) {
+        public Criteria andDepartmentNotBetween(String value1, String value2) {
             addCriterion("department not between", value1, value2, "department");
             return (Criteria) this;
         }
@@ -742,52 +752,62 @@ public class StaffExample {
             return (Criteria) this;
         }
 
-        public Criteria andPositionEqualTo(Long value) {
+        public Criteria andPositionEqualTo(String value) {
             addCriterion("`position` =", value, "position");
             return (Criteria) this;
         }
 
-        public Criteria andPositionNotEqualTo(Long value) {
+        public Criteria andPositionNotEqualTo(String value) {
             addCriterion("`position` <>", value, "position");
             return (Criteria) this;
         }
 
-        public Criteria andPositionGreaterThan(Long value) {
+        public Criteria andPositionGreaterThan(String value) {
             addCriterion("`position` >", value, "position");
             return (Criteria) this;
         }
 
-        public Criteria andPositionGreaterThanOrEqualTo(Long value) {
+        public Criteria andPositionGreaterThanOrEqualTo(String value) {
             addCriterion("`position` >=", value, "position");
             return (Criteria) this;
         }
 
-        public Criteria andPositionLessThan(Long value) {
+        public Criteria andPositionLessThan(String value) {
             addCriterion("`position` <", value, "position");
             return (Criteria) this;
         }
 
-        public Criteria andPositionLessThanOrEqualTo(Long value) {
+        public Criteria andPositionLessThanOrEqualTo(String value) {
             addCriterion("`position` <=", value, "position");
             return (Criteria) this;
         }
 
-        public Criteria andPositionIn(List<Long> values) {
+        public Criteria andPositionLike(String value) {
+            addCriterion("`position` like", value, "position");
+            return (Criteria) this;
+        }
+
+        public Criteria andPositionNotLike(String value) {
+            addCriterion("`position` not like", value, "position");
+            return (Criteria) this;
+        }
+
+        public Criteria andPositionIn(List<String> values) {
             addCriterion("`position` in", values, "position");
             return (Criteria) this;
         }
 
-        public Criteria andPositionNotIn(List<Long> values) {
+        public Criteria andPositionNotIn(List<String> values) {
             addCriterion("`position` not in", values, "position");
             return (Criteria) this;
         }
 
-        public Criteria andPositionBetween(Long value1, Long value2) {
+        public Criteria andPositionBetween(String value1, String value2) {
             addCriterion("`position` between", value1, value2, "position");
             return (Criteria) this;
         }
 
-        public Criteria andPositionNotBetween(Long value1, Long value2) {
+        public Criteria andPositionNotBetween(String value1, String value2) {
             addCriterion("`position` not between", value1, value2, "position");
             return (Criteria) this;
         }

@@ -10,8 +10,8 @@
     <result column="phone" jdbcType="VARCHAR" property="phone" />
     <result column="email" jdbcType="VARCHAR" property="email" />
     <result column="address" jdbcType="VARCHAR" property="address" />
-    <result column="department" jdbcType="BIGINT" property="department" />
-    <result column="position" jdbcType="BIGINT" property="position" />
+    <result column="department" jdbcType="VARCHAR" property="department" />
+    <result column="position" jdbcType="VARCHAR" property="position" />
     <result column="hire_date" jdbcType="DATE" property="hireDate" />
     <result column="status" jdbcType="TINYINT" property="status" />
     <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
@@ -117,8 +117,8 @@
       create_time, update_time)
     values (#{id,jdbcType=BIGINT}, #{jobNumber,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, 
       #{gender,jdbcType=VARCHAR}, #{age,jdbcType=INTEGER}, #{phone,jdbcType=VARCHAR}, 
-      #{email,jdbcType=VARCHAR}, #{address,jdbcType=VARCHAR}, #{department,jdbcType=BIGINT}, 
-      #{position,jdbcType=BIGINT}, #{hireDate,jdbcType=DATE}, #{status,jdbcType=TINYINT}, 
+      #{email,jdbcType=VARCHAR}, #{address,jdbcType=VARCHAR}, #{department,jdbcType=VARCHAR}, 
+      #{position,jdbcType=VARCHAR}, #{hireDate,jdbcType=DATE}, #{status,jdbcType=TINYINT}, 
       #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP})
   </insert>
   <insert id="insertSelective" parameterType="com.example.employee.staff.domain.Staff">
@@ -193,10 +193,10 @@
         #{address,jdbcType=VARCHAR},
       </if>
       <if test="department != null">
-        #{department,jdbcType=BIGINT},
+        #{department,jdbcType=VARCHAR},
       </if>
       <if test="position != null">
-        #{position,jdbcType=BIGINT},
+        #{position,jdbcType=VARCHAR},
       </if>
       <if test="hireDate != null">
         #{hireDate,jdbcType=DATE},
@@ -246,10 +246,10 @@
         address = #{row.address,jdbcType=VARCHAR},
       </if>
       <if test="row.department != null">
-        department = #{row.department,jdbcType=BIGINT},
+        department = #{row.department,jdbcType=VARCHAR},
       </if>
       <if test="row.position != null">
-        `position` = #{row.position,jdbcType=BIGINT},
+        `position` = #{row.position,jdbcType=VARCHAR},
       </if>
       <if test="row.hireDate != null">
         hire_date = #{row.hireDate,jdbcType=DATE},
@@ -278,8 +278,8 @@
       phone = #{row.phone,jdbcType=VARCHAR},
       email = #{row.email,jdbcType=VARCHAR},
       address = #{row.address,jdbcType=VARCHAR},
-      department = #{row.department,jdbcType=BIGINT},
-      `position` = #{row.position,jdbcType=BIGINT},
+      department = #{row.department,jdbcType=VARCHAR},
+      `position` = #{row.position,jdbcType=VARCHAR},
       hire_date = #{row.hireDate,jdbcType=DATE},
       `status` = #{row.status,jdbcType=TINYINT},
       create_time = #{row.createTime,jdbcType=TIMESTAMP},
@@ -313,10 +313,10 @@
         address = #{address,jdbcType=VARCHAR},
       </if>
       <if test="department != null">
-        department = #{department,jdbcType=BIGINT},
+        department = #{department,jdbcType=VARCHAR},
       </if>
       <if test="position != null">
-        `position` = #{position,jdbcType=BIGINT},
+        `position` = #{position,jdbcType=VARCHAR},
       </if>
       <if test="hireDate != null">
         hire_date = #{hireDate,jdbcType=DATE},
@@ -342,8 +342,8 @@
       phone = #{phone,jdbcType=VARCHAR},
       email = #{email,jdbcType=VARCHAR},
       address = #{address,jdbcType=VARCHAR},
-      department = #{department,jdbcType=BIGINT},
-      `position` = #{position,jdbcType=BIGINT},
+      department = #{department,jdbcType=VARCHAR},
+      `position` = #{position,jdbcType=VARCHAR},
       hire_date = #{hireDate,jdbcType=DATE},
       `status` = #{status,jdbcType=TINYINT},
       create_time = #{createTime,jdbcType=TIMESTAMP},

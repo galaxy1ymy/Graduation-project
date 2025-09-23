@@ -18,8 +18,8 @@ CREATE TABLE `staff` (
     `phone` VARCHAR(20) comment '手机号',
     `email` VARCHAR(100) comment '邮箱',
     `address` VARCHAR(200) comment '地址',
-    `department` BIGINT comment '部门',
-    `position` BIGINT comment '职位',
+    `department` VARCHAR(20) comment '部门',
+    `position` VARCHAR(20) comment '职位',
     `hire_date` DATE comment '入职日期',
     `status` TINYINT DEFAULT 1 comment '状态', -- 1:在职，0:离职
     `create_time` DATETIME DEFAULT CURRENT_TIMESTAMP comment '创建时间',
