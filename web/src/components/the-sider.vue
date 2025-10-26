@@ -16,9 +16,9 @@
             <carry-out-outlined />&nbsp; 我的考勤
           </router-link>
         </a-menu-item>
-        <a-menu-item key="/leaveRequest">
-          <router-link to="/leaveRequest" style="color: inherit;">
-            <coffee-outlined />&nbsp; 请假申请
+        <a-menu-item key="/approvePage">
+          <router-link to="/approvePage" style="color: inherit;">
+            <form-outlined />&nbsp; 审批
           </router-link>
         </a-menu-item>
         <a-menu-item key="/salaryMgmt">

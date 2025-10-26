@@ -23,3 +23,5 @@
 2025-10-26 16:13:31.018 [restartedMain] INFO  com.example.gateway.config.GatewayApplication [] - Started GatewayApplication in 6.123 seconds (process running for 7.55)
 2025-10-26 16:13:31.023 [restartedMain] INFO  com.example.gateway.config.GatewayApplication [] - 启动成功！！
 2025-10-26 16:13:31.024 [restartedMain] INFO  com.example.gateway.config.GatewayApplication [] - 网关地址: 	http://127.0.0.1:8000
+2025-10-26 22:23:08.268 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.netty.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-26 22:23:08.324 [netty-shutdown] INFO  o.s.boot.web.embedded.netty.GracefulShutdown [] - Graceful shutdown complete

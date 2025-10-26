@@ -22,7 +22,7 @@
 
     <div class="notice">
       <div style="background: #ececec; padding: 20px; border-radius: 8px;">
-        <a-card title="Card title" :bordered="false" style="width: 300px">
+        <a-card title="📢 工作通知" :bordered="false" style="width: 300px">
           <p>通知</p>
           <p>Card content</p>
           <p>Card content</p>
