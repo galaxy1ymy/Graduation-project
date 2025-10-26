@@ -45,8 +45,9 @@
                 targetProject="../staff/src/main/java">
         </javaClientGenerator>
         <!-- 指定 member 表生成规则 -->
-        <table tableName="staff" domainObjectName="Staff"></table>
+       <!-- <table tableName="staff" domainObjectName="Staff"></table>-->
         <!--<table tableName="login" domainObjectName="Login"></table>-->
+        <table tableName="attendance_records" domainObjectName="AttendanceRecords"></table>
 
     </context>
 </generatorConfiguration>

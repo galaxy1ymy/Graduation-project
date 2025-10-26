@@ -1,11 +1,7 @@
-/* 去掉浏览器默认 margin/padding */
-html, body {
+html, body, #app {
+    height: 100%;
     margin: 0;
     padding: 0;
-    height: 100%;
+    overflow: hidden; /* 禁止 body 滚动，全靠内部滚动 */
 }
 
-/* 全局字体、背景 */
-body {
-    font-family: 'Microsoft YaHei', Arial, sans-serif;
-}

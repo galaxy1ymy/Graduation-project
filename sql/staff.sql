@@ -28,4 +28,18 @@ CREATE TABLE `staff` (
     UNIQUE KEY `id_job_number_unique` (`id`, `job_number`)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='员工';
 
+ALTER TABLE staff ADD UNIQUE INDEX uq_job_number(job_number);
+
+drop table if exists `attendance_records`;
+CREATE TABLE attendance_records (
+    `id` INT AUTO_INCREMENT PRIMARY KEY comment '序号',        -- 唯一ID
+    `job_number` VARCHAR(50) NOT NULL comment '工号',          -- 员工编号，关联 staff 表
+    `punch_time` DATETIME NOT NULL comment '打卡时间',             -- 打卡时间
+    `type` ENUM('上班','下班') DEFAULT '上班' comment '打卡类型', -- 打卡类型，可选，上班/下班
+    `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP comment '创建时间', -- 创建时间
+    `updated_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP comment '更新时间',
+    FOREIGN KEY (job_number) REFERENCES staff(job_number) -- 关联 staff 表
+)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='考勤打卡';
+
+
 
