@@ -109,10 +109,39 @@ export default defineComponent({
     });
 
     const status = computed(() => {
-      if (!todayRecords.value.length) return "异常（未打卡）";
-      return "全部正常";
-    });
+      const records = todayRecords.value;
 
+      if (records.length === 0) {
+        return "异常（未打卡）";
+      }
+
+      const hasStart = records.some(r => r.type === "上班");
+      const hasEnd = records.some(r => r.type === "下班");
+      const currentTime = dayjs();
+
+      // 只打了上班卡
+      if (hasStart && !hasEnd) {
+        // 如果已经超过下班时间 18:00 还没下班打卡
+        const afterWorkTime = dayjs().hour(18).minute(0);
+        if (currentTime.isAfter(afterWorkTime)) {
+          return "打卡异常（未下班）";
+        } else {
+          return "上班打卡成功";
+        }
+      }
+
+      // 上下班都有
+      if (hasStart && hasEnd) {
+        return "全部正常";
+      }
+
+      // 只有下班卡（一般是异常）
+      if (!hasStart && hasEnd) {
+        return "打卡异常（缺上班卡）";
+      }
+
+      return "异常";
+    });
 
 
     onMounted(() => {
