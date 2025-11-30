@@ -27,6 +27,15 @@ public class StaffService {
         return list.isEmpty() ? null : list.get(0).getName();
     }
 
+    // 新增方法：根据工号获取完整 Staff 对象
+    public Staff getStaffByJobNumber(String jobNumber) {
+        StaffExample example = new StaffExample();
+        example.createCriteria().andJobNumberEqualTo(jobNumber);
+
+        List<Staff> list = staffMapper.selectByExample(example);
+        return list.isEmpty() ? null : list.get(0);
+    }
+
 
 
 

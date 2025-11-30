@@ -47,7 +47,8 @@
         <!-- 指定 member 表生成规则 -->
        <!-- <table tableName="staff" domainObjectName="Staff"></table>-->
         <!--<table tableName="login" domainObjectName="Login"></table>-->
-        <table tableName="attendance_records" domainObjectName="AttendanceRecords"></table>
+<!--        <table tableName="attendance_records" domainObjectName="AttendanceRecords"></table>-->
+        <table tableName="leave_request" domainObjectName="LeaveRequest"></table>
 
     </context>
 </generatorConfiguration>

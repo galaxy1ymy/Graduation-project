@@ -41,5 +41,24 @@ CREATE TABLE attendance_records (
     FOREIGN KEY (job_number) REFERENCES staff(job_number) -- 关联 staff 表
 )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='考勤打卡';
 
+DROP TABLE IF EXISTS `leave_request`;
+CREATE TABLE `leave_request` (
+    `id` BIGINT PRIMARY KEY AUTO_INCREMENT COMMENT '请假记录ID',
+    `job_number` VARCHAR(50) NOT NULL COMMENT '员工ID',
+    `leave_type` VARCHAR(20) NOT NULL COMMENT '请假类型',
+    `start_time` DATETIME NOT NULL COMMENT '请假开始时间',
+    `end_time` DATETIME NOT NULL COMMENT '请假结束时间',
+    `leave_duration` DECIMAL(5,2) NOT NULL COMMENT '请假时长',
+    `reason` TEXT COMMENT '请假原因',
+    `attachment` VARCHAR(200) DEFAULT NULL COMMENT '附件说明',
+    `status` TINYINT NOT NULL DEFAULT 0 COMMENT '审批状态：0=待审批，1=已通过，2=已拒绝',
+    `approver_id` BIGINT COMMENT '审批人ID',
+    `approve_time` DATETIME COMMENT '审批时间',
+    `create_time` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+    `update_time` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+    FOREIGN KEY (job_number) REFERENCES staff(job_number) -- 关联 staff 表
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='请假申请表';
+
+
 
 
