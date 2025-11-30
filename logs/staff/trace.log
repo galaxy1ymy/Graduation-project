@@ -1705,3 +1705,69 @@ Caused by: java.lang.ClassNotFoundException: Cannot find class: com.example.empl
 2025-11-30 18:31:42.487 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello
 2025-11-30 18:31:44.651 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
 2025-11-30 18:31:45.509 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Graceful shutdown complete
+2025-11-30 18:31:49.452 [background-preinit] INFO  org.hibernate.validator.internal.util.Version [] - HV000001: Hibernate Validator 8.0.2.Final
+2025-11-30 18:31:49.487 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 7820 (D:\Java\springbootProject\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee)
+2025-11-30 18:31:49.488 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
+2025-11-30 18:31:49.530 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-30 18:31:49.530 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-30 18:31:50.384 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=79ce2683-3c07-3cd0-8042-26c4bd6e2825
+2025-11-30 18:31:50.912 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
+2025-11-30 18:31:50.924 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
+2025-11-30 18:31:50.927 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
+2025-11-30 18:31:50.927 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-11-30 18:31:51.008 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
+2025-11-30 18:31:51.008 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 1477 ms
+2025-11-30 18:31:51.846 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - LiveReload server is running on port 35729
+2025-11-30 18:31:52.297 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Starting ProtocolHandler ["http-nio-8001"]
+2025-11-30 18:31:52.318 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat started on port 8001 (http) with context path '/staff'
+2025-11-30 18:31:52.892 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Started StaffApplication in 4.489 seconds (process running for 5.522)
+2025-11-30 18:31:52.894 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 启动成功！！
+2025-11-30 18:31:52.895 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello
+2025-11-30 18:35:46.094 [http-nio-8001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-30 18:35:46.095 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet [] - Initializing Servlet 'dispatcherServlet'
+2025-11-30 18:35:46.096 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet [] - Completed initialization in 1 ms
+2025-11-30 18:35:46.241 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
+2025-11-30 18:35:46.242 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/leave/create org.apache.catalina.connector.RequestFacade@33edd977
+2025-11-30 18:35:46.243 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.LeaveRequestController.createLeave
+2025-11-30 18:35:46.243 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2025-11-30 18:35:46.359 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 请求参数: [{"attachment":"","endTime":1764531300000,"jobNumber":"1","leaveDuration":1.03,"leaveType":"personal","reason":"有事","startTime":1764527580000}]
+2025-11-30 18:35:46.442 [http-nio-8001-exec-1] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Starting...
+2025-11-30 18:35:46.817 [http-nio-8001-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool [] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@76081031
+2025-11-30 18:35:46.820 [http-nio-8001-exec-1] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Start completed.
+2025-11-30 18:35:46.898 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 返回结果: "success"
+2025-11-30 18:35:46.899 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：660 ms -------------
+2025-11-30 18:39:10.630 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
+2025-11-30 18:39:10.631 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/leave/create org.apache.catalina.connector.RequestFacade@69955147
+2025-11-30 18:39:10.631 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.LeaveRequestController.createLeave
+2025-11-30 18:39:10.631 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2025-11-30 18:39:10.631 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 请求参数: [{"attachment":"","endTime":1764531300000,"jobNumber":"1","leaveDuration":1.03,"leaveType":"personal","reason":"有事","startTime":1764527580000}]
+2025-11-30 18:39:10.645 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 返回结果: "success"
+2025-11-30 18:39:10.646 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：16 ms -------------
+2025-11-30 18:39:56.196 [http-nio-8001-exec-4] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
+2025-11-30 18:39:56.196 [http-nio-8001-exec-4] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/login org.apache.catalina.connector.RequestFacade@11e44722
+2025-11-30 18:39:56.196 [http-nio-8001-exec-4] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.LoginController.login
+2025-11-30 18:39:56.196 [http-nio-8001-exec-4] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2025-11-30 18:39:56.199 [http-nio-8001-exec-4] INFO  com.example.common.aspect.LogAspect [] - 请求参数: [{"jobNumber":1,"password":"1"}]
+2025-11-30 18:39:56.206 [http-nio-8001-exec-4] INFO  com.example.common.aspect.LogAspect [] - 返回结果: {"content":{"jobNumber":1},"success":true}
+2025-11-30 18:39:56.206 [http-nio-8001-exec-4] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：10 ms -------------
+2025-11-30 18:39:56.252 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
+2025-11-30 18:39:56.252 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/getNames org.apache.catalina.connector.RequestFacade@bc42700
+2025-11-30 18:39:56.253 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.getNameByJobNumber
+2025-11-30 18:39:56.253 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2025-11-30 18:39:56.253 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - 请求参数: ["1"]
+2025-11-30 18:39:56.257 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - 返回结果: "兮兮"
+2025-11-30 18:39:56.257 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：5 ms -------------
+2025-11-30 18:40:12.109 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
+2025-11-30 18:40:12.109 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/leave/create org.apache.catalina.connector.RequestFacade@8005615
+2025-11-30 18:40:12.109 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.LeaveRequestController.createLeave
+2025-11-30 18:40:12.109 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2025-11-30 18:40:12.110 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - 请求参数: [{"attachment":"","endTime":1764531600000,"jobNumber":"1","leaveDuration":1,"leaveType":"事假","reason":"有事","startTime":1764528000000}]
+2025-11-30 18:40:12.120 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - 返回结果: "success"
+2025-11-30 18:40:12.120 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：12 ms -------------
+2025-11-30 18:43:41.726 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
+2025-11-30 18:43:41.726 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/leave/create org.apache.catalina.connector.RequestFacade@9f15de2
+2025-11-30 18:43:41.727 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.LeaveRequestController.createLeave
+2025-11-30 18:43:41.727 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2025-11-30 18:43:41.727 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - 请求参数: [{"attachment":"","endTime":1764542580000,"jobNumber":"1","leaveDuration":4,"leaveType":"事假","reason":"有事","startTime":1764528180000}]
+2025-11-30 18:43:41.737 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - 返回结果: "success"
+2025-11-30 18:43:41.737 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：11 ms -------------

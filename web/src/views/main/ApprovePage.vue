@@ -32,9 +32,12 @@
       :footer="null"
   >
     <LeaveForm v-if="currentType === 'leave'" ref="leaveRef" />
-<!--    <OvertimeForm v-if="currentType === 'overtime'" ref="overtimeRef" />-->
-<!--    <TravelForm v-if="currentType === 'travel'" ref="travelRef" />-->
-<!--    <OutForm v-if="currentType === 'out'" ref="outRef" />-->
+    <TravelForm v-if="currentType === 'travel'" ref="travelRef" />
+    <OvertimeForm v-if="currentType === 'overtime'" ref="overtimeRef" />
+    <OutForm v-if="currentType === 'out'" ref="outRef" />
+
+    <MeetingForm v-if="currentType === 'meeting'" ref="meetingRef" />
+    <GoodsForm v-if="currentType === 'goods'" ref="goodsRef" />
 
     <div style="text-align: right; margin-top: 20px">
       <a-button @click="handleCancel">取消</a-button>
@@ -61,12 +64,22 @@ import {
 import { ref,defineComponent } from "vue";
 import { message } from "ant-design-vue";
 import LeaveForm from "@/components/LeaveForm.vue";
+import TravelForm from "@/components/TravelForm.vue";
+import OvertimeForm from "@/components/OvertimeForm.vue";
+import OutForm from "@/components/OutForm.vue";
+import MeetingForm from "@/components/MeetingForm.vue";
+import GoodsForm from "@/components/GoodsForm.vue";
 import { useStore } from "vuex";
 import axios from "axios";
 
 export default defineComponent({
   components:{
-    LeaveForm
+    LeaveForm,
+    TravelForm,
+    OvertimeForm,
+    OutForm,
+    MeetingForm,
+    GoodsForm
   },
   setup() {
 
