@@ -48,7 +48,14 @@
        <!-- <table tableName="staff" domainObjectName="Staff"></table>-->
         <!--<table tableName="login" domainObjectName="Login"></table>-->
 <!--        <table tableName="attendance_records" domainObjectName="AttendanceRecords"></table>-->
-        <table tableName="leave_request" domainObjectName="LeaveRequest"></table>
+       <!-- <table tableName="leave_request" domainObjectName="LeaveRequest"></table>-->
+        <!--<table tableName="business" domainObjectName="Business"></table>-->
+       <!-- <table tableName="overtime" domainObjectName="Overtime"></table>-->
+        <!--<table tableName="going_out" domainObjectName="GoingOut"></table>-->
+        <!--<table tableName="meeting" domainObjectName="Meeting"></table>-->
+        <table tableName="goods" domainObjectName="Goods"></table>
+
+
 
     </context>
 </generatorConfiguration>

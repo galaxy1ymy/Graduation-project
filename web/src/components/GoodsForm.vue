@@ -7,8 +7,6 @@
 
     <div>明细</div>
 
-
-    <!-- 加班时长 -->
     <!-- 物品领用 -->
     <a-form-item label="物品名称" name="name" :rules="[{ required: true, message: '请填写' }]">
       <a-input v-model:value="formState.name" placeholder="请填写" />

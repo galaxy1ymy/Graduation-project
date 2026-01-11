@@ -13,3 +13,16 @@ Content-Type: application/json
 GET http://127.0.0.1:8001/staff/getNames?jobNumber=1
 Content-Type: application/json
 ###
+###
+
+GET http://127.0.0.1:8001/staff/business/checkAll?jobNumber=1
+Content-Type: application/json
+
+###
+
+GET http://127.0.0.1:8001/staff/goingOut/checkAll?jobNumber=1
+Content-Type: application/json
+
+###
+
+

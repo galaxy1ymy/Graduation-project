@@ -96,16 +96,18 @@ export default defineComponent({
     const overtimeRef = ref();
     const travelRef = ref();
     const outRef = ref();
+    const meetingRef = ref();
+    const goodsRef = ref();
 
     const menuList1 = [
-      { label: "请假", icon: ScheduleOutlined, type: "leave" },
-      { label: "出差", icon: CarOutlined, type: "travel" },
-      { label: "加班", icon: ClockCircleOutlined, type: "overtime" },
-      { label: "外出", icon: ShoppingOutlined, type: "out" }
+      {label: "请假", icon: ScheduleOutlined, type: "leave"},
+      {label: "出差", icon: CarOutlined, type: "travel"},
+      {label: "加班", icon: ClockCircleOutlined, type: "overtime"},
+      {label: "外出", icon: ShoppingOutlined, type: "out"}
     ];
     const menuList2 = [
-      { label: '会议室预定', icon: DesktopOutlined, type: 'meeting'},
-      { label: '物品领取', icon: ToolOutlined, type: 'goods'},
+      {label: '会议室预定', icon: DesktopOutlined, type: 'meeting'},
+      {label: '物品领取', icon: ToolOutlined, type: 'goods'},
     ]
 
 // 打开弹窗
@@ -120,83 +122,222 @@ export default defineComponent({
       visible.value = false;
     };
 
-// 提交
-    const submitOk = async () => {
-      try {
-        loading.value = true;
+    /** 获取附件 */
+    const getAttachment = (form) => {
+      if (form.files && form.files.length > 0) {
+        return form.files[0].response?.url || form.files[0].name || "";
+      }
+      return "";
+    };
 
-        if (currentType.value === "leave") {
-          // 1. 校验必填字段（附件不参与校验）
-          await leaveRef.value.validate();
-          const form = leaveRef.value.formState;
-
-          // 2. 获取当前登录用户
-          const jobNumber = store.state.jobNumber;
-          const staffName = store.state.staffName;
-
-          // 3. 处理附件，可选
-          let attachment = "";
-          if (form.files && form.files.length > 0) {
-            attachment = form.files[0].response?.url || form.files[0].name || "";
-          }
-
-          // 4. 构建提交数据
-          const payload = {
-            jobNumber,
-            staffName,
+    /** 提交配置（核心） */
+    const submitConfig = {
+      leave: {
+        ref: leaveRef,
+        url: "staff/leave/create",
+        successMsg: "请假申请提交成功",
+        buildPayload(form) {
+          return {
+            jobNumber: store.state.jobNumber,
+            staffName: store.state.staffName,
             leaveType: form.leaveType,
             startTime: form.startTime,
             endTime: form.endTime,
-            leaveDuration: Number(form.duration),  // 转成数字
+            leaveDuration: Number(form.duration),
             reason: form.reason,
-            attachment
+            attachment: getAttachment(form)
           };
-
-          // 5. 提交到后端
-          const res = await axios.post("staff/leave/create", payload);
-          if (res.data === "success") {
-            message.success("请假申请提交成功");
-            // 清空表单
-            Object.assign(form, {
-              leaveType: "",
-              startTime: null,
-              endTime: null,
-              duration: 0,
-              reason: "",
-              files: []
-            });
-            visible.value = false;
-          } else {
-            message.error("提交失败");
-          }
+        },
+        reset(form) {
+          Object.assign(form, {
+            leaveType: "",
+            startTime: null,
+            endTime: null,
+            duration: 0,
+            reason: "",
+            files: []
+          });
         }
+      },
 
-        loading.value = false;
+      travel: {
+        ref: travelRef,
+        url: "staff/business/create",
+        successMsg: "出差申请提交成功",
+        buildPayload(form) {
+          return {
+            jobNumber: store.state.jobNumber,
+            staffName: store.state.staffName,
+            startTime: form.startTime,
+            endTime: form.endTime,
+            businessDuration: Number(form.duration),
+            reason: form.reason,
+            attachment: getAttachment(form)
+          };
+        },
+        reset(form) {
+          Object.assign(form, {
+            startTime: null,
+            endTime: null,
+            duration: 0,
+            reason: "",
+            files: []
+          });
+        }
+      },
 
-      } catch (e) {
-        loading.value = false;
-        message.warning("请完整填写表单");
-      }
+      overtime: {
+        ref: overtimeRef,
+        url: "staff/overtime/create",
+        successMsg: "加班申请提交成功",
+        buildPayload(form) {
+          return {
+            jobNumber: store.state.jobNumber,
+            staffName: store.state.staffName,
+            startTime: form.startTime,
+            endTime: form.endTime,
+            overtimeDuration: Number(form.duration),
+            reason: form.reason
+          };
+        },
+        reset(form) {
+          Object.assign(form, {
+            startTime: null,
+            endTime: null,
+            duration: 0,
+            reason: ""
+          });
+        }
+      },
+
+      out: {
+        ref: outRef,
+        url: "staff/goingOut/create",
+        successMsg: "外出申请提交成功",
+        buildPayload(form) {
+          return {
+            jobNumber: store.state.jobNumber,
+            staffName: store.state.staffName,
+            startTime: form.startTime,
+            endTime: form.endTime,
+            goingoutDuration: Number(form.duration),
+            reason: form.reason,
+            address: form.address
+          };
+        },
+        reset(form) {
+          Object.assign(form, {
+            startTime: null,
+            endTime: null,
+            duration: 0,
+            reason: "",
+            address: ""
+          });
+        }
+      },
+
+      meeting: {
+        ref: meetingRef,
+        url: "staff/meeting/create",
+        successMsg: "会议室预定申请提交成功",
+        buildPayload(form) {
+          return {
+            jobNumber: store.state.jobNumber,
+            staffName: store.state.staffName,
+            startTime: form.startTime,
+            endTime: form.endTime,
+            meetingDuration: Number(form.duration),
+            room: form.room,
+            number: form.number,
+            name: form.name
+
+          };
+        },
+        reset(form) {
+          Object.assign(form, {
+            startTime: null,
+            endTime: null,
+            duration: 0,
+            room: "",
+            number: "",
+            name: ""
+          });
+        }
+      },
+
+      goods: {
+        ref: goodsRef,
+        url: "staff/goods/create",
+        successMsg: "物品领取申请提交成功",
+        buildPayload(form) {
+          return {
+            jobNumber: store.state.jobNumber,
+            staffName: store.state.staffName,
+            use: form.use,
+            name: form.name,
+            number: form.number,
+            attachment: getAttachment(form)
+          };
+        },
+        reset(form) {
+          Object.assign(form, {
+            use: "",
+            name: "",
+            number: "",
+            files: []
+          });
+        }
+      },
+
+
     };
 
+    /** 统一提交 */
+    const submitOk = async () => {
+      const config = submitConfig[currentType.value];
+      if (!config) return;
 
+      try {
+        loading.value = true;
+
+        await config.ref.value.validate();
+        const form = config.ref.value.formState;
+
+        const payload = config.buildPayload(form);
+        const res = await axios.post(config.url, payload);
+
+        if (res.data === "success") {
+          message.success(config.successMsg);
+          config.reset(form);
+          visible.value = false;
+        } else {
+          message.error("提交失败");
+        }
+      } catch (e) {
+        message.warning("请完整填写表单");
+      } finally {
+        loading.value = false;
+      }
+    };
 
     return {
       visible,
       currentType,
       modalTitle,
       loading,
-      leaveRef,
-      overtimeRef,
-      travelRef,
-      outRef,
       menuList1,
       menuList2,
+      leaveRef,
+      travelRef,
+      overtimeRef,
+      outRef,
+      meetingRef,
+      goodsRef,
       showModal,
       handleCancel,
-      submitOk,
-    }
-    }
+      submitOk
+    };
+  }
 });
 </script>
 

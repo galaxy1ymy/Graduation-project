@@ -1,8 +1,8 @@
 <template>
   <a-form layout="vertical" ref="meetingFormRef" :model="formState">
     <!-- 会议室名称 -->
-    <a-form-item label="会议室名称" name="name" :rules="[{ required: true, message: '请填写' }]">
-      <a-input v-model:value="formState.name" placeholder="请填写" />
+    <a-form-item label="会议室名称" name="room" :rules="[{ required: true, message: '请填写' }]">
+      <a-input v-model:value="formState.room" placeholder="请填写" />
     </a-form-item>
 
     <!-- 开始时间 -->
@@ -40,8 +40,8 @@
 
 
     <!-- 参会人员 -->
-    <a-form-item label="参会人员" name="people" :rules="[{ required: true, message: '请填写' }]">
-      <a-textarea v-model:value="formState.people" placeholder="请填写" />
+    <a-form-item label="参会人员" name="name" :rules="[{ required: true, message: '请填写' }]">
+      <a-textarea v-model:value="formState.name" placeholder="请填写" />
     </a-form-item>
 
 
@@ -61,11 +61,11 @@ export default defineComponent({
     const meetingFormRef = ref();
 
     const formState = reactive({
-      name: "",
+      room: "",
       startTime: null,
       endTime: null,
       number: "",
-      people: "",
+      name: "",
       duration: 0,
     });
 
