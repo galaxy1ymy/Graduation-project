@@ -42,9 +42,6 @@
       </div>
     </div>
   </div>
-
-
-
 </template>
 
 <script>
@@ -79,7 +76,12 @@ export default defineComponent({
 
     const checkStatus = async () => {
       try {
-        const res = await axios.get(`staff/list?jobNumber=${jobNumber}`);
+        const res = await axios.get('/staff/attendance/list', {
+          params: {
+            jobNumber
+          }
+        });
+
         const records = res.data; // 数组
 
         const today = dayjs().format('YYYY-MM-DD');
@@ -90,10 +92,15 @@ export default defineComponent({
         records.forEach(record => {
           const dateStr = dayjs(record.punchTime).format('YYYY-MM-DD');
           if (dateStr === today) {
-            if (record.type === '上班') up = dayjs(record.createdAt).format('YYYY-MM-DD HH:mm:ss');
-            if (record.type === '下班') down = dayjs(record.createdAt).format('YYYY-MM-DD HH:mm:ss');
+            if (record.type === '上班') {
+              up = dayjs(record.punchTime).format('HH:mm');
+            }
+            if (record.type === '下班') {
+              down = dayjs(record.punchTime).format('HH:mm');
+            }
           }
         });
+
 
         punchedUp.value = !!up;
         punchedDown.value = !!down;
@@ -106,7 +113,13 @@ export default defineComponent({
 
     const punch = async (type) => {
       try {
-        const res = await axios.post(`staff/punch?jobNumber=${jobNumber}&type=${type}`);
+        const res = await axios.post('/staff/attendance/punch', null, {
+          params: {
+            jobNumber,
+            type
+          }
+        });
+
         if(res.data.success){
           notification.success({ description: res.data.message });
           // 打卡成功后刷新当天打卡状态和时间

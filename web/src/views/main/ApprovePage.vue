@@ -134,7 +134,7 @@ export default defineComponent({
     const submitConfig = {
       leave: {
         ref: leaveRef,
-        url: "staff/leave/create",
+        url: "/staff/leave/create",
         successMsg: "请假申请提交成功",
         buildPayload(form) {
           return {
@@ -162,7 +162,7 @@ export default defineComponent({
 
       travel: {
         ref: travelRef,
-        url: "staff/business/create",
+        url: "/staff/business/create",
         successMsg: "出差申请提交成功",
         buildPayload(form) {
           return {
@@ -188,7 +188,7 @@ export default defineComponent({
 
       overtime: {
         ref: overtimeRef,
-        url: "staff/overtime/create",
+        url: "/staff/overtime/create",
         successMsg: "加班申请提交成功",
         buildPayload(form) {
           return {
@@ -212,7 +212,7 @@ export default defineComponent({
 
       out: {
         ref: outRef,
-        url: "staff/goingOut/create",
+        url: "/staff/goingOut/create",
         successMsg: "外出申请提交成功",
         buildPayload(form) {
           return {
@@ -238,7 +238,7 @@ export default defineComponent({
 
       meeting: {
         ref: meetingRef,
-        url: "staff/meeting/create",
+        url: "/staff/meeting/create",
         successMsg: "会议室预定申请提交成功",
         buildPayload(form) {
           return {
@@ -267,7 +267,7 @@ export default defineComponent({
 
       goods: {
         ref: goodsRef,
-        url: "staff/goods/create",
+        url: "/staff/goods/create",
         successMsg: "物品领取申请提交成功",
         buildPayload(form) {
           return {

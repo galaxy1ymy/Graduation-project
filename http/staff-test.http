@@ -25,4 +25,9 @@ Content-Type: application/json
 
 ###
 
+GET http://127.0.0.1:8001/staff/attendance/list?jobNumber=1
+Content-Type: application/json
+
+###
+
 

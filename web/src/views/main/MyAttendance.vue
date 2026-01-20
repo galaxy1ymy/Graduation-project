@@ -57,7 +57,11 @@ export default defineComponent({
     // 1️⃣ 获取打卡数据
     const loadAttendance = async () => {
       try {
-        const res = await axios.get(`staff/list?jobNumber=${jobNumber}`);
+        const res = await axios.get(`/staff/attendance/list`, {
+          params: {
+            jobNumber
+          }
+        });
         attendanceList.value = res.data;
         console.log("考勤数据：", attendanceList.value);
       } catch (error) {
@@ -65,7 +69,6 @@ export default defineComponent({
       }
     };
 
-    // 2️⃣ 获取当天打卡信息
     const getListData = (current) => {
       const currentDate = current.format("YYYY-MM-DD");
 
@@ -75,13 +78,30 @@ export default defineComponent({
 
       const isWeekend = current.day() === 0 || current.day() === 6; // 周末
       const isBeforeToday = current.isBefore(dayjs(), "day"); // 是否在今天之前
+      const isToday = current.isSame(dayjs(), "day"); // 今天
 
-      // ✅ 只在今天之前判断异常
+      // ✅ 今天之前且非周末，未打卡标记异常
       if (isBeforeToday && !isWeekend && records.length === 0) {
         return [{ type: "error", content: "异常（未打卡）" }];
       }
 
-      // ✅ 显示正常打卡
+      // ✅ 如果是今天，只打了上班卡，也标记异常
+      if (isToday) {
+        const hasStart = records.some(r => r.type === "上班");
+        const hasEnd = records.some(r => r.type === "下班");
+
+        if (hasStart && !hasEnd) {
+          return [
+            ...records.map((item) => ({
+              type: "success",
+              content: `${item.type}：${dayjs(item.punchTime).format("HH:mm")}`,
+            })),
+            { type: "error", content: "打卡异常（未下班）" }
+          ];
+        }
+      }
+
+      // ✅ 正常打卡显示
       return records.map((item) => ({
         type: item.type === "上班" ? "success" : "processing",
         content: `${item.type}：${dayjs(item.punchTime).format("HH:mm")}`,

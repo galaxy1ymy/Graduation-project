@@ -3,10 +3,7 @@ package com.example.employee.staff.controller;
 import com.example.employee.staff.domain.AttendanceRecords;
 import com.example.employee.staff.service.AttendanceService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -15,6 +12,7 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
+@RequestMapping("/attendance")
 public class AttendanceController {
 
     @Autowired

@@ -10,33 +10,33 @@
         mode="horizontal"
         :style="{ lineHeight: '64px' }"
     >
-      <a-menu-item key="/homePage">
-        <router-link to="/homePage" style="color: inherit;">
+      <a-menu-item key="homePage">
+        <router-link :to="{ name: 'HomePage' }" style="color: inherit;">
           <home-outlined />&nbsp; 首页
         </router-link>
       </a-menu-item>
-      <a-menu-item key="/myAttendance">
-        <router-link to="/myAttendance" style="color: inherit;">
+      <a-menu-item key="myAttendance">
+        <router-link :to="{ name: 'MyAttendance' }" style="color: inherit;">
           <carry-out-outlined />&nbsp; 我的考勤
         </router-link>
       </a-menu-item>
-      <a-menu-item key="/approvePage">
-        <router-link to="/approvePage" style="color: inherit;">
+      <a-menu-item key="approvePage">
+        <router-link :to="{ name: 'ApprovePage' }" style="color: inherit;">
           <form-outlined />&nbsp; 审批
         </router-link>
       </a-menu-item>
-      <a-menu-item key="/salaryMgmt">
-        <router-link to="/salaryMgmt" style="color: inherit;">
+      <a-menu-item key="salaryMgmt">
+        <router-link :to="{ name: 'SalaryMgmt' }" style="color: inherit;">
           <account-book-outlined />&nbsp; 薪资管理
         </router-link>
       </a-menu-item>
-      <a-menu-item key="/notion">
-        <router-link to="/notion" style="color: inherit;">
+      <a-menu-item key="notificationMgmt">
+        <router-link :to="{ name: 'NotificationMgmt' }" style="color: inherit;">
           <comment-outlined />&nbsp; 通知与会议
         </router-link>
       </a-menu-item>
-      <a-menu-item key="/divisionMgmt">
-        <router-link to="/divisionMgmt" style="color: inherit;">
+      <a-menu-item key="divisionMgmt">
+        <router-link :to="{ name: 'DivisionMgmt' }" style="color: inherit;">
           <usergroup-add-outlined />&nbsp; 部门管理
         </router-link>
       </a-menu-item>
@@ -54,11 +54,14 @@ export default defineComponent({
   setup() {
 
     const selectedKeys = ref([]);
-    watch(() => router.currentRoute.value.path, (newValue) => {
-      console.log('watch',newValue);
-      selectedKeys.value=[];
-      selectedKeys.value.push(newValue);
-    }, { immediate: true });
+    watch(
+        () => router.currentRoute.value.name,
+        (newValue) => {
+          selectedKeys.value = [newValue];
+        },
+        { immediate: true }
+    );
+
 
     return{
       selectedKeys,
