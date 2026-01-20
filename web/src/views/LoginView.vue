@@ -76,7 +76,13 @@ export default defineComponent({
 
           console.log('登录成功，获取到的token:', data.content.token);  // 添加这行
           notification.success({description: '登录成功',duration:3});
-          router.push("/home");
+
+          // 根据选择的用户类型跳转
+          if (userType.resource === '2') { // 管理者
+            window.location.href = 'http://localhost:8081/manage/homePage';
+          } else { // 普通员工
+            router.push("/home");
+          }
         } else {
           notification.error({description: data.message});
         }
