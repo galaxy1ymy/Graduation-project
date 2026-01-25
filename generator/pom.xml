@@ -26,7 +26,8 @@
                 <configuration>
                     <verbose>true</verbose>
                     <overwrite>true</overwrite>
-                    <configurationFile>src/main/resources/generator-config-staff.xml</configurationFile>
+                   <!-- <configurationFile>src/main/resources/generator-config-staff.xml</configurationFile>-->
+                    <configurationFile>src/main/resources/generator-config-administrator.xml</configurationFile>
                 </configuration>
                 <dependencies>
                     <!-- 添加数据库驱动（如 MySQL） -->
