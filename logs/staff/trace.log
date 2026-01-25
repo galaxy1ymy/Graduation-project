@@ -1,726 +1,420 @@
-2026-01-20 19:34:50.972 [background-preinit] INFO  org.hibernate.validator.internal.util.Version [] - HV000001: Hibernate Validator 8.0.2.Final
-2026-01-20 19:34:51.034 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 10840 (D:\Java\springbootProject\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee)
-2026-01-20 19:34:51.036 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
-2026-01-20 19:34:51.092 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-01-20 19:34:51.092 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-01-20 19:34:52.095 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=db56928c-007b-3d43-90ef-5e12f20227b1
-2026-01-20 19:34:52.814 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
-2026-01-20 19:34:52.830 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
-2026-01-20 19:34:52.831 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
-2026-01-20 19:34:52.832 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
-2026-01-20 19:34:52.932 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
-2026-01-20 19:34:52.933 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 1840 ms
-2026-01-20 19:34:54.296 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - Unable to start LiveReload server
-2026-01-20 19:34:54.971 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Starting ProtocolHandler ["http-nio-8001"]
-2026-01-20 19:34:55.005 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat started on port 8001 (http) with context path '/staff'
-2026-01-20 19:34:55.733 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Started StaffApplication in 6.038 seconds (process running for 7.441)
-2026-01-20 19:34:55.738 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 启动成功！！
-2026-01-20 19:34:55.739 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello
-2026-01-20 19:35:38.928 [http-nio-8001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-01-20 19:35:38.928 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet [] - Initializing Servlet 'dispatcherServlet'
-2026-01-20 19:35:38.931 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet [] - Completed initialization in 1 ms
-2026-01-20 19:35:39.232 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 19:35:39.234 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/login org.apache.catalina.connector.RequestFacade@12427299
-2026-01-20 19:35:39.235 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.LoginController.login
-2026-01-20 19:35:39.236 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 19:35:39.421 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 请求参数: [{"jobNumber":1,"password":"1"}]
-2026-01-20 19:35:39.465 [http-nio-8001-exec-1] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Starting...
-2026-01-20 19:35:40.212 [http-nio-8001-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool [] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6c1cff09
-2026-01-20 19:35:40.217 [http-nio-8001-exec-1] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Start completed.
-2026-01-20 19:35:40.363 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 返回结果: {"content":{"jobNumber":1},"success":true}
-2026-01-20 19:35:40.364 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：1135 ms -------------
-2026-01-20 19:35:40.749 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 19:35:40.749 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/getNames org.apache.catalina.connector.RequestFacade@33b1be0f
-2026-01-20 19:35:40.749 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.getNameByJobNumber
-2026-01-20 19:35:40.749 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 19:35:40.750 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 请求参数: ["1"]
-2026-01-20 19:35:40.848 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 返回结果: "兮兮"
-2026-01-20 19:35:40.849 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：100 ms -------------
-2026-01-20 19:36:03.513 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 19:36:03.514 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/list org.apache.catalina.connector.RequestFacade@f155ca5
-2026-01-20 19:36:03.514 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.AttendanceController.list
-2026-01-20 19:36:03.514 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 19:36:03.514 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - 请求参数: ["1"]
-2026-01-20 19:36:03.539 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - 返回结果: [{"createdAt":1758636213000,"id":1,"jobNumber":"1","punchTime":1758636214000,"type":"上班","updatedAt":1758636213000},{"createdAt":1758636435000,"id":2,"jobNumber":"1","punchTime":1758636436000,"type":"下班","updatedAt":1758636435000},{"createdAt":1760878415000,"id":3,"jobNumber":"1","punchTime":1760878416000,"type":"上班","updatedAt":1760878415000},{"createdAt":1760878417000,"id":4,"jobNumber":"1","punchTime":1760878417000,"type":"下班","updatedAt":1760878417000},{"createdAt":1761468316000,"id":5,"jobNumber":"1","punchTime":1761468316000,"type":"上班","updatedAt":1761468316000},{"createdAt":1761469054000,"id":6,"jobNumber":"1","punchTime":1761469054000,"type":"下班","updatedAt":1761469054000},{"createdAt":1762670152000,"id":7,"jobNumber":"1","punchTime":1762670152000,"type":"上班","updatedAt":1762670152000},{"createdAt":1763896137000,"id":8,"jobNumber":"1","punchTime":1763896137000,"type":"上班","updatedAt":1763896137000},{"createdAt":1763899688000,"id":9,"jobNumber":"1","punchTime":1763899688000,"type":"下班","updatedAt":1763899688000},{"createdAt":1767617383000,"id":10,"jobNumber":"1","punchTime":1767617383000,"type":"上班","updatedAt":1767617383000},{"createdAt":1768115802000,"id":11,"jobNumber":"1","punchTime":1768115802000,"type":"上班","updatedAt":1768115802000}]
-2026-01-20 19:36:03.539 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：26 ms -------------
-2026-01-20 19:38:47.464 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 19:38:47.465 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/list org.apache.catalina.connector.RequestFacade@57fad857
-2026-01-20 19:38:47.465 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.AttendanceController.list
-2026-01-20 19:38:47.465 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 19:38:47.466 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - 请求参数: ["1"]
-2026-01-20 19:38:47.481 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - 返回结果: [{"createdAt":1758636213000,"id":1,"jobNumber":"1","punchTime":1758636214000,"type":"上班","updatedAt":1758636213000},{"createdAt":1758636435000,"id":2,"jobNumber":"1","punchTime":1758636436000,"type":"下班","updatedAt":1758636435000},{"createdAt":1760878415000,"id":3,"jobNumber":"1","punchTime":1760878416000,"type":"上班","updatedAt":1760878415000},{"createdAt":1760878417000,"id":4,"jobNumber":"1","punchTime":1760878417000,"type":"下班","updatedAt":1760878417000},{"createdAt":1761468316000,"id":5,"jobNumber":"1","punchTime":1761468316000,"type":"上班","updatedAt":1761468316000},{"createdAt":1761469054000,"id":6,"jobNumber":"1","punchTime":1761469054000,"type":"下班","updatedAt":1761469054000},{"createdAt":1762670152000,"id":7,"jobNumber":"1","punchTime":1762670152000,"type":"上班","updatedAt":1762670152000},{"createdAt":1763896137000,"id":8,"jobNumber":"1","punchTime":1763896137000,"type":"上班","updatedAt":1763896137000},{"createdAt":1763899688000,"id":9,"jobNumber":"1","punchTime":1763899688000,"type":"下班","updatedAt":1763899688000},{"createdAt":1767617383000,"id":10,"jobNumber":"1","punchTime":1767617383000,"type":"上班","updatedAt":1767617383000},{"createdAt":1768115802000,"id":11,"jobNumber":"1","punchTime":1768115802000,"type":"上班","updatedAt":1768115802000}]
-2026-01-20 19:38:47.482 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：18 ms -------------
-2026-01-20 19:38:50.504 [http-nio-8001-exec-7] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 19:38:50.505 [http-nio-8001-exec-7] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/list org.apache.catalina.connector.RequestFacade@6329b939
-2026-01-20 19:38:50.505 [http-nio-8001-exec-7] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.AttendanceController.list
-2026-01-20 19:38:50.505 [http-nio-8001-exec-7] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 19:38:50.505 [http-nio-8001-exec-7] INFO  com.example.common.aspect.LogAspect [] - 请求参数: ["1"]
-2026-01-20 19:38:50.515 [http-nio-8001-exec-7] INFO  com.example.common.aspect.LogAspect [] - 返回结果: [{"createdAt":1758636213000,"id":1,"jobNumber":"1","punchTime":1758636214000,"type":"上班","updatedAt":1758636213000},{"createdAt":1758636435000,"id":2,"jobNumber":"1","punchTime":1758636436000,"type":"下班","updatedAt":1758636435000},{"createdAt":1760878415000,"id":3,"jobNumber":"1","punchTime":1760878416000,"type":"上班","updatedAt":1760878415000},{"createdAt":1760878417000,"id":4,"jobNumber":"1","punchTime":1760878417000,"type":"下班","updatedAt":1760878417000},{"createdAt":1761468316000,"id":5,"jobNumber":"1","punchTime":1761468316000,"type":"上班","updatedAt":1761468316000},{"createdAt":1761469054000,"id":6,"jobNumber":"1","punchTime":1761469054000,"type":"下班","updatedAt":1761469054000},{"createdAt":1762670152000,"id":7,"jobNumber":"1","punchTime":1762670152000,"type":"上班","updatedAt":1762670152000},{"createdAt":1763896137000,"id":8,"jobNumber":"1","punchTime":1763896137000,"type":"上班","updatedAt":1763896137000},{"createdAt":1763899688000,"id":9,"jobNumber":"1","punchTime":1763899688000,"type":"下班","updatedAt":1763899688000},{"createdAt":1767617383000,"id":10,"jobNumber":"1","punchTime":1767617383000,"type":"上班","updatedAt":1767617383000},{"createdAt":1768115802000,"id":11,"jobNumber":"1","punchTime":1768115802000,"type":"上班","updatedAt":1768115802000}]
-2026-01-20 19:38:50.517 [http-nio-8001-exec-7] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：13 ms -------------
-2026-01-20 19:38:51.911 [http-nio-8001-exec-4] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 19:38:51.911 [http-nio-8001-exec-4] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/punch org.apache.catalina.connector.RequestFacade@45804501
-2026-01-20 19:38:51.911 [http-nio-8001-exec-4] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.AttendanceController.punch
-2026-01-20 19:38:51.912 [http-nio-8001-exec-4] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 19:38:51.912 [http-nio-8001-exec-4] INFO  com.example.common.aspect.LogAspect [] - 请求参数: ["1","上班"]
-2026-01-20 19:38:51.997 [http-nio-8001-exec-4] INFO  com.example.common.aspect.LogAspect [] - 返回结果: {"success":true,"time":"2026-01-20 19:38:51","message":"上班 打卡成功"}
-2026-01-20 19:38:51.997 [http-nio-8001-exec-4] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：86 ms -------------
-2026-01-20 19:38:52.154 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 19:38:52.154 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/list org.apache.catalina.connector.RequestFacade@92bc7d
-2026-01-20 19:38:52.155 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.AttendanceController.list
-2026-01-20 19:38:52.155 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 19:38:52.155 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - 请求参数: ["1"]
-2026-01-20 19:38:52.160 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - 返回结果: [{"createdAt":1758636213000,"id":1,"jobNumber":"1","punchTime":1758636214000,"type":"上班","updatedAt":1758636213000},{"createdAt":1758636435000,"id":2,"jobNumber":"1","punchTime":1758636436000,"type":"下班","updatedAt":1758636435000},{"createdAt":1760878415000,"id":3,"jobNumber":"1","punchTime":1760878416000,"type":"上班","updatedAt":1760878415000},{"createdAt":1760878417000,"id":4,"jobNumber":"1","punchTime":1760878417000,"type":"下班","updatedAt":1760878417000},{"createdAt":1761468316000,"id":5,"jobNumber":"1","punchTime":1761468316000,"type":"上班","updatedAt":1761468316000},{"createdAt":1761469054000,"id":6,"jobNumber":"1","punchTime":1761469054000,"type":"下班","updatedAt":1761469054000},{"createdAt":1762670152000,"id":7,"jobNumber":"1","punchTime":1762670152000,"type":"上班","updatedAt":1762670152000},{"createdAt":1763896137000,"id":8,"jobNumber":"1","punchTime":1763896137000,"type":"上班","updatedAt":1763896137000},{"createdAt":1763899688000,"id":9,"jobNumber":"1","punchTime":1763899688000,"type":"下班","updatedAt":1763899688000},{"createdAt":1767617383000,"id":10,"jobNumber":"1","punchTime":1767617383000,"type":"上班","updatedAt":1767617383000},{"createdAt":1768115802000,"id":11,"jobNumber":"1","punchTime":1768115802000,"type":"上班","updatedAt":1768115802000},{"createdAt":1768909132000,"id":12,"jobNumber":"1","punchTime":1768909132000,"type":"上班","updatedAt":1768909132000}]
-2026-01-20 19:38:52.160 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：6 ms -------------
-2026-01-20 19:38:53.926 [http-nio-8001-exec-8] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 19:38:53.926 [http-nio-8001-exec-8] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/list org.apache.catalina.connector.RequestFacade@79d55e4e
-2026-01-20 19:38:53.927 [http-nio-8001-exec-8] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.AttendanceController.list
-2026-01-20 19:38:53.927 [http-nio-8001-exec-8] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 19:38:53.927 [http-nio-8001-exec-8] INFO  com.example.common.aspect.LogAspect [] - 请求参数: ["1"]
-2026-01-20 19:38:53.932 [http-nio-8001-exec-8] INFO  com.example.common.aspect.LogAspect [] - 返回结果: [{"createdAt":1758636213000,"id":1,"jobNumber":"1","punchTime":1758636214000,"type":"上班","updatedAt":1758636213000},{"createdAt":1758636435000,"id":2,"jobNumber":"1","punchTime":1758636436000,"type":"下班","updatedAt":1758636435000},{"createdAt":1760878415000,"id":3,"jobNumber":"1","punchTime":1760878416000,"type":"上班","updatedAt":1760878415000},{"createdAt":1760878417000,"id":4,"jobNumber":"1","punchTime":1760878417000,"type":"下班","updatedAt":1760878417000},{"createdAt":1761468316000,"id":5,"jobNumber":"1","punchTime":1761468316000,"type":"上班","updatedAt":1761468316000},{"createdAt":1761469054000,"id":6,"jobNumber":"1","punchTime":1761469054000,"type":"下班","updatedAt":1761469054000},{"createdAt":1762670152000,"id":7,"jobNumber":"1","punchTime":1762670152000,"type":"上班","updatedAt":1762670152000},{"createdAt":1763896137000,"id":8,"jobNumber":"1","punchTime":1763896137000,"type":"上班","updatedAt":1763896137000},{"createdAt":1763899688000,"id":9,"jobNumber":"1","punchTime":1763899688000,"type":"下班","updatedAt":1763899688000},{"createdAt":1767617383000,"id":10,"jobNumber":"1","punchTime":1767617383000,"type":"上班","updatedAt":1767617383000},{"createdAt":1768115802000,"id":11,"jobNumber":"1","punchTime":1768115802000,"type":"上班","updatedAt":1768115802000},{"createdAt":1768909132000,"id":12,"jobNumber":"1","punchTime":1768909132000,"type":"上班","updatedAt":1768909132000}]
-2026-01-20 19:38:53.933 [http-nio-8001-exec-8] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：7 ms -------------
-2026-01-20 19:44:55.124 [http-nio-8001-exec-9] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 19:44:55.124 [http-nio-8001-exec-9] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/login org.apache.catalina.connector.RequestFacade@3f3b061d
-2026-01-20 19:44:55.124 [http-nio-8001-exec-9] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.LoginController.login
-2026-01-20 19:44:55.124 [http-nio-8001-exec-9] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 19:44:55.124 [http-nio-8001-exec-9] INFO  com.example.common.aspect.LogAspect [] - 请求参数: [{"jobNumber":1,"password":"1"}]
-2026-01-20 19:44:55.133 [http-nio-8001-exec-9] INFO  com.example.common.aspect.LogAspect [] - 返回结果: {"content":{"jobNumber":1},"success":true}
-2026-01-20 19:44:55.134 [http-nio-8001-exec-9] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：10 ms -------------
-2026-01-20 19:44:55.160 [http-nio-8001-exec-10] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 19:44:55.160 [http-nio-8001-exec-10] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/getNames org.apache.catalina.connector.RequestFacade@2bff379a
-2026-01-20 19:44:55.160 [http-nio-8001-exec-10] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.getNameByJobNumber
-2026-01-20 19:44:55.160 [http-nio-8001-exec-10] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 19:44:55.160 [http-nio-8001-exec-10] INFO  com.example.common.aspect.LogAspect [] - 请求参数: ["1"]
-2026-01-20 19:44:55.167 [http-nio-8001-exec-10] INFO  com.example.common.aspect.LogAspect [] - 返回结果: "兮兮"
-2026-01-20 19:44:55.167 [http-nio-8001-exec-10] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：7 ms -------------
-2026-01-20 19:48:21.691 [http-nio-8001-exec-10] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 19:48:21.691 [http-nio-8001-exec-10] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/login org.apache.catalina.connector.RequestFacade@216ffbeb
-2026-01-20 19:48:21.692 [http-nio-8001-exec-10] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.LoginController.login
-2026-01-20 19:48:21.692 [http-nio-8001-exec-10] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 19:48:21.692 [http-nio-8001-exec-10] INFO  com.example.common.aspect.LogAspect [] - 请求参数: [{"jobNumber":1,"password":"1"}]
-2026-01-20 19:48:21.694 [http-nio-8001-exec-10] INFO  com.example.common.aspect.LogAspect [] - 返回结果: {"content":{"jobNumber":1},"success":true}
-2026-01-20 19:48:21.694 [http-nio-8001-exec-10] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：3 ms -------------
-2026-01-20 19:48:21.711 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 19:48:21.712 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/getNames org.apache.catalina.connector.RequestFacade@4c67db4
-2026-01-20 19:48:21.712 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.getNameByJobNumber
-2026-01-20 19:48:21.712 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 19:48:21.712 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 请求参数: ["1"]
-2026-01-20 19:48:21.715 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 返回结果: "兮兮"
-2026-01-20 19:48:21.716 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：5 ms -------------
-2026-01-20 19:57:29.246 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 19:57:29.246 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/login org.apache.catalina.connector.RequestFacade@169d6710
-2026-01-20 19:57:29.246 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.LoginController.login
-2026-01-20 19:57:29.246 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 19:57:29.247 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - 请求参数: [{"jobNumber":1,"password":"1"}]
-2026-01-20 19:57:29.249 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - 返回结果: {"content":{"jobNumber":1},"success":true}
-2026-01-20 19:57:29.249 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：3 ms -------------
-2026-01-20 19:57:29.288 [http-nio-8001-exec-8] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 19:57:29.288 [http-nio-8001-exec-8] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/getNames org.apache.catalina.connector.RequestFacade@3b7df2aa
-2026-01-20 19:57:29.289 [http-nio-8001-exec-8] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.getNameByJobNumber
-2026-01-20 19:57:29.289 [http-nio-8001-exec-8] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 19:57:29.289 [http-nio-8001-exec-8] INFO  com.example.common.aspect.LogAspect [] - 请求参数: ["1"]
-2026-01-20 19:57:29.292 [http-nio-8001-exec-8] INFO  com.example.common.aspect.LogAspect [] - 返回结果: "兮兮"
-2026-01-20 19:57:29.293 [http-nio-8001-exec-8] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：5 ms -------------
-2026-01-20 19:58:22.539 [http-nio-8001-exec-9] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 19:58:22.539 [http-nio-8001-exec-9] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/login org.apache.catalina.connector.RequestFacade@317f5117
-2026-01-20 19:58:22.539 [http-nio-8001-exec-9] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.LoginController.login
-2026-01-20 19:58:22.540 [http-nio-8001-exec-9] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 19:58:22.540 [http-nio-8001-exec-9] INFO  com.example.common.aspect.LogAspect [] - 请求参数: [{"jobNumber":1,"password":"1"}]
-2026-01-20 19:58:22.542 [http-nio-8001-exec-9] INFO  com.example.common.aspect.LogAspect [] - 返回结果: {"content":{"jobNumber":1},"success":true}
-2026-01-20 19:58:22.542 [http-nio-8001-exec-9] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：3 ms -------------
-2026-01-20 19:58:22.562 [http-nio-8001-exec-10] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 19:58:22.563 [http-nio-8001-exec-10] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/getNames org.apache.catalina.connector.RequestFacade@79fd78e7
-2026-01-20 19:58:22.563 [http-nio-8001-exec-10] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.getNameByJobNumber
-2026-01-20 19:58:22.563 [http-nio-8001-exec-10] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 19:58:22.564 [http-nio-8001-exec-10] INFO  com.example.common.aspect.LogAspect [] - 请求参数: ["1"]
-2026-01-20 19:58:22.568 [http-nio-8001-exec-10] INFO  com.example.common.aspect.LogAspect [] - 返回结果: "兮兮"
-2026-01-20 19:58:22.568 [http-nio-8001-exec-10] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：9 ms -------------
-2026-01-20 20:00:07.706 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 20:00:07.707 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/login org.apache.catalina.connector.RequestFacade@4e3528a6
-2026-01-20 20:00:07.707 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.LoginController.login
-2026-01-20 20:00:07.707 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 20:00:07.707 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 请求参数: [{"jobNumber":1,"password":"1"}]
-2026-01-20 20:00:07.725 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 返回结果: {"content":{"jobNumber":1},"success":true}
-2026-01-20 20:00:07.726 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：20 ms -------------
-2026-01-20 20:00:07.739 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 20:00:07.739 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/getNames org.apache.catalina.connector.RequestFacade@38275fd0
-2026-01-20 20:00:07.739 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.getNameByJobNumber
-2026-01-20 20:00:07.739 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 20:00:07.739 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 请求参数: ["1"]
-2026-01-20 20:00:07.744 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 返回结果: "兮兮"
-2026-01-20 20:00:07.745 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：6 ms -------------
-2026-01-20 20:11:44.889 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 20:11:44.890 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/login org.apache.catalina.connector.RequestFacade@8bc8124
-2026-01-20 20:11:44.890 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.LoginController.login
-2026-01-20 20:11:44.890 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 20:11:44.890 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 请求参数: [{"jobNumber":1,"password":"1"}]
-2026-01-20 20:11:44.896 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 返回结果: {"content":{"jobNumber":1},"success":true}
-2026-01-20 20:11:44.896 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：7 ms -------------
-2026-01-20 20:11:44.913 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 20:11:44.914 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/getNames org.apache.catalina.connector.RequestFacade@39c8e974
-2026-01-20 20:11:44.914 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.getNameByJobNumber
-2026-01-20 20:11:44.914 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 20:11:44.914 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 请求参数: ["1"]
-2026-01-20 20:11:44.917 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 返回结果: "兮兮"
-2026-01-20 20:11:44.918 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：5 ms -------------
-2026-01-20 20:22:05.137 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [] - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
-2026-01-20 20:22:05.199 [Thread-1] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
-2026-01-20 20:22:05.205 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Pausing ProtocolHandler ["http-nio-8001"]
-2026-01-20 20:22:06.161 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Graceful shutdown complete
-2026-01-20 20:22:06.162 [Thread-1] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Stopping ProtocolHandler ["http-nio-8001"]
-2026-01-20 20:22:06.189 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Shutdown initiated...
-2026-01-20 20:22:06.203 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Shutdown completed.
-2026-01-20 20:22:07.078 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 10840 (D:\Java\springbootProject\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee)
-2026-01-20 20:22:07.078 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
-2026-01-20 20:22:07.349 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=db56928c-007b-3d43-90ef-5e12f20227b1
-2026-01-20 20:22:07.481 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
-2026-01-20 20:22:07.482 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
-2026-01-20 20:22:07.483 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
-2026-01-20 20:22:07.483 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
-2026-01-20 20:22:07.547 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
-2026-01-20 20:22:07.547 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 466 ms
-2026-01-20 20:22:08.061 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - Unable to start LiveReload server
-2026-01-20 20:22:08.814 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Starting ProtocolHandler ["http-nio-8001"]
-2026-01-20 20:22:08.820 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat started on port 8001 (http) with context path '/staff'
-2026-01-20 20:22:09.267 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Started StaffApplication in 2.895 seconds (process running for 2840.975)
-2026-01-20 20:22:09.269 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [] - Condition evaluation unchanged
-2026-01-20 20:22:09.270 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 启动成功！！
-2026-01-20 20:22:09.271 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello
-2026-01-20 20:22:09.506 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [] - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
-2026-01-20 20:22:09.508 [Thread-7] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
-2026-01-20 20:22:09.508 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Pausing ProtocolHandler ["http-nio-8001"]
-2026-01-20 20:22:10.558 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Graceful shutdown complete
-2026-01-20 20:22:10.559 [Thread-7] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Stopping ProtocolHandler ["http-nio-8001"]
-2026-01-20 20:22:11.078 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 10840 (D:\Java\springbootProject\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee)
-2026-01-20 20:22:11.079 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
-2026-01-20 20:22:11.247 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=db56928c-007b-3d43-90ef-5e12f20227b1
-2026-01-20 20:22:11.318 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
-2026-01-20 20:22:11.319 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
-2026-01-20 20:22:11.319 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
-2026-01-20 20:22:11.319 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
-2026-01-20 20:22:11.359 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
-2026-01-20 20:22:11.359 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 279 ms
-2026-01-20 20:22:11.703 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - Unable to start LiveReload server
-2026-01-20 20:22:12.353 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Starting ProtocolHandler ["http-nio-8001"]
-2026-01-20 20:22:12.357 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat started on port 8001 (http) with context path '/staff'
-2026-01-20 20:22:12.990 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Started StaffApplication in 2.385 seconds (process running for 2844.698)
-2026-01-20 20:22:12.991 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [] - Condition evaluation unchanged
-2026-01-20 20:22:12.993 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 启动成功！！
-2026-01-20 20:22:12.993 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello
-2026-01-20 20:25:21.468 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
-2026-01-20 20:25:22.247 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Graceful shutdown complete
-2026-01-20 20:25:25.273 [background-preinit] INFO  org.hibernate.validator.internal.util.Version [] - HV000001: Hibernate Validator 8.0.2.Final
-2026-01-20 20:25:25.315 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 28192 (D:\Java\springbootProject\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee)
-2026-01-20 20:25:25.316 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
-2026-01-20 20:25:25.355 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-01-20 20:25:25.355 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-01-20 20:25:26.080 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=db56928c-007b-3d43-90ef-5e12f20227b1
-2026-01-20 20:25:26.766 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
-2026-01-20 20:25:26.781 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
-2026-01-20 20:25:26.782 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
-2026-01-20 20:25:26.783 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
-2026-01-20 20:25:26.852 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
-2026-01-20 20:25:26.853 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 1496 ms
-2026-01-20 20:25:27.841 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - Unable to start LiveReload server
-2026-01-20 20:25:28.261 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Starting ProtocolHandler ["http-nio-8001"]
-2026-01-20 20:25:28.280 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat started on port 8001 (http) with context path '/staff'
-2026-01-20 20:25:28.673 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Started StaffApplication in 4.446 seconds (process running for 5.735)
-2026-01-20 20:25:28.677 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 启动成功！！
-2026-01-20 20:25:28.678 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello
-2026-01-20 20:25:59.042 [http-nio-8001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-01-20 20:25:59.043 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet [] - Initializing Servlet 'dispatcherServlet'
-2026-01-20 20:25:59.044 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet [] - Completed initialization in 1 ms
-2026-01-20 20:25:59.256 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 20:25:59.257 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/login org.apache.catalina.connector.RequestFacade@1f11f663
-2026-01-20 20:25:59.257 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.LoginController.login
-2026-01-20 20:25:59.258 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 20:25:59.363 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 请求参数: [{"jobNumber":1,"password":"1"}]
-2026-01-20 20:25:59.388 [http-nio-8001-exec-1] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Starting...
-2026-01-20 20:25:59.863 [http-nio-8001-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool [] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3c19dbbe
-2026-01-20 20:25:59.865 [http-nio-8001-exec-1] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Start completed.
-2026-01-20 20:25:59.943 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 返回结果: {"content":{"jobNumber":1},"success":true}
-2026-01-20 20:25:59.943 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：688 ms -------------
-2026-01-20 20:26:00.306 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 20:26:00.306 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/getNames org.apache.catalina.connector.RequestFacade@384df312
-2026-01-20 20:26:00.307 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.getNameByJobNumber
-2026-01-20 20:26:00.307 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 20:26:00.307 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 请求参数: ["1"]
-2026-01-20 20:26:00.386 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 返回结果: "兮兮"
-2026-01-20 20:26:00.386 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：80 ms -------------
-2026-01-20 20:32:32.069 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
-2026-01-20 20:32:32.877 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Graceful shutdown complete
-2026-01-20 20:32:32.882 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Shutdown initiated...
-2026-01-20 20:32:32.888 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Shutdown completed.
-2026-01-20 20:32:37.178 [background-preinit] INFO  org.hibernate.validator.internal.util.Version [] - HV000001: Hibernate Validator 8.0.2.Final
-2026-01-20 20:32:37.220 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 2712 (D:\Java\springbootProject\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee)
-2026-01-20 20:32:37.220 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
-2026-01-20 20:32:37.259 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-01-20 20:32:37.259 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-01-20 20:32:38.148 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=db56928c-007b-3d43-90ef-5e12f20227b1
-2026-01-20 20:32:38.767 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
-2026-01-20 20:32:38.779 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
-2026-01-20 20:32:38.781 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
-2026-01-20 20:32:38.781 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
-2026-01-20 20:32:38.849 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
-2026-01-20 20:32:38.849 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 1588 ms
-2026-01-20 20:32:39.919 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - Unable to start LiveReload server
-2026-01-20 20:32:40.391 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Starting ProtocolHandler ["http-nio-8001"]
-2026-01-20 20:32:40.412 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat started on port 8001 (http) with context path '/staff'
-2026-01-20 20:32:40.850 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Started StaffApplication in 4.653 seconds (process running for 5.809)
-2026-01-20 20:32:40.854 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 启动成功！！
-2026-01-20 20:32:40.854 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello
-2026-01-20 20:34:13.241 [http-nio-8001-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-01-20 20:34:13.242 [http-nio-8001-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet [] - Initializing Servlet 'dispatcherServlet'
-2026-01-20 20:34:13.244 [http-nio-8001-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet [] - Completed initialization in 2 ms
-2026-01-20 20:34:13.422 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 20:34:13.423 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/login org.apache.catalina.connector.RequestFacade@7b5be3de
-2026-01-20 20:34:13.424 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.LoginController.login
-2026-01-20 20:34:13.424 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 20:34:13.537 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 请求参数: [{"jobNumber":1,"password":"1"}]
-2026-01-20 20:34:13.559 [http-nio-8001-exec-2] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Starting...
-2026-01-20 20:34:14.010 [http-nio-8001-exec-2] INFO  com.zaxxer.hikari.pool.HikariPool [] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@107fa487
-2026-01-20 20:34:14.012 [http-nio-8001-exec-2] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Start completed.
-2026-01-20 20:34:14.087 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 返回结果: {"content":{"jobNumber":1},"success":true}
-2026-01-20 20:34:14.088 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：667 ms -------------
-2026-01-20 20:34:14.139 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 20:34:14.139 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/getNames org.apache.catalina.connector.RequestFacade@4e1c25be
-2026-01-20 20:34:14.139 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.getNameByJobNumber
-2026-01-20 20:34:14.140 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 20:34:14.140 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 请求参数: ["1"]
-2026-01-20 20:34:14.198 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 返回结果: "兮兮"
-2026-01-20 20:34:14.199 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：60 ms -------------
-2026-01-20 20:35:44.880 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 20:35:44.881 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/login org.apache.catalina.connector.RequestFacade@28ba0c31
-2026-01-20 20:35:44.881 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.LoginController.login
-2026-01-20 20:35:44.881 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 20:35:44.882 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - 请求参数: [{"jobNumber":1,"password":"1"}]
-2026-01-20 20:35:44.884 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - 返回结果: {"content":{"jobNumber":1},"success":true}
-2026-01-20 20:35:44.885 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：5 ms -------------
-2026-01-20 20:35:44.899 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 20:35:44.899 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/getNames org.apache.catalina.connector.RequestFacade@626064f5
-2026-01-20 20:35:44.900 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.getNameByJobNumber
-2026-01-20 20:35:44.900 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 20:35:44.900 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - 请求参数: ["1"]
-2026-01-20 20:35:44.904 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - 返回结果: "兮兮"
-2026-01-20 20:35:44.905 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：5 ms -------------
-2026-01-20 20:36:25.005 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 20:36:25.006 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/login org.apache.catalina.connector.RequestFacade@6483c1d5
-2026-01-20 20:36:25.006 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.LoginController.login
-2026-01-20 20:36:25.006 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 20:36:25.006 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - 请求参数: [{"jobNumber":1,"password":"1"}]
-2026-01-20 20:36:25.008 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - 返回结果: {"content":{"jobNumber":1},"success":true}
-2026-01-20 20:36:25.009 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：4 ms -------------
-2026-01-20 20:36:25.023 [http-nio-8001-exec-4] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 20:36:25.023 [http-nio-8001-exec-4] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/getNames org.apache.catalina.connector.RequestFacade@4209196
-2026-01-20 20:36:25.023 [http-nio-8001-exec-4] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.getNameByJobNumber
-2026-01-20 20:36:25.024 [http-nio-8001-exec-4] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 20:36:25.024 [http-nio-8001-exec-4] INFO  com.example.common.aspect.LogAspect [] - 请求参数: ["1"]
-2026-01-20 20:36:25.028 [http-nio-8001-exec-4] INFO  com.example.common.aspect.LogAspect [] - 返回结果: "兮兮"
-2026-01-20 20:36:25.029 [http-nio-8001-exec-4] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：6 ms -------------
-2026-01-20 20:40:20.285 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
-2026-01-20 20:40:21.286 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Graceful shutdown complete
-2026-01-20 20:40:21.291 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Shutdown initiated...
-2026-01-20 20:40:21.297 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Shutdown completed.
-2026-01-20 20:40:27.313 [background-preinit] INFO  org.hibernate.validator.internal.util.Version [] - HV000001: Hibernate Validator 8.0.2.Final
-2026-01-20 20:40:27.353 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 21088 (D:\Java\springbootProject\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee)
-2026-01-20 20:40:27.354 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
-2026-01-20 20:40:27.391 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-01-20 20:40:27.391 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-01-20 20:40:28.108 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=db56928c-007b-3d43-90ef-5e12f20227b1
-2026-01-20 20:40:28.579 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
-2026-01-20 20:40:28.590 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
-2026-01-20 20:40:28.592 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
-2026-01-20 20:40:28.592 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
-2026-01-20 20:40:28.655 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
-2026-01-20 20:40:28.656 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 1264 ms
-2026-01-20 20:40:29.470 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - Unable to start LiveReload server
-2026-01-20 20:40:29.865 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Starting ProtocolHandler ["http-nio-8001"]
-2026-01-20 20:40:29.883 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat started on port 8001 (http) with context path '/staff'
-2026-01-20 20:40:30.300 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Started StaffApplication in 4.314 seconds (process running for 5.366)
-2026-01-20 20:40:30.302 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 启动成功！！
-2026-01-20 20:40:30.303 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello
-2026-01-20 20:41:24.355 [http-nio-8001-exec-5] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-01-20 20:41:24.355 [http-nio-8001-exec-5] INFO  org.springframework.web.servlet.DispatcherServlet [] - Initializing Servlet 'dispatcherServlet'
-2026-01-20 20:41:24.357 [http-nio-8001-exec-5] INFO  org.springframework.web.servlet.DispatcherServlet [] - Completed initialization in 2 ms
-2026-01-20 20:41:24.548 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 20:41:24.549 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/login org.apache.catalina.connector.RequestFacade@703fdf4
-2026-01-20 20:41:24.549 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.LoginController.login
-2026-01-20 20:41:24.550 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 20:41:24.656 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - 请求参数: [{"jobNumber":1,"password":"1"}]
-2026-01-20 20:41:24.684 [http-nio-8001-exec-5] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Starting...
-2026-01-20 20:41:25.132 [http-nio-8001-exec-5] INFO  com.zaxxer.hikari.pool.HikariPool [] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@45175944
-2026-01-20 20:41:25.135 [http-nio-8001-exec-5] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Start completed.
-2026-01-20 20:41:25.208 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - 返回结果: {"content":{"jobNumber":1},"success":true}
-2026-01-20 20:41:25.208 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：661 ms -------------
-2026-01-20 20:41:25.266 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 20:41:25.266 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/getNames org.apache.catalina.connector.RequestFacade@5b9e2b96
-2026-01-20 20:41:25.268 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.getNameByJobNumber
-2026-01-20 20:41:25.268 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 20:41:25.268 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - 请求参数: ["1"]
-2026-01-20 20:41:25.330 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - 返回结果: "兮兮"
-2026-01-20 20:41:25.330 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：64 ms -------------
-2026-01-20 20:45:51.133 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [] - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2026-01-20 20:45:51.138 [Thread-1] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
-2026-01-20 20:45:51.139 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Pausing ProtocolHandler ["http-nio-8001"]
-2026-01-20 20:45:52.086 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Graceful shutdown complete
-2026-01-20 20:45:52.087 [Thread-1] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Stopping ProtocolHandler ["http-nio-8001"]
-2026-01-20 20:45:52.092 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Shutdown initiated...
-2026-01-20 20:45:52.098 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Shutdown completed.
-2026-01-20 20:45:52.708 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 21088 (D:\Java\springbootProject\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee)
-2026-01-20 20:45:52.708 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
-2026-01-20 20:45:52.988 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=db56928c-007b-3d43-90ef-5e12f20227b1
-2026-01-20 20:45:53.127 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
-2026-01-20 20:45:53.181 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 471 ms
-2026-01-20 20:45:53.610 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - Unable to start LiveReload server
-2026-01-20 20:45:54.016 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat started on port 8001 (http) with context path '/staff'
-2026-01-20 20:45:54.411 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Started StaffApplication in 2.273 seconds (process running for 329.478)
-2026-01-20 20:45:54.411 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
-2026-01-20 20:45:54.413 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [] - Condition evaluation unchanged
-2026-01-20 20:45:54.413 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 启动成功！！
-2026-01-20 20:45:54.413 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello
-2026-01-20 20:45:55.299 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Graceful shutdown complete
-2026-01-20 20:45:58.166 [background-preinit] INFO  org.hibernate.validator.internal.util.Version [] - HV000001: Hibernate Validator 8.0.2.Final
-2026-01-20 20:45:58.204 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 29936 (D:\Java\springbootProject\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee)
-2026-01-20 20:45:58.205 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
-2026-01-20 20:45:58.246 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-01-20 20:45:58.247 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-01-20 20:45:59.015 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=db56928c-007b-3d43-90ef-5e12f20227b1
-2026-01-20 20:45:59.728 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
-2026-01-20 20:45:59.745 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
-2026-01-20 20:45:59.746 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
-2026-01-20 20:45:59.747 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
-2026-01-20 20:45:59.809 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
-2026-01-20 20:45:59.810 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 1563 ms
-2026-01-20 20:46:00.848 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - Unable to start LiveReload server
-2026-01-20 20:46:01.404 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Starting ProtocolHandler ["http-nio-8001"]
-2026-01-20 20:46:01.423 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat started on port 8001 (http) with context path '/staff'
-2026-01-20 20:46:01.770 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Started StaffApplication in 4.539 seconds (process running for 5.745)
-2026-01-20 20:46:01.773 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 启动成功！！
-2026-01-20 20:46:01.773 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello
-2026-01-20 20:46:40.643 [http-nio-8001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-01-20 20:46:40.643 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet [] - Initializing Servlet 'dispatcherServlet'
-2026-01-20 20:46:40.645 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet [] - Completed initialization in 2 ms
-2026-01-20 20:46:40.850 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 20:46:40.851 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/login org.apache.catalina.connector.RequestFacade@7b5be3de
-2026-01-20 20:46:40.852 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.LoginController.login
-2026-01-20 20:46:40.852 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 20:46:40.945 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 请求参数: [{"jobNumber":1,"password":"1"}]
-2026-01-20 20:46:40.965 [http-nio-8001-exec-1] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Starting...
-2026-01-20 20:46:41.422 [http-nio-8001-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool [] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@107fa487
-2026-01-20 20:46:41.425 [http-nio-8001-exec-1] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Start completed.
-2026-01-20 20:46:41.512 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 返回结果: {"content":{"jobNumber":1},"success":true}
-2026-01-20 20:46:41.512 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：664 ms -------------
-2026-01-20 20:46:41.577 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 20:46:41.578 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/getNames org.apache.catalina.connector.RequestFacade@aa5db08
-2026-01-20 20:46:41.578 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.getNameByJobNumber
-2026-01-20 20:46:41.578 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 20:46:41.579 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 请求参数: ["1"]
-2026-01-20 20:46:41.645 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 返回结果: "兮兮"
-2026-01-20 20:46:41.646 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：68 ms -------------
-2026-01-20 20:49:09.754 [http-nio-8001-exec-5] ERROR c.e.common.controller.ControllerExceptionHandle [] - 系统异常：
-org.springframework.web.servlet.resource.NoResourceFoundException: No static resource attendance/list.
-	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
-	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2026-01-20 20:49:09.761 [http-nio-8001-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [] - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource attendance/list.]
-2026-01-20 20:49:19.050 [http-nio-8001-exec-6] ERROR c.e.common.controller.ControllerExceptionHandle [] - 系统异常：
-org.springframework.web.servlet.resource.NoResourceFoundException: No static resource attendance/list.
-	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
-	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2026-01-20 20:49:19.053 [http-nio-8001-exec-6] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [] - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource attendance/list.]
-2026-01-20 20:49:28.985 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [] - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2026-01-20 20:49:28.988 [Thread-1] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
-2026-01-20 20:49:28.989 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Pausing ProtocolHandler ["http-nio-8001"]
-2026-01-20 20:49:29.801 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Graceful shutdown complete
-2026-01-20 20:49:29.802 [Thread-1] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Stopping ProtocolHandler ["http-nio-8001"]
-2026-01-20 20:49:29.805 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Shutdown initiated...
-2026-01-20 20:49:29.812 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Shutdown completed.
-2026-01-20 20:49:30.400 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 29936 (D:\Java\springbootProject\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee)
-2026-01-20 20:49:30.400 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
-2026-01-20 20:49:30.619 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=db56928c-007b-3d43-90ef-5e12f20227b1
-2026-01-20 20:49:30.689 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
-2026-01-20 20:49:30.690 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
-2026-01-20 20:49:30.690 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
-2026-01-20 20:49:30.690 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
-2026-01-20 20:49:30.724 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
-2026-01-20 20:49:30.725 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 323 ms
-2026-01-20 20:49:31.050 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - Unable to start LiveReload server
-2026-01-20 20:49:31.523 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Starting ProtocolHandler ["http-nio-8001"]
-2026-01-20 20:49:31.529 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat started on port 8001 (http) with context path '/staff'
-2026-01-20 20:49:32.140 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Started StaffApplication in 2.291 seconds (process running for 216.115)
-2026-01-20 20:49:32.142 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [] - Condition evaluation unchanged
-2026-01-20 20:49:32.142 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 启动成功！！
-2026-01-20 20:49:32.143 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello
-2026-01-20 20:49:44.347 [http-nio-8001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-01-20 20:49:44.348 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet [] - Initializing Servlet 'dispatcherServlet'
-2026-01-20 20:49:44.348 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet [] - Completed initialization in 0 ms
-2026-01-20 20:49:44.350 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 20:49:44.350 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://127.0.0.1:8001/staff/goingOut/checkAll org.apache.catalina.connector.RequestFacade@140d3b35
-2026-01-20 20:49:44.350 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.GoingOutController.checkAll
-2026-01-20 20:49:44.350 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 远程地址：127.0.0.1
-2026-01-20 20:49:44.350 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 请求参数: ["1"]
-2026-01-20 20:49:44.354 [http-nio-8001-exec-1] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-2 - Starting...
-2026-01-20 20:49:44.370 [http-nio-8001-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool [] - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@21b24daf
-2026-01-20 20:49:44.370 [http-nio-8001-exec-1] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-2 - Start completed.
-2026-01-20 20:49:44.432 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 返回结果: [{"address":"11","createTime":1768122095000,"endTime":1768125660000,"goingoutDuration":1.00,"id":1,"jobNumber":"1","reason":"11","startTime":1768122060000,"status":0,"updateTime":1768122095000}]
-2026-01-20 20:49:44.433 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：84 ms -------------
-2026-01-20 20:49:52.647 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 20:49:52.648 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://127.0.0.1:8001/staff/business/checkAll org.apache.catalina.connector.RequestFacade@117de153
-2026-01-20 20:49:52.648 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.BusinessController.checkAll
-2026-01-20 20:49:52.648 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 远程地址：127.0.0.1
-2026-01-20 20:49:52.648 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 请求参数: ["1"]
-2026-01-20 20:49:52.667 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 返回结果: [{"attachment":"","businessDuration":2.02,"createTime":1768118393000,"endTime":1768154400000,"id":1,"jobNumber":"1","reason":"去总部测试","startTime":1768147140000,"status":0,"updateTime":1768118393000},{"attachment":"","businessDuration":6.00,"createTime":1768118536000,"endTime":1768230000000,"id":2,"jobNumber":"1","reason":"外出拿机器","startTime":1768208400000,"status":0,"updateTime":1768118536000}]
-2026-01-20 20:49:52.668 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：21 ms -------------
-2026-01-20 20:49:59.406 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 20:49:59.406 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://127.0.0.1:8001/staff/attendance/list org.apache.catalina.connector.RequestFacade@4e9c56cc
-2026-01-20 20:49:59.406 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.AttendanceController.list
-2026-01-20 20:49:59.406 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - 远程地址：127.0.0.1
-2026-01-20 20:49:59.407 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - 请求参数: ["1"]
-2026-01-20 20:49:59.415 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - 返回结果: [{"createdAt":1758636213000,"id":1,"jobNumber":"1","punchTime":1758636214000,"type":"上班","updatedAt":1758636213000},{"createdAt":1758636435000,"id":2,"jobNumber":"1","punchTime":1758636436000,"type":"下班","updatedAt":1758636435000},{"createdAt":1760878415000,"id":3,"jobNumber":"1","punchTime":1760878416000,"type":"上班","updatedAt":1760878415000},{"createdAt":1760878417000,"id":4,"jobNumber":"1","punchTime":1760878417000,"type":"下班","updatedAt":1760878417000},{"createdAt":1761468316000,"id":5,"jobNumber":"1","punchTime":1761468316000,"type":"上班","updatedAt":1761468316000},{"createdAt":1761469054000,"id":6,"jobNumber":"1","punchTime":1761469054000,"type":"下班","updatedAt":1761469054000},{"createdAt":1762670152000,"id":7,"jobNumber":"1","punchTime":1762670152000,"type":"上班","updatedAt":1762670152000},{"createdAt":1763896137000,"id":8,"jobNumber":"1","punchTime":1763896137000,"type":"上班","updatedAt":1763896137000},{"createdAt":1763899688000,"id":9,"jobNumber":"1","punchTime":1763899688000,"type":"下班","updatedAt":1763899688000},{"createdAt":1767617383000,"id":10,"jobNumber":"1","punchTime":1767617383000,"type":"上班","updatedAt":1767617383000},{"createdAt":1768115802000,"id":11,"jobNumber":"1","punchTime":1768115802000,"type":"上班","updatedAt":1768115802000},{"createdAt":1768909132000,"id":12,"jobNumber":"1","punchTime":1768909132000,"type":"上班","updatedAt":1768909132000}]
-2026-01-20 20:49:59.416 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：10 ms -------------
-2026-01-20 20:50:04.425 [http-nio-8001-exec-4] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 20:50:04.426 [http-nio-8001-exec-4] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://127.0.0.1:8001/staff/attendance/list org.apache.catalina.connector.RequestFacade@6fa783f0
-2026-01-20 20:50:04.426 [http-nio-8001-exec-4] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.AttendanceController.list
-2026-01-20 20:50:04.426 [http-nio-8001-exec-4] INFO  com.example.common.aspect.LogAspect [] - 远程地址：127.0.0.1
-2026-01-20 20:50:04.426 [http-nio-8001-exec-4] INFO  com.example.common.aspect.LogAspect [] - 请求参数: ["1"]
-2026-01-20 20:50:04.431 [http-nio-8001-exec-4] INFO  com.example.common.aspect.LogAspect [] - 返回结果: [{"createdAt":1758636213000,"id":1,"jobNumber":"1","punchTime":1758636214000,"type":"上班","updatedAt":1758636213000},{"createdAt":1758636435000,"id":2,"jobNumber":"1","punchTime":1758636436000,"type":"下班","updatedAt":1758636435000},{"createdAt":1760878415000,"id":3,"jobNumber":"1","punchTime":1760878416000,"type":"上班","updatedAt":1760878415000},{"createdAt":1760878417000,"id":4,"jobNumber":"1","punchTime":1760878417000,"type":"下班","updatedAt":1760878417000},{"createdAt":1761468316000,"id":5,"jobNumber":"1","punchTime":1761468316000,"type":"上班","updatedAt":1761468316000},{"createdAt":1761469054000,"id":6,"jobNumber":"1","punchTime":1761469054000,"type":"下班","updatedAt":1761469054000},{"createdAt":1762670152000,"id":7,"jobNumber":"1","punchTime":1762670152000,"type":"上班","updatedAt":1762670152000},{"createdAt":1763896137000,"id":8,"jobNumber":"1","punchTime":1763896137000,"type":"上班","updatedAt":1763896137000},{"createdAt":1763899688000,"id":9,"jobNumber":"1","punchTime":1763899688000,"type":"下班","updatedAt":1763899688000},{"createdAt":1767617383000,"id":10,"jobNumber":"1","punchTime":1767617383000,"type":"上班","updatedAt":1767617383000},{"createdAt":1768115802000,"id":11,"jobNumber":"1","punchTime":1768115802000,"type":"上班","updatedAt":1768115802000},{"createdAt":1768909132000,"id":12,"jobNumber":"1","punchTime":1768909132000,"type":"上班","updatedAt":1768909132000}]
-2026-01-20 20:50:04.431 [http-nio-8001-exec-4] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：6 ms -------------
-2026-01-20 20:51:44.516 [http-nio-8001-exec-9] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 20:51:44.517 [http-nio-8001-exec-9] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/attendance/list org.apache.catalina.connector.RequestFacade@1ea98f55
-2026-01-20 20:51:44.517 [http-nio-8001-exec-9] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.AttendanceController.list
-2026-01-20 20:51:44.517 [http-nio-8001-exec-9] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 20:51:44.517 [http-nio-8001-exec-9] INFO  com.example.common.aspect.LogAspect [] - 请求参数: ["1"]
-2026-01-20 20:51:44.523 [http-nio-8001-exec-9] INFO  com.example.common.aspect.LogAspect [] - 返回结果: [{"createdAt":1758636213000,"id":1,"jobNumber":"1","punchTime":1758636214000,"type":"上班","updatedAt":1758636213000},{"createdAt":1758636435000,"id":2,"jobNumber":"1","punchTime":1758636436000,"type":"下班","updatedAt":1758636435000},{"createdAt":1760878415000,"id":3,"jobNumber":"1","punchTime":1760878416000,"type":"上班","updatedAt":1760878415000},{"createdAt":1760878417000,"id":4,"jobNumber":"1","punchTime":1760878417000,"type":"下班","updatedAt":1760878417000},{"createdAt":1761468316000,"id":5,"jobNumber":"1","punchTime":1761468316000,"type":"上班","updatedAt":1761468316000},{"createdAt":1761469054000,"id":6,"jobNumber":"1","punchTime":1761469054000,"type":"下班","updatedAt":1761469054000},{"createdAt":1762670152000,"id":7,"jobNumber":"1","punchTime":1762670152000,"type":"上班","updatedAt":1762670152000},{"createdAt":1763896137000,"id":8,"jobNumber":"1","punchTime":1763896137000,"type":"上班","updatedAt":1763896137000},{"createdAt":1763899688000,"id":9,"jobNumber":"1","punchTime":1763899688000,"type":"下班","updatedAt":1763899688000},{"createdAt":1767617383000,"id":10,"jobNumber":"1","punchTime":1767617383000,"type":"上班","updatedAt":1767617383000},{"createdAt":1768115802000,"id":11,"jobNumber":"1","punchTime":1768115802000,"type":"上班","updatedAt":1768115802000},{"createdAt":1768909132000,"id":12,"jobNumber":"1","punchTime":1768909132000,"type":"上班","updatedAt":1768909132000}]
-2026-01-20 20:51:44.524 [http-nio-8001-exec-9] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：8 ms -------------
-2026-01-20 20:51:44.601 [http-nio-8001-exec-10] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 20:51:44.601 [http-nio-8001-exec-10] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/attendance/list org.apache.catalina.connector.RequestFacade@33f0c78f
-2026-01-20 20:51:44.602 [http-nio-8001-exec-10] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.AttendanceController.list
-2026-01-20 20:51:44.602 [http-nio-8001-exec-10] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 20:51:44.602 [http-nio-8001-exec-10] INFO  com.example.common.aspect.LogAspect [] - 请求参数: ["1"]
-2026-01-20 20:51:44.607 [http-nio-8001-exec-10] INFO  com.example.common.aspect.LogAspect [] - 返回结果: [{"createdAt":1758636213000,"id":1,"jobNumber":"1","punchTime":1758636214000,"type":"上班","updatedAt":1758636213000},{"createdAt":1758636435000,"id":2,"jobNumber":"1","punchTime":1758636436000,"type":"下班","updatedAt":1758636435000},{"createdAt":1760878415000,"id":3,"jobNumber":"1","punchTime":1760878416000,"type":"上班","updatedAt":1760878415000},{"createdAt":1760878417000,"id":4,"jobNumber":"1","punchTime":1760878417000,"type":"下班","updatedAt":1760878417000},{"createdAt":1761468316000,"id":5,"jobNumber":"1","punchTime":1761468316000,"type":"上班","updatedAt":1761468316000},{"createdAt":1761469054000,"id":6,"jobNumber":"1","punchTime":1761469054000,"type":"下班","updatedAt":1761469054000},{"createdAt":1762670152000,"id":7,"jobNumber":"1","punchTime":1762670152000,"type":"上班","updatedAt":1762670152000},{"createdAt":1763896137000,"id":8,"jobNumber":"1","punchTime":1763896137000,"type":"上班","updatedAt":1763896137000},{"createdAt":1763899688000,"id":9,"jobNumber":"1","punchTime":1763899688000,"type":"下班","updatedAt":1763899688000},{"createdAt":1767617383000,"id":10,"jobNumber":"1","punchTime":1767617383000,"type":"上班","updatedAt":1767617383000},{"createdAt":1768115802000,"id":11,"jobNumber":"1","punchTime":1768115802000,"type":"上班","updatedAt":1768115802000},{"createdAt":1768909132000,"id":12,"jobNumber":"1","punchTime":1768909132000,"type":"上班","updatedAt":1768909132000}]
-2026-01-20 20:51:44.607 [http-nio-8001-exec-10] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：6 ms -------------
-2026-01-20 20:51:44.641 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 20:51:44.641 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/attendance/list org.apache.catalina.connector.RequestFacade@4f654946
-2026-01-20 20:51:44.641 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.AttendanceController.list
-2026-01-20 20:51:44.642 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 20:51:44.642 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 请求参数: ["1"]
-2026-01-20 20:51:44.646 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 返回结果: [{"createdAt":1758636213000,"id":1,"jobNumber":"1","punchTime":1758636214000,"type":"上班","updatedAt":1758636213000},{"createdAt":1758636435000,"id":2,"jobNumber":"1","punchTime":1758636436000,"type":"下班","updatedAt":1758636435000},{"createdAt":1760878415000,"id":3,"jobNumber":"1","punchTime":1760878416000,"type":"上班","updatedAt":1760878415000},{"createdAt":1760878417000,"id":4,"jobNumber":"1","punchTime":1760878417000,"type":"下班","updatedAt":1760878417000},{"createdAt":1761468316000,"id":5,"jobNumber":"1","punchTime":1761468316000,"type":"上班","updatedAt":1761468316000},{"createdAt":1761469054000,"id":6,"jobNumber":"1","punchTime":1761469054000,"type":"下班","updatedAt":1761469054000},{"createdAt":1762670152000,"id":7,"jobNumber":"1","punchTime":1762670152000,"type":"上班","updatedAt":1762670152000},{"createdAt":1763896137000,"id":8,"jobNumber":"1","punchTime":1763896137000,"type":"上班","updatedAt":1763896137000},{"createdAt":1763899688000,"id":9,"jobNumber":"1","punchTime":1763899688000,"type":"下班","updatedAt":1763899688000},{"createdAt":1767617383000,"id":10,"jobNumber":"1","punchTime":1767617383000,"type":"上班","updatedAt":1767617383000},{"createdAt":1768115802000,"id":11,"jobNumber":"1","punchTime":1768115802000,"type":"上班","updatedAt":1768115802000},{"createdAt":1768909132000,"id":12,"jobNumber":"1","punchTime":1768909132000,"type":"上班","updatedAt":1768909132000}]
-2026-01-20 20:51:44.646 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：5 ms -------------
-2026-01-20 20:51:44.680 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 20:51:44.680 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/attendance/list org.apache.catalina.connector.RequestFacade@4817bac8
-2026-01-20 20:51:44.680 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.AttendanceController.list
-2026-01-20 20:51:44.680 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 20:51:44.681 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 请求参数: ["1"]
-2026-01-20 20:51:44.684 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 返回结果: [{"createdAt":1758636213000,"id":1,"jobNumber":"1","punchTime":1758636214000,"type":"上班","updatedAt":1758636213000},{"createdAt":1758636435000,"id":2,"jobNumber":"1","punchTime":1758636436000,"type":"下班","updatedAt":1758636435000},{"createdAt":1760878415000,"id":3,"jobNumber":"1","punchTime":1760878416000,"type":"上班","updatedAt":1760878415000},{"createdAt":1760878417000,"id":4,"jobNumber":"1","punchTime":1760878417000,"type":"下班","updatedAt":1760878417000},{"createdAt":1761468316000,"id":5,"jobNumber":"1","punchTime":1761468316000,"type":"上班","updatedAt":1761468316000},{"createdAt":1761469054000,"id":6,"jobNumber":"1","punchTime":1761469054000,"type":"下班","updatedAt":1761469054000},{"createdAt":1762670152000,"id":7,"jobNumber":"1","punchTime":1762670152000,"type":"上班","updatedAt":1762670152000},{"createdAt":1763896137000,"id":8,"jobNumber":"1","punchTime":1763896137000,"type":"上班","updatedAt":1763896137000},{"createdAt":1763899688000,"id":9,"jobNumber":"1","punchTime":1763899688000,"type":"下班","updatedAt":1763899688000},{"createdAt":1767617383000,"id":10,"jobNumber":"1","punchTime":1767617383000,"type":"上班","updatedAt":1767617383000},{"createdAt":1768115802000,"id":11,"jobNumber":"1","punchTime":1768115802000,"type":"上班","updatedAt":1768115802000},{"createdAt":1768909132000,"id":12,"jobNumber":"1","punchTime":1768909132000,"type":"上班","updatedAt":1768909132000}]
-2026-01-20 20:51:44.684 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：4 ms -------------
-2026-01-20 20:51:44.697 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 20:51:44.697 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/attendance/list org.apache.catalina.connector.RequestFacade@3917aade
-2026-01-20 20:51:44.697 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.AttendanceController.list
-2026-01-20 20:51:44.697 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 20:51:44.697 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - 请求参数: ["1"]
-2026-01-20 20:51:44.701 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - 返回结果: [{"createdAt":1758636213000,"id":1,"jobNumber":"1","punchTime":1758636214000,"type":"上班","updatedAt":1758636213000},{"createdAt":1758636435000,"id":2,"jobNumber":"1","punchTime":1758636436000,"type":"下班","updatedAt":1758636435000},{"createdAt":1760878415000,"id":3,"jobNumber":"1","punchTime":1760878416000,"type":"上班","updatedAt":1760878415000},{"createdAt":1760878417000,"id":4,"jobNumber":"1","punchTime":1760878417000,"type":"下班","updatedAt":1760878417000},{"createdAt":1761468316000,"id":5,"jobNumber":"1","punchTime":1761468316000,"type":"上班","updatedAt":1761468316000},{"createdAt":1761469054000,"id":6,"jobNumber":"1","punchTime":1761469054000,"type":"下班","updatedAt":1761469054000},{"createdAt":1762670152000,"id":7,"jobNumber":"1","punchTime":1762670152000,"type":"上班","updatedAt":1762670152000},{"createdAt":1763896137000,"id":8,"jobNumber":"1","punchTime":1763896137000,"type":"上班","updatedAt":1763896137000},{"createdAt":1763899688000,"id":9,"jobNumber":"1","punchTime":1763899688000,"type":"下班","updatedAt":1763899688000},{"createdAt":1767617383000,"id":10,"jobNumber":"1","punchTime":1767617383000,"type":"上班","updatedAt":1767617383000},{"createdAt":1768115802000,"id":11,"jobNumber":"1","punchTime":1768115802000,"type":"上班","updatedAt":1768115802000},{"createdAt":1768909132000,"id":12,"jobNumber":"1","punchTime":1768909132000,"type":"上班","updatedAt":1768909132000}]
-2026-01-20 20:51:44.701 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：4 ms -------------
-2026-01-20 20:51:48.654 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
-2026-01-20 20:51:49.634 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Graceful shutdown complete
-2026-01-20 20:51:49.637 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-2 - Shutdown initiated...
-2026-01-20 20:51:49.639 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-2 - Shutdown completed.
-2026-01-20 20:51:52.666 [background-preinit] INFO  org.hibernate.validator.internal.util.Version [] - HV000001: Hibernate Validator 8.0.2.Final
-2026-01-20 20:51:52.709 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 9856 (D:\Java\springbootProject\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee)
-2026-01-20 20:51:52.710 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
-2026-01-20 20:51:52.750 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-01-20 20:51:52.750 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-01-20 20:51:53.502 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=db56928c-007b-3d43-90ef-5e12f20227b1
-2026-01-20 20:51:54.180 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
-2026-01-20 20:51:54.193 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
-2026-01-20 20:51:54.195 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
-2026-01-20 20:51:54.195 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
-2026-01-20 20:51:54.271 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
-2026-01-20 20:51:54.272 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 1521 ms
-2026-01-20 20:51:55.323 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - Unable to start LiveReload server
-2026-01-20 20:51:55.846 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Starting ProtocolHandler ["http-nio-8001"]
-2026-01-20 20:51:55.864 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat started on port 8001 (http) with context path '/staff'
-2026-01-20 20:51:56.296 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Started StaffApplication in 4.627 seconds (process running for 5.905)
-2026-01-20 20:51:56.299 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 启动成功！！
-2026-01-20 20:51:56.299 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello
-2026-01-20 20:52:25.573 [http-nio-8001-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-01-20 20:52:25.573 [http-nio-8001-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet [] - Initializing Servlet 'dispatcherServlet'
-2026-01-20 20:52:25.575 [http-nio-8001-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet [] - Completed initialization in 1 ms
-2026-01-20 20:52:25.796 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 20:52:25.797 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/login org.apache.catalina.connector.RequestFacade@5932697e
-2026-01-20 20:52:25.798 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.LoginController.login
-2026-01-20 20:52:25.798 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 20:52:25.900 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 请求参数: [{"jobNumber":1,"password":"1"}]
-2026-01-20 20:52:25.929 [http-nio-8001-exec-2] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Starting...
-2026-01-20 20:52:26.379 [http-nio-8001-exec-2] INFO  com.zaxxer.hikari.pool.HikariPool [] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@519c7659
-2026-01-20 20:52:26.382 [http-nio-8001-exec-2] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Start completed.
-2026-01-20 20:52:26.457 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 返回结果: {"content":{"jobNumber":1},"success":true}
-2026-01-20 20:52:26.458 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：663 ms -------------
-2026-01-20 20:52:26.519 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 20:52:26.521 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/getNames org.apache.catalina.connector.RequestFacade@384df312
-2026-01-20 20:52:26.521 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.getNameByJobNumber
-2026-01-20 20:52:26.521 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 20:52:26.521 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 请求参数: ["1"]
-2026-01-20 20:52:26.581 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 返回结果: "兮兮"
-2026-01-20 20:52:26.582 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：63 ms -------------
-2026-01-20 20:52:26.963 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 20:52:26.964 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/attendance/list org.apache.catalina.connector.RequestFacade@615652d8
-2026-01-20 20:52:26.964 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.AttendanceController.list
-2026-01-20 20:52:26.964 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 20:52:26.964 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - 请求参数: ["1"]
-2026-01-20 20:52:26.979 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - 返回结果: [{"createdAt":1758636213000,"id":1,"jobNumber":"1","punchTime":1758636214000,"type":"上班","updatedAt":1758636213000},{"createdAt":1758636435000,"id":2,"jobNumber":"1","punchTime":1758636436000,"type":"下班","updatedAt":1758636435000},{"createdAt":1760878415000,"id":3,"jobNumber":"1","punchTime":1760878416000,"type":"上班","updatedAt":1760878415000},{"createdAt":1760878417000,"id":4,"jobNumber":"1","punchTime":1760878417000,"type":"下班","updatedAt":1760878417000},{"createdAt":1761468316000,"id":5,"jobNumber":"1","punchTime":1761468316000,"type":"上班","updatedAt":1761468316000},{"createdAt":1761469054000,"id":6,"jobNumber":"1","punchTime":1761469054000,"type":"下班","updatedAt":1761469054000},{"createdAt":1762670152000,"id":7,"jobNumber":"1","punchTime":1762670152000,"type":"上班","updatedAt":1762670152000},{"createdAt":1763896137000,"id":8,"jobNumber":"1","punchTime":1763896137000,"type":"上班","updatedAt":1763896137000},{"createdAt":1763899688000,"id":9,"jobNumber":"1","punchTime":1763899688000,"type":"下班","updatedAt":1763899688000},{"createdAt":1767617383000,"id":10,"jobNumber":"1","punchTime":1767617383000,"type":"上班","updatedAt":1767617383000},{"createdAt":1768115802000,"id":11,"jobNumber":"1","punchTime":1768115802000,"type":"上班","updatedAt":1768115802000},{"createdAt":1768909132000,"id":12,"jobNumber":"1","punchTime":1768909132000,"type":"上班","updatedAt":1768909132000}]
-2026-01-20 20:52:26.980 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：17 ms -------------
-2026-01-20 20:52:31.054 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 20:52:31.055 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/attendance/list org.apache.catalina.connector.RequestFacade@273bd115
-2026-01-20 20:52:31.055 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.AttendanceController.list
-2026-01-20 20:52:31.055 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 20:52:31.055 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - 请求参数: ["1"]
-2026-01-20 20:52:31.063 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - 返回结果: [{"createdAt":1758636213000,"id":1,"jobNumber":"1","punchTime":1758636214000,"type":"上班","updatedAt":1758636213000},{"createdAt":1758636435000,"id":2,"jobNumber":"1","punchTime":1758636436000,"type":"下班","updatedAt":1758636435000},{"createdAt":1760878415000,"id":3,"jobNumber":"1","punchTime":1760878416000,"type":"上班","updatedAt":1760878415000},{"createdAt":1760878417000,"id":4,"jobNumber":"1","punchTime":1760878417000,"type":"下班","updatedAt":1760878417000},{"createdAt":1761468316000,"id":5,"jobNumber":"1","punchTime":1761468316000,"type":"上班","updatedAt":1761468316000},{"createdAt":1761469054000,"id":6,"jobNumber":"1","punchTime":1761469054000,"type":"下班","updatedAt":1761469054000},{"createdAt":1762670152000,"id":7,"jobNumber":"1","punchTime":1762670152000,"type":"上班","updatedAt":1762670152000},{"createdAt":1763896137000,"id":8,"jobNumber":"1","punchTime":1763896137000,"type":"上班","updatedAt":1763896137000},{"createdAt":1763899688000,"id":9,"jobNumber":"1","punchTime":1763899688000,"type":"下班","updatedAt":1763899688000},{"createdAt":1767617383000,"id":10,"jobNumber":"1","punchTime":1767617383000,"type":"上班","updatedAt":1767617383000},{"createdAt":1768115802000,"id":11,"jobNumber":"1","punchTime":1768115802000,"type":"上班","updatedAt":1768115802000},{"createdAt":1768909132000,"id":12,"jobNumber":"1","punchTime":1768909132000,"type":"上班","updatedAt":1768909132000}]
-2026-01-20 20:52:31.064 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：10 ms -------------
-2026-01-20 20:52:34.984 [http-nio-8001-exec-7] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 20:52:34.984 [http-nio-8001-exec-7] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/attendance/punch org.apache.catalina.connector.RequestFacade@1a178855
-2026-01-20 20:52:34.984 [http-nio-8001-exec-7] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.AttendanceController.punch
-2026-01-20 20:52:34.985 [http-nio-8001-exec-7] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 20:52:34.985 [http-nio-8001-exec-7] INFO  com.example.common.aspect.LogAspect [] - 请求参数: ["1","下班"]
-2026-01-20 20:52:35.030 [http-nio-8001-exec-7] INFO  com.example.common.aspect.LogAspect [] - 返回结果: {"success":true,"time":"2026-01-20 20:52:35","message":"下班 打卡成功"}
-2026-01-20 20:52:35.032 [http-nio-8001-exec-7] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：46 ms -------------
-2026-01-20 20:52:35.358 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 20:52:35.358 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/attendance/list org.apache.catalina.connector.RequestFacade@60e4317f
-2026-01-20 20:52:35.358 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.AttendanceController.list
-2026-01-20 20:52:35.359 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 20:52:35.359 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - 请求参数: ["1"]
-2026-01-20 20:52:35.364 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - 返回结果: [{"createdAt":1758636213000,"id":1,"jobNumber":"1","punchTime":1758636214000,"type":"上班","updatedAt":1758636213000},{"createdAt":1758636435000,"id":2,"jobNumber":"1","punchTime":1758636436000,"type":"下班","updatedAt":1758636435000},{"createdAt":1760878415000,"id":3,"jobNumber":"1","punchTime":1760878416000,"type":"上班","updatedAt":1760878415000},{"createdAt":1760878417000,"id":4,"jobNumber":"1","punchTime":1760878417000,"type":"下班","updatedAt":1760878417000},{"createdAt":1761468316000,"id":5,"jobNumber":"1","punchTime":1761468316000,"type":"上班","updatedAt":1761468316000},{"createdAt":1761469054000,"id":6,"jobNumber":"1","punchTime":1761469054000,"type":"下班","updatedAt":1761469054000},{"createdAt":1762670152000,"id":7,"jobNumber":"1","punchTime":1762670152000,"type":"上班","updatedAt":1762670152000},{"createdAt":1763896137000,"id":8,"jobNumber":"1","punchTime":1763896137000,"type":"上班","updatedAt":1763896137000},{"createdAt":1763899688000,"id":9,"jobNumber":"1","punchTime":1763899688000,"type":"下班","updatedAt":1763899688000},{"createdAt":1767617383000,"id":10,"jobNumber":"1","punchTime":1767617383000,"type":"上班","updatedAt":1767617383000},{"createdAt":1768115802000,"id":11,"jobNumber":"1","punchTime":1768115802000,"type":"上班","updatedAt":1768115802000},{"createdAt":1768909132000,"id":12,"jobNumber":"1","punchTime":1768909132000,"type":"上班","updatedAt":1768909132000},{"createdAt":1768913555000,"id":13,"jobNumber":"1","punchTime":1768913555000,"type":"下班","updatedAt":1768913555000}]
-2026-01-20 20:52:35.365 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：7 ms -------------
-2026-01-20 20:53:01.694 [http-nio-8001-exec-10] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 20:53:01.694 [http-nio-8001-exec-10] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/attendance/list org.apache.catalina.connector.RequestFacade@31b7e5af
-2026-01-20 20:53:01.695 [http-nio-8001-exec-10] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.AttendanceController.list
-2026-01-20 20:53:01.695 [http-nio-8001-exec-10] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 20:53:01.695 [http-nio-8001-exec-10] INFO  com.example.common.aspect.LogAspect [] - 请求参数: ["1"]
-2026-01-20 20:53:01.699 [http-nio-8001-exec-10] INFO  com.example.common.aspect.LogAspect [] - 返回结果: [{"createdAt":1758636213000,"id":1,"jobNumber":"1","punchTime":1758636214000,"type":"上班","updatedAt":1758636213000},{"createdAt":1758636435000,"id":2,"jobNumber":"1","punchTime":1758636436000,"type":"下班","updatedAt":1758636435000},{"createdAt":1760878415000,"id":3,"jobNumber":"1","punchTime":1760878416000,"type":"上班","updatedAt":1760878415000},{"createdAt":1760878417000,"id":4,"jobNumber":"1","punchTime":1760878417000,"type":"下班","updatedAt":1760878417000},{"createdAt":1761468316000,"id":5,"jobNumber":"1","punchTime":1761468316000,"type":"上班","updatedAt":1761468316000},{"createdAt":1761469054000,"id":6,"jobNumber":"1","punchTime":1761469054000,"type":"下班","updatedAt":1761469054000},{"createdAt":1762670152000,"id":7,"jobNumber":"1","punchTime":1762670152000,"type":"上班","updatedAt":1762670152000},{"createdAt":1763896137000,"id":8,"jobNumber":"1","punchTime":1763896137000,"type":"上班","updatedAt":1763896137000},{"createdAt":1763899688000,"id":9,"jobNumber":"1","punchTime":1763899688000,"type":"下班","updatedAt":1763899688000},{"createdAt":1767617383000,"id":10,"jobNumber":"1","punchTime":1767617383000,"type":"上班","updatedAt":1767617383000},{"createdAt":1768115802000,"id":11,"jobNumber":"1","punchTime":1768115802000,"type":"上班","updatedAt":1768115802000},{"createdAt":1768909132000,"id":12,"jobNumber":"1","punchTime":1768909132000,"type":"上班","updatedAt":1768909132000},{"createdAt":1768913555000,"id":13,"jobNumber":"1","punchTime":1768913555000,"type":"下班","updatedAt":1768913555000}]
-2026-01-20 20:53:01.700 [http-nio-8001-exec-10] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：6 ms -------------
-2026-01-20 20:54:34.266 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 20:54:34.266 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/attendance/list org.apache.catalina.connector.RequestFacade@3aa16e4c
-2026-01-20 20:54:34.266 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.AttendanceController.list
-2026-01-20 20:54:34.266 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 20:54:34.266 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 请求参数: ["1"]
-2026-01-20 20:54:34.270 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 返回结果: [{"createdAt":1758636213000,"id":1,"jobNumber":"1","punchTime":1758636214000,"type":"上班","updatedAt":1758636213000},{"createdAt":1758636435000,"id":2,"jobNumber":"1","punchTime":1758636436000,"type":"下班","updatedAt":1758636435000},{"createdAt":1760878415000,"id":3,"jobNumber":"1","punchTime":1760878416000,"type":"上班","updatedAt":1760878415000},{"createdAt":1760878417000,"id":4,"jobNumber":"1","punchTime":1760878417000,"type":"下班","updatedAt":1760878417000},{"createdAt":1761468316000,"id":5,"jobNumber":"1","punchTime":1761468316000,"type":"上班","updatedAt":1761468316000},{"createdAt":1761469054000,"id":6,"jobNumber":"1","punchTime":1761469054000,"type":"下班","updatedAt":1761469054000},{"createdAt":1762670152000,"id":7,"jobNumber":"1","punchTime":1762670152000,"type":"上班","updatedAt":1762670152000},{"createdAt":1763896137000,"id":8,"jobNumber":"1","punchTime":1763896137000,"type":"上班","updatedAt":1763896137000},{"createdAt":1763899688000,"id":9,"jobNumber":"1","punchTime":1763899688000,"type":"下班","updatedAt":1763899688000},{"createdAt":1767617383000,"id":10,"jobNumber":"1","punchTime":1767617383000,"type":"上班","updatedAt":1767617383000},{"createdAt":1768115802000,"id":11,"jobNumber":"1","punchTime":1768115802000,"type":"上班","updatedAt":1768115802000},{"createdAt":1768909132000,"id":12,"jobNumber":"1","punchTime":1768909132000,"type":"上班","updatedAt":1768909132000},{"createdAt":1768913555000,"id":13,"jobNumber":"1","punchTime":1768913555000,"type":"下班","updatedAt":1768913555000}]
-2026-01-20 20:54:34.271 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：7 ms -------------
-2026-01-20 20:54:37.883 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 20:54:37.883 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/attendance/list org.apache.catalina.connector.RequestFacade@f45fc1f
-2026-01-20 20:54:37.883 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.AttendanceController.list
-2026-01-20 20:54:37.883 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 20:54:37.883 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 请求参数: ["1"]
-2026-01-20 20:54:37.888 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 返回结果: [{"createdAt":1758636213000,"id":1,"jobNumber":"1","punchTime":1758636214000,"type":"上班","updatedAt":1758636213000},{"createdAt":1758636435000,"id":2,"jobNumber":"1","punchTime":1758636436000,"type":"下班","updatedAt":1758636435000},{"createdAt":1760878415000,"id":3,"jobNumber":"1","punchTime":1760878416000,"type":"上班","updatedAt":1760878415000},{"createdAt":1760878417000,"id":4,"jobNumber":"1","punchTime":1760878417000,"type":"下班","updatedAt":1760878417000},{"createdAt":1761468316000,"id":5,"jobNumber":"1","punchTime":1761468316000,"type":"上班","updatedAt":1761468316000},{"createdAt":1761469054000,"id":6,"jobNumber":"1","punchTime":1761469054000,"type":"下班","updatedAt":1761469054000},{"createdAt":1762670152000,"id":7,"jobNumber":"1","punchTime":1762670152000,"type":"上班","updatedAt":1762670152000},{"createdAt":1763896137000,"id":8,"jobNumber":"1","punchTime":1763896137000,"type":"上班","updatedAt":1763896137000},{"createdAt":1763899688000,"id":9,"jobNumber":"1","punchTime":1763899688000,"type":"下班","updatedAt":1763899688000},{"createdAt":1767617383000,"id":10,"jobNumber":"1","punchTime":1767617383000,"type":"上班","updatedAt":1767617383000},{"createdAt":1768115802000,"id":11,"jobNumber":"1","punchTime":1768115802000,"type":"上班","updatedAt":1768115802000},{"createdAt":1768909132000,"id":12,"jobNumber":"1","punchTime":1768909132000,"type":"上班","updatedAt":1768909132000},{"createdAt":1768913555000,"id":13,"jobNumber":"1","punchTime":1768913555000,"type":"下班","updatedAt":1768913555000}]
-2026-01-20 20:54:37.888 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：5 ms -------------
-2026-01-20 20:56:24.212 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 20:56:24.213 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/leave/create org.apache.catalina.connector.RequestFacade@6167072c
-2026-01-20 20:56:24.213 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.LeaveRequestController.createLeave
-2026-01-20 20:56:24.213 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 20:56:24.220 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - 请求参数: [{"attachment":"","endTime":1768917360000,"jobNumber":"1","leaveDuration":1,"leaveType":"年假","reason":"余九九","startTime":1768913760000}]
-2026-01-20 20:56:24.249 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - 返回结果: "success"
-2026-01-20 20:56:24.249 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：37 ms -------------
-2026-01-20 20:56:39.445 [http-nio-8001-exec-4] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 20:56:39.446 [http-nio-8001-exec-4] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/business/create org.apache.catalina.connector.RequestFacade@3ceb1ad8
-2026-01-20 20:56:39.446 [http-nio-8001-exec-4] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.BusinessController.createBusiness
-2026-01-20 20:56:39.446 [http-nio-8001-exec-4] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 20:56:39.452 [http-nio-8001-exec-4] INFO  com.example.common.aspect.LogAspect [] - 请求参数: [{"attachment":"","businessDuration":3,"endTime":1768924560000,"jobNumber":"1","reason":"nn幸存者","startTime":1768913760000}]
-2026-01-20 20:56:39.464 [http-nio-8001-exec-4] INFO  com.example.common.aspect.LogAspect [] - 返回结果: "success"
-2026-01-20 20:56:39.464 [http-nio-8001-exec-4] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：19 ms -------------
-2026-01-20 20:56:45.269 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 20:56:45.269 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/attendance/list org.apache.catalina.connector.RequestFacade@6e8958ab
-2026-01-20 20:56:45.269 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.AttendanceController.list
-2026-01-20 20:56:45.269 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 20:56:45.269 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - 请求参数: ["1"]
-2026-01-20 20:56:45.274 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - 返回结果: [{"createdAt":1758636213000,"id":1,"jobNumber":"1","punchTime":1758636214000,"type":"上班","updatedAt":1758636213000},{"createdAt":1758636435000,"id":2,"jobNumber":"1","punchTime":1758636436000,"type":"下班","updatedAt":1758636435000},{"createdAt":1760878415000,"id":3,"jobNumber":"1","punchTime":1760878416000,"type":"上班","updatedAt":1760878415000},{"createdAt":1760878417000,"id":4,"jobNumber":"1","punchTime":1760878417000,"type":"下班","updatedAt":1760878417000},{"createdAt":1761468316000,"id":5,"jobNumber":"1","punchTime":1761468316000,"type":"上班","updatedAt":1761468316000},{"createdAt":1761469054000,"id":6,"jobNumber":"1","punchTime":1761469054000,"type":"下班","updatedAt":1761469054000},{"createdAt":1762670152000,"id":7,"jobNumber":"1","punchTime":1762670152000,"type":"上班","updatedAt":1762670152000},{"createdAt":1763896137000,"id":8,"jobNumber":"1","punchTime":1763896137000,"type":"上班","updatedAt":1763896137000},{"createdAt":1763899688000,"id":9,"jobNumber":"1","punchTime":1763899688000,"type":"下班","updatedAt":1763899688000},{"createdAt":1767617383000,"id":10,"jobNumber":"1","punchTime":1767617383000,"type":"上班","updatedAt":1767617383000},{"createdAt":1768115802000,"id":11,"jobNumber":"1","punchTime":1768115802000,"type":"上班","updatedAt":1768115802000},{"createdAt":1768909132000,"id":12,"jobNumber":"1","punchTime":1768909132000,"type":"上班","updatedAt":1768909132000},{"createdAt":1768913555000,"id":13,"jobNumber":"1","punchTime":1768913555000,"type":"下班","updatedAt":1768913555000}]
-2026-01-20 20:56:45.275 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：6 ms -------------
-2026-01-20 20:57:07.589 [http-nio-8001-exec-7] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 20:57:07.589 [http-nio-8001-exec-7] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/attendance/list org.apache.catalina.connector.RequestFacade@255926e4
-2026-01-20 20:57:07.589 [http-nio-8001-exec-7] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.AttendanceController.list
-2026-01-20 20:57:07.589 [http-nio-8001-exec-7] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 20:57:07.590 [http-nio-8001-exec-7] INFO  com.example.common.aspect.LogAspect [] - 请求参数: ["1"]
-2026-01-20 20:57:07.595 [http-nio-8001-exec-7] INFO  com.example.common.aspect.LogAspect [] - 返回结果: [{"createdAt":1758636213000,"id":1,"jobNumber":"1","punchTime":1758636214000,"type":"上班","updatedAt":1758636213000},{"createdAt":1758636435000,"id":2,"jobNumber":"1","punchTime":1758636436000,"type":"下班","updatedAt":1758636435000},{"createdAt":1760878415000,"id":3,"jobNumber":"1","punchTime":1760878416000,"type":"上班","updatedAt":1760878415000},{"createdAt":1760878417000,"id":4,"jobNumber":"1","punchTime":1760878417000,"type":"下班","updatedAt":1760878417000},{"createdAt":1761468316000,"id":5,"jobNumber":"1","punchTime":1761468316000,"type":"上班","updatedAt":1761468316000},{"createdAt":1761469054000,"id":6,"jobNumber":"1","punchTime":1761469054000,"type":"下班","updatedAt":1761469054000},{"createdAt":1762670152000,"id":7,"jobNumber":"1","punchTime":1762670152000,"type":"上班","updatedAt":1762670152000},{"createdAt":1763896137000,"id":8,"jobNumber":"1","punchTime":1763896137000,"type":"上班","updatedAt":1763896137000},{"createdAt":1763899688000,"id":9,"jobNumber":"1","punchTime":1763899688000,"type":"下班","updatedAt":1763899688000},{"createdAt":1767617383000,"id":10,"jobNumber":"1","punchTime":1767617383000,"type":"上班","updatedAt":1767617383000},{"createdAt":1768115802000,"id":11,"jobNumber":"1","punchTime":1768115802000,"type":"上班","updatedAt":1768115802000},{"createdAt":1768909132000,"id":12,"jobNumber":"1","punchTime":1768909132000,"type":"上班","updatedAt":1768909132000},{"createdAt":1768913555000,"id":13,"jobNumber":"1","punchTime":1768913555000,"type":"下班","updatedAt":1768913555000}]
-2026-01-20 20:57:07.596 [http-nio-8001-exec-7] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：7 ms -------------
-2026-01-20 20:57:26.509 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
-2026-01-20 20:57:26.509 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/attendance/list org.apache.catalina.connector.RequestFacade@3d40d817
-2026-01-20 20:57:26.509 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.AttendanceController.list
-2026-01-20 20:57:26.510 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
-2026-01-20 20:57:26.510 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - 请求参数: ["1"]
-2026-01-20 20:57:26.513 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - 返回结果: [{"createdAt":1758636213000,"id":1,"jobNumber":"1","punchTime":1758636214000,"type":"上班","updatedAt":1758636213000},{"createdAt":1758636435000,"id":2,"jobNumber":"1","punchTime":1758636436000,"type":"下班","updatedAt":1758636435000},{"createdAt":1760878415000,"id":3,"jobNumber":"1","punchTime":1760878416000,"type":"上班","updatedAt":1760878415000},{"createdAt":1760878417000,"id":4,"jobNumber":"1","punchTime":1760878417000,"type":"下班","updatedAt":1760878417000},{"createdAt":1761468316000,"id":5,"jobNumber":"1","punchTime":1761468316000,"type":"上班","updatedAt":1761468316000},{"createdAt":1761469054000,"id":6,"jobNumber":"1","punchTime":1761469054000,"type":"下班","updatedAt":1761469054000},{"createdAt":1762670152000,"id":7,"jobNumber":"1","punchTime":1762670152000,"type":"上班","updatedAt":1762670152000},{"createdAt":1763896137000,"id":8,"jobNumber":"1","punchTime":1763896137000,"type":"上班","updatedAt":1763896137000},{"createdAt":1763899688000,"id":9,"jobNumber":"1","punchTime":1763899688000,"type":"下班","updatedAt":1763899688000},{"createdAt":1767617383000,"id":10,"jobNumber":"1","punchTime":1767617383000,"type":"上班","updatedAt":1767617383000},{"createdAt":1768115802000,"id":11,"jobNumber":"1","punchTime":1768115802000,"type":"上班","updatedAt":1768115802000},{"createdAt":1768909132000,"id":12,"jobNumber":"1","punchTime":1768909132000,"type":"上班","updatedAt":1768909132000},{"createdAt":1768913555000,"id":13,"jobNumber":"1","punchTime":1768913555000,"type":"下班","updatedAt":1768913555000}]
-2026-01-20 20:57:26.513 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：4 ms -------------
+2026-01-25 20:26:48.240 [background-preinit] INFO  org.hibernate.validator.internal.util.Version [] - HV000001: Hibernate Validator 8.0.2.Final
+2026-01-25 20:26:48.310 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 27492 (D:\Java\springbootProject\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee)
+2026-01-25 20:26:48.312 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
+2026-01-25 20:26:48.360 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-01-25 20:26:48.361 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-01-25 20:26:49.567 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=db56928c-007b-3d43-90ef-5e12f20227b1
+2026-01-25 20:26:50.438 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
+2026-01-25 20:26:50.458 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
+2026-01-25 20:26:50.460 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-01-25 20:26:50.460 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2026-01-25 20:26:50.558 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
+2026-01-25 20:26:50.558 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 2196 ms
+2026-01-25 20:26:51.829 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - Unable to start LiveReload server
+2026-01-25 20:26:52.284 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Starting ProtocolHandler ["http-nio-8001"]
+2026-01-25 20:26:52.308 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat started on port 8001 (http) with context path '/staff'
+2026-01-25 20:26:52.694 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Started StaffApplication in 5.892 seconds (process running for 7.287)
+2026-01-25 20:26:52.698 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 启动成功！！
+2026-01-25 20:26:52.700 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello
+2026-01-25 20:32:29.532 [http-nio-8001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-25 20:32:29.535 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet [] - Initializing Servlet 'dispatcherServlet'
+2026-01-25 20:32:29.548 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet [] - Completed initialization in 12 ms
+2026-01-25 20:32:29.813 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-01-25 20:32:29.815 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/login org.apache.catalina.connector.RequestFacade@7cd5f3f1
+2026-01-25 20:32:29.815 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.LoginController.login
+2026-01-25 20:32:29.816 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-01-25 20:32:29.950 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 请求参数: [{"jobNumber":1,"password":"1"}]
+2026-01-25 20:32:29.985 [http-nio-8001-exec-1] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Starting...
+2026-01-25 20:32:30.615 [http-nio-8001-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool [] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1ff793b9
+2026-01-25 20:32:30.618 [http-nio-8001-exec-1] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Start completed.
+2026-01-25 20:32:30.743 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - 返回结果: {"content":{"jobNumber":1},"success":true}
+2026-01-25 20:32:30.743 [http-nio-8001-exec-1] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：931 ms -------------
+2026-01-25 20:32:30.829 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-01-25 20:32:30.829 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/getNames org.apache.catalina.connector.RequestFacade@4af8985a
+2026-01-25 20:32:30.830 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.getNameByJobNumber
+2026-01-25 20:32:30.831 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-01-25 20:32:30.831 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 请求参数: ["1"]
+2026-01-25 20:32:30.932 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - 返回结果: "兮兮"
+2026-01-25 20:32:30.933 [http-nio-8001-exec-2] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：104 ms -------------
+2026-01-25 20:32:31.605 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-01-25 20:32:31.605 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/attendance/list org.apache.catalina.connector.RequestFacade@19396dd4
+2026-01-25 20:32:31.605 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.AttendanceController.list
+2026-01-25 20:32:31.605 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-01-25 20:32:31.606 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - 请求参数: ["1"]
+2026-01-25 20:32:31.626 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - 返回结果: [{"createdAt":1758636213000,"id":1,"jobNumber":"1","punchTime":1758636214000,"type":"上班","updatedAt":1758636213000},{"createdAt":1758636435000,"id":2,"jobNumber":"1","punchTime":1758636436000,"type":"下班","updatedAt":1758636435000},{"createdAt":1760878415000,"id":3,"jobNumber":"1","punchTime":1760878416000,"type":"上班","updatedAt":1760878415000},{"createdAt":1760878417000,"id":4,"jobNumber":"1","punchTime":1760878417000,"type":"下班","updatedAt":1760878417000},{"createdAt":1761468316000,"id":5,"jobNumber":"1","punchTime":1761468316000,"type":"上班","updatedAt":1761468316000},{"createdAt":1761469054000,"id":6,"jobNumber":"1","punchTime":1761469054000,"type":"下班","updatedAt":1761469054000},{"createdAt":1762670152000,"id":7,"jobNumber":"1","punchTime":1762670152000,"type":"上班","updatedAt":1762670152000},{"createdAt":1763896137000,"id":8,"jobNumber":"1","punchTime":1763896137000,"type":"上班","updatedAt":1763896137000},{"createdAt":1763899688000,"id":9,"jobNumber":"1","punchTime":1763899688000,"type":"下班","updatedAt":1763899688000},{"createdAt":1767617383000,"id":10,"jobNumber":"1","punchTime":1767617383000,"type":"上班","updatedAt":1767617383000},{"createdAt":1768115802000,"id":11,"jobNumber":"1","punchTime":1768115802000,"type":"上班","updatedAt":1768115802000},{"createdAt":1768909132000,"id":12,"jobNumber":"1","punchTime":1768909132000,"type":"上班","updatedAt":1768909132000},{"createdAt":1768913555000,"id":13,"jobNumber":"1","punchTime":1768913555000,"type":"下班","updatedAt":1768913555000}]
+2026-01-25 20:32:31.627 [http-nio-8001-exec-3] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：22 ms -------------
+2026-01-25 20:32:46.599 [http-nio-8001-exec-4] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-01-25 20:32:46.599 [http-nio-8001-exec-4] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/attendance/punch org.apache.catalina.connector.RequestFacade@6329b939
+2026-01-25 20:32:46.599 [http-nio-8001-exec-4] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.AttendanceController.punch
+2026-01-25 20:32:46.599 [http-nio-8001-exec-4] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-01-25 20:32:46.601 [http-nio-8001-exec-4] INFO  com.example.common.aspect.LogAspect [] - 请求参数: ["1","上班"]
+2026-01-25 20:32:46.628 [http-nio-8001-exec-4] INFO  com.example.common.aspect.LogAspect [] - 返回结果: {"success":true,"time":"2026-01-25 20:32:46","message":"上班 打卡成功"}
+2026-01-25 20:32:46.629 [http-nio-8001-exec-4] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：30 ms -------------
+2026-01-25 20:32:46.862 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-01-25 20:32:46.862 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/attendance/list org.apache.catalina.connector.RequestFacade@79d55e4e
+2026-01-25 20:32:46.862 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.AttendanceController.list
+2026-01-25 20:32:46.864 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-01-25 20:32:46.864 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - 请求参数: ["1"]
+2026-01-25 20:32:46.871 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - 返回结果: [{"createdAt":1758636213000,"id":1,"jobNumber":"1","punchTime":1758636214000,"type":"上班","updatedAt":1758636213000},{"createdAt":1758636435000,"id":2,"jobNumber":"1","punchTime":1758636436000,"type":"下班","updatedAt":1758636435000},{"createdAt":1760878415000,"id":3,"jobNumber":"1","punchTime":1760878416000,"type":"上班","updatedAt":1760878415000},{"createdAt":1760878417000,"id":4,"jobNumber":"1","punchTime":1760878417000,"type":"下班","updatedAt":1760878417000},{"createdAt":1761468316000,"id":5,"jobNumber":"1","punchTime":1761468316000,"type":"上班","updatedAt":1761468316000},{"createdAt":1761469054000,"id":6,"jobNumber":"1","punchTime":1761469054000,"type":"下班","updatedAt":1761469054000},{"createdAt":1762670152000,"id":7,"jobNumber":"1","punchTime":1762670152000,"type":"上班","updatedAt":1762670152000},{"createdAt":1763896137000,"id":8,"jobNumber":"1","punchTime":1763896137000,"type":"上班","updatedAt":1763896137000},{"createdAt":1763899688000,"id":9,"jobNumber":"1","punchTime":1763899688000,"type":"下班","updatedAt":1763899688000},{"createdAt":1767617383000,"id":10,"jobNumber":"1","punchTime":1767617383000,"type":"上班","updatedAt":1767617383000},{"createdAt":1768115802000,"id":11,"jobNumber":"1","punchTime":1768115802000,"type":"上班","updatedAt":1768115802000},{"createdAt":1768909132000,"id":12,"jobNumber":"1","punchTime":1768909132000,"type":"上班","updatedAt":1768909132000},{"createdAt":1768913555000,"id":13,"jobNumber":"1","punchTime":1768913555000,"type":"下班","updatedAt":1768913555000},{"createdAt":1769344367000,"id":14,"jobNumber":"1","punchTime":1769344367000,"type":"上班","updatedAt":1769344367000}]
+2026-01-25 20:32:46.871 [http-nio-8001-exec-5] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：9 ms -------------
+2026-01-25 20:32:55.855 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-01-25 20:32:55.856 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/attendance/list org.apache.catalina.connector.RequestFacade@35c36d6d
+2026-01-25 20:32:55.856 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.AttendanceController.list
+2026-01-25 20:32:55.856 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-01-25 20:32:55.856 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - 请求参数: ["1"]
+2026-01-25 20:32:55.863 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - 返回结果: [{"createdAt":1758636213000,"id":1,"jobNumber":"1","punchTime":1758636214000,"type":"上班","updatedAt":1758636213000},{"createdAt":1758636435000,"id":2,"jobNumber":"1","punchTime":1758636436000,"type":"下班","updatedAt":1758636435000},{"createdAt":1760878415000,"id":3,"jobNumber":"1","punchTime":1760878416000,"type":"上班","updatedAt":1760878415000},{"createdAt":1760878417000,"id":4,"jobNumber":"1","punchTime":1760878417000,"type":"下班","updatedAt":1760878417000},{"createdAt":1761468316000,"id":5,"jobNumber":"1","punchTime":1761468316000,"type":"上班","updatedAt":1761468316000},{"createdAt":1761469054000,"id":6,"jobNumber":"1","punchTime":1761469054000,"type":"下班","updatedAt":1761469054000},{"createdAt":1762670152000,"id":7,"jobNumber":"1","punchTime":1762670152000,"type":"上班","updatedAt":1762670152000},{"createdAt":1763896137000,"id":8,"jobNumber":"1","punchTime":1763896137000,"type":"上班","updatedAt":1763896137000},{"createdAt":1763899688000,"id":9,"jobNumber":"1","punchTime":1763899688000,"type":"下班","updatedAt":1763899688000},{"createdAt":1767617383000,"id":10,"jobNumber":"1","punchTime":1767617383000,"type":"上班","updatedAt":1767617383000},{"createdAt":1768115802000,"id":11,"jobNumber":"1","punchTime":1768115802000,"type":"上班","updatedAt":1768115802000},{"createdAt":1768909132000,"id":12,"jobNumber":"1","punchTime":1768909132000,"type":"上班","updatedAt":1768909132000},{"createdAt":1768913555000,"id":13,"jobNumber":"1","punchTime":1768913555000,"type":"下班","updatedAt":1768913555000},{"createdAt":1769344367000,"id":14,"jobNumber":"1","punchTime":1769344367000,"type":"上班","updatedAt":1769344367000}]
+2026-01-25 20:32:55.864 [http-nio-8001-exec-6] INFO  com.example.common.aspect.LogAspect [] - ------------- 结束 耗时：9 ms -------------
+2026-01-25 21:14:38.479 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [] - Restarting due to 14 class path changes (0 additions, 5 deletions, 9 modifications)
+2026-01-25 21:14:38.541 [Thread-1] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-25 21:14:38.551 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Pausing ProtocolHandler ["http-nio-8001"]
+2026-01-25 21:14:39.645 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Graceful shutdown complete
+2026-01-25 21:14:39.646 [Thread-1] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Stopping ProtocolHandler ["http-nio-8001"]
+2026-01-25 21:14:39.676 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Shutdown initiated...
+2026-01-25 21:14:39.684 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Shutdown completed.
+2026-01-25 21:14:40.660 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 27492 (D:\Java\springbootProject\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee)
+2026-01-25 21:14:40.660 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
+2026-01-25 21:14:41.003 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=db56928c-007b-3d43-90ef-5e12f20227b1
+2026-01-25 21:14:41.189 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
+2026-01-25 21:14:41.190 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
+2026-01-25 21:14:41.192 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-01-25 21:14:41.192 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2026-01-25 21:14:41.262 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
+2026-01-25 21:14:41.262 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 598 ms
+2026-01-25 21:14:41.317 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'attendanceController': Unsatisfied dependency expressed through field 'attendanceService': Error creating bean with name 'attendanceService': Unsatisfied dependency expressed through field 'attendanceRecordsMapper': Error creating bean with name 'attendanceRecordsMapper' defined in file [D:\Java\springbootProject\employee\staff\target\classes\com\example\employee\staff\mapper\AttendanceRecordsMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory': Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [D:\Java\springbootProject\employee\staff\target\classes\mapper\AttendanceRecordsMapper.xml]'
+2026-01-25 21:14:41.318 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Stopping service [Tomcat]
+2026-01-25 21:14:41.324 [restartedMain] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger [] - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-01-25 21:14:41.344 [restartedMain] ERROR org.springframework.boot.SpringApplication [] - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'attendanceController': Unsatisfied dependency expressed through field 'attendanceService': Error creating bean with name 'attendanceService': Unsatisfied dependency expressed through field 'attendanceRecordsMapper': Error creating bean with name 'attendanceRecordsMapper' defined in file [D:\Java\springbootProject\employee\staff\target\classes\com\example\employee\staff\mapper\AttendanceRecordsMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory': Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [D:\Java\springbootProject\employee\staff\target\classes\mapper\AttendanceRecordsMapper.xml]'
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1459)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:606)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1188)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at com.example.employee.staff.config.StaffApplication.main(StaffApplication.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'attendanceService': Unsatisfied dependency expressed through field 'attendanceRecordsMapper': Error creating bean with name 'attendanceRecordsMapper' defined in file [D:\Java\springbootProject\employee\staff\target\classes\com\example\employee\staff\mapper\AttendanceRecordsMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory': Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [D:\Java\springbootProject\employee\staff\target\classes\mapper\AttendanceRecordsMapper.xml]'
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1459)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:606)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1683)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1628)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'attendanceRecordsMapper' defined in file [D:\Java\springbootProject\employee\staff\target\classes\com\example\employee\staff\mapper\AttendanceRecordsMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory': Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [D:\Java\springbootProject\employee\staff\target\classes\mapper\AttendanceRecordsMapper.xml]'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1450)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:606)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1683)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1628)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
+	... 38 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [D:\Java\springbootProject\employee\staff\target\classes\mapper\AttendanceRecordsMapper.xml]'
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1745)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1541)
+	... 48 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [D:\Java\springbootProject\employee\staff\target\classes\mapper\AttendanceRecordsMapper.xml]'
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:200)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:89)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:169)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 61 common frames omitted
+Caused by: java.io.IOException: Failed to parse mapping resource: 'file [D:\Java\springbootProject\employee\staff\target\classes\mapper\AttendanceRecordsMapper.xml]'
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:700)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:577)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:720)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:189)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:172)
+	... 64 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\Java\springbootProject\employee\staff\target\classes\mapper\AttendanceRecordsMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.employee.manager.employee.staff.domain.AttendanceRecords'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.employee.manager.employee.staff.domain.AttendanceRecords
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:127)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:100)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:698)
+	... 72 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.employee.manager.employee.staff.domain.AttendanceRecords'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.employee.manager.employee.staff.domain.AttendanceRecords
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:103)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:269)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:261)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:253)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:123)
+	... 74 common frames omitted
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.employee.manager.employee.staff.domain.AttendanceRecords'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.employee.manager.employee.staff.domain.AttendanceRecords
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:128)
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:132)
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:101)
+	... 78 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Cannot find class: com.example.employee.manager.employee.staff.domain.AttendanceRecords
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:226)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:103)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:322)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:124)
+	... 80 common frames omitted
+2026-01-25 21:14:43.199 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 27492 (D:\Java\springbootProject\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee)
+2026-01-25 21:14:43.199 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
+2026-01-25 21:14:43.383 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=db56928c-007b-3d43-90ef-5e12f20227b1
+2026-01-25 21:14:43.446 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
+2026-01-25 21:14:43.447 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
+2026-01-25 21:14:43.448 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-01-25 21:14:43.448 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2026-01-25 21:14:43.483 [restartedMain] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
+2026-01-25 21:14:43.483 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 282 ms
+2026-01-25 21:14:43.517 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'attendanceController': Unsatisfied dependency expressed through field 'attendanceService': Error creating bean with name 'attendanceService': Unsatisfied dependency expressed through field 'attendanceRecordsMapper': Error creating bean with name 'attendanceRecordsMapper' defined in file [D:\Java\springbootProject\employee\staff\target\classes\com\example\employee\staff\mapper\AttendanceRecordsMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory': Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [D:\Java\springbootProject\employee\staff\target\classes\mapper\AttendanceRecordsMapper.xml]'
+2026-01-25 21:14:43.517 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Stopping service [Tomcat]
+2026-01-25 21:14:43.521 [restartedMain] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger [] - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-01-25 21:14:43.524 [restartedMain] ERROR org.springframework.boot.SpringApplication [] - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'attendanceController': Unsatisfied dependency expressed through field 'attendanceService': Error creating bean with name 'attendanceService': Unsatisfied dependency expressed through field 'attendanceRecordsMapper': Error creating bean with name 'attendanceRecordsMapper' defined in file [D:\Java\springbootProject\employee\staff\target\classes\com\example\employee\staff\mapper\AttendanceRecordsMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory': Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [D:\Java\springbootProject\employee\staff\target\classes\mapper\AttendanceRecordsMapper.xml]'
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1459)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:606)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1188)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at com.example.employee.staff.config.StaffApplication.main(StaffApplication.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'attendanceService': Unsatisfied dependency expressed through field 'attendanceRecordsMapper': Error creating bean with name 'attendanceRecordsMapper' defined in file [D:\Java\springbootProject\employee\staff\target\classes\com\example\employee\staff\mapper\AttendanceRecordsMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory': Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [D:\Java\springbootProject\employee\staff\target\classes\mapper\AttendanceRecordsMapper.xml]'
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1459)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:606)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1683)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1628)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'attendanceRecordsMapper' defined in file [D:\Java\springbootProject\employee\staff\target\classes\com\example\employee\staff\mapper\AttendanceRecordsMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory': Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [D:\Java\springbootProject\employee\staff\target\classes\mapper\AttendanceRecordsMapper.xml]'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1450)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:606)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1683)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1628)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
+	... 38 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [D:\Java\springbootProject\employee\staff\target\classes\mapper\AttendanceRecordsMapper.xml]'
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1745)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1541)
+	... 48 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [D:\Java\springbootProject\employee\staff\target\classes\mapper\AttendanceRecordsMapper.xml]'
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:200)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:89)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:169)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 61 common frames omitted
+Caused by: java.io.IOException: Failed to parse mapping resource: 'file [D:\Java\springbootProject\employee\staff\target\classes\mapper\AttendanceRecordsMapper.xml]'
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:700)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:577)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:720)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:189)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:172)
+	... 64 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\Java\springbootProject\employee\staff\target\classes\mapper\AttendanceRecordsMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.employee.manager.employee.staff.domain.AttendanceRecords'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.employee.manager.employee.staff.domain.AttendanceRecords
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:127)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:100)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:698)
+	... 72 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.employee.manager.employee.staff.domain.AttendanceRecords'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.employee.manager.employee.staff.domain.AttendanceRecords
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:103)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:269)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:261)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:253)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:123)
+	... 74 common frames omitted
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.employee.manager.employee.staff.domain.AttendanceRecords'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.employee.manager.employee.staff.domain.AttendanceRecords
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:128)
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:132)
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:101)
+	... 78 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Cannot find class: com.example.employee.manager.employee.staff.domain.AttendanceRecords
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:226)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:103)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:322)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:124)
+	... 80 common frames omitted
+2026-01-25 21:14:59.023 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 27492 (D:\Java\springbootProject\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee)
+2026-01-25 21:14:59.024 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
+2026-01-25 21:14:59.087 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.example.employee.staff.config.StaffApplication]
+2026-01-25 21:14:59.093 [restartedMain] ERROR org.springframework.boot.SpringApplication [] - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.example.employee.staff.config.StaffApplication]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:194)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:418)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:791)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:609)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at com.example.employee.staff.config.StaffApplication.main(StaffApplication.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'staffApplication' for bean class [com.example.employee.manager.employee.staff.config.StaffApplication] conflicts with existing, non-compatible bean definition of same name and class [com.example.employee.staff.config.StaffApplication]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:361)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:288)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:346)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:281)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:204)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:172)
+	... 16 common frames omitted
+2026-01-25 21:15:01.034 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 27492 (D:\Java\springbootProject\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee)
+2026-01-25 21:15:01.034 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
+2026-01-25 21:15:01.067 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.example.employee.staff.config.StaffApplication]
+2026-01-25 21:15:01.072 [restartedMain] ERROR org.springframework.boot.SpringApplication [] - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.example.employee.staff.config.StaffApplication]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:194)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:418)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:791)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:609)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at com.example.employee.staff.config.StaffApplication.main(StaffApplication.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'staffApplication' for bean class [com.example.employee.manager.employee.staff.config.StaffApplication] conflicts with existing, non-compatible bean definition of same name and class [com.example.employee.staff.config.StaffApplication]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:361)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:288)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:346)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:281)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:204)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:172)
+	... 16 common frames omitted
+2026-01-25 21:19:10.464 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 27492 (D:\Java\springbootProject\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee)
+2026-01-25 21:19:10.464 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
+2026-01-25 21:19:10.494 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.example.employee.staff.config.StaffApplication]
+2026-01-25 21:19:10.498 [restartedMain] ERROR org.springframework.boot.SpringApplication [] - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.example.employee.staff.config.StaffApplication]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:194)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:418)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:791)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:609)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at com.example.employee.staff.config.StaffApplication.main(StaffApplication.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'staffApplication' for bean class [com.example.employee.manager.employee.staff.config.StaffApplication] conflicts with existing, non-compatible bean definition of same name and class [com.example.employee.staff.config.StaffApplication]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:361)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:288)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:346)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:281)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:204)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:172)
+	... 16 common frames omitted

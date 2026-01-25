@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.example.employee.staff.mapper.StaffMapper">
-  <resultMap id="BaseResultMap" type="com.example.employee.staff.domain.Staff">
+<mapper namespace="com.example.employee.manager.employee.staff.mapper.StaffMapper">
+  <resultMap id="BaseResultMap" type="com.example.employee.manager.employee.staff.domain.Staff">
     <id column="id" jdbcType="BIGINT" property="id" />
     <result column="job_number" jdbcType="VARCHAR" property="jobNumber" />
     <result column="name" jdbcType="VARCHAR" property="name" />
@@ -79,7 +79,7 @@
     id, job_number, `name`, gender, age, phone, email, address, department, `position`, 
     hire_date, `status`, create_time, update_time
   </sql>
-  <select id="selectByExample" parameterType="com.example.employee.staff.domain.StaffExample" resultMap="BaseResultMap">
+  <select id="selectByExample" parameterType="com.example.employee.manager.employee.staff.domain.StaffExample" resultMap="BaseResultMap">
     select
     <if test="distinct">
       distinct
@@ -103,13 +103,13 @@
     delete from staff
     where id = #{id,jdbcType=BIGINT}
   </delete>
-  <delete id="deleteByExample" parameterType="com.example.employee.staff.domain.StaffExample">
+  <delete id="deleteByExample" parameterType="com.example.employee.manager.employee.staff.domain.StaffExample">
     delete from staff
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.example.employee.staff.domain.Staff">
+  <insert id="insert" parameterType="com.example.employee.manager.employee.staff.domain.Staff">
     insert into staff (id, job_number, `name`, 
       gender, age, phone, 
       email, address, department, 
@@ -121,7 +121,7 @@
       #{position,jdbcType=VARCHAR}, #{hireDate,jdbcType=DATE}, #{status,jdbcType=TINYINT}, 
       #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP})
   </insert>
-  <insert id="insertSelective" parameterType="com.example.employee.staff.domain.Staff">
+  <insert id="insertSelective" parameterType="com.example.employee.manager.employee.staff.domain.Staff">
     insert into staff
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -212,7 +212,7 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.example.employee.staff.domain.StaffExample" resultType="java.lang.Long">
+  <select id="countByExample" parameterType="com.example.employee.manager.employee.staff.domain.StaffExample" resultType="java.lang.Long">
     select count(*) from staff
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
@@ -288,7 +288,7 @@
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="com.example.employee.staff.domain.Staff">
+  <update id="updateByPrimaryKeySelective" parameterType="com.example.employee.manager.employee.staff.domain.Staff">
     update staff
     <set>
       <if test="jobNumber != null">
@@ -333,7 +333,7 @@
     </set>
     where id = #{id,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.example.employee.staff.domain.Staff">
+  <update id="updateByPrimaryKey" parameterType="com.example.employee.manager.employee.staff.domain.Staff">
     update staff
     set job_number = #{jobNumber,jdbcType=VARCHAR},
       `name` = #{name,jdbcType=VARCHAR},

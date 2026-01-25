@@ -1,0 +1,28 @@
+package com.example.employee.manager.employee.staff.service;
+
+import com.example.employee.manager.employee.staff.domain.Business;
+import com.example.employee.manager.employee.staff.domain.BusinessExample;
+import com.example.employee.manager.employee.staff.mapper.BusinessMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+@Service
+public class BusinessService {
+
+    @Autowired
+    private BusinessMapper businessMapper;
+
+    public int createBusiness(Business request) {
+        // 插入数据库
+        return businessMapper.insertSelective(request);
+    }
+
+    public List<Business> getAllBusiness(String jobNumber) {
+        BusinessExample example = new BusinessExample();
+        example.createCriteria().andJobNumberEqualTo(jobNumber);
+        return businessMapper.selectByExampleWithBLOBs(example);
+    }
+
+}
