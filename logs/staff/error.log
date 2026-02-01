@@ -88,24 +88,24 @@ Caused by: java.io.IOException: Failed to parse mapping resource: 'file [D:\Java
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:172)
 	... 64 common frames omitted
-Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\Java\springbootProject\employee\staff\target\classes\mapper\AttendanceRecordsMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.employee.manager.employee.staff.domain.AttendanceRecords'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.employee.manager.employee.staff.domain.AttendanceRecords
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\Java\springbootProject\employee\staff\target\classes\mapper\AttendanceRecordsMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'domain.staff.employee.manager.com.example.employee.staff.AttendanceRecords'.  Cause: java.lang.ClassNotFoundException: Cannot find class: domain.staff.employee.manager.com.example.employee.staff.AttendanceRecords
 	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:127)
 	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:100)
 	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:698)
 	... 72 common frames omitted
-Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.employee.manager.employee.staff.domain.AttendanceRecords'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.employee.manager.employee.staff.domain.AttendanceRecords
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'domain.staff.employee.manager.com.example.employee.staff.AttendanceRecords'.  Cause: java.lang.ClassNotFoundException: Cannot find class: domain.staff.employee.manager.com.example.employee.staff.AttendanceRecords
 	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:103)
 	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:269)
 	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:261)
 	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:253)
 	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:123)
 	... 74 common frames omitted
-Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.employee.manager.employee.staff.domain.AttendanceRecords'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.employee.manager.employee.staff.domain.AttendanceRecords
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'domain.staff.employee.manager.com.example.employee.staff.AttendanceRecords'.  Cause: java.lang.ClassNotFoundException: Cannot find class: domain.staff.employee.manager.com.example.employee.staff.AttendanceRecords
 	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:128)
 	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:132)
 	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:101)
 	... 78 common frames omitted
-Caused by: java.lang.ClassNotFoundException: Cannot find class: com.example.employee.manager.employee.staff.domain.AttendanceRecords
+Caused by: java.lang.ClassNotFoundException: Cannot find class: domain.staff.employee.manager.com.example.employee.staff.AttendanceRecords
 	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:226)
 	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:103)
 	at org.apache.ibatis.io.Resources.classForName(Resources.java:322)
@@ -201,24 +201,24 @@ Caused by: java.io.IOException: Failed to parse mapping resource: 'file [D:\Java
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:172)
 	... 64 common frames omitted
-Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\Java\springbootProject\employee\staff\target\classes\mapper\AttendanceRecordsMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.employee.manager.employee.staff.domain.AttendanceRecords'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.employee.manager.employee.staff.domain.AttendanceRecords
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\Java\springbootProject\employee\staff\target\classes\mapper\AttendanceRecordsMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'domain.staff.employee.manager.com.example.employee.staff.AttendanceRecords'.  Cause: java.lang.ClassNotFoundException: Cannot find class: domain.staff.employee.manager.com.example.employee.staff.AttendanceRecords
 	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:127)
 	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:100)
 	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:698)
 	... 72 common frames omitted
-Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.employee.manager.employee.staff.domain.AttendanceRecords'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.employee.manager.employee.staff.domain.AttendanceRecords
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'domain.staff.employee.manager.com.example.employee.staff.AttendanceRecords'.  Cause: java.lang.ClassNotFoundException: Cannot find class: domain.staff.employee.manager.com.example.employee.staff.AttendanceRecords
 	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:103)
 	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:269)
 	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:261)
 	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:253)
 	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:123)
 	... 74 common frames omitted
-Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.employee.manager.employee.staff.domain.AttendanceRecords'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.employee.manager.employee.staff.domain.AttendanceRecords
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'domain.staff.employee.manager.com.example.employee.staff.AttendanceRecords'.  Cause: java.lang.ClassNotFoundException: Cannot find class: domain.staff.employee.manager.com.example.employee.staff.AttendanceRecords
 	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:128)
 	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:132)
 	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:101)
 	... 78 common frames omitted
-Caused by: java.lang.ClassNotFoundException: Cannot find class: com.example.employee.manager.employee.staff.domain.AttendanceRecords
+Caused by: java.lang.ClassNotFoundException: Cannot find class: domain.staff.employee.manager.com.example.employee.staff.AttendanceRecords
 	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:226)
 	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:103)
 	at org.apache.ibatis.io.Resources.classForName(Resources.java:322)
@@ -243,7 +243,7 @@ org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse 
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
-Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'staffApplication' for bean class [com.example.employee.manager.employee.staff.config.StaffApplication] conflicts with existing, non-compatible bean definition of same name and class [com.example.employee.staff.config.StaffApplication]
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'staffApplication' for bean class [config.staff.employee.manager.com.example.employee.staff.StaffApplication] conflicts with existing, non-compatible bean definition of same name and class [com.example.employee.staff.config.StaffApplication]
 	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:361)
 	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:288)
 	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128)
@@ -271,7 +271,7 @@ org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse 
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
-Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'staffApplication' for bean class [com.example.employee.manager.employee.staff.config.StaffApplication] conflicts with existing, non-compatible bean definition of same name and class [com.example.employee.staff.config.StaffApplication]
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'staffApplication' for bean class [config.staff.employee.manager.com.example.employee.staff.StaffApplication] conflicts with existing, non-compatible bean definition of same name and class [com.example.employee.staff.config.StaffApplication]
 	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:361)
 	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:288)
 	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128)
@@ -299,7 +299,7 @@ org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse 
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
-Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'staffApplication' for bean class [com.example.employee.manager.employee.staff.config.StaffApplication] conflicts with existing, non-compatible bean definition of same name and class [com.example.employee.staff.config.StaffApplication]
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'staffApplication' for bean class [config.staff.employee.manager.com.example.employee.staff.StaffApplication] conflicts with existing, non-compatible bean definition of same name and class [com.example.employee.staff.config.StaffApplication]
 	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:361)
 	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:288)
 	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128)
@@ -308,3 +308,48 @@ Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionExcep
 	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:204)
 	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:172)
 	... 16 common frames omitted
+2026-02-01 15:13:25.631 [http-nio-8001-exec-1] ERROR c.e.e.s.m.c.controller.ControllerExceptionHandle - 校验异常：密码不能为空
+2026-02-01 15:13:45.792 [http-nio-8001-exec-2] ERROR c.e.e.s.m.c.controller.ControllerExceptionHandle - 系统异常：
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource list.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)

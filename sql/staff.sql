@@ -4,6 +4,7 @@ drop table if exists `login`;
 CREATE TABLE `login` (
                          `job_number` bigint NOT NULL comment '工号',
                          `password` VARCHAR(50) NOT NULL comment '密码',
+                         role CHAR(1) NOT NULL COMMENT '角色：1员工 2管理员',
                          PRIMARY KEY (`job_number`),
                          UNIQUE KEY `job_number_unique` (`job_number`)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='登录';
@@ -27,6 +28,11 @@ CREATE TABLE `staff` (
     PRIMARY KEY (`id`),
     UNIQUE KEY `id_job_number_unique` (`id`, `job_number`)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='员工';
+
+ALTER TABLE staff
+    ADD COLUMN role CHAR(1) NOT NULL DEFAULT '1'
+        COMMENT '角色：1员工 2管理员';
+
 
 ALTER TABLE staff ADD UNIQUE INDEX uq_job_number(job_number);
 

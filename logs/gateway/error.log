@@ -17,7 +17,7 @@ org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse 
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
-Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'gatewayApplication' for bean class [com.example.employee.manager.gateway.config.GatewayApplication] conflicts with existing, non-compatible bean definition of same name and class [com.example.gateway.config.GatewayApplication]
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'gatewayApplication' for bean class [config.gateway.manager.com.example.employee.staff.GatewayApplication] conflicts with existing, non-compatible bean definition of same name and class [com.example.gateway.config.GatewayApplication]
 	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:361)
 	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:288)
 	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128)
@@ -45,7 +45,7 @@ org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse 
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
-Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'gatewayApplication' for bean class [com.example.employee.manager.gateway.config.GatewayApplication] conflicts with existing, non-compatible bean definition of same name and class [com.example.gateway.config.GatewayApplication]
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'gatewayApplication' for bean class [config.gateway.manager.com.example.employee.staff.GatewayApplication] conflicts with existing, non-compatible bean definition of same name and class [com.example.gateway.config.GatewayApplication]
 	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:361)
 	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:288)
 	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128)
@@ -73,7 +73,7 @@ org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse 
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
-Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'gatewayApplication' for bean class [com.example.employee.manager.gateway.config.GatewayApplication] conflicts with existing, non-compatible bean definition of same name and class [com.example.gateway.config.GatewayApplication]
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'gatewayApplication' for bean class [config.gateway.manager.com.example.employee.staff.GatewayApplication] conflicts with existing, non-compatible bean definition of same name and class [com.example.gateway.config.GatewayApplication]
 	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:361)
 	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:288)
 	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128)

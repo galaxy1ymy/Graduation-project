@@ -63,27 +63,28 @@ export default defineComponent({
     const login = () => {
       axios.post('staff/login',{
         jobNumber: loginForm.jobNumber,
-        password: loginForm.password
+        password: loginForm.password,
+        loginType: userType.resource
       }).then(response => {
         let data=response.data;
         if (data.success) {
-          store.commit('setJobNumber', loginForm.jobNumber);
-          store.commit('setPassword', loginForm.password);
+          const { token, role, staffName } = data.content
 
-          axios.get(`staff/getNames?jobNumber=${loginForm.jobNumber}`).then(res => {
-            store.commit('setStaffName', res.data);
-          });
+          store.commit('setJobNumber', loginForm.jobNumber)
+          store.commit('setRole', role)
+          store.commit('setToken', token)
+          store.commit('setStaffName', staffName)
 
-          console.log('登录成功，获取到的token:', data.content.token);  // 添加这行
-          notification.success({description: '登录成功',duration:3});
 
-          // 根据选择的用户类型跳转
-          if (userType.resource === '2') { // 管理者
-            window.location.href = 'http://localhost:8081/manage/homePage';
-          } else { // 普通员工
-            router.push("/home");
+
+          notification.success({ description: '登录成功', duration: 3 })
+
+          if (role === '2') {
+            window.location.href = 'http://localhost:8080/manage/homePage'
+          } else {
+            router.push('/home')
           }
-        } else {
+        }else {
           notification.error({description: data.message});
         }
       })
@@ -98,6 +99,7 @@ export default defineComponent({
       login,
       loginFailed,
       userType,
+
     };
   },
 });

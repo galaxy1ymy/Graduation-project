@@ -45,7 +45,7 @@
                 targetProject="../staff/src/main/java">
         </javaClientGenerator>
         <!-- 指定 member 表生成规则 -->
-       <!-- <table tableName="staff" domainObjectName="Staff"></table>-->
+        <table tableName="staff" domainObjectName="Staff"></table>
         <!--<table tableName="login" domainObjectName="Login"></table>-->
 <!--        <table tableName="attendance_records" domainObjectName="AttendanceRecords"></table>-->
        <!-- <table tableName="leave_request" domainObjectName="LeaveRequest"></table>-->
@@ -53,7 +53,7 @@
        <!-- <table tableName="overtime" domainObjectName="Overtime"></table>-->
         <!--<table tableName="going_out" domainObjectName="GoingOut"></table>-->
         <!--<table tableName="meeting" domainObjectName="Meeting"></table>-->
-        <table tableName="goods" domainObjectName="Goods"></table>
+<!--        <table tableName="goods" domainObjectName="Goods"></table>-->
 
 
 

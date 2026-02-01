@@ -59,7 +59,8 @@ dayjs.locale('zh-cn')
 export default defineComponent({
   setup() {
     const store = useStore();
-    const staffName = computed(() => store.getters.getStaffName);
+
+    const staffName = computed(() => store.getters.getStaffName)
 
     const jobNumber = store.getters.getJobNumber;
     const punchedUp = ref(false);
@@ -73,6 +74,7 @@ export default defineComponent({
     const onPanelChange = (value, mode) => {
       console.log(value, mode);
     };
+
 
     const checkStatus = async () => {
       try {
