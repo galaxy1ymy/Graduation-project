@@ -41,6 +41,11 @@ Content-Type: application/json
 
 ###
 
+GET http://127.0.0.1:8001/staff/list
+Content-Type: application/json
+
+###
+
 
 GET http://127.0.0.1:8001/staff/attendance/todayCount
 Content-Type: application/json

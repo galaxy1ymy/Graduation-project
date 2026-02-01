@@ -16,6 +16,11 @@
           <home-outlined />&nbsp; 首页
         </router-link>
       </a-menu-item>
+      <a-menu-item key="staffList">
+        <router-link :to="{ name: 'StaffList' }" style="color: inherit;">
+          <home-outlined />&nbsp; 员工管理
+        </router-link>
+      </a-menu-item>
 
     </a-menu>
   </a-layout-header>

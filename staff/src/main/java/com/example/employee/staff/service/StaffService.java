@@ -43,6 +43,27 @@ public class StaffService {
     }
 
 
+    /**
+     * 员工列表
+     */
+    public List<Staff> list() {
+        StaffExample example = new StaffExample();
+        example.setOrderByClause("id desc");
+        return staffMapper.selectByExample(example);
+    }
+
+
+    public void deleteById(Long id) {
+        staffMapper.deleteByPrimaryKey(id);
+    }
+
+    public void update(Staff staff) {
+        staffMapper.updateByPrimaryKeySelective(staff);
+    }
+
+
+
+
 
 
 
