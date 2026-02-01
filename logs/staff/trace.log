@@ -1060,3 +1060,799 @@ org.springframework.web.servlet.resource.NoResourceFoundException: No static res
 2026-02-01 15:30:55.201 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 启动成功！！
 2026-02-01 15:30:55.201 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello
 2026-02-01 15:30:56.353 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Graceful shutdown complete
+2026-02-01 15:31:03.288 [background-preinit] INFO  org.hibernate.validator.internal.util.Version [] - HV000001: Hibernate Validator 8.0.2.Final
+2026-02-01 15:31:03.345 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 32712 (D:\Java\springbootProject\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee)
+2026-02-01 15:31:03.346 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
+2026-02-01 15:31:03.394 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-01 15:31:03.395 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-01 15:31:04.198 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=db56928c-007b-3d43-90ef-5e12f20227b1
+2026-02-01 15:31:04.788 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
+2026-02-01 15:31:04.803 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
+2026-02-01 15:31:04.806 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-02-01 15:31:04.807 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2026-02-01 15:31:04.889 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
+2026-02-01 15:31:04.889 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 1494 ms
+2026-02-01 15:31:05.900 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - Unable to start LiveReload server
+2026-02-01 15:31:06.423 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Starting ProtocolHandler ["http-nio-8001"]
+2026-02-01 15:31:06.443 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat started on port 8001 (http) with context path '/staff'
+2026-02-01 15:31:06.932 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Started StaffApplication in 4.536 seconds (process running for 5.709)
+2026-02-01 15:31:06.937 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 启动成功！！
+2026-02-01 15:31:06.937 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello
+2026-02-01 15:31:25.672 [http-nio-8001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-01 15:31:25.672 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet [] - Initializing Servlet 'dispatcherServlet'
+2026-02-01 15:31:25.674 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet [] - Completed initialization in 2 ms
+2026-02-01 15:31:25.871 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-01 15:31:25.873 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/login org.apache.catalina.connector.RequestFacade@b52ccc1
+2026-02-01 15:31:25.873 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.LoginController.login
+2026-02-01 15:31:25.873 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-01 15:31:25.988 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求参数: [{"jobNumber":1,"password":"1"}]
+2026-02-01 15:31:26.018 [http-nio-8001-exec-1] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Starting...
+2026-02-01 15:31:26.484 [http-nio-8001-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool [] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@de411d1
+2026-02-01 15:31:26.487 [http-nio-8001-exec-1] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Start completed.
+2026-02-01 15:31:26.599 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 返回结果: {"content":{"role":"1","staffName":"兮兮","jobNumber":1},"success":true}
+2026-02-01 15:31:26.599 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 结束 耗时：729 ms -------------
+2026-02-01 15:31:26.839 [http-nio-8001-exec-2] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-01 15:31:26.839 [http-nio-8001-exec-2] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/attendance/list org.apache.catalina.connector.RequestFacade@51bb707
+2026-02-01 15:31:26.839 [http-nio-8001-exec-2] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.AttendanceController.list
+2026-02-01 15:31:26.839 [http-nio-8001-exec-2] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-01 15:31:26.840 [http-nio-8001-exec-2] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求参数: ["1"]
+2026-02-01 15:31:26.854 [http-nio-8001-exec-2] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 返回结果: [{"createdAt":1758636213000,"id":1,"jobNumber":"1","punchTime":1758636214000,"type":"上班","updatedAt":1758636213000},{"createdAt":1758636435000,"id":2,"jobNumber":"1","punchTime":1758636436000,"type":"下班","updatedAt":1758636435000},{"createdAt":1760878415000,"id":3,"jobNumber":"1","punchTime":1760878416000,"type":"上班","updatedAt":1760878415000},{"createdAt":1760878417000,"id":4,"jobNumber":"1","punchTime":1760878417000,"type":"下班","updatedAt":1760878417000},{"createdAt":1761468316000,"id":5,"jobNumber":"1","punchTime":1761468316000,"type":"上班","updatedAt":1761468316000},{"createdAt":1761469054000,"id":6,"jobNumber":"1","punchTime":1761469054000,"type":"下班","updatedAt":1761469054000},{"createdAt":1762670152000,"id":7,"jobNumber":"1","punchTime":1762670152000,"type":"上班","updatedAt":1762670152000},{"createdAt":1763896137000,"id":8,"jobNumber":"1","punchTime":1763896137000,"type":"上班","updatedAt":1763896137000},{"createdAt":1763899688000,"id":9,"jobNumber":"1","punchTime":1763899688000,"type":"下班","updatedAt":1763899688000},{"createdAt":1767617383000,"id":10,"jobNumber":"1","punchTime":1767617383000,"type":"上班","updatedAt":1767617383000},{"createdAt":1768115802000,"id":11,"jobNumber":"1","punchTime":1768115802000,"type":"上班","updatedAt":1768115802000},{"createdAt":1768909132000,"id":12,"jobNumber":"1","punchTime":1768909132000,"type":"上班","updatedAt":1768909132000},{"createdAt":1768913555000,"id":13,"jobNumber":"1","punchTime":1768913555000,"type":"下班","updatedAt":1768913555000},{"createdAt":1769344367000,"id":14,"jobNumber":"1","punchTime":1769344367000,"type":"上班","updatedAt":1769344367000},{"createdAt":1769928642000,"id":15,"jobNumber":"1","punchTime":1769928642000,"type":"上班","updatedAt":1769928642000}]
+2026-02-01 15:31:26.856 [http-nio-8001-exec-2] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 结束 耗时：17 ms -------------
+2026-02-01 15:32:17.037 [http-nio-8001-exec-3] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-01 15:32:17.038 [http-nio-8001-exec-3] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/login org.apache.catalina.connector.RequestFacade@1a178855
+2026-02-01 15:32:17.038 [http-nio-8001-exec-3] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.LoginController.login
+2026-02-01 15:32:17.038 [http-nio-8001-exec-3] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-01 15:32:17.038 [http-nio-8001-exec-3] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求参数: [{"jobNumber":2,"password":"2"}]
+2026-02-01 15:32:17.044 [http-nio-8001-exec-3] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 返回结果: {"content":{"role":"2","staffName":"古茗","jobNumber":2},"success":true}
+2026-02-01 15:32:17.044 [http-nio-8001-exec-3] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 结束 耗时：7 ms -------------
+2026-02-01 15:33:17.823 [http-nio-8001-exec-4] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-01 15:33:17.823 [http-nio-8001-exec-4] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/attendance/list org.apache.catalina.connector.RequestFacade@339a7d63
+2026-02-01 15:33:17.823 [http-nio-8001-exec-4] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.AttendanceController.list
+2026-02-01 15:33:17.824 [http-nio-8001-exec-4] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-01 15:33:17.824 [http-nio-8001-exec-4] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求参数: ["1"]
+2026-02-01 15:33:17.831 [http-nio-8001-exec-4] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 返回结果: [{"createdAt":1758636213000,"id":1,"jobNumber":"1","punchTime":1758636214000,"type":"上班","updatedAt":1758636213000},{"createdAt":1758636435000,"id":2,"jobNumber":"1","punchTime":1758636436000,"type":"下班","updatedAt":1758636435000},{"createdAt":1760878415000,"id":3,"jobNumber":"1","punchTime":1760878416000,"type":"上班","updatedAt":1760878415000},{"createdAt":1760878417000,"id":4,"jobNumber":"1","punchTime":1760878417000,"type":"下班","updatedAt":1760878417000},{"createdAt":1761468316000,"id":5,"jobNumber":"1","punchTime":1761468316000,"type":"上班","updatedAt":1761468316000},{"createdAt":1761469054000,"id":6,"jobNumber":"1","punchTime":1761469054000,"type":"下班","updatedAt":1761469054000},{"createdAt":1762670152000,"id":7,"jobNumber":"1","punchTime":1762670152000,"type":"上班","updatedAt":1762670152000},{"createdAt":1763896137000,"id":8,"jobNumber":"1","punchTime":1763896137000,"type":"上班","updatedAt":1763896137000},{"createdAt":1763899688000,"id":9,"jobNumber":"1","punchTime":1763899688000,"type":"下班","updatedAt":1763899688000},{"createdAt":1767617383000,"id":10,"jobNumber":"1","punchTime":1767617383000,"type":"上班","updatedAt":1767617383000},{"createdAt":1768115802000,"id":11,"jobNumber":"1","punchTime":1768115802000,"type":"上班","updatedAt":1768115802000},{"createdAt":1768909132000,"id":12,"jobNumber":"1","punchTime":1768909132000,"type":"上班","updatedAt":1768909132000},{"createdAt":1768913555000,"id":13,"jobNumber":"1","punchTime":1768913555000,"type":"下班","updatedAt":1768913555000},{"createdAt":1769344367000,"id":14,"jobNumber":"1","punchTime":1769344367000,"type":"上班","updatedAt":1769344367000},{"createdAt":1769928642000,"id":15,"jobNumber":"1","punchTime":1769928642000,"type":"上班","updatedAt":1769928642000}]
+2026-02-01 15:33:17.832 [http-nio-8001-exec-4] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 结束 耗时：9 ms -------------
+2026-02-01 15:33:33.950 [http-nio-8001-exec-5] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-01 15:33:33.950 [http-nio-8001-exec-5] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/login org.apache.catalina.connector.RequestFacade@43517687
+2026-02-01 15:33:33.951 [http-nio-8001-exec-5] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.LoginController.login
+2026-02-01 15:33:33.951 [http-nio-8001-exec-5] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-01 15:33:33.952 [http-nio-8001-exec-5] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求参数: [{"jobNumber":2,"password":"2"}]
+2026-02-01 15:33:33.956 [http-nio-8001-exec-5] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 返回结果: {"content":{"role":"2","staffName":"古茗","jobNumber":2},"success":true}
+2026-02-01 15:33:33.956 [http-nio-8001-exec-5] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 结束 耗时：6 ms -------------
+2026-02-01 15:40:39.628 [http-nio-8001-exec-6] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-01 15:40:39.628 [http-nio-8001-exec-6] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/login org.apache.catalina.connector.RequestFacade@72d328aa
+2026-02-01 15:40:39.628 [http-nio-8001-exec-6] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.LoginController.login
+2026-02-01 15:40:39.628 [http-nio-8001-exec-6] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 远程地址：127.0.0.1
+2026-02-01 15:40:39.628 [http-nio-8001-exec-6] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求参数: [{"jobNumber":1,"password":"1"}]
+2026-02-01 15:40:39.637 [http-nio-8001-exec-6] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 返回结果: {"content":{"role":"1","staffName":"兮兮","jobNumber":1},"success":true}
+2026-02-01 15:40:39.637 [http-nio-8001-exec-6] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 结束 耗时：10 ms -------------
+2026-02-01 15:59:40.663 [http-nio-8001-exec-8] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-01 15:59:40.670 [http-nio-8001-exec-8] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求地址: http://127.0.0.1:8001/staff/count org.apache.catalina.connector.RequestFacade@4a502e6f
+2026-02-01 15:59:40.670 [http-nio-8001-exec-8] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.count
+2026-02-01 15:59:40.670 [http-nio-8001-exec-8] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 远程地址：127.0.0.1
+2026-02-01 15:59:40.670 [http-nio-8001-exec-8] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求参数: []
+2026-02-01 15:59:40.739 [http-nio-8001-exec-8] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 返回结果: 2
+2026-02-01 15:59:40.739 [http-nio-8001-exec-8] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 结束 耗时：77 ms -------------
+2026-02-01 16:01:58.276 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [] - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2026-02-01 16:01:58.317 [Thread-1] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-01 16:01:58.324 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Pausing ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:01:59.499 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Graceful shutdown complete
+2026-02-01 16:01:59.500 [Thread-1] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Stopping ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:01:59.527 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Shutdown initiated...
+2026-02-01 16:01:59.535 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Shutdown completed.
+2026-02-01 16:02:00.275 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 32712 (D:\Java\springbootProject\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee)
+2026-02-01 16:02:00.276 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
+2026-02-01 16:02:00.663 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=8106e384-2813-3474-91b8-6f7cf3416231
+2026-02-01 16:02:00.806 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
+2026-02-01 16:02:00.809 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:02:00.809 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-02-01 16:02:00.809 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2026-02-01 16:02:00.858 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
+2026-02-01 16:02:00.858 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 580 ms
+2026-02-01 16:02:01.372 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - Unable to start LiveReload server
+2026-02-01 16:02:01.844 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Starting ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:02:01.849 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat started on port 8001 (http) with context path '/staff'
+2026-02-01 16:02:02.296 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Started StaffApplication in 2.621 seconds (process running for 1861.072)
+2026-02-01 16:02:02.297 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [] - Condition evaluation unchanged
+2026-02-01 16:02:02.298 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 启动成功！！
+2026-02-01 16:02:02.298 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello
+2026-02-01 16:02:30.695 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [] - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2026-02-01 16:02:30.695 [Thread-7] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-01 16:02:30.697 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Pausing ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:02:31.620 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Graceful shutdown complete
+2026-02-01 16:02:31.620 [Thread-7] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Stopping ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:02:32.410 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 32712 (D:\Java\springbootProject\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee)
+2026-02-01 16:02:32.411 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
+2026-02-01 16:02:32.634 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=db56928c-007b-3d43-90ef-5e12f20227b1
+2026-02-01 16:02:32.713 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
+2026-02-01 16:02:32.714 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:02:32.714 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-02-01 16:02:32.715 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2026-02-01 16:02:32.752 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
+2026-02-01 16:02:32.752 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 339 ms
+2026-02-01 16:02:33.122 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - Unable to start LiveReload server
+2026-02-01 16:02:33.591 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Starting ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:02:33.596 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat started on port 8001 (http) with context path '/staff'
+2026-02-01 16:02:34.295 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Started StaffApplication in 2.62 seconds (process running for 1893.072)
+2026-02-01 16:02:34.296 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [] - Condition evaluation unchanged
+2026-02-01 16:02:34.297 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 启动成功！！
+2026-02-01 16:02:34.297 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello
+2026-02-01 16:02:34.586 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [] - Restarting due to 2 class path changes (2 additions, 0 deletions, 0 modifications)
+2026-02-01 16:02:34.587 [Thread-13] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-01 16:02:34.588 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Pausing ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:02:35.762 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Graceful shutdown complete
+2026-02-01 16:02:35.762 [Thread-13] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Stopping ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:02:36.673 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 32712 (D:\Java\springbootProject\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee)
+2026-02-01 16:02:36.674 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
+2026-02-01 16:02:36.918 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=db56928c-007b-3d43-90ef-5e12f20227b1
+2026-02-01 16:02:37.043 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
+2026-02-01 16:02:37.043 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:02:37.044 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-02-01 16:02:37.044 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2026-02-01 16:02:37.113 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
+2026-02-01 16:02:37.113 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 438 ms
+2026-02-01 16:02:37.702 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - Unable to start LiveReload server
+2026-02-01 16:02:38.614 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Starting ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:02:38.620 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat started on port 8001 (http) with context path '/staff'
+2026-02-01 16:02:39.174 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Started StaffApplication in 3.361 seconds (process running for 1897.95)
+2026-02-01 16:02:39.175 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [] - Condition evaluation unchanged
+2026-02-01 16:02:39.175 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 启动成功！！
+2026-02-01 16:02:39.175 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello
+2026-02-01 16:02:56.689 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [] - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2026-02-01 16:02:56.690 [Thread-19] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-01 16:02:56.690 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Pausing ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:02:58.333 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Graceful shutdown complete
+2026-02-01 16:02:58.333 [Thread-19] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Stopping ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:02:59.267 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 32712 (D:\Java\springbootProject\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee)
+2026-02-01 16:02:59.267 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
+2026-02-01 16:02:59.635 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=00ca3988-6908-3a68-82f6-fcf69937a98b
+2026-02-01 16:02:59.775 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
+2026-02-01 16:02:59.775 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:02:59.776 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-02-01 16:02:59.776 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2026-02-01 16:02:59.850 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
+2026-02-01 16:02:59.851 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 581 ms
+2026-02-01 16:03:00.511 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - Unable to start LiveReload server
+2026-02-01 16:03:01.237 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Starting ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:03:01.242 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat started on port 8001 (http) with context path '/staff'
+2026-02-01 16:03:02.037 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Started StaffApplication in 3.651 seconds (process running for 1920.814)
+2026-02-01 16:03:02.039 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [] - Condition evaluation unchanged
+2026-02-01 16:03:02.039 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 启动成功！！
+2026-02-01 16:03:02.040 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello
+2026-02-01 16:03:57.364 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [] - Restarting due to 2 class path changes (1 addition, 1 deletion, 0 modifications)
+2026-02-01 16:03:57.366 [Thread-25] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-01 16:03:57.366 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Pausing ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:03:58.692 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Graceful shutdown complete
+2026-02-01 16:03:58.692 [Thread-25] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Stopping ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:03:59.481 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 32712 (D:\Java\springbootProject\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee)
+2026-02-01 16:03:59.481 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
+2026-02-01 16:03:59.820 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=2a22d98e-ddb2-3fc6-91dc-99c4ac59becc
+2026-02-01 16:03:59.945 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
+2026-02-01 16:03:59.945 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:03:59.945 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-02-01 16:03:59.945 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2026-02-01 16:04:00.012 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
+2026-02-01 16:04:00.012 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 527 ms
+2026-02-01 16:04:00.383 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - Unable to start LiveReload server
+2026-02-01 16:04:00.884 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Starting ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:04:00.888 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat started on port 8001 (http) with context path '/staff'
+2026-02-01 16:04:01.560 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Started StaffApplication in 2.803 seconds (process running for 1980.336)
+2026-02-01 16:04:01.561 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [] - Condition evaluation unchanged
+2026-02-01 16:04:01.561 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 启动成功！！
+2026-02-01 16:04:01.561 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello
+2026-02-01 16:04:01.845 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [] - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-02-01 16:04:01.846 [Thread-31] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-01 16:04:01.846 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Pausing ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:04:02.699 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Graceful shutdown complete
+2026-02-01 16:04:02.699 [Thread-31] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Stopping ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:04:03.223 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 32712 (D:\Java\springbootProject\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee)
+2026-02-01 16:04:03.224 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
+2026-02-01 16:04:03.396 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=91e4a881-00bd-35fb-8dd7-6510780ac22c
+2026-02-01 16:04:03.459 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
+2026-02-01 16:04:03.460 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:04:03.460 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-02-01 16:04:03.460 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2026-02-01 16:04:03.500 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
+2026-02-01 16:04:03.500 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 275 ms
+2026-02-01 16:04:03.516 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'attendanceController' defined in file [D:\Java\springbootProject\employee\staff\target\classes\com\example\employee\staff\controller\AttendanceController.class]: Post-processing of merged bean definition failed
+2026-02-01 16:04:03.518 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Stopping service [Tomcat]
+2026-02-01 16:04:03.523 [restartedMain] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger [] - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-01 16:04:03.541 [restartedMain] ERROR org.springframework.boot.SpringApplication [] - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'attendanceController' defined in file [D:\Java\springbootProject\employee\staff\target\classes\com\example\employee\staff\controller\AttendanceController.class]: Post-processing of merged bean definition failed
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:584)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1188)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at com.example.employee.staff.config.StaffApplication.main(StaffApplication.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.example.employee.staff.controller.AttendanceController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@20b1cc57]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:756)
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:689)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:432)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:413)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:313)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1123)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:581)
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/example/employee/staff/service/AttendanceService
+	at java.base/java.lang.Class.getDeclaredFields0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3297)
+	at java.base/java.lang.Class.getDeclaredFields(Class.java:2371)
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:751)
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.example.employee.staff.service.AttendanceService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	... 30 common frames omitted
+2026-02-01 16:04:09.128 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 32712 (D:\Java\springbootProject\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee)
+2026-02-01 16:04:09.128 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
+2026-02-01 16:04:09.455 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=2a22d98e-ddb2-3fc6-91dc-99c4ac59becc
+2026-02-01 16:04:09.590 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
+2026-02-01 16:04:09.592 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:04:09.592 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-02-01 16:04:09.592 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2026-02-01 16:04:09.664 [restartedMain] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
+2026-02-01 16:04:09.664 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 532 ms
+2026-02-01 16:04:10.250 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - Unable to start LiveReload server
+2026-02-01 16:04:10.986 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Starting ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:04:10.992 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat started on port 8001 (http) with context path '/staff'
+2026-02-01 16:04:11.595 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Started StaffApplication in 3.447 seconds (process running for 1990.372)
+2026-02-01 16:04:11.597 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [] - Condition evaluation unchanged
+2026-02-01 16:04:11.597 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 启动成功！！
+2026-02-01 16:04:11.597 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello
+2026-02-01 16:05:03.735 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [] - Restarting due to 2 class path changes (2 additions, 0 deletions, 0 modifications)
+2026-02-01 16:05:03.735 [Thread-37] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-01 16:05:03.736 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Pausing ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:05:04.589 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Graceful shutdown complete
+2026-02-01 16:05:04.589 [Thread-37] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Stopping ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:05:05.364 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 32712 (D:\Java\springbootProject\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee)
+2026-02-01 16:05:05.364 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
+2026-02-01 16:05:05.584 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=db56928c-007b-3d43-90ef-5e12f20227b1
+2026-02-01 16:05:05.657 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
+2026-02-01 16:05:05.658 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:05:05.658 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-02-01 16:05:05.658 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2026-02-01 16:05:05.702 [restartedMain] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
+2026-02-01 16:05:05.703 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 337 ms
+2026-02-01 16:05:05.972 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - Unable to start LiveReload server
+2026-02-01 16:05:06.331 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Starting ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:05:06.335 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat started on port 8001 (http) with context path '/staff'
+2026-02-01 16:05:06.711 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Started StaffApplication in 2.072 seconds (process running for 2045.488)
+2026-02-01 16:05:06.713 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [] - Condition evaluation unchanged
+2026-02-01 16:05:06.713 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 启动成功！！
+2026-02-01 16:05:06.713 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello
+2026-02-01 16:05:35.215 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [] - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2026-02-01 16:05:35.216 [Thread-47] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-01 16:05:35.218 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Pausing ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:05:36.540 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Graceful shutdown complete
+2026-02-01 16:05:36.540 [Thread-47] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Stopping ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:05:37.304 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 32712 (D:\Java\springbootProject\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee)
+2026-02-01 16:05:37.305 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
+2026-02-01 16:05:37.480 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=db56928c-007b-3d43-90ef-5e12f20227b1
+2026-02-01 16:05:37.563 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
+2026-02-01 16:05:37.564 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:05:37.564 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-02-01 16:05:37.564 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2026-02-01 16:05:37.613 [restartedMain] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
+2026-02-01 16:05:37.613 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 307 ms
+2026-02-01 16:05:38.124 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - Unable to start LiveReload server
+2026-02-01 16:05:38.808 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Starting ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:05:38.812 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat started on port 8001 (http) with context path '/staff'
+2026-02-01 16:05:39.243 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Started StaffApplication in 2.636 seconds (process running for 2078.02)
+2026-02-01 16:05:39.244 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [] - Condition evaluation unchanged
+2026-02-01 16:05:39.244 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 启动成功！！
+2026-02-01 16:05:39.244 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello
+2026-02-01 16:06:11.828 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-01 16:06:12.778 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Graceful shutdown complete
+2026-02-01 16:06:17.921 [background-preinit] INFO  org.hibernate.validator.internal.util.Version [] - HV000001: Hibernate Validator 8.0.2.Final
+2026-02-01 16:06:17.969 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 33936 (D:\Java\springbootProject\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee)
+2026-02-01 16:06:17.970 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
+2026-02-01 16:06:18.015 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-01 16:06:18.016 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-01 16:06:18.921 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=db56928c-007b-3d43-90ef-5e12f20227b1
+2026-02-01 16:06:19.471 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
+2026-02-01 16:06:19.487 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:06:19.489 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-02-01 16:06:19.489 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2026-02-01 16:06:19.558 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
+2026-02-01 16:06:19.558 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 1542 ms
+2026-02-01 16:06:20.538 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - Unable to start LiveReload server
+2026-02-01 16:06:21.025 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Starting ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:06:21.045 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat started on port 8001 (http) with context path '/staff'
+2026-02-01 16:06:21.498 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Started StaffApplication in 4.872 seconds (process running for 6.309)
+2026-02-01 16:06:21.501 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 启动成功！！
+2026-02-01 16:06:21.501 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello
+2026-02-01 16:11:41.416 [http-nio-8001-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-01 16:11:41.416 [http-nio-8001-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet [] - Initializing Servlet 'dispatcherServlet'
+2026-02-01 16:11:41.417 [http-nio-8001-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet [] - Completed initialization in 0 ms
+2026-02-01 16:11:41.447 [http-nio-8001-exec-2] ERROR c.e.e.s.m.c.controller.ControllerExceptionHandle [] - 系统异常：
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource active/count.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2026-02-01 16:11:41.494 [http-nio-8001-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [] - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource active/count.]
+2026-02-01 16:11:55.000 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-01 16:11:55.001 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求地址: http://127.0.0.1:8001/staff/count org.apache.catalina.connector.RequestFacade@44b9ea72
+2026-02-01 16:11:55.001 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.count
+2026-02-01 16:11:55.001 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 远程地址：127.0.0.1
+2026-02-01 16:11:55.056 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求参数: []
+2026-02-01 16:11:55.089 [http-nio-8001-exec-1] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Starting...
+2026-02-01 16:11:55.463 [http-nio-8001-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool [] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5f06ad39
+2026-02-01 16:11:55.466 [http-nio-8001-exec-1] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Start completed.
+2026-02-01 16:11:55.543 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 返回结果: 2
+2026-02-01 16:11:55.543 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 结束 耗时：545 ms -------------
+2026-02-01 16:12:33.665 [http-nio-8001-exec-3] ERROR c.e.e.s.m.c.controller.ControllerExceptionHandle [] - 系统异常：
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource active/count.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2026-02-01 16:12:33.668 [http-nio-8001-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [] - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource active/count.]
+2026-02-01 16:12:43.348 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [] - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-02-01 16:12:43.353 [Thread-1] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-01 16:12:43.355 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Pausing ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:12:44.432 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Graceful shutdown complete
+2026-02-01 16:12:44.433 [Thread-1] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Stopping ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:12:44.441 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Shutdown initiated...
+2026-02-01 16:12:44.448 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Shutdown completed.
+2026-02-01 16:12:45.226 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 33936 (D:\Java\springbootProject\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee)
+2026-02-01 16:12:45.227 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
+2026-02-01 16:12:45.472 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=db56928c-007b-3d43-90ef-5e12f20227b1
+2026-02-01 16:12:45.588 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
+2026-02-01 16:12:45.588 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:12:45.589 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-02-01 16:12:45.589 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2026-02-01 16:12:45.629 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
+2026-02-01 16:12:45.629 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 400 ms
+2026-02-01 16:12:46.597 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - Unable to start LiveReload server
+2026-02-01 16:12:47.595 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Starting ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:12:47.601 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat started on port 8001 (http) with context path '/staff'
+2026-02-01 16:12:48.375 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Started StaffApplication in 3.859 seconds (process running for 393.187)
+2026-02-01 16:12:48.377 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [] - Condition evaluation unchanged
+2026-02-01 16:12:48.377 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 启动成功！！
+2026-02-01 16:12:48.378 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello
+2026-02-01 16:14:57.586 [http-nio-8001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-01 16:14:57.586 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet [] - Initializing Servlet 'dispatcherServlet'
+2026-02-01 16:14:57.587 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet [] - Completed initialization in 1 ms
+2026-02-01 16:14:57.588 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-01 16:14:57.589 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求地址: http://127.0.0.1:8001/staff/active/count org.apache.catalina.connector.RequestFacade@4a127d89
+2026-02-01 16:14:57.589 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.activeCount
+2026-02-01 16:14:57.589 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 远程地址：127.0.0.1
+2026-02-01 16:14:57.589 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求参数: []
+2026-02-01 16:14:57.614 [http-nio-8001-exec-1] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-2 - Starting...
+2026-02-01 16:14:57.632 [http-nio-8001-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool [] - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2ab94d17
+2026-02-01 16:14:57.632 [http-nio-8001-exec-1] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-2 - Start completed.
+2026-02-01 16:14:57.651 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 返回结果: 1
+2026-02-01 16:14:57.651 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 结束 耗时：63 ms -------------
+2026-02-01 16:20:52.005 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [] - Restarting due to 7 class path changes (0 additions, 7 deletions, 0 modifications)
+2026-02-01 16:20:52.007 [Thread-7] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-01 16:20:52.007 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Pausing ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:20:53.502 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Graceful shutdown complete
+2026-02-01 16:20:53.502 [Thread-7] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Stopping ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:20:53.505 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-2 - Shutdown initiated...
+2026-02-01 16:20:53.509 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-2 - Shutdown completed.
+2026-02-01 16:20:54.079 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 33936 (D:\Java\springbootProject\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee)
+2026-02-01 16:20:54.079 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
+2026-02-01 16:20:54.328 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=db56928c-007b-3d43-90ef-5e12f20227b1
+2026-02-01 16:20:54.432 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
+2026-02-01 16:20:54.433 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:20:54.433 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-02-01 16:20:54.433 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2026-02-01 16:20:54.480 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
+2026-02-01 16:20:54.480 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 399 ms
+2026-02-01 16:20:54.958 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - Unable to start LiveReload server
+2026-02-01 16:20:55.620 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Starting ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:20:55.625 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat started on port 8001 (http) with context path '/staff'
+2026-02-01 16:20:56.154 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Started StaffApplication in 2.6 seconds (process running for 880.966)
+2026-02-01 16:20:56.155 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [] - Condition evaluation unchanged
+2026-02-01 16:20:56.155 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 启动成功！！
+2026-02-01 16:20:56.156 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello
+2026-02-01 16:20:56.413 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [] - Restarting due to 7 class path changes (7 additions, 0 deletions, 0 modifications)
+2026-02-01 16:20:56.414 [Thread-13] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-01 16:20:56.415 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Pausing ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:20:57.216 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Graceful shutdown complete
+2026-02-01 16:20:57.218 [Thread-13] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Stopping ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:20:57.851 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 33936 (D:\Java\springbootProject\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee)
+2026-02-01 16:20:57.851 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
+2026-02-01 16:20:58.020 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=db56928c-007b-3d43-90ef-5e12f20227b1
+2026-02-01 16:20:58.073 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
+2026-02-01 16:20:58.074 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:20:58.074 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-02-01 16:20:58.074 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2026-02-01 16:20:58.105 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
+2026-02-01 16:20:58.106 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 252 ms
+2026-02-01 16:20:58.477 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - Unable to start LiveReload server
+2026-02-01 16:20:59.437 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Starting ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:20:59.440 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat started on port 8001 (http) with context path '/staff'
+2026-02-01 16:21:00.039 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Started StaffApplication in 2.774 seconds (process running for 884.851)
+2026-02-01 16:21:00.041 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [] - Condition evaluation unchanged
+2026-02-01 16:21:00.041 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 启动成功！！
+2026-02-01 16:21:00.041 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello
+2026-02-01 16:21:04.169 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-01 16:21:04.915 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Graceful shutdown complete
+2026-02-01 16:21:08.399 [background-preinit] INFO  org.hibernate.validator.internal.util.Version [] - HV000001: Hibernate Validator 8.0.2.Final
+2026-02-01 16:21:08.441 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 30864 (D:\Java\springbootProject\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee)
+2026-02-01 16:21:08.442 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
+2026-02-01 16:21:08.481 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-01 16:21:08.481 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-01 16:21:09.315 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=db56928c-007b-3d43-90ef-5e12f20227b1
+2026-02-01 16:21:09.910 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
+2026-02-01 16:21:09.921 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:21:09.923 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-02-01 16:21:09.923 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2026-02-01 16:21:09.988 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
+2026-02-01 16:21:09.988 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 1507 ms
+2026-02-01 16:21:10.815 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - Unable to start LiveReload server
+2026-02-01 16:21:11.332 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Starting ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:21:11.351 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat started on port 8001 (http) with context path '/staff'
+2026-02-01 16:21:11.907 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Started StaffApplication in 4.892 seconds (process running for 6.17)
+2026-02-01 16:21:11.911 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 启动成功！！
+2026-02-01 16:21:11.911 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello
+2026-02-01 16:21:17.350 [http-nio-8001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-01 16:21:17.350 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet [] - Initializing Servlet 'dispatcherServlet'
+2026-02-01 16:21:17.351 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet [] - Completed initialization in 0 ms
+2026-02-01 16:21:17.375 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-01 16:21:17.375 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求地址: http://127.0.0.1:8001/staff/active/count org.apache.catalina.connector.RequestFacade@5e1ceb7
+2026-02-01 16:21:17.375 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.activeCount
+2026-02-01 16:21:17.375 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 远程地址：127.0.0.1
+2026-02-01 16:21:17.406 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求参数: []
+2026-02-01 16:21:17.448 [http-nio-8001-exec-1] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Starting...
+2026-02-01 16:21:17.714 [http-nio-8001-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool [] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@500069e3
+2026-02-01 16:21:17.715 [http-nio-8001-exec-1] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Start completed.
+2026-02-01 16:21:17.756 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 返回结果: 2
+2026-02-01 16:21:17.756 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 结束 耗时：383 ms -------------
+2026-02-01 16:23:10.609 [http-nio-8001-exec-4] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-01 16:23:10.610 [http-nio-8001-exec-4] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求地址: http://127.0.0.1:8001/staff/count org.apache.catalina.connector.RequestFacade@503ab1be
+2026-02-01 16:23:10.610 [http-nio-8001-exec-4] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.count
+2026-02-01 16:23:10.610 [http-nio-8001-exec-4] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 远程地址：127.0.0.1
+2026-02-01 16:23:10.610 [http-nio-8001-exec-4] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求参数: []
+2026-02-01 16:23:10.613 [http-nio-8001-exec-4] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 返回结果: 2
+2026-02-01 16:23:10.614 [http-nio-8001-exec-4] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 结束 耗时：5 ms -------------
+2026-02-01 16:23:10.618 [http-nio-8001-exec-5] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-01 16:23:10.619 [http-nio-8001-exec-5] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求地址: http://127.0.0.1:8001/staff/count org.apache.catalina.connector.RequestFacade@5111d900
+2026-02-01 16:23:10.619 [http-nio-8001-exec-5] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.count
+2026-02-01 16:23:10.619 [http-nio-8001-exec-5] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 远程地址：127.0.0.1
+2026-02-01 16:23:10.619 [http-nio-8001-exec-5] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求参数: []
+2026-02-01 16:23:10.621 [http-nio-8001-exec-5] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 返回结果: 2
+2026-02-01 16:23:10.622 [http-nio-8001-exec-5] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 结束 耗时：4 ms -------------
+2026-02-01 16:23:10.625 [http-nio-8001-exec-6] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-01 16:23:10.626 [http-nio-8001-exec-6] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求地址: http://127.0.0.1:8001/staff/count org.apache.catalina.connector.RequestFacade@1816cb59
+2026-02-01 16:23:10.626 [http-nio-8001-exec-6] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.count
+2026-02-01 16:23:10.626 [http-nio-8001-exec-6] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 远程地址：127.0.0.1
+2026-02-01 16:23:10.626 [http-nio-8001-exec-6] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求参数: []
+2026-02-01 16:23:10.628 [http-nio-8001-exec-6] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 返回结果: 2
+2026-02-01 16:23:10.628 [http-nio-8001-exec-6] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 结束 耗时：3 ms -------------
+2026-02-01 16:23:26.761 [http-nio-8001-exec-7] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-01 16:23:26.762 [http-nio-8001-exec-7] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求地址: http://127.0.0.1:8001/staff/attendance/todayCount org.apache.catalina.connector.RequestFacade@fc2a374
+2026-02-01 16:23:26.762 [http-nio-8001-exec-7] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.AttendanceController.todayCount
+2026-02-01 16:23:26.762 [http-nio-8001-exec-7] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 远程地址：127.0.0.1
+2026-02-01 16:23:26.762 [http-nio-8001-exec-7] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求参数: []
+2026-02-01 16:23:26.780 [http-nio-8001-exec-7] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 返回结果: 1
+2026-02-01 16:23:26.780 [http-nio-8001-exec-7] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 结束 耗时：19 ms -------------
+2026-02-01 16:23:45.746 [http-nio-8001-exec-10] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-01 16:23:45.747 [http-nio-8001-exec-10] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求地址: http://127.0.0.1:8001/staff/count org.apache.catalina.connector.RequestFacade@6c6461bd
+2026-02-01 16:23:45.747 [http-nio-8001-exec-10] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.count
+2026-02-01 16:23:45.747 [http-nio-8001-exec-10] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 远程地址：127.0.0.1
+2026-02-01 16:23:45.747 [http-nio-8001-exec-10] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求参数: []
+2026-02-01 16:23:45.750 [http-nio-8001-exec-10] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 返回结果: 2
+2026-02-01 16:23:45.750 [http-nio-8001-exec-10] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 结束 耗时：4 ms -------------
+2026-02-01 16:23:45.763 [http-nio-8001-exec-9] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-01 16:23:45.763 [http-nio-8001-exec-9] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求地址: http://127.0.0.1:8001/staff/count org.apache.catalina.connector.RequestFacade@4639ce13
+2026-02-01 16:23:45.763 [http-nio-8001-exec-9] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.count
+2026-02-01 16:23:45.764 [http-nio-8001-exec-9] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 远程地址：127.0.0.1
+2026-02-01 16:23:45.764 [http-nio-8001-exec-9] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求参数: []
+2026-02-01 16:23:45.765 [http-nio-8001-exec-9] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 返回结果: 2
+2026-02-01 16:23:45.767 [http-nio-8001-exec-9] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 结束 耗时：2 ms -------------
+2026-02-01 16:23:49.814 [http-nio-8001-exec-8] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-01 16:23:49.815 [http-nio-8001-exec-8] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求地址: http://127.0.0.1:8001/staff/count org.apache.catalina.connector.RequestFacade@9526218
+2026-02-01 16:23:49.816 [http-nio-8001-exec-8] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.count
+2026-02-01 16:23:49.816 [http-nio-8001-exec-8] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 远程地址：127.0.0.1
+2026-02-01 16:23:49.816 [http-nio-8001-exec-8] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求参数: []
+2026-02-01 16:23:49.820 [http-nio-8001-exec-8] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 返回结果: 2
+2026-02-01 16:23:49.820 [http-nio-8001-exec-8] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 结束 耗时：6 ms -------------
+2026-02-01 16:23:52.439 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-01 16:23:52.439 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求地址: http://127.0.0.1:8001/staff/count org.apache.catalina.connector.RequestFacade@4a5918c5
+2026-02-01 16:23:52.439 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.count
+2026-02-01 16:23:52.440 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 远程地址：127.0.0.1
+2026-02-01 16:23:52.440 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求参数: []
+2026-02-01 16:23:52.442 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 返回结果: 2
+2026-02-01 16:23:52.443 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 结束 耗时：4 ms -------------
+2026-02-01 16:24:46.833 [http-nio-8001-exec-5] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-01 16:24:46.833 [http-nio-8001-exec-5] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/count org.apache.catalina.connector.RequestFacade@3e426cf8
+2026-02-01 16:24:46.833 [http-nio-8001-exec-5] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.count
+2026-02-01 16:24:46.833 [http-nio-8001-exec-5] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-01 16:24:46.835 [http-nio-8001-exec-5] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求参数: []
+2026-02-01 16:24:46.837 [http-nio-8001-exec-5] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 返回结果: 2
+2026-02-01 16:24:46.838 [http-nio-8001-exec-5] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 结束 耗时：5 ms -------------
+2026-02-01 16:25:26.135 [http-nio-8001-exec-10] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-01 16:25:26.135 [http-nio-8001-exec-10] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求地址: http://127.0.0.1:8001/staff/count org.apache.catalina.connector.RequestFacade@669c0acd
+2026-02-01 16:25:26.135 [http-nio-8001-exec-10] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.count
+2026-02-01 16:25:26.135 [http-nio-8001-exec-10] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 远程地址：127.0.0.1
+2026-02-01 16:25:26.135 [http-nio-8001-exec-10] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求参数: []
+2026-02-01 16:25:26.137 [http-nio-8001-exec-10] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 返回结果: 2
+2026-02-01 16:25:26.139 [http-nio-8001-exec-10] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 结束 耗时：4 ms -------------
+2026-02-01 16:25:26.148 [http-nio-8001-exec-9] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-01 16:25:26.148 [http-nio-8001-exec-9] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求地址: http://127.0.0.1:8001/staff/count org.apache.catalina.connector.RequestFacade@4cc1a563
+2026-02-01 16:25:26.148 [http-nio-8001-exec-9] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.count
+2026-02-01 16:25:26.148 [http-nio-8001-exec-9] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 远程地址：127.0.0.1
+2026-02-01 16:25:26.149 [http-nio-8001-exec-9] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求参数: []
+2026-02-01 16:25:26.151 [http-nio-8001-exec-9] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 返回结果: 2
+2026-02-01 16:25:26.152 [http-nio-8001-exec-9] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 结束 耗时：4 ms -------------
+2026-02-01 16:25:26.156 [http-nio-8001-exec-8] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-01 16:25:26.156 [http-nio-8001-exec-8] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求地址: http://127.0.0.1:8001/staff/count org.apache.catalina.connector.RequestFacade@3aa0968
+2026-02-01 16:25:26.156 [http-nio-8001-exec-8] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.count
+2026-02-01 16:25:26.156 [http-nio-8001-exec-8] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 远程地址：127.0.0.1
+2026-02-01 16:25:26.156 [http-nio-8001-exec-8] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求参数: []
+2026-02-01 16:25:26.159 [http-nio-8001-exec-8] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 返回结果: 2
+2026-02-01 16:25:26.159 [http-nio-8001-exec-8] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 结束 耗时：3 ms -------------
+2026-02-01 16:25:26.162 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-01 16:25:26.162 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求地址: http://127.0.0.1:8001/staff/count org.apache.catalina.connector.RequestFacade@601e0930
+2026-02-01 16:25:26.162 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.count
+2026-02-01 16:25:26.162 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 远程地址：127.0.0.1
+2026-02-01 16:25:26.162 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求参数: []
+2026-02-01 16:25:26.164 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 返回结果: 2
+2026-02-01 16:25:26.165 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 结束 耗时：3 ms -------------
+2026-02-01 16:25:28.799 [http-nio-8001-exec-2] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-01 16:25:28.799 [http-nio-8001-exec-2] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求地址: http://127.0.0.1:8001/staff/count org.apache.catalina.connector.RequestFacade@78bfe685
+2026-02-01 16:25:28.799 [http-nio-8001-exec-2] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.count
+2026-02-01 16:25:28.799 [http-nio-8001-exec-2] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 远程地址：127.0.0.1
+2026-02-01 16:25:28.800 [http-nio-8001-exec-2] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求参数: []
+2026-02-01 16:25:28.803 [http-nio-8001-exec-2] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 返回结果: 2
+2026-02-01 16:25:28.803 [http-nio-8001-exec-2] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 结束 耗时：4 ms -------------
+2026-02-01 16:26:00.880 [http-nio-8001-exec-5] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-01 16:26:00.882 [http-nio-8001-exec-5] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求地址: http://127.0.0.1:8001/staff/count org.apache.catalina.connector.RequestFacade@6c1c4b48
+2026-02-01 16:26:00.882 [http-nio-8001-exec-5] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.count
+2026-02-01 16:26:00.882 [http-nio-8001-exec-5] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 远程地址：127.0.0.1
+2026-02-01 16:26:00.883 [http-nio-8001-exec-5] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求参数: []
+2026-02-01 16:26:00.888 [http-nio-8001-exec-5] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 返回结果: 2
+2026-02-01 16:26:00.889 [http-nio-8001-exec-5] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 结束 耗时：11 ms -------------
+2026-02-01 16:26:00.904 [http-nio-8001-exec-6] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-01 16:26:00.905 [http-nio-8001-exec-6] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求地址: http://127.0.0.1:8001/staff/count org.apache.catalina.connector.RequestFacade@12eea029
+2026-02-01 16:26:00.905 [http-nio-8001-exec-6] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.count
+2026-02-01 16:26:00.905 [http-nio-8001-exec-6] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 远程地址：127.0.0.1
+2026-02-01 16:26:00.905 [http-nio-8001-exec-6] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求参数: []
+2026-02-01 16:26:00.912 [http-nio-8001-exec-6] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 返回结果: 2
+2026-02-01 16:26:00.912 [http-nio-8001-exec-6] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 结束 耗时：9 ms -------------
+2026-02-01 16:26:01.458 [http-nio-8001-exec-7] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-01 16:26:01.458 [http-nio-8001-exec-7] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求地址: http://127.0.0.1:8001/staff/count org.apache.catalina.connector.RequestFacade@4214ed6a
+2026-02-01 16:26:01.459 [http-nio-8001-exec-7] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.count
+2026-02-01 16:26:01.460 [http-nio-8001-exec-7] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 远程地址：127.0.0.1
+2026-02-01 16:26:01.460 [http-nio-8001-exec-7] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求参数: []
+2026-02-01 16:26:01.464 [http-nio-8001-exec-7] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 返回结果: 2
+2026-02-01 16:26:01.464 [http-nio-8001-exec-7] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 结束 耗时：6 ms -------------
+2026-02-01 16:26:01.499 [http-nio-8001-exec-10] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-01 16:26:01.499 [http-nio-8001-exec-10] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求地址: http://127.0.0.1:8001/staff/count org.apache.catalina.connector.RequestFacade@6c386c3d
+2026-02-01 16:26:01.499 [http-nio-8001-exec-10] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.count
+2026-02-01 16:26:01.499 [http-nio-8001-exec-10] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 远程地址：127.0.0.1
+2026-02-01 16:26:01.499 [http-nio-8001-exec-10] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求参数: []
+2026-02-01 16:26:01.502 [http-nio-8001-exec-10] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 返回结果: 2
+2026-02-01 16:26:01.502 [http-nio-8001-exec-10] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 结束 耗时：3 ms -------------
+2026-02-01 16:26:07.379 [http-nio-8001-exec-9] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-01 16:26:07.379 [http-nio-8001-exec-9] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求地址: http://127.0.0.1:8001/staff/count org.apache.catalina.connector.RequestFacade@1023ce2
+2026-02-01 16:26:07.380 [http-nio-8001-exec-9] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.count
+2026-02-01 16:26:07.380 [http-nio-8001-exec-9] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 远程地址：127.0.0.1
+2026-02-01 16:26:07.380 [http-nio-8001-exec-9] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求参数: []
+2026-02-01 16:26:07.383 [http-nio-8001-exec-9] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 返回结果: 2
+2026-02-01 16:26:07.383 [http-nio-8001-exec-9] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 结束 耗时：4 ms -------------
+2026-02-01 16:36:50.738 [http-nio-8001-exec-2] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-01 16:36:50.744 [http-nio-8001-exec-2] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求地址: http://127.0.0.1:8001/staff/count org.apache.catalina.connector.RequestFacade@6476fb5
+2026-02-01 16:36:50.745 [http-nio-8001-exec-2] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.count
+2026-02-01 16:36:50.746 [http-nio-8001-exec-2] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 远程地址：127.0.0.1
+2026-02-01 16:36:50.746 [http-nio-8001-exec-2] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求参数: []
+2026-02-01 16:36:50.811 [http-nio-8001-exec-2] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 返回结果: 2
+2026-02-01 16:36:50.811 [http-nio-8001-exec-2] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 结束 耗时：74 ms -------------
+2026-02-01 16:36:50.829 [http-nio-8001-exec-4] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-01 16:36:50.829 [http-nio-8001-exec-4] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求地址: http://127.0.0.1:8001/staff/count org.apache.catalina.connector.RequestFacade@bb8c058
+2026-02-01 16:36:50.829 [http-nio-8001-exec-4] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.count
+2026-02-01 16:36:50.829 [http-nio-8001-exec-4] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 远程地址：127.0.0.1
+2026-02-01 16:36:50.829 [http-nio-8001-exec-4] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求参数: []
+2026-02-01 16:36:50.832 [http-nio-8001-exec-4] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 返回结果: 2
+2026-02-01 16:36:50.832 [http-nio-8001-exec-4] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 结束 耗时：3 ms -------------
+2026-02-01 16:36:50.834 [http-nio-8001-exec-3] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-01 16:36:50.834 [http-nio-8001-exec-3] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求地址: http://127.0.0.1:8001/staff/count org.apache.catalina.connector.RequestFacade@29227504
+2026-02-01 16:36:50.834 [http-nio-8001-exec-3] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.count
+2026-02-01 16:36:50.834 [http-nio-8001-exec-3] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 远程地址：127.0.0.1
+2026-02-01 16:36:50.834 [http-nio-8001-exec-3] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求参数: []
+2026-02-01 16:36:50.836 [http-nio-8001-exec-3] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 返回结果: 2
+2026-02-01 16:36:50.836 [http-nio-8001-exec-3] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 结束 耗时：2 ms -------------
+2026-02-01 16:36:50.837 [http-nio-8001-exec-5] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-01 16:36:50.837 [http-nio-8001-exec-5] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求地址: http://127.0.0.1:8001/staff/count org.apache.catalina.connector.RequestFacade@646b9e79
+2026-02-01 16:36:50.837 [http-nio-8001-exec-5] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.count
+2026-02-01 16:36:50.837 [http-nio-8001-exec-5] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 远程地址：127.0.0.1
+2026-02-01 16:36:50.838 [http-nio-8001-exec-5] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求参数: []
+2026-02-01 16:36:50.838 [http-nio-8001-exec-6] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-01 16:36:50.838 [http-nio-8001-exec-6] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求地址: http://127.0.0.1:8001/staff/count org.apache.catalina.connector.RequestFacade@179e3cc
+2026-02-01 16:36:50.838 [http-nio-8001-exec-6] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.count
+2026-02-01 16:36:50.838 [http-nio-8001-exec-6] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 远程地址：127.0.0.1
+2026-02-01 16:36:50.838 [http-nio-8001-exec-6] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求参数: []
+2026-02-01 16:36:50.840 [http-nio-8001-exec-5] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 返回结果: 2
+2026-02-01 16:36:50.840 [http-nio-8001-exec-5] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 结束 耗时：3 ms -------------
+2026-02-01 16:36:50.852 [http-nio-8001-exec-6] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 返回结果: 2
+2026-02-01 16:36:50.852 [http-nio-8001-exec-6] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 结束 耗时：14 ms -------------
+2026-02-01 16:36:50.857 [http-nio-8001-exec-7] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-01 16:36:50.857 [http-nio-8001-exec-7] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求地址: http://127.0.0.1:8001/staff/count org.apache.catalina.connector.RequestFacade@13e652ac
+2026-02-01 16:36:50.857 [http-nio-8001-exec-7] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.count
+2026-02-01 16:36:50.857 [http-nio-8001-exec-7] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 远程地址：127.0.0.1
+2026-02-01 16:36:50.859 [http-nio-8001-exec-7] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求参数: []
+2026-02-01 16:36:50.859 [http-nio-8001-exec-10] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-01 16:36:50.859 [http-nio-8001-exec-10] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求地址: http://127.0.0.1:8001/staff/count org.apache.catalina.connector.RequestFacade@14bbf080
+2026-02-01 16:36:50.859 [http-nio-8001-exec-10] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.count
+2026-02-01 16:36:50.859 [http-nio-8001-exec-10] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 远程地址：127.0.0.1
+2026-02-01 16:36:50.859 [http-nio-8001-exec-10] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求参数: []
+2026-02-01 16:36:50.860 [http-nio-8001-exec-10] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 返回结果: 2
+2026-02-01 16:36:50.860 [http-nio-8001-exec-7] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 返回结果: 2
+2026-02-01 16:36:50.861 [http-nio-8001-exec-7] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 结束 耗时：4 ms -------------
+2026-02-01 16:36:50.861 [http-nio-8001-exec-10] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 结束 耗时：2 ms -------------
+2026-02-01 16:36:50.864 [http-nio-8001-exec-9] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-01 16:36:50.865 [http-nio-8001-exec-9] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求地址: http://127.0.0.1:8001/staff/count org.apache.catalina.connector.RequestFacade@792b4fa0
+2026-02-01 16:36:50.865 [http-nio-8001-exec-9] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.count
+2026-02-01 16:36:50.865 [http-nio-8001-exec-9] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 远程地址：127.0.0.1
+2026-02-01 16:36:50.866 [http-nio-8001-exec-9] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求参数: []
+2026-02-01 16:36:50.871 [http-nio-8001-exec-9] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 返回结果: 2
+2026-02-01 16:36:50.871 [http-nio-8001-exec-9] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 结束 耗时：7 ms -------------
+2026-02-01 16:36:50.876 [http-nio-8001-exec-8] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-01 16:36:50.876 [http-nio-8001-exec-8] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求地址: http://127.0.0.1:8001/staff/count org.apache.catalina.connector.RequestFacade@5c706f16
+2026-02-01 16:36:50.876 [http-nio-8001-exec-8] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.count
+2026-02-01 16:36:50.876 [http-nio-8001-exec-8] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 远程地址：127.0.0.1
+2026-02-01 16:36:50.877 [http-nio-8001-exec-8] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求参数: []
+2026-02-01 16:36:50.878 [http-nio-8001-exec-8] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 返回结果: 2
+2026-02-01 16:36:50.879 [http-nio-8001-exec-8] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 结束 耗时：3 ms -------------
+2026-02-01 16:37:07.902 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-01 16:37:07.903 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求地址: http://127.0.0.1:8001/staff/count org.apache.catalina.connector.RequestFacade@7614b74c
+2026-02-01 16:37:07.903 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.count
+2026-02-01 16:37:07.903 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 远程地址：127.0.0.1
+2026-02-01 16:37:07.903 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求参数: []
+2026-02-01 16:37:07.905 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 返回结果: 2
+2026-02-01 16:37:07.905 [http-nio-8001-exec-1] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 结束 耗时：3 ms -------------
+2026-02-01 16:39:11.105 [http-nio-8001-exec-5] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-01 16:39:11.106 [http-nio-8001-exec-5] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/count org.apache.catalina.connector.RequestFacade@6a03b12a
+2026-02-01 16:39:11.106 [http-nio-8001-exec-5] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.count
+2026-02-01 16:39:11.106 [http-nio-8001-exec-5] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-01 16:39:11.106 [http-nio-8001-exec-5] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 请求参数: []
+2026-02-01 16:39:11.108 [http-nio-8001-exec-5] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - 返回结果: 2
+2026-02-01 16:39:11.108 [http-nio-8001-exec-5] INFO  c.e.employee.staff.manager.common.aspect.LogAspect [] - ------------- 结束 耗时：3 ms -------------
+2026-02-01 16:41:40.057 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [] - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-02-01 16:41:40.126 [Thread-1] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-01 16:41:40.134 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Pausing ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:41:41.693 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Graceful shutdown complete
+2026-02-01 16:41:41.696 [Thread-1] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Stopping ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:41:41.728 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Shutdown initiated...
+2026-02-01 16:41:41.757 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Shutdown completed.
+2026-02-01 16:41:42.721 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 30864 (D:\Java\springbootProject\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee)
+2026-02-01 16:41:42.722 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
+2026-02-01 16:41:43.176 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=db56928c-007b-3d43-90ef-5e12f20227b1
+2026-02-01 16:41:43.360 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
+2026-02-01 16:41:43.361 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:41:43.362 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-02-01 16:41:43.362 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2026-02-01 16:41:43.433 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
+2026-02-01 16:41:43.433 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 706 ms
+2026-02-01 16:41:43.824 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - Unable to start LiveReload server
+2026-02-01 16:41:44.312 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Starting ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:41:44.318 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat started on port 8001 (http) with context path '/staff'
+2026-02-01 16:41:44.950 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Started StaffApplication in 3.019 seconds (process running for 1239.213)
+2026-02-01 16:41:44.951 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [] - Condition evaluation unchanged
+2026-02-01 16:41:44.951 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 启动成功！！
+2026-02-01 16:41:44.952 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello
+2026-02-01 16:41:51.887 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [] - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-02-01 16:41:51.889 [Thread-7] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-01 16:41:51.889 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Pausing ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:41:52.850 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Graceful shutdown complete
+2026-02-01 16:41:52.850 [Thread-7] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Stopping ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:41:53.583 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 30864 (D:\Java\springbootProject\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee)
+2026-02-01 16:41:53.584 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
+2026-02-01 16:41:53.761 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=a602e2e7-734f-3828-be57-9a9cc92f8f74
+2026-02-01 16:41:53.838 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
+2026-02-01 16:41:53.838 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:41:53.838 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-02-01 16:41:53.838 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2026-02-01 16:41:53.882 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
+2026-02-01 16:41:53.882 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 296 ms
+2026-02-01 16:41:54.231 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - Unable to start LiveReload server
+2026-02-01 16:41:54.839 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Starting ProtocolHandler ["http-nio-8001"]
+2026-02-01 16:41:54.845 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat started on port 8001 (http) with context path '/staff'
+2026-02-01 16:41:55.598 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Started StaffApplication in 2.701 seconds (process running for 1249.861)
+2026-02-01 16:41:55.599 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [] - Condition evaluation unchanged
+2026-02-01 16:41:55.599 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 启动成功！！
+2026-02-01 16:41:55.601 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello
+2026-02-01 16:41:57.321 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-01 16:41:58.192 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Graceful shutdown complete

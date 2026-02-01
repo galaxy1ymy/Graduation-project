@@ -65,5 +65,42 @@ public class AttendanceService {
         return attendanceRecordsMapper.selectByExample(example);
     }
 
+    // 今日出勤人数（去重）
+    public int todayCount() {
+        AttendanceRecordsExample example = new AttendanceRecordsExample();
+
+        Calendar calendar = Calendar.getInstance();
+
+        // 今天开始 00:00:00
+        calendar.set(Calendar.HOUR_OF_DAY, 0);
+        calendar.set(Calendar.MINUTE, 0);
+        calendar.set(Calendar.SECOND, 0);
+        calendar.set(Calendar.MILLISECOND, 0);
+        Date startOfDay = calendar.getTime();
+
+        // 今天结束 23:59:59.999
+        calendar.set(Calendar.HOUR_OF_DAY, 23);
+        calendar.set(Calendar.MINUTE, 59);
+        calendar.set(Calendar.SECOND, 59);
+        calendar.set(Calendar.MILLISECOND, 999);
+        Date endOfDay = calendar.getTime();
+
+        example.createCriteria()
+                .andPunchTimeBetween(startOfDay, endOfDay);
+
+        // 只查 jobNumber，减少数据量
+        example.setDistinct(true);
+
+        List<AttendanceRecords> list =
+                attendanceRecordsMapper.selectByExample(example);
+
+        // Java 层去重
+        return (int) list.stream()
+                .map(AttendanceRecords::getJobNumber)
+                .distinct()
+                .count();
+    }
+
+
 
 }

@@ -25,7 +25,7 @@ public class Staff {
 
     private Date hireDate;
 
-    private Byte status;
+    private String status;
 
     private Date createTime;
 
@@ -121,11 +121,11 @@ public class Staff {
         this.hireDate = hireDate;
     }
 
-    public Byte getStatus() {
+    public String getStatus() {
         return status;
     }
 
-    public void setStatus(Byte status) {
+    public void setStatus(String status) {
         this.status = status;
     }
 

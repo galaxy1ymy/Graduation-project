@@ -19,6 +19,12 @@ public class StaffController {
         return staffService.count();
     }
 
+    @GetMapping("/active/count")
+    public Integer activeCount() {
+        return staffService.countByStatus("1");
+    }
+
+
     @GetMapping("/getNames")
     public String getNameByJobNumber(@RequestParam String jobNumber) {  //绑定 HTTP 请求参数 到方法参数的注解
         return staffService.getNameByJobNumber(jobNumber);

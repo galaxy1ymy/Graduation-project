@@ -1,6 +1,10 @@
 <template>
   <a-layout-header class="header">
     <div class="logo" style="color: white">管理员系统</div>
+    <div style="float: right; color: white">
+      <a @click="logout" style="color: white; cursor: pointer">退出登录</a>
+    </div>
+
     <a-menu
         v-model:selectedKeys="selectedKeys"
         theme="dark"
@@ -34,9 +38,19 @@ export default defineComponent({
         { immediate: true }
     );
 
+    const logout = () => {
+      // 1️⃣ 清空登录信息（很重要）
+      sessionStorage.clear()
+      localStorage.clear()
+
+      // 2️⃣ 跳转到 8081 的登录页
+      window.location.href = 'http://localhost:8081/login'
+    }
+
 
     return{
       selectedKeys,
+      logout
 
     };
   }

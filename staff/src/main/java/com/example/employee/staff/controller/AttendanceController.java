@@ -51,4 +51,10 @@ public class AttendanceController {
     public List<AttendanceRecords> list(@RequestParam String jobNumber) {
         return attendanceService.getRecords(jobNumber);
     }
+
+    @GetMapping("/todayCount")
+    public Integer todayCount() {
+        return attendanceService.todayCount();
+    }
+
 }

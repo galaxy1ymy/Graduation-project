@@ -36,6 +36,13 @@ public class StaffService {
         return list.isEmpty() ? null : list.get(0);
     }
 
+    public int countByStatus(String status) {
+        StaffExample example = new StaffExample();
+        example.createCriteria().andStatusEqualTo(status);
+        return Math.toIntExact(staffMapper.countByExample(example));
+    }
+
+
 
 
 

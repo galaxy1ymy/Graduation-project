@@ -6,8 +6,7 @@ Content-Type: application/json
 
 GET http://127.0.0.1:8001/staff/count
 Content-Type: application/json
-=======
->>>>>>> ffb236f472abca80f60ef7bf648a0e6e2fa8a25c
+
 ###
 
 GET http://127.0.0.1:8001/staff/getNames?jobNumber=1
@@ -26,6 +25,24 @@ Content-Type: application/json
 ###
 
 GET http://127.0.0.1:8001/staff/attendance/list?jobNumber=1
+Content-Type: application/json
+
+###
+
+
+GET http://127.0.0.1:8001/staff/active/count
+Content-Type: application/json
+
+###
+
+
+GET http://127.0.0.1:8001/staff/count
+Content-Type: application/json
+
+###
+
+
+GET http://127.0.0.1:8001/staff/attendance/todayCount
 Content-Type: application/json
 
 ###
