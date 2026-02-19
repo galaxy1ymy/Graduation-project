@@ -39,18 +39,16 @@
     <!-- 已提交 Tab -->
     <a-tab-pane key="2" tab="已提交">
       <div style="display: flex; justify-content: flex-end; margin-bottom: 8px;">
-        <a-button type="primary" @click="fetchAll">
-          刷新
-        </a-button>
+        <a-button type="primary" @click="fetchAll">刷新</a-button>
       </div>
 
-      <div style="max-height: 70vh; overflow-y: auto;">
         <a-table
             :columns="columns"
             :data-source="pagedList"
             :pagination="pagination"
             :loading="loading"
             @change="handleTableChange"
+            :scroll="{ y: '60vh' }"
         >
           <template #bodyCell="{ column, record }">
         <span v-if="['startTime','endTime','createTime','updateTime','approveTime'].includes(column.key)">
@@ -64,7 +62,6 @@
             <span v-else>{{ record[column.key] }}</span>
           </template>
         </a-table>
-      </div>
     </a-tab-pane>
 
 
