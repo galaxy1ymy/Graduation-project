@@ -2,15 +2,11 @@ import axios from 'axios'
 import store from '@/store'
 import { notification } from 'ant-design-vue'
 
-// 创建 axios 实例
 const request = axios.create({
-    baseURL: 'http://127.0.0.1:8001', // 后端地址
+    baseURL: '/',   // ✅ 改成 /
     timeout: 10000
 })
 
-/**
- * 请求拦截器
- */
 request.interceptors.request.use(
     config => {
         const token = store.getters.getToken
@@ -22,14 +18,10 @@ request.interceptors.request.use(
     error => Promise.reject(error)
 )
 
-/**
- * 响应拦截器
- */
 request.interceptors.response.use(
     response => {
         const res = response.data
 
-        // 如果你后端是 CommonResp 结构
         if (res && res.success === false) {
             notification.error({
                 message: '请求失败',

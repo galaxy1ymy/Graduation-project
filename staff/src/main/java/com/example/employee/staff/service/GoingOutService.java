@@ -24,5 +24,13 @@ public class GoingOutService {
         return goingOutMapper.selectByExampleWithBLOBs(example);
     }
 
+    public GoingOut getGoingOutById(Long id) {
+        return goingOutMapper.selectByPrimaryKey(id);
+    }
+
+    public int updateGoingOut(GoingOut goingOut) {
+        return goingOutMapper.updateByPrimaryKeySelective(goingOut);
+    }
+
 
 }

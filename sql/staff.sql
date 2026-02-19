@@ -46,6 +46,8 @@ CREATE TABLE attendance_records (
     `updated_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP comment '更新时间',
     FOREIGN KEY (job_number) REFERENCES staff(job_number) -- 关联 staff 表
 )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='考勤打卡';
+ALTER TABLE attendance_records
+    ADD COLUMN name VARCHAR(50) COMMENT '员工姓名';
 
 DROP TABLE IF EXISTS `leave_request`;
 CREATE TABLE `leave_request` (
@@ -65,6 +67,9 @@ CREATE TABLE `leave_request` (
     FOREIGN KEY (job_number) REFERENCES staff(job_number) -- 关联 staff 表
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='请假申请表';
 
+ALTER TABLE leave_request
+    ADD COLUMN name VARCHAR(50) COMMENT '员工姓名';
+
 
 DROP TABLE IF EXISTS `business`;
 CREATE TABLE `business` (
@@ -83,6 +88,9 @@ CREATE TABLE `business` (
     FOREIGN KEY (job_number) REFERENCES staff(job_number) -- 关联 staff 表
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='出差申请表';
 
+ALTER TABLE business
+    ADD COLUMN name VARCHAR(50) COMMENT '员工姓名';
+
 
 DROP TABLE IF EXISTS `overtime`;
 CREATE TABLE `overtime` (
@@ -100,6 +108,8 @@ CREATE TABLE `overtime` (
     FOREIGN KEY (job_number) REFERENCES staff(job_number) -- 关联 staff 表
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='加班申请表';
 
+ALTER TABLE overtime
+    ADD COLUMN name VARCHAR(50) COMMENT '员工姓名';
 
 DROP TABLE IF EXISTS `going_out`;
 CREATE TABLE `going_out` (
@@ -117,6 +127,9 @@ CREATE TABLE `going_out` (
     `update_time` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
     FOREIGN KEY (job_number) REFERENCES staff(job_number) -- 关联 staff 表
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='外出申请表';
+ALTER TABLE going_out
+    ADD COLUMN name VARCHAR(50) COMMENT '员工姓名';
+
 
 
 DROP TABLE IF EXISTS `meeting`;
@@ -137,6 +150,9 @@ CREATE TABLE `meeting` (
   FOREIGN KEY (job_number) REFERENCES staff(job_number) -- 关联 staff 表
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='会议室预定申请表';
 
+ALTER TABLE meeting
+    ADD COLUMN employee_name VARCHAR(50) COMMENT '员工姓名';
+
 
 DROP TABLE IF EXISTS `goods`;
 CREATE TABLE `goods` (
@@ -153,3 +169,5 @@ CREATE TABLE `goods` (
       `update_time` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
       FOREIGN KEY (job_number) REFERENCES staff(job_number) -- 关联 staff 表
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='物品领取申请表';
+ALTER TABLE goods
+    ADD COLUMN employee_name VARCHAR(50) COMMENT '员工姓名';

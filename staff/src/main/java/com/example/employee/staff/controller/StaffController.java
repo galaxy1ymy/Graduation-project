@@ -35,8 +35,14 @@ public class StaffController {
      * 员工列表
      */
     @GetMapping("/list")
-    public CommonResp<List<Staff>> list() {
-        return new CommonResp<>(staffService.list());
+    public CommonResp<List<Staff>> list(@RequestParam(required = false) String name) {
+        List<Staff> staffs;
+        if (name != null && !name.isEmpty()) {
+            staffs = staffService.listByName(name);
+        } else {
+            staffs = staffService.list();
+        }
+        return new CommonResp<>(staffs);
     }
 
     @DeleteMapping("/{id}")
@@ -45,11 +51,20 @@ public class StaffController {
         return new CommonResp<>(true);
     }
 
-    @PutMapping
-    public CommonResp<Boolean> update(@RequestBody Staff staff) {
+    @PutMapping("/{id}")
+    public CommonResp<Boolean> update(@PathVariable Long id, @RequestBody Staff staff) {
+        staff.setId(id); // 确保 id 一定存在
         staffService.update(staff);
         return new CommonResp<>(true);
     }
+
+    @PostMapping
+    public CommonResp<Boolean> add(@RequestBody Staff staff) {
+        staffService.add(staff);
+        return new CommonResp<>(true);
+    }
+
+
 
 
 

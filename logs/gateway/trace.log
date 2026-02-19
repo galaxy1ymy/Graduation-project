@@ -1,146 +1,25 @@
-2026-01-25 20:26:45.733 [background-preinit] INFO  org.hibernate.validator.internal.util.Version [] - HV000001: Hibernate Validator 8.0.2.Final
-2026-01-25 20:26:45.816 [restartedMain] INFO  config.gateway.com.example.employee.manager.GatewayApplication [] - Starting GatewayApplication using Java 17.0.11 with PID 11968 (D:\Java\springbootProject\employee\gateway\target\classes started by lenovo in D:\Java\springbootProject\employee)
-2026-01-25 20:26:45.818 [restartedMain] INFO  config.gateway.com.example.employee.manager.GatewayApplication [] - No active profile set, falling back to 1 default profile: "default"
-2026-01-25 20:26:46.011 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-01-25 20:26:46.012 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-01-25 20:26:46.972 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=3fe1d1b5-2bed-3b9e-b9ed-abdf029ce510
-2026-01-25 20:26:48.779 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [After]
-2026-01-25 20:26:48.779 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Before]
-2026-01-25 20:26:48.779 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Between]
-2026-01-25 20:26:48.779 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Cookie]
-2026-01-25 20:26:48.779 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Header]
-2026-01-25 20:26:48.779 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Host]
-2026-01-25 20:26:48.779 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Method]
-2026-01-25 20:26:48.779 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Path]
-2026-01-25 20:26:48.779 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Query]
-2026-01-25 20:26:48.779 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [ReadBody]
-2026-01-25 20:26:48.780 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [RemoteAddr]
-2026-01-25 20:26:48.780 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
-2026-01-25 20:26:48.780 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Weight]
-2026-01-25 20:26:48.780 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [CloudFoundryRouteService]
-2026-01-25 20:26:49.056 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - LiveReload server is running on port 35729
-2026-01-25 20:26:50.249 [restartedMain] INFO  o.s.boot.web.embedded.netty.NettyWebServer [] - Netty started on port 8000 (http)
-2026-01-25 20:26:51.250 [restartedMain] INFO  config.gateway.com.example.employee.manager.GatewayApplication [] - Started GatewayApplication in 6.839 seconds (process running for 8.32)
-2026-01-25 20:26:51.255 [restartedMain] INFO  config.gateway.com.example.employee.manager.GatewayApplication [] - 启动成功！！
-2026-01-25 20:26:51.256 [restartedMain] INFO  config.gateway.com.example.employee.manager.GatewayApplication [] - 网关地址: 	http://127.0.0.1:8000
-2026-01-25 21:14:38.606 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [] - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
-2026-01-25 21:14:38.690 [Thread-7] INFO  o.s.boot.web.embedded.netty.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
-2026-01-25 21:14:38.726 [netty-shutdown] INFO  o.s.boot.web.embedded.netty.GracefulShutdown [] - Graceful shutdown complete
-2026-01-25 21:14:39.514 [restartedMain] INFO  com.example.gateway.config.GatewayApplication [] - Starting GatewayApplication using Java 17.0.11 with PID 11968 (D:\Java\springbootProject\employee\gateway\target\classes started by lenovo in D:\Java\springbootProject\employee)
-2026-01-25 21:14:39.515 [restartedMain] INFO  com.example.gateway.config.GatewayApplication [] - No active profile set, falling back to 1 default profile: "default"
-2026-01-25 21:14:39.619 [restartedMain] WARN  o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext [] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.example.gateway.config.GatewayApplication]
-2026-01-25 21:14:39.647 [restartedMain] ERROR org.springframework.boot.SpringApplication [] - Application run failed
-org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.example.gateway.config.GatewayApplication]
-	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:194)
-	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:418)
-	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290)
-	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
-	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
-	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:791)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:609)
-	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
-	at com.example.gateway.config.GatewayApplication.main(GatewayApplication.java:17)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
-Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'gatewayApplication' for bean class [config.gateway.manager.com.example.employee.staff.GatewayApplication] conflicts with existing, non-compatible bean definition of same name and class [com.example.gateway.config.GatewayApplication]
-	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:361)
-	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:288)
-	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128)
-	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:346)
-	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:281)
-	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:204)
-	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:172)
-	... 16 common frames omitted
-2026-01-25 21:14:41.597 [restartedMain] INFO  com.example.gateway.config.GatewayApplication [] - Starting GatewayApplication using Java 17.0.11 with PID 11968 (D:\Java\springbootProject\employee\gateway\target\classes started by lenovo in D:\Java\springbootProject\employee)
-2026-01-25 21:14:41.597 [restartedMain] INFO  com.example.gateway.config.GatewayApplication [] - No active profile set, falling back to 1 default profile: "default"
-2026-01-25 21:14:41.683 [restartedMain] WARN  o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext [] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.example.gateway.config.GatewayApplication]
-2026-01-25 21:14:41.686 [restartedMain] ERROR org.springframework.boot.SpringApplication [] - Application run failed
-org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.example.gateway.config.GatewayApplication]
-	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:194)
-	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:418)
-	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290)
-	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
-	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
-	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:791)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:609)
-	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
-	at com.example.gateway.config.GatewayApplication.main(GatewayApplication.java:17)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
-Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'gatewayApplication' for bean class [config.gateway.manager.com.example.employee.staff.GatewayApplication] conflicts with existing, non-compatible bean definition of same name and class [com.example.gateway.config.GatewayApplication]
-	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:361)
-	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:288)
-	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128)
-	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:346)
-	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:281)
-	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:204)
-	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:172)
-	... 16 common frames omitted
-2026-01-25 21:19:10.028 [restartedMain] INFO  com.example.gateway.config.GatewayApplication [] - Starting GatewayApplication using Java 17.0.11 with PID 11968 (D:\Java\springbootProject\employee\gateway\target\classes started by lenovo in D:\Java\springbootProject\employee)
-2026-01-25 21:19:10.028 [restartedMain] INFO  com.example.gateway.config.GatewayApplication [] - No active profile set, falling back to 1 default profile: "default"
-2026-01-25 21:19:10.087 [restartedMain] WARN  o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext [] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.example.gateway.config.GatewayApplication]
-2026-01-25 21:19:10.089 [restartedMain] ERROR org.springframework.boot.SpringApplication [] - Application run failed
-org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.example.gateway.config.GatewayApplication]
-	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:194)
-	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:418)
-	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290)
-	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
-	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
-	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:791)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:609)
-	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
-	at com.example.gateway.config.GatewayApplication.main(GatewayApplication.java:17)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
-Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'gatewayApplication' for bean class [config.gateway.manager.com.example.employee.staff.GatewayApplication] conflicts with existing, non-compatible bean definition of same name and class [com.example.gateway.config.GatewayApplication]
-	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:361)
-	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:288)
-	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128)
-	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:346)
-	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:281)
-	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:204)
-	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:172)
-	... 16 common frames omitted
-2026-02-01 14:49:39.322 [background-preinit] INFO  org.hibernate.validator.internal.util.Version [] - HV000001: Hibernate Validator 8.0.2.Final
-2026-02-01 14:49:39.380 [restartedMain] INFO  c.e.e.s.manager.gateway.config.GatewayApplication [] - Starting GatewayApplication using Java 17.0.11 with PID 30544 (D:\Java\springbootProject\employee\gateway\target\classes started by lenovo in D:\Java\springbootProject\employee)
-2026-02-01 14:49:39.381 [restartedMain] INFO  c.e.e.s.manager.gateway.config.GatewayApplication [] - No active profile set, falling back to 1 default profile: "default"
-2026-02-01 14:49:39.544 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-02-01 14:49:39.545 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-02-01 14:49:40.185 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=3fe1d1b5-2bed-3b9e-b9ed-abdf029ce510
-2026-02-01 14:49:41.623 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [After]
-2026-02-01 14:49:41.623 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Before]
-2026-02-01 14:49:41.624 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Between]
-2026-02-01 14:49:41.624 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Cookie]
-2026-02-01 14:49:41.624 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Header]
-2026-02-01 14:49:41.624 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Host]
-2026-02-01 14:49:41.624 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Method]
-2026-02-01 14:49:41.624 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Path]
-2026-02-01 14:49:41.624 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Query]
-2026-02-01 14:49:41.624 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [ReadBody]
-2026-02-01 14:49:41.624 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [RemoteAddr]
-2026-02-01 14:49:41.624 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
-2026-02-01 14:49:41.624 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Weight]
-2026-02-01 14:49:41.625 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [CloudFoundryRouteService]
-2026-02-01 14:49:41.874 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - LiveReload server is running on port 35729
-2026-02-01 14:49:43.077 [restartedMain] INFO  o.s.boot.web.embedded.netty.NettyWebServer [] - Netty started on port 8000 (http)
-2026-02-01 14:49:44.332 [restartedMain] INFO  c.e.e.s.manager.gateway.config.GatewayApplication [] - Started GatewayApplication in 6.077 seconds (process running for 7.45)
-2026-02-01 14:49:44.336 [restartedMain] INFO  c.e.e.s.manager.gateway.config.GatewayApplication [] - 启动成功！！
-2026-02-01 14:49:44.336 [restartedMain] INFO  c.e.e.s.manager.gateway.config.GatewayApplication [] - 网关地址: 	http://127.0.0.1:8000
+2026-02-19 19:58:28.984 [background-preinit] INFO  org.hibernate.validator.internal.util.Version [] - HV000001: Hibernate Validator 8.0.2.Final
+2026-02-19 19:58:29.051 [restartedMain] INFO  c.e.e.s.manager.gateway.config.GatewayApplication [] - Starting GatewayApplication using Java 17.0.11 with PID 2860 (D:\Java\springbootProject\employee\gateway\target\classes started by lenovo in D:\Java\springbootProject\employee)
+2026-02-19 19:58:29.052 [restartedMain] INFO  c.e.e.s.manager.gateway.config.GatewayApplication [] - No active profile set, falling back to 1 default profile: "default"
+2026-02-19 19:58:29.222 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-19 19:58:29.222 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-19 19:58:29.923 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=3fe1d1b5-2bed-3b9e-b9ed-abdf029ce510
+2026-02-19 19:58:31.511 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [After]
+2026-02-19 19:58:31.511 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Before]
+2026-02-19 19:58:31.511 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Between]
+2026-02-19 19:58:31.511 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Cookie]
+2026-02-19 19:58:31.511 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Header]
+2026-02-19 19:58:31.511 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Host]
+2026-02-19 19:58:31.511 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Method]
+2026-02-19 19:58:31.511 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Path]
+2026-02-19 19:58:31.511 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Query]
+2026-02-19 19:58:31.511 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [ReadBody]
+2026-02-19 19:58:31.512 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [RemoteAddr]
+2026-02-19 19:58:31.512 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2026-02-19 19:58:31.512 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [Weight]
+2026-02-19 19:58:31.512 [restartedMain] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator [] - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2026-02-19 19:58:31.791 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - LiveReload server is running on port 35729
+2026-02-19 19:58:33.178 [restartedMain] INFO  o.s.boot.web.embedded.netty.NettyWebServer [] - Netty started on port 8000 (http)
+2026-02-19 19:58:34.539 [restartedMain] INFO  c.e.e.s.manager.gateway.config.GatewayApplication [] - Started GatewayApplication in 6.922 seconds (process running for 8.477)
+2026-02-19 19:58:34.545 [restartedMain] INFO  c.e.e.s.manager.gateway.config.GatewayApplication [] - 启动成功！！
+2026-02-19 19:58:34.546 [restartedMain] INFO  c.e.e.s.manager.gateway.config.GatewayApplication [] - 网关地址: 	http://127.0.0.1:8000

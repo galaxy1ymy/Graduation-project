@@ -25,4 +25,12 @@ public class BusinessService {
         return businessMapper.selectByExampleWithBLOBs(example);
     }
 
+    public Business getBusinessById(Long id) {
+        return businessMapper.selectByPrimaryKey(id);
+    }
+
+    public int updateBusiness(Business business) {
+        return businessMapper.updateByPrimaryKeySelective(business);
+    }
+
 }

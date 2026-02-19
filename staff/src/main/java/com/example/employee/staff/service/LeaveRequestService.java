@@ -24,5 +24,17 @@ public class LeaveRequestService {
         example.createCriteria().andJobNumberEqualTo(jobNumber);
         return leaveRequestMapper.selectByExampleWithBLOBs(example);
     }
+
+    // 更新请假记录（审批状态）
+    public int updateLeave(LeaveRequest request) {
+        return leaveRequestMapper.updateByPrimaryKeySelective(request);
+    }
+
+    // 根据ID查询
+    public LeaveRequest getLeaveById(Long id) {
+        return leaveRequestMapper.selectByPrimaryKey(id);
+    }
+
+
 }
 

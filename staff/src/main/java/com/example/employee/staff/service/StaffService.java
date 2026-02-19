@@ -61,6 +61,18 @@ public class StaffService {
         staffMapper.updateByPrimaryKeySelective(staff);
     }
 
+    public void add(Staff staff) {
+        staffMapper.insertSelective(staff);
+    }
+
+    public List<Staff> listByName(String name) {
+        StaffExample example = new StaffExample();
+        example.createCriteria().andNameLike("%" + name + "%"); // 模糊查询
+        example.setOrderByClause("id desc");
+        return staffMapper.selectByExample(example);
+    }
+
+
 
 
 

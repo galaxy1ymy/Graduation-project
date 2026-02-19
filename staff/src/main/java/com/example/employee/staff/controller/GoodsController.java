@@ -31,6 +31,7 @@ public class GoodsController {
         }
 
         request.setStatus(0); // 默认待审批
+        request.setEmployeeName(staff.getName());
         request.setCreateTime(new Date());
         request.setUpdateTime(new Date());
 

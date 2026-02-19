@@ -36,12 +36,13 @@
 
   <a-modal
       v-model:open="visible"
-      title="编辑员工"
+      :title="formState.id ? '编辑员工' : '新增员工'"
       @ok="submitEdit"
       ok-text="保存"
       cancel-text="取消"
   >
-    <a-form :model="formState" label-col="{ span: 5 }" wrapper-col="{ span: 18 }">
+
+  <a-form :model="formState" label-col="{ span: 5 }" wrapper-col="{ span: 18 }">
       <a-form-item label="姓名">
         <a-input v-model:value="formState.name" />
       </a-form-item>
@@ -54,7 +55,12 @@
       </a-form-item>
 
       <a-form-item label="部门">
-        <a-input v-model:value="formState.department" />
+        <a-select v-model:value="formState.department" >
+          <a-select-option value="会计部门">会计部门</a-select-option>
+          <a-select-option value="人事部门">人事部门</a-select-option>
+          <a-select-option value="运营部门">运营部门</a-select-option>
+          <a-select-option value="研发部门">研发部门</a-select-option>
+        </a-select>
       </a-form-item>
 
       <a-form-item label="职位">
@@ -63,6 +69,24 @@
 
       <a-form-item label="手机号">
         <a-input v-model:value="formState.phone" />
+      </a-form-item>
+
+      <a-form-item label="地址">
+        <a-input v-model:value="formState.address" />
+      </a-form-item>
+
+      <a-form-item label="权限">
+        <a-select v-model:value="formState.role" >
+          <a-select-option value="1">1</a-select-option>
+          <a-select-option value="员工">2</a-select-option>
+        </a-select>
+      </a-form-item>
+
+      <a-form-item label="是否在职">
+        <a-select v-model:value="formState.status" >
+          <a-select-option value="是">1</a-select-option>
+          <a-select-option value="否">0</a-select-option>
+        </a-select>
       </a-form-item>
     </a-form>
   </a-modal>
@@ -191,7 +215,9 @@ export default defineComponent({
       department: '',
       position: '',
       phone: '',
-      address: ''
+      address: '',
+      role:'',
+      status:''
     })
 
 
@@ -214,20 +240,61 @@ export default defineComponent({
     const submitEdit = async () => {
       try {
         if (formState.id) {
-          // 编辑
-          await request.put('/staff', formState)
+          // 编辑员工
+          await request.put(`/staff/${formState.id}`, {
+            jobNumber: formState.jobNumber,
+            name: formState.name,
+            gender: formState.gender,
+            age: formState.age,
+            department: formState.department,
+            position: formState.position,
+            phone: formState.phone,
+            address: formState.address,
+            role: formState.role,
+            status: formState.status
+          })
           message.success('修改成功')
         } else {
-          // 新增
-          await request.post('/staff', formState)
+          // 新增员工
+          await request.post('/staff', {
+            jobNumber: formState.jobNumber,
+            name: formState.name,
+            gender: formState.gender,
+            age: formState.age,
+            department: formState.department,
+            position: formState.position,
+            phone: formState.phone,
+            address: formState.address,
+            role: formState.role,
+            status: formState.status
+          })
           message.success('新增成功')
         }
+
         visible.value = false
-        loadData()
+        loadData() // 刷新表格
       } catch (e) {
         message.error('操作失败')
       }
     }
+
+    const handleAdd = () => {
+      Object.assign(formState, {
+        id: null,
+        jobNumber: '',
+        name: '',
+        gender: '',
+        age: null,
+        department: '',
+        position: '',
+        phone: '',
+        address: '',
+        role: '',
+        status: ''
+      })
+      visible.value = true
+    }
+
 
 
 
@@ -246,7 +313,7 @@ export default defineComponent({
       submitEdit,
       loadData,
       value,
-      // handleAdd,
+      handleAdd,
       search
     }
 

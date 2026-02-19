@@ -24,4 +24,14 @@ public class OvertimeService {
         example.createCriteria().andJobNumberEqualTo(jobNumber);
         return overtimeMapper.selectByExampleWithBLOBs(example);
     }
+
+    // 根据ID获取记录
+    public Overtime getOvertimeById(Long id) {
+        return overtimeMapper.selectByPrimaryKey(id);
+    }
+
+    // 更新记录（审批通过或驳回）
+    public int updateOvertime(Overtime overtime) {
+        return overtimeMapper.updateByPrimaryKeySelective(overtime);
+    }
 }

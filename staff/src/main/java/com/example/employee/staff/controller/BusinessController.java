@@ -32,6 +32,7 @@ public class BusinessController {
         }
 
         request.setStatus(0); // 默认待审批
+        request.setName(staff.getName());
         request.setCreateTime(new Date());
         request.setUpdateTime(new Date());
 
@@ -44,6 +45,20 @@ public class BusinessController {
     public List<Business> checkAll(@RequestParam String jobNumber) {
         List<Business> list = businessService.getAllBusiness(jobNumber);
         return list;
+    }
+
+    @PutMapping("/updateStatus/{id}")
+    public String updateStatus(@PathVariable Long id, @RequestBody Business request) {
+        Business business = businessService.getBusinessById(id);
+        if (business == null) return "fail: 记录不存在";
+
+        business.setStatus(request.getStatus());
+        business.setApproverId(request.getApproverId()); // 可选
+        business.setApproveTime(new Date());
+        business.setUpdateTime(new Date());
+
+        int result = businessService.updateBusiness(business);
+        return result > 0 ? "success" : "fail";
     }
 
 }
