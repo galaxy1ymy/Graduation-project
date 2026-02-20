@@ -1,7 +1,11 @@
 <template>
   <div>
     <h1>通知</h1>
-    <a-list bordered :data-source="notifications" locale="{ emptyText: '暂无通知' }">
+    <a-list
+        bordered
+        :data-source="notifications"
+        locale="{ emptyText: '暂无通知' }"
+    >
       <template #renderItem="{ item }">
         <a-list-item>
           <a-list-item-meta :title="item.title" :description="item.content" />
@@ -22,7 +26,8 @@ let intervalId = null;
 const fetchNotifications = async () => {
   try {
     const res = await axios.get('/manager/notifications');
-    notifications.value = res.data;
+    // 倒序排列：最新发布的在最上面
+    notifications.value = res.data.slice().reverse();
   } catch (error) {
     console.error('获取通知列表失败', error);
   }

@@ -25,11 +25,6 @@
           <form-outlined />&nbsp; 审批
         </router-link>
       </a-menu-item>
-      <a-menu-item key="salaryMgmt">
-        <router-link :to="{ name: 'SalaryMgmt' }" style="color: inherit;">
-          <account-book-outlined />&nbsp; 薪资管理
-        </router-link>
-      </a-menu-item>
       <a-menu-item key="notificationMgmt">
         <router-link :to="{ name: 'NotificationMgmt' }" style="color: inherit;">
           <comment-outlined />&nbsp; 通知与会议

@@ -43,9 +43,17 @@ const editingNotification = ref(null);
 const form = reactive({ title: '', content: '' });
 
 // 获取通知列表
+// 获取通知列表
 const fetchNotifications = async () => {
   try {
-    notifications.value = await request.get('/manager/notifications');
+    let data = await request.get('/manager/notifications');
+
+    // 假设每条通知有 createdAt 字段，按时间倒序
+    /*notifications.value = data.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));*/
+
+    // 如果接口已经是数组倒序返回，也可以直接用 reverse()
+    notifications.value = data.reverse();
+
   } catch (err) {
     console.error('获取通知列表失败', err);
   }
