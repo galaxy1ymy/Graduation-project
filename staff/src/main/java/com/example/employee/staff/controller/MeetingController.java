@@ -40,4 +40,19 @@ public class MeetingController {
         return list;
     }
 
+    // 新增审批接口
+    @PutMapping("/updateStatus/{id}")
+    public String updateStatus(@PathVariable Long id, @RequestBody Meeting request) {
+        Meeting meeting = meetingService.getMeetingById(id);
+        if (meeting == null) return "fail: 记录不存在";
+
+        meeting.setStatus(request.getStatus()); // 1=通过，2=驳回
+        meeting.setApproverId(request.getApproverId()); // 可选
+        meeting.setApproveTime(new Date());
+        meeting.setUpdateTime(new Date());
+
+        int result = meetingService.updateMeeting(meeting);
+        return result > 0 ? "success" : "fail";
+    }
+
 }

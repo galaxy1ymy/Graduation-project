@@ -1,6 +1,7 @@
 package com.example.employee.staff.controller;
 
 import com.example.employee.staff.domain.Goods;
+import com.example.employee.staff.domain.Meeting;
 import com.example.employee.staff.domain.Staff;
 import com.example.employee.staff.service.GoodsService;
 import com.example.employee.staff.service.StaffService;
@@ -43,5 +44,20 @@ public class GoodsController {
     public List<Goods> checkAll(@RequestParam String jobNumber) {
         List<Goods> list = goodsService.getAllGoods(jobNumber);
         return list;
+    }
+
+    // 新增审批接口
+    @PutMapping("/updateStatus/{id}")
+    public String updateStatus(@PathVariable Long id, @RequestBody Meeting request) {
+        Goods goods = goodsService.getGoodsById(id);
+        if (goods == null) return "fail: 记录不存在";
+
+        goods.setStatus(request.getStatus()); // 1=通过，2=驳回
+        goods.setApproverId(request.getApproverId()); // 可选
+        goods.setApproveTime(new Date());
+        goods.setUpdateTime(new Date());
+
+        int result = goodsService.updateGoods(goods);
+        return result > 0 ? "success" : "fail";
     }
 }

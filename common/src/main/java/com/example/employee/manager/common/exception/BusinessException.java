@@ -1,4 +1,4 @@
-package com.example.employee.staff.manager.common.exception;
+package com.example.employee.manager.common.exception;
 
 public class BusinessException extends RuntimeException{
     private BusinessExceptionEnum e;

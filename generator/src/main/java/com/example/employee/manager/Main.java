@@ -1,4 +1,4 @@
-package com.example.employee.staff.manager;
+package com.example.employee.manager;
 
 public class Main {
     public static void main(String[] args) {

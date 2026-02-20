@@ -1,4 +1,4 @@
-package com.example.employee.staff.manager.common.resp;
+package com.example.employee.manager.common.resp;
 
 public class CommonResp<T> {
 //    业务上的成功或失败

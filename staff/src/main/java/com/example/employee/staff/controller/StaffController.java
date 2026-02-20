@@ -1,7 +1,7 @@
 package com.example.employee.staff.controller;
 
 import com.example.employee.staff.domain.Staff;
-import com.example.employee.staff.manager.common.resp.CommonResp;
+import com.example.employee.manager.common.resp.CommonResp;
 import com.example.employee.staff.service.StaffService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

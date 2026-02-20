@@ -23,7 +23,12 @@
       </a-menu-item>
       <a-menu-item key="leave-approval">
         <router-link :to="{ name: 'LeaveApprovalManagement' }" style="color: inherit;">
-          <home-outlined />&nbsp; 请假管理
+          <home-outlined />&nbsp; 请假审批管理
+        </router-link>
+      </a-menu-item>
+      <a-menu-item key="noticeManagement">
+        <router-link :to="{ name: 'NoticeManagement' }" style="color: inherit;">
+          <home-outlined />&nbsp; 通知管理
         </router-link>
       </a-menu-item>
 
@@ -54,7 +59,7 @@ export default defineComponent({
       localStorage.clear()
 
       // 2️⃣ 跳转到 8081 的登录页
-      window.location.href = 'http://localhost:8081/login'
+      window.location.href = 'http://localhost:8080/login'
     }
 
 

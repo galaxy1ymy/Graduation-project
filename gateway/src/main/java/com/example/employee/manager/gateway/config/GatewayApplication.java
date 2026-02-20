@@ -1,4 +1,4 @@
-package com.example.employee.staff.manager.gateway.config;
+package com.example.employee.manager.gateway.config;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

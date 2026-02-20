@@ -61,33 +61,39 @@ export default defineComponent({
 
     const router = useRouter();
     const login = () => {
-      axios.post('staff/login',{
+      axios.post('staff/login', {
         jobNumber: loginForm.jobNumber,
         password: loginForm.password,
         loginType: userType.resource
       }).then(response => {
-        let data=response.data;
+        let data = response.data;
         if (data.success) {
-          const { token, role, staffName } = data.content
+          const { token, role, staffName } = data.content;
 
-          store.commit('setJobNumber', loginForm.jobNumber)
-          store.commit('setRole', role)
-          store.commit('setToken', token)
-          store.commit('setStaffName', staffName)
-
-
-
-          notification.success({ description: '登录成功', duration: 3 })
-
-          if (role === '2') {
-            window.location.href = 'http://localhost:8080/manage/homePage'
-          } else {
-            router.push('/home')
+          // 判断前端选择的类型是否与后台返回的角色一致
+          if (userType.resource !== role) {
+            notification.error({ description: '登录失败：账号类型与选择的登录类型不匹配' });
+            return;
           }
-        }else {
-          notification.error({description: data.message});
+
+          // 保存到 store
+          store.commit('setJobNumber', loginForm.jobNumber);
+          store.commit('setRole', role);
+          store.commit('setToken', token);
+          store.commit('setStaffName', staffName);
+
+          notification.success({ description: '登录成功', duration: 3 });
+
+          // 跳转页面
+          if (role === '2') {
+            window.location.href = 'http://localhost:8081/manage/homePage';
+          } else {
+            router.push('/home');
+          }
+        } else {
+          notification.error({ description: data.message });
         }
-      })
+      });
 
     };
 

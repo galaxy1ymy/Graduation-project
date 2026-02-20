@@ -45,7 +45,7 @@
                 targetProject="../manager/src/main/java">
         </javaClientGenerator>
 
-        <table tableName="administrator" domainObjectName="administrator"></table>
+        <table tableName="notification" domainObjectName="Notification"></table>
 
 
 

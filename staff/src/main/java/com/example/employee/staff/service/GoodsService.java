@@ -24,4 +24,11 @@ public class GoodsService {
         example.createCriteria().andJobNumberEqualTo(jobNumber);
         return goodsMapper.selectByExampleWithBLOBs(example);
     }
+
+    public Goods getGoodsById(Long id) {
+        return goodsMapper.selectByPrimaryKey(id);
+    }
+    public int updateGoods(Goods goods) {
+        return goodsMapper.updateByPrimaryKeySelective(goods);
+    }
 }

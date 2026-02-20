@@ -1,7 +1,7 @@
 package com.example.employee.staff.service;
 
-import com.example.employee.staff.manager.common.exception.BusinessException;
-import com.example.employee.staff.manager.common.exception.BusinessExceptionEnum;
+import com.example.employee.manager.common.exception.BusinessException;
+import com.example.employee.manager.common.exception.BusinessExceptionEnum;
 import com.example.employee.staff.domain.Login;
 import com.example.employee.staff.mapper.LoginMapper;
 import com.example.employee.staff.req.StaffLoginReq;

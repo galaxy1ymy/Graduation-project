@@ -23,5 +23,12 @@ public class MeetingService {
         example.createCriteria().andJobNumberEqualTo(jobNumber);
         return meetingMapper.selectByExampleWithBLOBs(example);
     }
+
+    public Meeting getMeetingById(Long id) {
+        return meetingMapper.selectByPrimaryKey(id);
+    }
+    public int updateMeeting(Meeting meeting) {
+        return meetingMapper.updateByPrimaryKeySelective(meeting);
+    }
 }
 

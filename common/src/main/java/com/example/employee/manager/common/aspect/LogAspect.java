@@ -1,4 +1,4 @@
-package com.example.employee.staff.manager.common.aspect;
+package com.example.employee.manager.common.aspect;
 
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.support.spring.PropertyPreFilters;

@@ -3,7 +3,6 @@
 
     <!-- ================= 发起申请 ================= -->
     <a-tab-pane key="1" tab="发起申请">
-
       <a-card title="假勤">
         <a-card-grid
             v-for="(item, index) in menuList1"
@@ -31,45 +30,39 @@
           </a-button>
         </a-card-grid>
       </a-card>
-
     </a-tab-pane>
 
-
     <!-- ================= 已提交 ================= -->
-    <!-- 已提交 Tab -->
     <a-tab-pane key="2" tab="已提交">
       <div style="display: flex; justify-content: flex-end; margin-bottom: 8px;">
         <a-button type="primary" @click="fetchAll">刷新</a-button>
       </div>
 
-        <a-table
-            :columns="columns"
-            :data-source="pagedList"
-            :pagination="pagination"
-            :loading="loading"
-            @change="handleTableChange"
-            :scroll="{ y: '60vh' }"
-        >
-          <template #bodyCell="{ column, record }">
-        <span v-if="['startTime','endTime','createTime','updateTime','approveTime'].includes(column.key)">
-          {{ formatDate(record[column.key]) }}
-        </span>
-            <span v-else-if="column.key === 'status'">
-          <a-tag v-if="record.status === 0" color="orange">待审批</a-tag>
-          <a-tag v-else-if="record.status === 1" color="green">已通过</a-tag>
-          <a-tag v-else color="red">已拒绝</a-tag>
-        </span>
-            <span v-else>{{ record[column.key] }}</span>
-          </template>
-        </a-table>
+      <a-table
+          :columns="columns"
+          :data-source="pagedList"
+          :pagination="pagination"
+          :loading="loading"
+          @change="handleTableChange"
+          :scroll="{ y: '60vh' }"
+      >
+        <template #bodyCell="{ column, record }">
+          <span v-if="['startTime','endTime','createTime','updateTime','approveTime'].includes(column.key)">
+            {{ formatDate(record[column.key]) }}
+          </span>
+          <span v-else-if="column.key === 'status'">
+            <a-tag v-if="record.status === 0" color="orange">待审批</a-tag>
+            <a-tag v-else-if="record.status === 1" color="green">已通过</a-tag>
+            <a-tag v-else color="red">已拒绝</a-tag>
+          </span>
+          <span v-else>{{ record[column.key] }}</span>
+        </template>
+      </a-table>
     </a-tab-pane>
-
-
 
   </a-tabs>
 
-
-  <!-- ================= 弹窗保持不变 ================= -->
+  <!-- ================= 弹窗 ================= -->
   <a-modal
       v-model:visible="visible"
       :title="modalTitle"
@@ -107,7 +100,7 @@ import {
   DesktopOutlined,
   ToolOutlined
 } from "@ant-design/icons-vue";
-import { ref,defineComponent,onMounted,computed } from "vue";
+import { ref, defineComponent, onMounted, computed } from "vue";
 import { message } from "ant-design-vue";
 import LeaveForm from "@/components/LeaveForm.vue";
 import TravelForm from "@/components/TravelForm.vue";
@@ -117,7 +110,6 @@ import MeetingForm from "@/components/MeetingForm.vue";
 import GoodsForm from "@/components/GoodsForm.vue";
 import { useStore } from "vuex";
 import axios from "axios";
-
 
 export default defineComponent({
   components:{
@@ -129,22 +121,15 @@ export default defineComponent({
     GoodsForm
   },
   setup() {
-
-// 弹窗
     const activeKey = ref('1');
-
     const store = useStore();
     const visible = ref(false);
     const currentType = ref("");
     const modalTitle = ref("");
     const loading = ref(false);
+    const allList = ref([]);
+    const formatDate = ts => ts ? new Date(ts).toLocaleString() : '';
 
-    const allList = ref([])
-    const formatDate = ts => ts ? new Date(ts).toLocaleString() : ''
-
-
-
-// 子表单 ref
     const leaveRef = ref();
     const overtimeRef = ref();
     const travelRef = ref();
@@ -161,21 +146,18 @@ export default defineComponent({
     const menuList2 = [
       {label: '会议室预定', icon: DesktopOutlined, type: 'meeting'},
       {label: '物品领取', icon: ToolOutlined, type: 'goods'},
-    ]
+    ];
 
-// 打开弹窗
     const showModal = (item) => {
       visible.value = true;
       modalTitle.value = item.label;
       currentType.value = item.type;
     };
 
-// 关闭
     const handleCancel = () => {
       visible.value = false;
     };
 
-    /** 获取附件 */
     const getAttachment = (form) => {
       if (form.files && form.files.length > 0) {
         return form.files[0].response?.url || form.files[0].name || "";
@@ -183,7 +165,6 @@ export default defineComponent({
       return "";
     };
 
-    /** 提交配置（核心） */
     const submitConfig = {
       leave: {
         ref: leaveRef,
@@ -192,7 +173,6 @@ export default defineComponent({
         buildPayload(form) {
           return {
             jobNumber: store.state.jobNumber,
-            staffName: store.state.staffName,
             leaveType: form.leaveType,
             startTime: form.startTime,
             endTime: form.endTime,
@@ -212,7 +192,6 @@ export default defineComponent({
           });
         }
       },
-
       travel: {
         ref: travelRef,
         url: "/staff/business/create",
@@ -220,7 +199,6 @@ export default defineComponent({
         buildPayload(form) {
           return {
             jobNumber: store.state.jobNumber,
-            staffName: store.state.staffName,
             startTime: form.startTime,
             endTime: form.endTime,
             businessDuration: Number(form.duration),
@@ -238,7 +216,6 @@ export default defineComponent({
           });
         }
       },
-
       overtime: {
         ref: overtimeRef,
         url: "/staff/overtime/create",
@@ -246,7 +223,6 @@ export default defineComponent({
         buildPayload(form) {
           return {
             jobNumber: store.state.jobNumber,
-            staffName: store.state.staffName,
             startTime: form.startTime,
             endTime: form.endTime,
             overtimeDuration: Number(form.duration),
@@ -262,7 +238,6 @@ export default defineComponent({
           });
         }
       },
-
       out: {
         ref: outRef,
         url: "/staff/goingOut/create",
@@ -270,7 +245,6 @@ export default defineComponent({
         buildPayload(form) {
           return {
             jobNumber: store.state.jobNumber,
-            staffName: store.state.staffName,
             startTime: form.startTime,
             endTime: form.endTime,
             goingoutDuration: Number(form.duration),
@@ -288,7 +262,6 @@ export default defineComponent({
           });
         }
       },
-
       meeting: {
         ref: meetingRef,
         url: "/staff/meeting/create",
@@ -296,14 +269,12 @@ export default defineComponent({
         buildPayload(form) {
           return {
             jobNumber: store.state.jobNumber,
-            staffName: store.state.staffName,
             startTime: form.startTime,
             endTime: form.endTime,
             meetingDuration: Number(form.duration),
             room: form.room,
             number: form.number,
             name: form.name
-
           };
         },
         reset(form) {
@@ -317,7 +288,6 @@ export default defineComponent({
           });
         }
       },
-
       goods: {
         ref: goodsRef,
         url: "/staff/goods/create",
@@ -325,7 +295,6 @@ export default defineComponent({
         buildPayload(form) {
           return {
             jobNumber: store.state.jobNumber,
-            staffName: store.state.staffName,
             use: form.use,
             name: form.name,
             number: form.number,
@@ -340,22 +309,17 @@ export default defineComponent({
             files: []
           });
         }
-      },
-
-
+      }
     };
 
-    /** 统一提交 */
     const submitOk = async () => {
       const config = submitConfig[currentType.value];
       if (!config) return;
 
       try {
         loading.value = true;
-
         await config.ref.value.validate();
         const form = config.ref.value.formState;
-
         const payload = config.buildPayload(form);
         const res = await axios.post(config.url, payload);
 
@@ -373,121 +337,99 @@ export default defineComponent({
       }
     };
 
-
+    // 表格列
     const columns = [
-      { title: '申请类型', dataIndex: 'type', key: 'type' },  // ⭐ 新增
+      { title: '申请类型', dataIndex: 'type', key: 'type' },
       { title: '开始时间', dataIndex: 'startTime', key: 'startTime' },
       { title: '结束时间', dataIndex: 'endTime', key: 'endTime' },
-      { title: '时长', dataIndex: 'duration', key: 'duration' },
-      { title: '原因', dataIndex: 'reason', key: 'reason' },
+      { title: '时长/数量', dataIndex: 'duration', key: 'duration' },
+      { title: '会议室', dataIndex: 'room', key: 'room' },
+      { title: '人数', dataIndex: 'number', key: 'number' },
+      { title: '参会人员', dataIndex: 'name', key: 'name' },
+      { title: '用途/原因', dataIndex: 'reason', key: 'reason' },
       { title: '附件', dataIndex: 'attachment', key: 'attachment' },
       { title: '审批状态', dataIndex: 'status', key: 'status' }
-    ]
+    ];
 
-    // 获取数据后同步 total
     const fetchAll = async () => {
-      loading.value = true
+      loading.value = true;
       try {
-        const jobNumber = '1'
-        const [leaveRes, businessRes, overtimeRes, goingOutRes] =
-            await Promise.all([
-              axios.get('/staff/leave/checkAll', { params: { jobNumber } }),
-              axios.get('/staff/business/checkAll', { params: { jobNumber } }),
-              axios.get('/staff/overtime/checkAll', { params: { jobNumber } }),
-              axios.get('/staff/goingOut/checkAll', { params: { jobNumber } }),
-            ])
+        const jobNumber = '1';
+        const [leaveRes, businessRes, overtimeRes, goingOutRes, meetingRes, goodsRes] = await Promise.all([
+          axios.get('/staff/leave/checkAll', { params: { jobNumber } }),
+          axios.get('/staff/business/checkAll', { params: { jobNumber } }),
+          axios.get('/staff/overtime/checkAll', { params: { jobNumber } }),
+          axios.get('/staff/goingOut/checkAll', { params: { jobNumber } }),
+          axios.get('/staff/meeting/checkAll', { params: { jobNumber } }),
+          axios.get('/staff/goods/checkAll', { params: { jobNumber } })
+        ]);
 
-        const formatList = (list, typeName, durationKey) =>
+        const formatList = (list, typeName, durationKey, reasonKey, extraFields = () => ({})) =>
             Array.isArray(list)
                 ? list.map(item => ({
                   ...item,
                   type: typeName,
-                  duration: item[durationKey]
+                  duration: item[durationKey],
+                  reason: item[reasonKey] || '',
+                  startTime: item.start_time || item.startTime,
+                  endTime: item.end_time || item.endTime,
+                  createTime: item.create_time || item.createTime,
+                  updateTime: item.update_time || item.updateTime,
+                  approveTime: item.approve_time || item.approveTime,
+                  ...extraFields(item)
                 }))
-                : []
+                : [];
 
         allList.value = [
-          ...formatList(leaveRes.data, '请假', 'leaveDuration'),
-          ...formatList(businessRes.data, '出差', 'businessDuration'),
-          ...formatList(overtimeRes.data, '加班', 'overtimeDuration'),
-          ...formatList(goingOutRes.data, '外出', 'goingoutDuration')
-        ]
+          ...formatList(leaveRes.data, '请假', 'leaveDuration', 'reason'),
+          ...formatList(businessRes.data, '出差', 'businessDuration', 'reason'),
+          ...formatList(overtimeRes.data, '加班', 'overtimeDuration', 'reason'),
+          ...formatList(goingOutRes.data, '外出', 'goingoutDuration', 'reason'),
+          ...formatList(meetingRes.data, '会议室预定', 'meetingDuration', 'reason', item => ({
+            room: item.room,
+            number: item.number,
+            name: item.name
+          })),
+          ...formatList(goodsRes.data, '物品领取', 'number', 'use')
+        ];
 
-        allList.value.sort((a, b) => new Date(b.createTime) - new Date(a.createTime))
-
-        pagination.value.total = allList.value.length  // ✅ 同步 total
-
+        allList.value.sort((a,b) => new Date(b.createTime) - new Date(a.createTime));
+        pagination.value.total = allList.value.length;
       } catch (err) {
-        console.error('获取数据失败', err)
+        console.error('获取数据失败', err);
       } finally {
-        loading.value = false
+        loading.value = false;
       }
-    }
+    };
 
+    onMounted(() => { fetchAll(); });
 
-
-    onMounted(() => {
-      fetchAll()
-    })
-
-    // 分页对象
     const pagination = ref({
       current: 1,
       pageSize: 10,
       total: 0,
       showSizeChanger: true,
-      pageSizeOptions: ['10', '20', '50', '100', '全部'],  // 支持“全部”
+      pageSizeOptions: ['10','20','50','100','全部'],
       showTotal: total => `共 ${total} 条`
-    })
+    });
 
-// 计算当前页显示数据
     const pagedList = computed(() => {
-      if (pagination.value.pageSize === allList.value.length) {
-        return allList.value  // 显示全部
-      }
-      const start = (pagination.value.current - 1) * pagination.value.pageSize
-      const end = start + pagination.value.pageSize
-      return allList.value.slice(start, end)
-    })
+      if (pagination.value.pageSize === allList.value.length) return allList.value;
+      const start = (pagination.value.current - 1) * pagination.value.pageSize;
+      const end = start + pagination.value.pageSize;
+      return allList.value.slice(start,end);
+    });
 
-// 分页变化处理
     const handleTableChange = (pager) => {
-      pagination.value.current = pager.current
-      if (pager.pageSize === '全部') {
-        pagination.value.pageSize = allList.value.length
-      } else {
-        pagination.value.pageSize = Number(pager.pageSize)
-      }
-    }
-
-
-
-
+      pagination.value.current = pager.current;
+      pagination.value.pageSize = pager.pageSize === '全部' ? allList.value.length : Number(pager.pageSize);
+    };
 
     return {
-      visible,
-      activeKey,
-      currentType,
-      modalTitle,
-      loading,
-      menuList1,
-      menuList2,
-      leaveRef,
-      travelRef,
-      overtimeRef,
-      outRef,
-      meetingRef,
-      goodsRef,
-      showModal,
-      handleCancel,
-      submitOk,
-      allList,
-      columns,
-      formatDate,
-      pagedList,
-      handleTableChange,
-      pagination,
-      fetchAll
+      visible, activeKey, currentType, modalTitle, loading,
+      menuList1, menuList2, leaveRef, travelRef, overtimeRef, outRef, meetingRef, goodsRef,
+      showModal, handleCancel, submitOk, allList, columns, formatDate, pagedList,
+      handleTableChange, pagination, fetchAll
     };
   }
 });
@@ -496,12 +438,11 @@ export default defineComponent({
 <style scoped>
 .grid-item {
   width: 25%;
-  padding: 0 !important;        /* 去掉默认内边距 */
+  padding: 0 !important;
   text-align: center;
   box-sizing: border-box;
   border: 0.5px solid #e1e1e1;
 }
-
 .full-btn {
   width: 100%;
   height: 100%;
@@ -514,17 +455,12 @@ export default defineComponent({
   background: #fff;
   transition: all 0.3s;
 }
-
-/* 悬浮效果 */
 .full-btn:hover {
   background: #f0f5ff;
   color: #1677ff;
 }
-
-/* 图标大小和间距 */
 .full-btn .anticon {
   font-size: 22px;
   margin-bottom: 6px;
 }
-
 </style>
