@@ -47,6 +47,10 @@
         <a-input v-model:value="formState.name" />
       </a-form-item>
 
+    <a-form-item label="员工号">
+      <a-input v-model:value="formState.jobNumber" placeholder="请输入员工号" />
+    </a-form-item>
+
       <a-form-item label="性别">
         <a-select v-model:value="formState.gender">
           <a-select-option value="男">男</a-select-option>
@@ -78,19 +82,20 @@
         <a-input v-model:value="formState.address" />
       </a-form-item>
 
-      <a-form-item label="权限">
-        <a-select v-model:value="formState.role" >
-          <a-select-option value="1">1</a-select-option>
-          <a-select-option value="员工">2</a-select-option>
-        </a-select>
-      </a-form-item>
+    <!-- 权限 -->
+    <a-form-item label="权限">
+      <a-select v-model:value="formState.role">
+        <a-select-option :value="1">管理员</a-select-option>
+        <a-select-option :value="2">员工</a-select-option>
+      </a-select>
+    </a-form-item>
 
-      <a-form-item label="是否在职">
-        <a-select v-model:value="formState.status" >
-          <a-select-option value="是">1</a-select-option>
-          <a-select-option value="否">0</a-select-option>
-        </a-select>
-      </a-form-item>
+    <a-form-item label="是否在职">
+      <a-select v-model:value="formState.status" >
+        <a-select-option :value="1">是</a-select-option>
+        <a-select-option :value="0">否</a-select-option>
+      </a-select>
+    </a-form-item>
     </a-form>
   </a-modal>
 
@@ -192,7 +197,7 @@ export default defineComponent({
     const value = ref('')
 
     const search = async () => {
-      const res = await request.get('/staff/list', {
+      const res = await request.get('/staff/people/list', {
         params: {
           name: value.value
         }
@@ -203,7 +208,7 @@ export default defineComponent({
 
     /** 查询员工列表 */
     const loadData = async () => {
-      const res = await request.get('/staff/list')
+      const res = await request.get('/staff/people/list')
       data.value = res.content
 
     }
@@ -232,7 +237,7 @@ export default defineComponent({
 
     const remove = async (record) => {
       try {
-        await request.delete(`/staff/${record.id}`)
+        await request.delete(`/staff/people/${record.id}`)
         message.success('删除成功')
         loadData() // 重新加载列表
       } catch (e) {
@@ -244,7 +249,7 @@ export default defineComponent({
       try {
         if (formState.id) {
           // 编辑员工
-          await request.put(`/staff/${formState.id}`, {
+          await request.put(`/staff/people/${formState.id}`, {
             jobNumber: formState.jobNumber,
             name: formState.name,
             gender: formState.gender,
@@ -259,7 +264,7 @@ export default defineComponent({
           message.success('修改成功')
         } else {
           // 新增员工
-          await request.post('/staff', {
+          await request.post('/staff/people', {
             jobNumber: formState.jobNumber,
             name: formState.name,
             gender: formState.gender,

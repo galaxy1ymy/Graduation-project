@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@RequestMapping("/people")
 public class StaffController {
 
     @Autowired
@@ -34,10 +35,6 @@ public class StaffController {
         return staffService.getNameByJobNumber(jobNumber);
     }
 
-
-    /**
-     * 员工列表
-     */
     @GetMapping("/list")
     public CommonResp<List<Staff>> list(@RequestParam(required = false) String name) {
         List<Staff> staffs;

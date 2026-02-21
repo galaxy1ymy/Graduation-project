@@ -32,11 +32,11 @@ const todayAttendance = ref(0)
 
 const loadData = async () => {
   // 1️⃣ 系统用户总数
-  const staffRes = await request.get('/staff/count')
+  const staffRes = await request.get('/staff/people/count')
   totalStaff.value = staffRes
 
   // 2️⃣ 在职员工（示例接口）
-  const activeRes = await request.get('/staff/active/count')
+  const activeRes = await request.get('/staff/people/active/count')
   activeStaff.value = activeRes
 
   // 3️⃣ 今日出勤
