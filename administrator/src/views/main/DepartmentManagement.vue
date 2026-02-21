@@ -10,7 +10,7 @@
       <template #action="{ record }">
         <a-button type="link" @click="editDepartment(record)">编辑</a-button>
         <a-button type="link" danger @click="deleteDepartment(record.id)">删除</a-button>
-        <a-button type="link" @click="viewStaff(record.id)">查看员工</a-button>
+        <a-button type="link" @click="viewStaff(record.name)">查看员工</a-button>
       </template>
     </a-table>
 
@@ -18,6 +18,8 @@
     <a-modal
         v-model:visible="modalVisible"
         :title="modalTitle"
+        ok-text="确定"
+        cancel-text="取消"
         @ok="submitForm"
         @cancel="closeModal"
     >
@@ -130,6 +132,8 @@ const submitForm = async () => {
 const deleteDepartment = async (id) => {
   Modal.confirm({
     title: '确认删除该部门吗？',
+    okText: '确定',
+    cancelText: '取消',
     onOk: async () => {
       try {
         await axios.delete(`/manager/departments/${id}`)
@@ -143,20 +147,15 @@ const deleteDepartment = async (id) => {
 }
 
 // 查看该部门员工列表
-const viewStaff = async (id) => {
+const viewStaff = async (departmentName) => {
   try {
-    const res = await axios.get(`/manager/departments/${id}/staff`)
-    console.log('员工数据:', res.data)
-    staffList.value = res.data.map(item => ({
-      id: item.id,
-      jobNumber: item.jobNumber,
-      name: item.name,
-      gender: item.gender,
-      age: item.age,
-      phone: item.phone,
-      position: item.position
-    }))
+    const res = await axios.get('/staff/people/by-department', {
+      params: { department: departmentName }
+    })
+
+    staffList.value = res.data
     staffModalVisible.value = true
+
   } catch (error) {
     message.error('查询部门员工失败')
   }

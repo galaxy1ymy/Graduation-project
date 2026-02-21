@@ -10,6 +10,6 @@ import java.util.List;
 @FeignClient(name = "staff", url = "http://localhost:8001") // staff 服务地址
 public interface StaffFeign {
 
-    @GetMapping("/staff/by-department")
+    @GetMapping("/staff/people/by-department")
     List<StaffDTO> getStaffByDepartment(@RequestParam("department") String department);
 }

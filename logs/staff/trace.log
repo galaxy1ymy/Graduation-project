@@ -4015,3 +4015,1181 @@ org.springframework.web.servlet.resource.NoResourceFoundException: No static res
 2026-02-21 15:33:45.547 [http-nio-8001-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [] - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource list.]
 2026-02-21 15:35:27.311 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
 2026-02-21 15:35:27.508 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Graceful shutdown complete
+2026-02-21 15:35:35.396 [background-preinit] INFO  org.hibernate.validator.internal.util.Version [] - HV000001: Hibernate Validator 8.0.2.Final
+2026-02-21 15:35:35.460 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 14028 (D:\Java\springbootProject\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee)
+2026-02-21 15:35:35.461 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
+2026-02-21 15:35:35.521 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-21 15:35:35.522 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor [] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-21 15:35:36.303 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=db56928c-007b-3d43-90ef-5e12f20227b1
+2026-02-21 15:35:36.913 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
+2026-02-21 15:35:36.931 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
+2026-02-21 15:35:36.933 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-02-21 15:35:36.933 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2026-02-21 15:35:37.009 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
+2026-02-21 15:35:37.010 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 1488 ms
+2026-02-21 15:35:38.143 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - LiveReload server is running on port 35729
+2026-02-21 15:35:38.545 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Starting ProtocolHandler ["http-nio-8001"]
+2026-02-21 15:35:38.563 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat started on port 8001 (http) with context path '/staff'
+2026-02-21 15:35:38.974 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Started StaffApplication in 4.904 seconds (process running for 6.55)
+2026-02-21 15:35:38.978 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 启动成功！！
+2026-02-21 15:35:38.978 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello
+2026-02-21 15:36:01.571 [http-nio-8001-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-21 15:36:01.572 [http-nio-8001-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet [] - Initializing Servlet 'dispatcherServlet'
+2026-02-21 15:36:01.573 [http-nio-8001-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet [] - Completed initialization in 1 ms
+2026-02-21 15:36:01.606 [http-nio-8001-exec-2] ERROR c.e.e.common.controller.ControllerExceptionHandle [] - 系统异常：
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource count.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2026-02-21 15:36:01.676 [http-nio-8001-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [] - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource count.]
+2026-02-21 15:36:03.770 [http-nio-8001-exec-3] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:36:03.771 [http-nio-8001-exec-3] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/people/list org.apache.catalina.connector.RequestFacade@4f8a1c8c
+2026-02-21 15:36:03.771 [http-nio-8001-exec-3] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.list
+2026-02-21 15:36:03.771 [http-nio-8001-exec-3] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:36:03.840 [http-nio-8001-exec-3] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: [null]
+2026-02-21 15:36:03.901 [http-nio-8001-exec-3] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Starting...
+2026-02-21 15:36:04.453 [http-nio-8001-exec-3] INFO  com.zaxxer.hikari.pool.HikariPool [] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@31619fde
+2026-02-21 15:36:04.456 [http-nio-8001-exec-3] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Start completed.
+2026-02-21 15:36:04.590 [http-nio-8001-exec-3] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: {"content":[{"address":"事件发生分解","age":21,"createTime":1771653591000,"department":"会计部门","email":"3333","gender":"女","hireDate":1757260800000,"id":3,"jobNumber":"3","name":"古茗","phone":"333333","position":"员工","role":"1","status":"1","updateTime":1771653591000},{"address":"安徽省合肥市蜀山区凉亭雅苑","age":21,"createTime":1757341655000,"department":"行政部门","email":"111","gender":"女","hireDate":1757260800000,"id":2,"jobNumber":"2","name":"密码","phone":"22222","position":"人事主管","role":"2","status":"1","updateTime":1757341655000},{"address":"安徽省合肥市肥西县华南大道紫云苑北区3栋1804","age":21,"createTime":1757341646000,"department":"开发部门","gender":"女","hireDate":1757260800000,"id":1,"jobNumber":"1","name":"兮兮","phone":"18096749785","position":"Java开发工程师","role":"1","status":"1","updateTime":1757341655000}],"success":true}
+2026-02-21 15:36:04.591 [http-nio-8001-exec-3] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：823 ms -------------
+2026-02-21 15:36:05.199 [http-nio-8001-exec-4] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:36:05.199 [http-nio-8001-exec-4] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/leave/checkAll org.apache.catalina.connector.RequestFacade@6c06f55f
+2026-02-21 15:36:05.200 [http-nio-8001-exec-4] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.LeaveRequestController.checkAll
+2026-02-21 15:36:05.200 [http-nio-8001-exec-4] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:36:05.201 [http-nio-8001-exec-4] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: ["1"]
+2026-02-21 15:36:05.258 [http-nio-8001-exec-4] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: [{"approveTime":1770907775000,"attachment":"","createTime":1764498947000,"endTime":1764531300000,"id":1,"jobNumber":"1","leaveDuration":1.03,"leaveType":"personal","reason":"有事","startTime":1764527580000,"status":1,"updateTime":1770907775000},{"approveTime":1770907780000,"attachment":"","createTime":1764499151000,"endTime":1764531300000,"id":2,"jobNumber":"1","leaveDuration":1.03,"leaveType":"personal","reason":"有事","startTime":1764527580000,"status":1,"updateTime":1770907780000},{"approveTime":1770909216000,"attachment":"","createTime":1764499212000,"endTime":1764531600000,"id":3,"jobNumber":"1","leaveDuration":1.00,"leaveType":"事假","reason":"有事","startTime":1764528000000,"status":2,"updateTime":1770909216000},{"approveTime":1770909217000,"attachment":"","createTime":1764499422000,"endTime":1764542580000,"id":4,"jobNumber":"1","leaveDuration":4.00,"leaveType":"事假","reason":"有事","startTime":1764528180000,"status":2,"updateTime":1770909217000},{"approveTime":1770909219000,"attachment":"","createTime":1768913784000,"endTime":1768917360000,"id":5,"jobNumber":"1","leaveDuration":1.00,"leaveType":"年假","reason":"余九九","startTime":1768913760000,"status":2,"updateTime":1770909219000},{"approveTime":1770909220000,"attachment":"","createTime":1770908949000,"endTime":1772204880000,"id":6,"jobNumber":"1","leaveDuration":360.00,"leaveType":"年假","reason":"吉萨回答是否哈萨克发哈事件","startTime":1770908880000,"status":2,"updateTime":1770909220000},{"approveTime":1770909197000,"attachment":"","createTime":1770909108000,"endTime":1772204940000,"id":7,"jobNumber":"1","leaveDuration":360.00,"leaveType":"事假","name":"兮兮","reason":"收到贵司的好地方哈哈","startTime":1770908940000,"status":1,"updateTime":1770909197000},{"approveTime":1770910820000,"attachment":"","createTime":1770910075000,"endTime":1772291460000,"id":8,"jobNumber":"1","leaveDuration":312.00,"leaveType":"婚假","name":"兮兮","reason":"婚嫁","startTime":1771168260000,"status":1,"updateTime":1770910820000},{"approveTime":1771505780000,"attachment":"","createTime":1771505664000,"endTime":1771678440000,"id":9,"jobNumber":"1","leaveDuration":24.00,"leaveType":"调休假","name":"兮兮","reason":"赶高铁","startTime":1771592040000,"status":1,"updateTime":1771505780000},{"approveTime":1771589238000,"attachment":"DWH_5017.jpg","createTime":1771578173000,"endTime":1771596060000,"id":10,"jobNumber":"1","leaveDuration":5.00,"leaveType":"年假","name":"兮兮","reason":"去蜜雪冰城喝珍珠奶茶","startTime":1771578060000,"status":1,"updateTime":1771589238000},{"approveTime":1771589237000,"attachment":"DWH_4983.jpg","createTime":1771578701000,"endTime":1771589460000,"id":11,"jobNumber":"1","leaveDuration":3.00,"leaveType":"年假","name":"兮兮","reason":"蛋糕珍珠奶茶","startTime":1771578660000,"status":1,"updateTime":1771589237000},{"approveTime":1771589236000,"attachment":"test.jpg","createTime":1771581061000,"endTime":1771598940000,"id":12,"jobNumber":"1","leaveDuration":5.00,"leaveType":"调休假","name":"兮兮","reason":"弟弟弟弟","startTime":1771580940000,"status":1,"updateTime":1771589236000},{"approveTime":1771589234000,"attachment":"test.jpg","createTime":1771581246000,"endTime":1771588380000,"id":13,"jobNumber":"1","leaveDuration":2.00,"leaveType":"年假","name":"兮兮","reason":"111111","startTime":1771581180000,"status":1,"updateTime":1771589234000}]
+2026-02-21 15:36:05.260 [http-nio-8001-exec-4] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：61 ms -------------
+2026-02-21 15:36:05.345 [http-nio-8001-exec-5] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:36:05.345 [http-nio-8001-exec-5] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/business/checkAll org.apache.catalina.connector.RequestFacade@71b7147d
+2026-02-21 15:36:05.345 [http-nio-8001-exec-5] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.BusinessController.checkAll
+2026-02-21 15:36:05.345 [http-nio-8001-exec-5] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:36:05.345 [http-nio-8001-exec-5] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: ["1"]
+2026-02-21 15:36:05.364 [http-nio-8001-exec-5] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: [{"approveTime":1770911002000,"attachment":"","businessDuration":2.02,"createTime":1768118393000,"endTime":1768154400000,"id":1,"jobNumber":"1","reason":"去总部测试","startTime":1768147140000,"status":1,"updateTime":1770911002000},{"approveTime":1770911189000,"attachment":"","businessDuration":6.00,"createTime":1768118536000,"endTime":1768230000000,"id":2,"jobNumber":"1","reason":"外出拿机器","startTime":1768208400000,"status":1,"updateTime":1770911189000},{"approveTime":1771573885000,"approverId":1,"attachment":"","businessDuration":3.00,"createTime":1768913799000,"endTime":1768924560000,"id":3,"jobNumber":"1","reason":"nn幸存者","startTime":1768913760000,"status":1,"updateTime":1771573885000}]
+2026-02-21 15:36:05.364 [http-nio-8001-exec-5] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：20 ms -------------
+2026-02-21 15:36:05.522 [http-nio-8001-exec-6] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:36:05.522 [http-nio-8001-exec-8] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:36:05.522 [http-nio-8001-exec-7] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:36:05.522 [http-nio-8001-exec-9] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:36:05.524 [http-nio-8001-exec-6] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/overtime/checkAll org.apache.catalina.connector.RequestFacade@10c6b3a2
+2026-02-21 15:36:05.524 [http-nio-8001-exec-7] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/goingOut/checkAll org.apache.catalina.connector.RequestFacade@571f1124
+2026-02-21 15:36:05.524 [http-nio-8001-exec-8] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/meeting/checkAll org.apache.catalina.connector.RequestFacade@7f1cfffd
+2026-02-21 15:36:05.524 [http-nio-8001-exec-7] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.GoingOutController.checkAll
+2026-02-21 15:36:05.524 [http-nio-8001-exec-9] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/goods/checkAll org.apache.catalina.connector.RequestFacade@4a07b6d2
+2026-02-21 15:36:05.524 [http-nio-8001-exec-7] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:36:05.524 [http-nio-8001-exec-6] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.OvertimeController.checkAll
+2026-02-21 15:36:05.524 [http-nio-8001-exec-8] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.MeetingController.checkAll
+2026-02-21 15:36:05.524 [http-nio-8001-exec-9] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.GoodsController.checkAll
+2026-02-21 15:36:05.524 [http-nio-8001-exec-7] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: ["1"]
+2026-02-21 15:36:05.524 [http-nio-8001-exec-6] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:36:05.524 [http-nio-8001-exec-8] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:36:05.524 [http-nio-8001-exec-9] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:36:05.525 [http-nio-8001-exec-6] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: ["1"]
+2026-02-21 15:36:05.525 [http-nio-8001-exec-9] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: ["1"]
+2026-02-21 15:36:05.525 [http-nio-8001-exec-8] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: ["1"]
+2026-02-21 15:36:05.555 [http-nio-8001-exec-9] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: [{"attachment":"屏幕截图 2025-11-09 165751.png","createTime":1768124581000,"id":1,"jobNumber":"1","name":"发射点发射点v","number":12,"status":0,"updateTime":1768124581000,"use":"123"},{"approveTime":1771577351000,"attachment":"","createTime":1771574732000,"employeeName":"兮兮","id":2,"jobNumber":"1","name":"珍珠奶茶","number":1,"status":1,"updateTime":1771577351000,"use":"蜜雪冰城"}]
+2026-02-21 15:36:05.555 [http-nio-8001-exec-7] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: [{"address":"11","approveTime":1770911196000,"createTime":1768122095000,"endTime":1768125660000,"goingoutDuration":1.00,"id":1,"jobNumber":"1","reason":"11","startTime":1768122060000,"status":1,"updateTime":1770911196000},{"address":"1234","approveTime":1771573922000,"approverId":1,"createTime":1771506018000,"endTime":1771592400000,"goingoutDuration":24.00,"id":2,"jobNumber":"1","name":"兮兮","reason":"外出","startTime":1771506000000,"status":1,"updateTime":1771573922000}]
+2026-02-21 15:36:05.556 [http-nio-8001-exec-9] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：34 ms -------------
+2026-02-21 15:36:05.556 [http-nio-8001-exec-7] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：34 ms -------------
+2026-02-21 15:36:05.556 [http-nio-8001-exec-8] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: [{"createTime":1768123477000,"endTime":1768130640000,"id":1,"jobNumber":"1","meetingDuration":2.00,"name":"11","number":"3","startTime":1768123440000,"status":0,"updateTime":1768123477000},{"createTime":1768123522000,"endTime":1768137840000,"id":2,"jobNumber":"1","meetingDuration":4.00,"name":"22","number":"2","room":"","startTime":1768123440000,"status":0,"updateTime":1768123522000},{"createTime":1768123676000,"endTime":1768130700000,"id":3,"jobNumber":"1","meetingDuration":2.00,"name":"11","number":"2","room":"","startTime":1768123500000,"status":0,"updateTime":1768123676000},{"approveTime":1771573933000,"approverId":1,"createTime":1768123775000,"endTime":1768130940000,"id":4,"jobNumber":"1","meetingDuration":2.00,"name":"三三，四四","number":"2","room":"1","startTime":1768123740000,"status":1,"updateTime":1771573933000},{"approveTime":1771576500000,"createTime":1771573029000,"employeeName":"兮兮","endTime":1771583760000,"id":5,"jobNumber":"1","meetingDuration":3.00,"name":"珍珠奶茶加珍珠","number":"1","room":"蜜雪冰城","startTime":1771572960000,"status":1,"updateTime":1771576500000}]
+2026-02-21 15:36:05.557 [http-nio-8001-exec-8] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：35 ms -------------
+2026-02-21 15:36:05.558 [http-nio-8001-exec-6] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: [{"approveTime":1770911192000,"createTime":1768119405000,"endTime":1768161600000,"id":1,"jobNumber":"1","overtimeDuration":1.50,"reason":"加班呢","startTime":1768156200000,"status":1,"updateTime":1770911192000},{"approveTime":1770911193000,"createTime":1768119476000,"endTime":1768151760000,"id":2,"jobNumber":"1","overtimeDuration":1.00,"reason":"111","startTime":1768148160000,"status":2,"updateTime":1770911193000},{"approveTime":1770911194000,"createTime":1768119768000,"endTime":1768123020000,"id":3,"jobNumber":"1","overtimeDuration":1.00,"reason":"222","startTime":1768119420000,"status":1,"updateTime":1770911194000},{"approveTime":1771589246000,"createTime":1768120059000,"endTime":1768123620000,"id":4,"jobNumber":"1","overtimeDuration":1.00,"reason":"333","startTime":1768120020000,"status":2,"updateTime":1771589246000},{"approveTime":1771573908000,"approverId":1,"createTime":1771505922000,"endTime":1771509480000,"id":5,"jobNumber":"1","name":"兮兮","overtimeDuration":1.00,"reason":"加班","startTime":1771505880000,"status":1,"updateTime":1771573908000}]
+2026-02-21 15:36:05.558 [http-nio-8001-exec-6] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：36 ms -------------
+2026-02-21 15:36:06.558 [http-nio-8001-exec-10] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:36:06.559 [http-nio-8001-exec-10] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/people/list org.apache.catalina.connector.RequestFacade@345dae48
+2026-02-21 15:36:06.559 [http-nio-8001-exec-10] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.list
+2026-02-21 15:36:06.559 [http-nio-8001-exec-10] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:36:06.559 [http-nio-8001-exec-10] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: [null]
+2026-02-21 15:36:06.562 [http-nio-8001-exec-10] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: {"content":[{"address":"事件发生分解","age":21,"createTime":1771653591000,"department":"会计部门","email":"3333","gender":"女","hireDate":1757260800000,"id":3,"jobNumber":"3","name":"古茗","phone":"333333","position":"员工","role":"1","status":"1","updateTime":1771653591000},{"address":"安徽省合肥市蜀山区凉亭雅苑","age":21,"createTime":1757341655000,"department":"行政部门","email":"111","gender":"女","hireDate":1757260800000,"id":2,"jobNumber":"2","name":"密码","phone":"22222","position":"人事主管","role":"2","status":"1","updateTime":1757341655000},{"address":"安徽省合肥市肥西县华南大道紫云苑北区3栋1804","age":21,"createTime":1757341646000,"department":"开发部门","gender":"女","hireDate":1757260800000,"id":1,"jobNumber":"1","name":"兮兮","phone":"18096749785","position":"Java开发工程师","role":"1","status":"1","updateTime":1757341655000}],"success":true}
+2026-02-21 15:36:06.564 [http-nio-8001-exec-10] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：6 ms -------------
+2026-02-21 15:36:27.347 [http-nio-8001-exec-1] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:36:27.347 [http-nio-8001-exec-1] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/people org.apache.catalina.connector.RequestFacade@5c6e9c5
+2026-02-21 15:36:27.347 [http-nio-8001-exec-1] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.add
+2026-02-21 15:36:27.349 [http-nio-8001-exec-1] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:36:27.349 [http-nio-8001-exec-1] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: [{"address":"1","department":"人事部门","gender":"女","jobNumber":"","name":"珍珠奶茶","phone":"1","position":"1","role":"1","status":"是"}]
+2026-02-21 15:36:27.537 [http-nio-8001-exec-1] ERROR c.e.e.common.controller.ControllerExceptionHandle [] - 系统异常：
+org.springframework.jdbc.UncategorizedSQLException: 
+### Error updating database.  Cause: java.sql.SQLException: Incorrect integer value: '是' for column 'status' at row 1
+### The error may exist in file [D:\Java\springbootProject\employee\staff\target\classes\mapper\StaffMapper.xml]
+### The error may involve com.example.employee.staff.mapper.StaffMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: insert into staff      ( job_number,                       `name`,                       gender,                              phone,                              address,                       department,                       `position`,                              `status`,                                     `role` )       values ( ?,                       ?,                       ?,                              ?,                              ?,                       ?,                       ?,                              ?,                                     ? )
+### Cause: java.sql.SQLException: Incorrect integer value: '是' for column 'status' at row 1
+; uncategorized SQLException; SQL state [HY000]; error code [1366]; Incorrect integer value: '是' for column 'status' at row 1
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:93)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:439)
+	at jdk.proxy2/jdk.proxy2.$Proxy79.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy3/jdk.proxy3.$Proxy84.insertSelective(Unknown Source)
+	at com.example.employee.staff.service.StaffService.add(StaffService.java:66)
+	at com.example.employee.staff.controller.StaffController.add(StaffController.java:64)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.example.employee.common.aspect.LogAspect.doAround(LogAspect.java:69)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:649)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:631)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at com.example.employee.staff.controller.StaffController$$SpringCGLIB$$0.add(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.sql.SQLException: Incorrect integer value: '是' for column 'status' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	... 81 common frames omitted
+2026-02-21 15:36:27.540 [http-nio-8001-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [] - Resolved [org.springframework.jdbc.UncategorizedSQLException: <EOL><EOL>### Error updating database.  Cause: java.sql.SQLException: Incorrect integer value: '是' for column 'status' at row 1<EOL><EOL>### The error may exist in file [D:\Java\springbootProject\employee\staff\target\classes\mapper\StaffMapper.xml]<EOL><EOL>### The error may involve com.example.employee.staff.mapper.StaffMapper.insertSelective-Inline<EOL><EOL>### The error occurred while setting parameters<EOL><EOL>### SQL: insert into staff      ( job_number,                       `name`,                       gender,                              phone,                              address,                       department,                       `position`,                              `status`,                                     `role` )       values ( ?,                       ?,                       ?,                              ?,                              ?,                       ?,                       ?,                              ?,                                     ? )<EOL><EOL>### Cause: java.sql.SQLException: Incorrect integer value: '是' for column 'status' at row 1<EOL>; uncategorized SQLException; SQL state [HY000]; error code [1366]; Incorrect integer value: '是' for column 'status' at row 1]
+2026-02-21 15:36:30.716 [http-nio-8001-exec-3] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:36:30.716 [http-nio-8001-exec-4] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:36:30.716 [http-nio-8001-exec-2] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:36:30.716 [http-nio-8001-exec-5] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:36:30.716 [http-nio-8001-exec-3] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/business/checkAll org.apache.catalina.connector.RequestFacade@198b6d0
+2026-02-21 15:36:30.716 [http-nio-8001-exec-9] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:36:30.716 [http-nio-8001-exec-2] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/leave/checkAll org.apache.catalina.connector.RequestFacade@4d38d6ee
+2026-02-21 15:36:30.716 [http-nio-8001-exec-4] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/overtime/checkAll org.apache.catalina.connector.RequestFacade@86da764
+2026-02-21 15:36:30.716 [http-nio-8001-exec-2] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.LeaveRequestController.checkAll
+2026-02-21 15:36:30.716 [http-nio-8001-exec-5] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/goingOut/checkAll org.apache.catalina.connector.RequestFacade@1ad73203
+2026-02-21 15:36:30.716 [http-nio-8001-exec-3] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.BusinessController.checkAll
+2026-02-21 15:36:30.716 [http-nio-8001-exec-7] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:36:30.717 [http-nio-8001-exec-3] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:36:30.716 [http-nio-8001-exec-9] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/goods/checkAll org.apache.catalina.connector.RequestFacade@545a7998
+2026-02-21 15:36:30.717 [http-nio-8001-exec-4] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.OvertimeController.checkAll
+2026-02-21 15:36:30.717 [http-nio-8001-exec-2] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:36:30.717 [http-nio-8001-exec-5] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.GoingOutController.checkAll
+2026-02-21 15:36:30.717 [http-nio-8001-exec-7] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/meeting/checkAll org.apache.catalina.connector.RequestFacade@37e7ba64
+2026-02-21 15:36:30.717 [http-nio-8001-exec-5] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:36:30.717 [http-nio-8001-exec-3] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: ["1"]
+2026-02-21 15:36:30.717 [http-nio-8001-exec-9] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.GoodsController.checkAll
+2026-02-21 15:36:30.717 [http-nio-8001-exec-4] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:36:30.717 [http-nio-8001-exec-2] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: ["1"]
+2026-02-21 15:36:30.717 [http-nio-8001-exec-7] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.MeetingController.checkAll
+2026-02-21 15:36:30.717 [http-nio-8001-exec-5] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: ["1"]
+2026-02-21 15:36:30.717 [http-nio-8001-exec-7] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:36:30.717 [http-nio-8001-exec-9] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:36:30.717 [http-nio-8001-exec-4] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: ["1"]
+2026-02-21 15:36:30.717 [http-nio-8001-exec-7] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: ["1"]
+2026-02-21 15:36:30.718 [http-nio-8001-exec-9] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: ["1"]
+2026-02-21 15:36:30.720 [http-nio-8001-exec-3] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: [{"approveTime":1770911002000,"attachment":"","businessDuration":2.02,"createTime":1768118393000,"endTime":1768154400000,"id":1,"jobNumber":"1","reason":"去总部测试","startTime":1768147140000,"status":1,"updateTime":1770911002000},{"approveTime":1770911189000,"attachment":"","businessDuration":6.00,"createTime":1768118536000,"endTime":1768230000000,"id":2,"jobNumber":"1","reason":"外出拿机器","startTime":1768208400000,"status":1,"updateTime":1770911189000},{"approveTime":1771573885000,"approverId":1,"attachment":"","businessDuration":3.00,"createTime":1768913799000,"endTime":1768924560000,"id":3,"jobNumber":"1","reason":"nn幸存者","startTime":1768913760000,"status":1,"updateTime":1771573885000}]
+2026-02-21 15:36:30.720 [http-nio-8001-exec-5] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: [{"address":"11","approveTime":1770911196000,"createTime":1768122095000,"endTime":1768125660000,"goingoutDuration":1.00,"id":1,"jobNumber":"1","reason":"11","startTime":1768122060000,"status":1,"updateTime":1770911196000},{"address":"1234","approveTime":1771573922000,"approverId":1,"createTime":1771506018000,"endTime":1771592400000,"goingoutDuration":24.00,"id":2,"jobNumber":"1","name":"兮兮","reason":"外出","startTime":1771506000000,"status":1,"updateTime":1771573922000}]
+2026-02-21 15:36:30.720 [http-nio-8001-exec-3] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：4 ms -------------
+2026-02-21 15:36:30.720 [http-nio-8001-exec-5] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：4 ms -------------
+2026-02-21 15:36:30.721 [http-nio-8001-exec-4] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: [{"approveTime":1770911192000,"createTime":1768119405000,"endTime":1768161600000,"id":1,"jobNumber":"1","overtimeDuration":1.50,"reason":"加班呢","startTime":1768156200000,"status":1,"updateTime":1770911192000},{"approveTime":1770911193000,"createTime":1768119476000,"endTime":1768151760000,"id":2,"jobNumber":"1","overtimeDuration":1.00,"reason":"111","startTime":1768148160000,"status":2,"updateTime":1770911193000},{"approveTime":1770911194000,"createTime":1768119768000,"endTime":1768123020000,"id":3,"jobNumber":"1","overtimeDuration":1.00,"reason":"222","startTime":1768119420000,"status":1,"updateTime":1770911194000},{"approveTime":1771589246000,"createTime":1768120059000,"endTime":1768123620000,"id":4,"jobNumber":"1","overtimeDuration":1.00,"reason":"333","startTime":1768120020000,"status":2,"updateTime":1771589246000},{"approveTime":1771573908000,"approverId":1,"createTime":1771505922000,"endTime":1771509480000,"id":5,"jobNumber":"1","name":"兮兮","overtimeDuration":1.00,"reason":"加班","startTime":1771505880000,"status":1,"updateTime":1771573908000}]
+2026-02-21 15:36:30.721 [http-nio-8001-exec-4] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：5 ms -------------
+2026-02-21 15:36:30.722 [http-nio-8001-exec-7] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: [{"createTime":1768123477000,"endTime":1768130640000,"id":1,"jobNumber":"1","meetingDuration":2.00,"name":"11","number":"3","startTime":1768123440000,"status":0,"updateTime":1768123477000},{"createTime":1768123522000,"endTime":1768137840000,"id":2,"jobNumber":"1","meetingDuration":4.00,"name":"22","number":"2","room":"","startTime":1768123440000,"status":0,"updateTime":1768123522000},{"createTime":1768123676000,"endTime":1768130700000,"id":3,"jobNumber":"1","meetingDuration":2.00,"name":"11","number":"2","room":"","startTime":1768123500000,"status":0,"updateTime":1768123676000},{"approveTime":1771573933000,"approverId":1,"createTime":1768123775000,"endTime":1768130940000,"id":4,"jobNumber":"1","meetingDuration":2.00,"name":"三三，四四","number":"2","room":"1","startTime":1768123740000,"status":1,"updateTime":1771573933000},{"approveTime":1771576500000,"createTime":1771573029000,"employeeName":"兮兮","endTime":1771583760000,"id":5,"jobNumber":"1","meetingDuration":3.00,"name":"珍珠奶茶加珍珠","number":"1","room":"蜜雪冰城","startTime":1771572960000,"status":1,"updateTime":1771576500000}]
+2026-02-21 15:36:30.722 [http-nio-8001-exec-7] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：6 ms -------------
+2026-02-21 15:36:30.724 [http-nio-8001-exec-9] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: [{"attachment":"屏幕截图 2025-11-09 165751.png","createTime":1768124581000,"id":1,"jobNumber":"1","name":"发射点发射点v","number":12,"status":0,"updateTime":1768124581000,"use":"123"},{"approveTime":1771577351000,"attachment":"","createTime":1771574732000,"employeeName":"兮兮","id":2,"jobNumber":"1","name":"珍珠奶茶","number":1,"status":1,"updateTime":1771577351000,"use":"蜜雪冰城"}]
+2026-02-21 15:36:30.724 [http-nio-8001-exec-9] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：8 ms -------------
+2026-02-21 15:36:30.728 [http-nio-8001-exec-2] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: [{"approveTime":1770907775000,"attachment":"","createTime":1764498947000,"endTime":1764531300000,"id":1,"jobNumber":"1","leaveDuration":1.03,"leaveType":"personal","reason":"有事","startTime":1764527580000,"status":1,"updateTime":1770907775000},{"approveTime":1770907780000,"attachment":"","createTime":1764499151000,"endTime":1764531300000,"id":2,"jobNumber":"1","leaveDuration":1.03,"leaveType":"personal","reason":"有事","startTime":1764527580000,"status":1,"updateTime":1770907780000},{"approveTime":1770909216000,"attachment":"","createTime":1764499212000,"endTime":1764531600000,"id":3,"jobNumber":"1","leaveDuration":1.00,"leaveType":"事假","reason":"有事","startTime":1764528000000,"status":2,"updateTime":1770909216000},{"approveTime":1770909217000,"attachment":"","createTime":1764499422000,"endTime":1764542580000,"id":4,"jobNumber":"1","leaveDuration":4.00,"leaveType":"事假","reason":"有事","startTime":1764528180000,"status":2,"updateTime":1770909217000},{"approveTime":1770909219000,"attachment":"","createTime":1768913784000,"endTime":1768917360000,"id":5,"jobNumber":"1","leaveDuration":1.00,"leaveType":"年假","reason":"余九九","startTime":1768913760000,"status":2,"updateTime":1770909219000},{"approveTime":1770909220000,"attachment":"","createTime":1770908949000,"endTime":1772204880000,"id":6,"jobNumber":"1","leaveDuration":360.00,"leaveType":"年假","reason":"吉萨回答是否哈萨克发哈事件","startTime":1770908880000,"status":2,"updateTime":1770909220000},{"approveTime":1770909197000,"attachment":"","createTime":1770909108000,"endTime":1772204940000,"id":7,"jobNumber":"1","leaveDuration":360.00,"leaveType":"事假","name":"兮兮","reason":"收到贵司的好地方哈哈","startTime":1770908940000,"status":1,"updateTime":1770909197000},{"approveTime":1770910820000,"attachment":"","createTime":1770910075000,"endTime":1772291460000,"id":8,"jobNumber":"1","leaveDuration":312.00,"leaveType":"婚假","name":"兮兮","reason":"婚嫁","startTime":1771168260000,"status":1,"updateTime":1770910820000},{"approveTime":1771505780000,"attachment":"","createTime":1771505664000,"endTime":1771678440000,"id":9,"jobNumber":"1","leaveDuration":24.00,"leaveType":"调休假","name":"兮兮","reason":"赶高铁","startTime":1771592040000,"status":1,"updateTime":1771505780000},{"approveTime":1771589238000,"attachment":"DWH_5017.jpg","createTime":1771578173000,"endTime":1771596060000,"id":10,"jobNumber":"1","leaveDuration":5.00,"leaveType":"年假","name":"兮兮","reason":"去蜜雪冰城喝珍珠奶茶","startTime":1771578060000,"status":1,"updateTime":1771589238000},{"approveTime":1771589237000,"attachment":"DWH_4983.jpg","createTime":1771578701000,"endTime":1771589460000,"id":11,"jobNumber":"1","leaveDuration":3.00,"leaveType":"年假","name":"兮兮","reason":"蛋糕珍珠奶茶","startTime":1771578660000,"status":1,"updateTime":1771589237000},{"approveTime":1771589236000,"attachment":"test.jpg","createTime":1771581061000,"endTime":1771598940000,"id":12,"jobNumber":"1","leaveDuration":5.00,"leaveType":"调休假","name":"兮兮","reason":"弟弟弟弟","startTime":1771580940000,"status":1,"updateTime":1771589236000},{"approveTime":1771589234000,"attachment":"test.jpg","createTime":1771581246000,"endTime":1771588380000,"id":13,"jobNumber":"1","leaveDuration":2.00,"leaveType":"年假","name":"兮兮","reason":"111111","startTime":1771581180000,"status":1,"updateTime":1771589234000}]
+2026-02-21 15:36:30.729 [http-nio-8001-exec-2] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：13 ms -------------
+2026-02-21 15:36:35.987 [http-nio-8001-exec-8] ERROR c.e.e.common.controller.ControllerExceptionHandle [] - 系统异常：
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource count.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2026-02-21 15:36:35.988 [http-nio-8001-exec-8] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [] - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource count.]
+2026-02-21 15:36:40.811 [http-nio-8001-exec-6] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:36:40.811 [http-nio-8001-exec-6] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/people/list org.apache.catalina.connector.RequestFacade@2da0c3c1
+2026-02-21 15:36:40.811 [http-nio-8001-exec-6] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.list
+2026-02-21 15:36:40.811 [http-nio-8001-exec-6] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:36:40.811 [http-nio-8001-exec-6] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: [null]
+2026-02-21 15:36:40.818 [http-nio-8001-exec-6] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: {"content":[{"address":"事件发生分解","age":21,"createTime":1771653591000,"department":"会计部门","email":"3333","gender":"女","hireDate":1757260800000,"id":3,"jobNumber":"3","name":"古茗","phone":"333333","position":"员工","role":"1","status":"1","updateTime":1771653591000},{"address":"安徽省合肥市蜀山区凉亭雅苑","age":21,"createTime":1757341655000,"department":"行政部门","email":"111","gender":"女","hireDate":1757260800000,"id":2,"jobNumber":"2","name":"密码","phone":"22222","position":"人事主管","role":"2","status":"1","updateTime":1757341655000},{"address":"安徽省合肥市肥西县华南大道紫云苑北区3栋1804","age":21,"createTime":1757341646000,"department":"开发部门","gender":"女","hireDate":1757260800000,"id":1,"jobNumber":"1","name":"兮兮","phone":"18096749785","position":"Java开发工程师","role":"1","status":"1","updateTime":1757341655000}],"success":true}
+2026-02-21 15:36:40.818 [http-nio-8001-exec-6] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：7 ms -------------
+2026-02-21 15:36:46.504 [http-nio-8001-exec-10] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:36:46.504 [http-nio-8001-exec-10] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/people/list org.apache.catalina.connector.RequestFacade@3565b1be
+2026-02-21 15:36:46.504 [http-nio-8001-exec-10] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.list
+2026-02-21 15:36:46.504 [http-nio-8001-exec-10] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:36:46.504 [http-nio-8001-exec-10] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: ["兮兮"]
+2026-02-21 15:36:46.510 [http-nio-8001-exec-10] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: {"content":[{"address":"安徽省合肥市肥西县华南大道紫云苑北区3栋1804","age":21,"createTime":1757341646000,"department":"开发部门","gender":"女","hireDate":1757260800000,"id":1,"jobNumber":"1","name":"兮兮","phone":"18096749785","position":"Java开发工程师","role":"1","status":"1","updateTime":1757341655000}],"success":true}
+2026-02-21 15:36:46.510 [http-nio-8001-exec-10] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：7 ms -------------
+2026-02-21 15:37:56.566 [http-nio-8001-exec-1] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:37:56.566 [http-nio-8001-exec-1] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/login org.apache.catalina.connector.RequestFacade@44506918
+2026-02-21 15:37:56.567 [http-nio-8001-exec-1] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.LoginController.login
+2026-02-21 15:37:56.567 [http-nio-8001-exec-1] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:37:56.570 [http-nio-8001-exec-1] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: [{"jobNumber":1,"password":"1"}]
+2026-02-21 15:37:56.586 [http-nio-8001-exec-1] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: {"content":{"role":"1","staffName":"兮兮","jobNumber":1},"success":true}
+2026-02-21 15:37:56.586 [http-nio-8001-exec-1] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：20 ms -------------
+2026-02-21 15:37:56.825 [http-nio-8001-exec-3] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:37:56.825 [http-nio-8001-exec-3] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/attendance/list org.apache.catalina.connector.RequestFacade@fbf9b38
+2026-02-21 15:37:56.825 [http-nio-8001-exec-3] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.AttendanceController.list
+2026-02-21 15:37:56.825 [http-nio-8001-exec-3] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:37:56.825 [http-nio-8001-exec-3] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: ["1"]
+2026-02-21 15:37:56.845 [http-nio-8001-exec-3] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: [{"createdAt":1758636213000,"id":1,"jobNumber":"1","punchTime":1758636214000,"type":"上班","updatedAt":1758636213000},{"createdAt":1758636435000,"id":2,"jobNumber":"1","punchTime":1758636436000,"type":"下班","updatedAt":1758636435000},{"createdAt":1760878415000,"id":3,"jobNumber":"1","punchTime":1760878416000,"type":"上班","updatedAt":1760878415000},{"createdAt":1760878417000,"id":4,"jobNumber":"1","punchTime":1760878417000,"type":"下班","updatedAt":1760878417000},{"createdAt":1761468316000,"id":5,"jobNumber":"1","punchTime":1761468316000,"type":"上班","updatedAt":1761468316000},{"createdAt":1761469054000,"id":6,"jobNumber":"1","punchTime":1761469054000,"type":"下班","updatedAt":1761469054000},{"createdAt":1762670152000,"id":7,"jobNumber":"1","punchTime":1762670152000,"type":"上班","updatedAt":1762670152000},{"createdAt":1763896137000,"id":8,"jobNumber":"1","punchTime":1763896137000,"type":"上班","updatedAt":1763896137000},{"createdAt":1763899688000,"id":9,"jobNumber":"1","punchTime":1763899688000,"type":"下班","updatedAt":1763899688000},{"createdAt":1767617383000,"id":10,"jobNumber":"1","punchTime":1767617383000,"type":"上班","updatedAt":1767617383000},{"createdAt":1768115802000,"id":11,"jobNumber":"1","punchTime":1768115802000,"type":"上班","updatedAt":1768115802000},{"createdAt":1768909132000,"id":12,"jobNumber":"1","punchTime":1768909132000,"type":"上班","updatedAt":1768909132000},{"createdAt":1768913555000,"id":13,"jobNumber":"1","punchTime":1768913555000,"type":"下班","updatedAt":1768913555000},{"createdAt":1769344367000,"id":14,"jobNumber":"1","punchTime":1769344367000,"type":"上班","updatedAt":1769344367000},{"createdAt":1769928642000,"id":15,"jobNumber":"1","punchTime":1769928642000,"type":"上班","updatedAt":1769928642000},{"createdAt":1770534594000,"id":16,"jobNumber":"1","punchTime":1770534594000,"type":"上班","updatedAt":1770534594000},{"createdAt":1770897583000,"id":17,"jobNumber":"1","punchTime":1770897583000,"type":"上班","updatedAt":1770897583000},{"createdAt":1771502402000,"id":18,"jobNumber":"1","punchTime":1771502402000,"type":"上班","updatedAt":1771502402000},{"createdAt":1771572219000,"id":19,"jobNumber":"1","punchTime":1771572219000,"type":"上班","updatedAt":1771572219000},{"createdAt":1771594782000,"id":20,"jobNumber":"1","punchTime":1771594782000,"type":"下班","updatedAt":1771594782000},{"createdAt":1771642640000,"id":21,"jobNumber":"1","punchTime":1771642640000,"type":"上班","updatedAt":1771642640000}]
+2026-02-21 15:37:56.845 [http-nio-8001-exec-3] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：20 ms -------------
+2026-02-21 15:37:58.718 [http-nio-8001-exec-5] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:37:58.719 [http-nio-8001-exec-5] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/attendance/list org.apache.catalina.connector.RequestFacade@5376398b
+2026-02-21 15:37:58.719 [http-nio-8001-exec-5] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.AttendanceController.list
+2026-02-21 15:37:58.719 [http-nio-8001-exec-5] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:37:58.719 [http-nio-8001-exec-5] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: ["1"]
+2026-02-21 15:37:58.724 [http-nio-8001-exec-5] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: [{"createdAt":1758636213000,"id":1,"jobNumber":"1","punchTime":1758636214000,"type":"上班","updatedAt":1758636213000},{"createdAt":1758636435000,"id":2,"jobNumber":"1","punchTime":1758636436000,"type":"下班","updatedAt":1758636435000},{"createdAt":1760878415000,"id":3,"jobNumber":"1","punchTime":1760878416000,"type":"上班","updatedAt":1760878415000},{"createdAt":1760878417000,"id":4,"jobNumber":"1","punchTime":1760878417000,"type":"下班","updatedAt":1760878417000},{"createdAt":1761468316000,"id":5,"jobNumber":"1","punchTime":1761468316000,"type":"上班","updatedAt":1761468316000},{"createdAt":1761469054000,"id":6,"jobNumber":"1","punchTime":1761469054000,"type":"下班","updatedAt":1761469054000},{"createdAt":1762670152000,"id":7,"jobNumber":"1","punchTime":1762670152000,"type":"上班","updatedAt":1762670152000},{"createdAt":1763896137000,"id":8,"jobNumber":"1","punchTime":1763896137000,"type":"上班","updatedAt":1763896137000},{"createdAt":1763899688000,"id":9,"jobNumber":"1","punchTime":1763899688000,"type":"下班","updatedAt":1763899688000},{"createdAt":1767617383000,"id":10,"jobNumber":"1","punchTime":1767617383000,"type":"上班","updatedAt":1767617383000},{"createdAt":1768115802000,"id":11,"jobNumber":"1","punchTime":1768115802000,"type":"上班","updatedAt":1768115802000},{"createdAt":1768909132000,"id":12,"jobNumber":"1","punchTime":1768909132000,"type":"上班","updatedAt":1768909132000},{"createdAt":1768913555000,"id":13,"jobNumber":"1","punchTime":1768913555000,"type":"下班","updatedAt":1768913555000},{"createdAt":1769344367000,"id":14,"jobNumber":"1","punchTime":1769344367000,"type":"上班","updatedAt":1769344367000},{"createdAt":1769928642000,"id":15,"jobNumber":"1","punchTime":1769928642000,"type":"上班","updatedAt":1769928642000},{"createdAt":1770534594000,"id":16,"jobNumber":"1","punchTime":1770534594000,"type":"上班","updatedAt":1770534594000},{"createdAt":1770897583000,"id":17,"jobNumber":"1","punchTime":1770897583000,"type":"上班","updatedAt":1770897583000},{"createdAt":1771502402000,"id":18,"jobNumber":"1","punchTime":1771502402000,"type":"上班","updatedAt":1771502402000},{"createdAt":1771572219000,"id":19,"jobNumber":"1","punchTime":1771572219000,"type":"上班","updatedAt":1771572219000},{"createdAt":1771594782000,"id":20,"jobNumber":"1","punchTime":1771594782000,"type":"下班","updatedAt":1771594782000},{"createdAt":1771642640000,"id":21,"jobNumber":"1","punchTime":1771642640000,"type":"上班","updatedAt":1771642640000}]
+2026-02-21 15:37:58.724 [http-nio-8001-exec-5] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：6 ms -------------
+2026-02-21 15:37:59.720 [http-nio-8001-exec-4] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:37:59.720 [http-nio-8001-exec-4] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/leave/checkAll org.apache.catalina.connector.RequestFacade@5964f3c0
+2026-02-21 15:37:59.720 [http-nio-8001-exec-4] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.LeaveRequestController.checkAll
+2026-02-21 15:37:59.720 [http-nio-8001-exec-4] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:37:59.720 [http-nio-8001-exec-4] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: ["1"]
+2026-02-21 15:37:59.729 [http-nio-8001-exec-4] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: [{"approveTime":1770907775000,"attachment":"","createTime":1764498947000,"endTime":1764531300000,"id":1,"jobNumber":"1","leaveDuration":1.03,"leaveType":"personal","reason":"有事","startTime":1764527580000,"status":1,"updateTime":1770907775000},{"approveTime":1770907780000,"attachment":"","createTime":1764499151000,"endTime":1764531300000,"id":2,"jobNumber":"1","leaveDuration":1.03,"leaveType":"personal","reason":"有事","startTime":1764527580000,"status":1,"updateTime":1770907780000},{"approveTime":1770909216000,"attachment":"","createTime":1764499212000,"endTime":1764531600000,"id":3,"jobNumber":"1","leaveDuration":1.00,"leaveType":"事假","reason":"有事","startTime":1764528000000,"status":2,"updateTime":1770909216000},{"approveTime":1770909217000,"attachment":"","createTime":1764499422000,"endTime":1764542580000,"id":4,"jobNumber":"1","leaveDuration":4.00,"leaveType":"事假","reason":"有事","startTime":1764528180000,"status":2,"updateTime":1770909217000},{"approveTime":1770909219000,"attachment":"","createTime":1768913784000,"endTime":1768917360000,"id":5,"jobNumber":"1","leaveDuration":1.00,"leaveType":"年假","reason":"余九九","startTime":1768913760000,"status":2,"updateTime":1770909219000},{"approveTime":1770909220000,"attachment":"","createTime":1770908949000,"endTime":1772204880000,"id":6,"jobNumber":"1","leaveDuration":360.00,"leaveType":"年假","reason":"吉萨回答是否哈萨克发哈事件","startTime":1770908880000,"status":2,"updateTime":1770909220000},{"approveTime":1770909197000,"attachment":"","createTime":1770909108000,"endTime":1772204940000,"id":7,"jobNumber":"1","leaveDuration":360.00,"leaveType":"事假","name":"兮兮","reason":"收到贵司的好地方哈哈","startTime":1770908940000,"status":1,"updateTime":1770909197000},{"approveTime":1770910820000,"attachment":"","createTime":1770910075000,"endTime":1772291460000,"id":8,"jobNumber":"1","leaveDuration":312.00,"leaveType":"婚假","name":"兮兮","reason":"婚嫁","startTime":1771168260000,"status":1,"updateTime":1770910820000},{"approveTime":1771505780000,"attachment":"","createTime":1771505664000,"endTime":1771678440000,"id":9,"jobNumber":"1","leaveDuration":24.00,"leaveType":"调休假","name":"兮兮","reason":"赶高铁","startTime":1771592040000,"status":1,"updateTime":1771505780000},{"approveTime":1771589238000,"attachment":"DWH_5017.jpg","createTime":1771578173000,"endTime":1771596060000,"id":10,"jobNumber":"1","leaveDuration":5.00,"leaveType":"年假","name":"兮兮","reason":"去蜜雪冰城喝珍珠奶茶","startTime":1771578060000,"status":1,"updateTime":1771589238000},{"approveTime":1771589237000,"attachment":"DWH_4983.jpg","createTime":1771578701000,"endTime":1771589460000,"id":11,"jobNumber":"1","leaveDuration":3.00,"leaveType":"年假","name":"兮兮","reason":"蛋糕珍珠奶茶","startTime":1771578660000,"status":1,"updateTime":1771589237000},{"approveTime":1771589236000,"attachment":"test.jpg","createTime":1771581061000,"endTime":1771598940000,"id":12,"jobNumber":"1","leaveDuration":5.00,"leaveType":"调休假","name":"兮兮","reason":"弟弟弟弟","startTime":1771580940000,"status":1,"updateTime":1771589236000},{"approveTime":1771589234000,"attachment":"test.jpg","createTime":1771581246000,"endTime":1771588380000,"id":13,"jobNumber":"1","leaveDuration":2.00,"leaveType":"年假","name":"兮兮","reason":"111111","startTime":1771581180000,"status":1,"updateTime":1771589234000}]
+2026-02-21 15:37:59.729 [http-nio-8001-exec-4] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：9 ms -------------
+2026-02-21 15:38:00.077 [http-nio-8001-exec-7] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:38:00.077 [http-nio-8001-exec-2] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:38:00.077 [http-nio-8001-exec-9] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:38:00.077 [http-nio-8001-exec-8] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:38:00.078 [http-nio-8001-exec-6] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:38:00.078 [http-nio-8001-exec-7] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/business/checkAll org.apache.catalina.connector.RequestFacade@3af5a13b
+2026-02-21 15:38:00.078 [http-nio-8001-exec-2] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/goingOut/checkAll org.apache.catalina.connector.RequestFacade@4bef9869
+2026-02-21 15:38:00.078 [http-nio-8001-exec-9] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/overtime/checkAll org.apache.catalina.connector.RequestFacade@26080251
+2026-02-21 15:38:00.078 [http-nio-8001-exec-8] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/meeting/checkAll org.apache.catalina.connector.RequestFacade@5cab753e
+2026-02-21 15:38:00.078 [http-nio-8001-exec-6] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/goods/checkAll org.apache.catalina.connector.RequestFacade@651b8fb6
+2026-02-21 15:38:00.078 [http-nio-8001-exec-8] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.MeetingController.checkAll
+2026-02-21 15:38:00.078 [http-nio-8001-exec-6] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.GoodsController.checkAll
+2026-02-21 15:38:00.078 [http-nio-8001-exec-7] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.BusinessController.checkAll
+2026-02-21 15:38:00.078 [http-nio-8001-exec-2] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.GoingOutController.checkAll
+2026-02-21 15:38:00.078 [http-nio-8001-exec-9] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.OvertimeController.checkAll
+2026-02-21 15:38:00.078 [http-nio-8001-exec-8] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:38:00.078 [http-nio-8001-exec-9] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:38:00.078 [http-nio-8001-exec-6] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:38:00.078 [http-nio-8001-exec-2] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:38:00.079 [http-nio-8001-exec-6] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: ["1"]
+2026-02-21 15:38:00.078 [http-nio-8001-exec-7] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:38:00.078 [http-nio-8001-exec-8] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: ["1"]
+2026-02-21 15:38:00.079 [http-nio-8001-exec-7] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: ["1"]
+2026-02-21 15:38:00.079 [http-nio-8001-exec-9] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: ["1"]
+2026-02-21 15:38:00.079 [http-nio-8001-exec-2] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: ["1"]
+2026-02-21 15:38:00.083 [http-nio-8001-exec-2] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: [{"address":"11","approveTime":1770911196000,"createTime":1768122095000,"endTime":1768125660000,"goingoutDuration":1.00,"id":1,"jobNumber":"1","reason":"11","startTime":1768122060000,"status":1,"updateTime":1770911196000},{"address":"1234","approveTime":1771573922000,"approverId":1,"createTime":1771506018000,"endTime":1771592400000,"goingoutDuration":24.00,"id":2,"jobNumber":"1","name":"兮兮","reason":"外出","startTime":1771506000000,"status":1,"updateTime":1771573922000}]
+2026-02-21 15:38:00.083 [http-nio-8001-exec-8] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: [{"createTime":1768123477000,"endTime":1768130640000,"id":1,"jobNumber":"1","meetingDuration":2.00,"name":"11","number":"3","startTime":1768123440000,"status":0,"updateTime":1768123477000},{"createTime":1768123522000,"endTime":1768137840000,"id":2,"jobNumber":"1","meetingDuration":4.00,"name":"22","number":"2","room":"","startTime":1768123440000,"status":0,"updateTime":1768123522000},{"createTime":1768123676000,"endTime":1768130700000,"id":3,"jobNumber":"1","meetingDuration":2.00,"name":"11","number":"2","room":"","startTime":1768123500000,"status":0,"updateTime":1768123676000},{"approveTime":1771573933000,"approverId":1,"createTime":1768123775000,"endTime":1768130940000,"id":4,"jobNumber":"1","meetingDuration":2.00,"name":"三三，四四","number":"2","room":"1","startTime":1768123740000,"status":1,"updateTime":1771573933000},{"approveTime":1771576500000,"createTime":1771573029000,"employeeName":"兮兮","endTime":1771583760000,"id":5,"jobNumber":"1","meetingDuration":3.00,"name":"珍珠奶茶加珍珠","number":"1","room":"蜜雪冰城","startTime":1771572960000,"status":1,"updateTime":1771576500000}]
+2026-02-21 15:38:00.083 [http-nio-8001-exec-2] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：6 ms -------------
+2026-02-21 15:38:00.083 [http-nio-8001-exec-8] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：6 ms -------------
+2026-02-21 15:38:00.085 [http-nio-8001-exec-7] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: [{"approveTime":1770911002000,"attachment":"","businessDuration":2.02,"createTime":1768118393000,"endTime":1768154400000,"id":1,"jobNumber":"1","reason":"去总部测试","startTime":1768147140000,"status":1,"updateTime":1770911002000},{"approveTime":1770911189000,"attachment":"","businessDuration":6.00,"createTime":1768118536000,"endTime":1768230000000,"id":2,"jobNumber":"1","reason":"外出拿机器","startTime":1768208400000,"status":1,"updateTime":1770911189000},{"approveTime":1771573885000,"approverId":1,"attachment":"","businessDuration":3.00,"createTime":1768913799000,"endTime":1768924560000,"id":3,"jobNumber":"1","reason":"nn幸存者","startTime":1768913760000,"status":1,"updateTime":1771573885000}]
+2026-02-21 15:38:00.085 [http-nio-8001-exec-9] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: [{"approveTime":1770911192000,"createTime":1768119405000,"endTime":1768161600000,"id":1,"jobNumber":"1","overtimeDuration":1.50,"reason":"加班呢","startTime":1768156200000,"status":1,"updateTime":1770911192000},{"approveTime":1770911193000,"createTime":1768119476000,"endTime":1768151760000,"id":2,"jobNumber":"1","overtimeDuration":1.00,"reason":"111","startTime":1768148160000,"status":2,"updateTime":1770911193000},{"approveTime":1770911194000,"createTime":1768119768000,"endTime":1768123020000,"id":3,"jobNumber":"1","overtimeDuration":1.00,"reason":"222","startTime":1768119420000,"status":1,"updateTime":1770911194000},{"approveTime":1771589246000,"createTime":1768120059000,"endTime":1768123620000,"id":4,"jobNumber":"1","overtimeDuration":1.00,"reason":"333","startTime":1768120020000,"status":2,"updateTime":1771589246000},{"approveTime":1771573908000,"approverId":1,"createTime":1771505922000,"endTime":1771509480000,"id":5,"jobNumber":"1","name":"兮兮","overtimeDuration":1.00,"reason":"加班","startTime":1771505880000,"status":1,"updateTime":1771573908000}]
+2026-02-21 15:38:00.085 [http-nio-8001-exec-7] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：8 ms -------------
+2026-02-21 15:38:00.085 [http-nio-8001-exec-9] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：8 ms -------------
+2026-02-21 15:38:00.085 [http-nio-8001-exec-6] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: [{"attachment":"屏幕截图 2025-11-09 165751.png","createTime":1768124581000,"id":1,"jobNumber":"1","name":"发射点发射点v","number":12,"status":0,"updateTime":1768124581000,"use":"123"},{"approveTime":1771577351000,"attachment":"","createTime":1771574732000,"employeeName":"兮兮","id":2,"jobNumber":"1","name":"珍珠奶茶","number":1,"status":1,"updateTime":1771577351000,"use":"蜜雪冰城"}]
+2026-02-21 15:38:00.085 [http-nio-8001-exec-6] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：7 ms -------------
+2026-02-21 15:38:04.371 [http-nio-8001-exec-10] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:38:04.372 [http-nio-8001-exec-10] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/attendance/list org.apache.catalina.connector.RequestFacade@72d4d55a
+2026-02-21 15:38:04.372 [http-nio-8001-exec-10] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.AttendanceController.list
+2026-02-21 15:38:04.372 [http-nio-8001-exec-10] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:38:04.372 [http-nio-8001-exec-10] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: ["1"]
+2026-02-21 15:38:04.377 [http-nio-8001-exec-10] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: [{"createdAt":1758636213000,"id":1,"jobNumber":"1","punchTime":1758636214000,"type":"上班","updatedAt":1758636213000},{"createdAt":1758636435000,"id":2,"jobNumber":"1","punchTime":1758636436000,"type":"下班","updatedAt":1758636435000},{"createdAt":1760878415000,"id":3,"jobNumber":"1","punchTime":1760878416000,"type":"上班","updatedAt":1760878415000},{"createdAt":1760878417000,"id":4,"jobNumber":"1","punchTime":1760878417000,"type":"下班","updatedAt":1760878417000},{"createdAt":1761468316000,"id":5,"jobNumber":"1","punchTime":1761468316000,"type":"上班","updatedAt":1761468316000},{"createdAt":1761469054000,"id":6,"jobNumber":"1","punchTime":1761469054000,"type":"下班","updatedAt":1761469054000},{"createdAt":1762670152000,"id":7,"jobNumber":"1","punchTime":1762670152000,"type":"上班","updatedAt":1762670152000},{"createdAt":1763896137000,"id":8,"jobNumber":"1","punchTime":1763896137000,"type":"上班","updatedAt":1763896137000},{"createdAt":1763899688000,"id":9,"jobNumber":"1","punchTime":1763899688000,"type":"下班","updatedAt":1763899688000},{"createdAt":1767617383000,"id":10,"jobNumber":"1","punchTime":1767617383000,"type":"上班","updatedAt":1767617383000},{"createdAt":1768115802000,"id":11,"jobNumber":"1","punchTime":1768115802000,"type":"上班","updatedAt":1768115802000},{"createdAt":1768909132000,"id":12,"jobNumber":"1","punchTime":1768909132000,"type":"上班","updatedAt":1768909132000},{"createdAt":1768913555000,"id":13,"jobNumber":"1","punchTime":1768913555000,"type":"下班","updatedAt":1768913555000},{"createdAt":1769344367000,"id":14,"jobNumber":"1","punchTime":1769344367000,"type":"上班","updatedAt":1769344367000},{"createdAt":1769928642000,"id":15,"jobNumber":"1","punchTime":1769928642000,"type":"上班","updatedAt":1769928642000},{"createdAt":1770534594000,"id":16,"jobNumber":"1","punchTime":1770534594000,"type":"上班","updatedAt":1770534594000},{"createdAt":1770897583000,"id":17,"jobNumber":"1","punchTime":1770897583000,"type":"上班","updatedAt":1770897583000},{"createdAt":1771502402000,"id":18,"jobNumber":"1","punchTime":1771502402000,"type":"上班","updatedAt":1771502402000},{"createdAt":1771572219000,"id":19,"jobNumber":"1","punchTime":1771572219000,"type":"上班","updatedAt":1771572219000},{"createdAt":1771594782000,"id":20,"jobNumber":"1","punchTime":1771594782000,"type":"下班","updatedAt":1771594782000},{"createdAt":1771642640000,"id":21,"jobNumber":"1","punchTime":1771642640000,"type":"上班","updatedAt":1771642640000}]
+2026-02-21 15:38:04.377 [http-nio-8001-exec-10] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：6 ms -------------
+2026-02-21 15:38:07.538 [http-nio-8001-exec-1] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:38:07.538 [http-nio-8001-exec-1] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/people/count org.apache.catalina.connector.RequestFacade@24ff5287
+2026-02-21 15:38:07.538 [http-nio-8001-exec-1] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.count
+2026-02-21 15:38:07.538 [http-nio-8001-exec-1] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:38:07.538 [http-nio-8001-exec-1] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: []
+2026-02-21 15:38:07.545 [http-nio-8001-exec-1] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: 3
+2026-02-21 15:38:07.546 [http-nio-8001-exec-1] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：8 ms -------------
+2026-02-21 15:38:07.558 [http-nio-8001-exec-3] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:38:07.558 [http-nio-8001-exec-3] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/people/active/count org.apache.catalina.connector.RequestFacade@3d0a7c4b
+2026-02-21 15:38:07.558 [http-nio-8001-exec-3] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.activeCount
+2026-02-21 15:38:07.560 [http-nio-8001-exec-3] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:38:07.560 [http-nio-8001-exec-3] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: []
+2026-02-21 15:38:07.564 [http-nio-8001-exec-3] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: 3
+2026-02-21 15:38:07.564 [http-nio-8001-exec-3] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：6 ms -------------
+2026-02-21 15:38:07.731 [http-nio-8001-exec-5] ERROR c.e.e.common.controller.ControllerExceptionHandle [] - 系统异常：
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource people/attendance/todayCount.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2026-02-21 15:38:07.733 [http-nio-8001-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [] - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource people/attendance/todayCount.]
+2026-02-21 15:38:35.528 [http-nio-8001-exec-4] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:38:35.528 [http-nio-8001-exec-4] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/people/count org.apache.catalina.connector.RequestFacade@1e3333d4
+2026-02-21 15:38:35.528 [http-nio-8001-exec-4] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.count
+2026-02-21 15:38:35.528 [http-nio-8001-exec-4] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:38:35.528 [http-nio-8001-exec-4] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: []
+2026-02-21 15:38:35.531 [http-nio-8001-exec-4] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: 3
+2026-02-21 15:38:35.531 [http-nio-8001-exec-4] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：3 ms -------------
+2026-02-21 15:38:35.766 [http-nio-8001-exec-2] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:38:35.766 [http-nio-8001-exec-2] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/people/active/count org.apache.catalina.connector.RequestFacade@4d8a2507
+2026-02-21 15:38:35.766 [http-nio-8001-exec-2] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.activeCount
+2026-02-21 15:38:35.766 [http-nio-8001-exec-2] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:38:35.766 [http-nio-8001-exec-2] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: []
+2026-02-21 15:38:35.768 [http-nio-8001-exec-2] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: 3
+2026-02-21 15:38:35.769 [http-nio-8001-exec-2] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：3 ms -------------
+2026-02-21 15:38:35.781 [http-nio-8001-exec-8] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:38:35.782 [http-nio-8001-exec-8] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/attendance/todayCount org.apache.catalina.connector.RequestFacade@4268ce7a
+2026-02-21 15:38:35.782 [http-nio-8001-exec-8] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.AttendanceController.todayCount
+2026-02-21 15:38:35.782 [http-nio-8001-exec-8] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:38:35.782 [http-nio-8001-exec-8] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: []
+2026-02-21 15:38:35.793 [http-nio-8001-exec-8] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: 1
+2026-02-21 15:38:35.794 [http-nio-8001-exec-8] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：13 ms -------------
+2026-02-21 15:38:46.131 [http-nio-8001-exec-6] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:38:46.131 [http-nio-8001-exec-6] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/people/list org.apache.catalina.connector.RequestFacade@6562e344
+2026-02-21 15:38:46.132 [http-nio-8001-exec-6] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.list
+2026-02-21 15:38:46.132 [http-nio-8001-exec-6] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:38:46.132 [http-nio-8001-exec-6] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: [null]
+2026-02-21 15:38:46.134 [http-nio-8001-exec-6] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: {"content":[{"address":"事件发生分解","age":21,"createTime":1771653591000,"department":"会计部门","email":"3333","gender":"女","hireDate":1757260800000,"id":3,"jobNumber":"3","name":"古茗","phone":"333333","position":"员工","role":"1","status":"1","updateTime":1771653591000},{"address":"安徽省合肥市蜀山区凉亭雅苑","age":21,"createTime":1757341655000,"department":"行政部门","email":"111","gender":"女","hireDate":1757260800000,"id":2,"jobNumber":"2","name":"密码","phone":"22222","position":"人事主管","role":"2","status":"1","updateTime":1757341655000},{"address":"安徽省合肥市肥西县华南大道紫云苑北区3栋1804","age":21,"createTime":1757341646000,"department":"开发部门","gender":"女","hireDate":1757260800000,"id":1,"jobNumber":"1","name":"兮兮","phone":"18096749785","position":"Java开发工程师","role":"1","status":"1","updateTime":1757341655000}],"success":true}
+2026-02-21 15:38:46.135 [http-nio-8001-exec-6] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：4 ms -------------
+2026-02-21 15:39:00.023 [http-nio-8001-exec-7] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:39:00.023 [http-nio-8001-exec-7] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/people org.apache.catalina.connector.RequestFacade@3d4c628d
+2026-02-21 15:39:00.023 [http-nio-8001-exec-7] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.add
+2026-02-21 15:39:00.023 [http-nio-8001-exec-7] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:39:00.023 [http-nio-8001-exec-7] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: [{"address":"1","department":"","gender":"女","jobNumber":"","name":"1","phone":"1","position":"1","role":"1","status":"是"}]
+2026-02-21 15:39:00.032 [http-nio-8001-exec-7] ERROR c.e.e.common.controller.ControllerExceptionHandle [] - 系统异常：
+org.springframework.jdbc.UncategorizedSQLException: 
+### Error updating database.  Cause: java.sql.SQLException: Incorrect integer value: '是' for column 'status' at row 1
+### The error may exist in file [D:\Java\springbootProject\employee\staff\target\classes\mapper\StaffMapper.xml]
+### The error may involve com.example.employee.staff.mapper.StaffMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: insert into staff      ( job_number,                       `name`,                       gender,                              phone,                              address,                       department,                       `position`,                              `status`,                                     `role` )       values ( ?,                       ?,                       ?,                              ?,                              ?,                       ?,                       ?,                              ?,                                     ? )
+### Cause: java.sql.SQLException: Incorrect integer value: '是' for column 'status' at row 1
+; uncategorized SQLException; SQL state [HY000]; error code [1366]; Incorrect integer value: '是' for column 'status' at row 1
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:93)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:439)
+	at jdk.proxy2/jdk.proxy2.$Proxy79.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy3/jdk.proxy3.$Proxy84.insertSelective(Unknown Source)
+	at com.example.employee.staff.service.StaffService.add(StaffService.java:66)
+	at com.example.employee.staff.controller.StaffController.add(StaffController.java:64)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.example.employee.common.aspect.LogAspect.doAround(LogAspect.java:69)
+	at jdk.internal.reflect.GeneratedMethodAccessor43.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:649)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:631)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at com.example.employee.staff.controller.StaffController$$SpringCGLIB$$0.add(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.sql.SQLException: Incorrect integer value: '是' for column 'status' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	... 80 common frames omitted
+2026-02-21 15:39:00.035 [http-nio-8001-exec-7] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [] - Resolved [org.springframework.jdbc.UncategorizedSQLException: <EOL><EOL>### Error updating database.  Cause: java.sql.SQLException: Incorrect integer value: '是' for column 'status' at row 1<EOL><EOL>### The error may exist in file [D:\Java\springbootProject\employee\staff\target\classes\mapper\StaffMapper.xml]<EOL><EOL>### The error may involve com.example.employee.staff.mapper.StaffMapper.insertSelective-Inline<EOL><EOL>### The error occurred while setting parameters<EOL><EOL>### SQL: insert into staff      ( job_number,                       `name`,                       gender,                              phone,                              address,                       department,                       `position`,                              `status`,                                     `role` )       values ( ?,                       ?,                       ?,                              ?,                              ?,                       ?,                       ?,                              ?,                                     ? )<EOL><EOL>### Cause: java.sql.SQLException: Incorrect integer value: '是' for column 'status' at row 1<EOL>; uncategorized SQLException; SQL state [HY000]; error code [1366]; Incorrect integer value: '是' for column 'status' at row 1]
+2026-02-21 15:40:24.083 [http-nio-8001-exec-9] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:40:24.083 [http-nio-8001-exec-9] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/people/list org.apache.catalina.connector.RequestFacade@129b9f27
+2026-02-21 15:40:24.083 [http-nio-8001-exec-9] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.list
+2026-02-21 15:40:24.083 [http-nio-8001-exec-9] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:40:24.083 [http-nio-8001-exec-9] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: [null]
+2026-02-21 15:40:24.090 [http-nio-8001-exec-9] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: {"content":[{"address":"事件发生分解","age":21,"createTime":1771653591000,"department":"会计部门","email":"3333","gender":"女","hireDate":1757260800000,"id":3,"jobNumber":"3","name":"古茗","phone":"333333","position":"员工","role":"1","status":"1","updateTime":1771653591000},{"address":"安徽省合肥市蜀山区凉亭雅苑","age":21,"createTime":1757341655000,"department":"行政部门","email":"111","gender":"女","hireDate":1757260800000,"id":2,"jobNumber":"2","name":"密码","phone":"22222","position":"人事主管","role":"2","status":"1","updateTime":1757341655000},{"address":"安徽省合肥市肥西县华南大道紫云苑北区3栋1804","age":21,"createTime":1757341646000,"department":"开发部门","gender":"女","hireDate":1757260800000,"id":1,"jobNumber":"1","name":"兮兮","phone":"18096749785","position":"Java开发工程师","role":"1","status":"1","updateTime":1757341655000}],"success":true}
+2026-02-21 15:40:24.092 [http-nio-8001-exec-9] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：9 ms -------------
+2026-02-21 15:40:24.166 [http-nio-8001-exec-10] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:40:24.167 [http-nio-8001-exec-10] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/people/list org.apache.catalina.connector.RequestFacade@216b8890
+2026-02-21 15:40:24.167 [http-nio-8001-exec-10] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.list
+2026-02-21 15:40:24.167 [http-nio-8001-exec-10] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:40:24.167 [http-nio-8001-exec-10] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: [null]
+2026-02-21 15:40:24.170 [http-nio-8001-exec-10] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: {"content":[{"address":"事件发生分解","age":21,"createTime":1771653591000,"department":"会计部门","email":"3333","gender":"女","hireDate":1757260800000,"id":3,"jobNumber":"3","name":"古茗","phone":"333333","position":"员工","role":"1","status":"1","updateTime":1771653591000},{"address":"安徽省合肥市蜀山区凉亭雅苑","age":21,"createTime":1757341655000,"department":"行政部门","email":"111","gender":"女","hireDate":1757260800000,"id":2,"jobNumber":"2","name":"密码","phone":"22222","position":"人事主管","role":"2","status":"1","updateTime":1757341655000},{"address":"安徽省合肥市肥西县华南大道紫云苑北区3栋1804","age":21,"createTime":1757341646000,"department":"开发部门","gender":"女","hireDate":1757260800000,"id":1,"jobNumber":"1","name":"兮兮","phone":"18096749785","position":"Java开发工程师","role":"1","status":"1","updateTime":1757341655000}],"success":true}
+2026-02-21 15:40:24.170 [http-nio-8001-exec-10] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：4 ms -------------
+2026-02-21 15:40:37.968 [http-nio-8001-exec-1] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:40:37.969 [http-nio-8001-exec-1] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/people org.apache.catalina.connector.RequestFacade@76dc9495
+2026-02-21 15:40:37.969 [http-nio-8001-exec-1] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.add
+2026-02-21 15:40:37.969 [http-nio-8001-exec-1] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:40:37.969 [http-nio-8001-exec-1] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: [{"address":"1","department":"人事部门","gender":"女","jobNumber":"","name":"1","phone":"1","position":"1","role":"1","status":"1"}]
+2026-02-21 15:40:38.002 [http-nio-8001-exec-1] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: {"content":true,"success":true}
+2026-02-21 15:40:38.003 [http-nio-8001-exec-1] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：35 ms -------------
+2026-02-21 15:40:38.052 [http-nio-8001-exec-3] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:40:38.052 [http-nio-8001-exec-3] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/people/list org.apache.catalina.connector.RequestFacade@731eb8a2
+2026-02-21 15:40:38.052 [http-nio-8001-exec-3] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.list
+2026-02-21 15:40:38.052 [http-nio-8001-exec-3] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:40:38.052 [http-nio-8001-exec-3] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: [null]
+2026-02-21 15:40:38.056 [http-nio-8001-exec-3] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: {"content":[{"address":"1","createTime":1771659637000,"department":"人事部门","gender":"女","id":4,"jobNumber":"","name":"1","phone":"1","position":"1","role":"1","status":"1","updateTime":1771659637000},{"address":"事件发生分解","age":21,"createTime":1771653591000,"department":"会计部门","email":"3333","gender":"女","hireDate":1757260800000,"id":3,"jobNumber":"3","name":"古茗","phone":"333333","position":"员工","role":"1","status":"1","updateTime":1771653591000},{"address":"安徽省合肥市蜀山区凉亭雅苑","age":21,"createTime":1757341655000,"department":"行政部门","email":"111","gender":"女","hireDate":1757260800000,"id":2,"jobNumber":"2","name":"密码","phone":"22222","position":"人事主管","role":"2","status":"1","updateTime":1757341655000},{"address":"安徽省合肥市肥西县华南大道紫云苑北区3栋1804","age":21,"createTime":1757341646000,"department":"开发部门","gender":"女","hireDate":1757260800000,"id":1,"jobNumber":"1","name":"兮兮","phone":"18096749785","position":"Java开发工程师","role":"1","status":"1","updateTime":1757341655000}],"success":true}
+2026-02-21 15:40:38.057 [http-nio-8001-exec-3] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：5 ms -------------
+2026-02-21 15:41:39.633 [http-nio-8001-exec-5] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:41:39.634 [http-nio-8001-exec-5] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/people/list org.apache.catalina.connector.RequestFacade@53296b26
+2026-02-21 15:41:39.634 [http-nio-8001-exec-5] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.list
+2026-02-21 15:41:39.634 [http-nio-8001-exec-5] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:41:39.634 [http-nio-8001-exec-5] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: [null]
+2026-02-21 15:41:39.639 [http-nio-8001-exec-5] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: {"content":[{"address":"1","createTime":1771659637000,"department":"人事部门","gender":"女","id":4,"jobNumber":"","name":"1","phone":"1","position":"1","role":"1","status":"1","updateTime":1771659637000},{"address":"事件发生分解","age":21,"createTime":1771653591000,"department":"会计部门","email":"3333","gender":"女","hireDate":1757260800000,"id":3,"jobNumber":"3","name":"古茗","phone":"333333","position":"员工","role":"1","status":"1","updateTime":1771653591000},{"address":"安徽省合肥市蜀山区凉亭雅苑","age":21,"createTime":1757341655000,"department":"行政部门","email":"111","gender":"女","hireDate":1757260800000,"id":2,"jobNumber":"2","name":"密码","phone":"22222","position":"人事主管","role":"2","status":"1","updateTime":1757341655000},{"address":"安徽省合肥市肥西县华南大道紫云苑北区3栋1804","age":21,"createTime":1757341646000,"department":"开发部门","gender":"女","hireDate":1757260800000,"id":1,"jobNumber":"1","name":"兮兮","phone":"18096749785","position":"Java开发工程师","role":"1","status":"1","updateTime":1757341655000}],"success":true}
+2026-02-21 15:41:39.640 [http-nio-8001-exec-5] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：7 ms -------------
+2026-02-21 15:41:39.859 [http-nio-8001-exec-4] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:41:39.859 [http-nio-8001-exec-4] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/people/list org.apache.catalina.connector.RequestFacade@30563ac3
+2026-02-21 15:41:39.859 [http-nio-8001-exec-4] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.list
+2026-02-21 15:41:39.859 [http-nio-8001-exec-4] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:41:39.859 [http-nio-8001-exec-4] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: [null]
+2026-02-21 15:41:39.872 [http-nio-8001-exec-4] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: {"content":[{"address":"1","createTime":1771659637000,"department":"人事部门","gender":"女","id":4,"jobNumber":"","name":"1","phone":"1","position":"1","role":"1","status":"1","updateTime":1771659637000},{"address":"事件发生分解","age":21,"createTime":1771653591000,"department":"会计部门","email":"3333","gender":"女","hireDate":1757260800000,"id":3,"jobNumber":"3","name":"古茗","phone":"333333","position":"员工","role":"1","status":"1","updateTime":1771653591000},{"address":"安徽省合肥市蜀山区凉亭雅苑","age":21,"createTime":1757341655000,"department":"行政部门","email":"111","gender":"女","hireDate":1757260800000,"id":2,"jobNumber":"2","name":"密码","phone":"22222","position":"人事主管","role":"2","status":"1","updateTime":1757341655000},{"address":"安徽省合肥市肥西县华南大道紫云苑北区3栋1804","age":21,"createTime":1757341646000,"department":"开发部门","gender":"女","hireDate":1757260800000,"id":1,"jobNumber":"1","name":"兮兮","phone":"18096749785","position":"Java开发工程师","role":"1","status":"1","updateTime":1757341655000}],"success":true}
+2026-02-21 15:41:39.872 [http-nio-8001-exec-4] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：13 ms -------------
+2026-02-21 15:41:53.692 [http-nio-8001-exec-2] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:41:53.692 [http-nio-8001-exec-2] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/people/list org.apache.catalina.connector.RequestFacade@5c749fe8
+2026-02-21 15:41:53.692 [http-nio-8001-exec-2] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.list
+2026-02-21 15:41:53.692 [http-nio-8001-exec-2] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:41:53.692 [http-nio-8001-exec-2] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: [null]
+2026-02-21 15:41:53.697 [http-nio-8001-exec-2] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: {"content":[{"address":"1","createTime":1771659637000,"department":"人事部门","gender":"女","id":4,"jobNumber":"","name":"1","phone":"1","position":"1","role":"1","status":"1","updateTime":1771659637000},{"address":"事件发生分解","age":21,"createTime":1771653591000,"department":"会计部门","email":"3333","gender":"女","hireDate":1757260800000,"id":3,"jobNumber":"3","name":"古茗","phone":"333333","position":"员工","role":"1","status":"1","updateTime":1771653591000},{"address":"安徽省合肥市蜀山区凉亭雅苑","age":21,"createTime":1757341655000,"department":"行政部门","email":"111","gender":"女","hireDate":1757260800000,"id":2,"jobNumber":"2","name":"密码","phone":"22222","position":"人事主管","role":"2","status":"1","updateTime":1757341655000},{"address":"安徽省合肥市肥西县华南大道紫云苑北区3栋1804","age":21,"createTime":1757341646000,"department":"开发部门","gender":"女","hireDate":1757260800000,"id":1,"jobNumber":"1","name":"兮兮","phone":"18096749785","position":"Java开发工程师","role":"1","status":"1","updateTime":1757341655000}],"success":true}
+2026-02-21 15:41:53.697 [http-nio-8001-exec-2] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：5 ms -------------
+2026-02-21 15:41:53.710 [http-nio-8001-exec-8] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:41:53.710 [http-nio-8001-exec-8] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/people/list org.apache.catalina.connector.RequestFacade@5d8e38fe
+2026-02-21 15:41:53.710 [http-nio-8001-exec-8] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.list
+2026-02-21 15:41:53.710 [http-nio-8001-exec-8] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:41:53.710 [http-nio-8001-exec-8] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: [null]
+2026-02-21 15:41:53.716 [http-nio-8001-exec-8] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: {"content":[{"address":"1","createTime":1771659637000,"department":"人事部门","gender":"女","id":4,"jobNumber":"","name":"1","phone":"1","position":"1","role":"1","status":"1","updateTime":1771659637000},{"address":"事件发生分解","age":21,"createTime":1771653591000,"department":"会计部门","email":"3333","gender":"女","hireDate":1757260800000,"id":3,"jobNumber":"3","name":"古茗","phone":"333333","position":"员工","role":"1","status":"1","updateTime":1771653591000},{"address":"安徽省合肥市蜀山区凉亭雅苑","age":21,"createTime":1757341655000,"department":"行政部门","email":"111","gender":"女","hireDate":1757260800000,"id":2,"jobNumber":"2","name":"密码","phone":"22222","position":"人事主管","role":"2","status":"1","updateTime":1757341655000},{"address":"安徽省合肥市肥西县华南大道紫云苑北区3栋1804","age":21,"createTime":1757341646000,"department":"开发部门","gender":"女","hireDate":1757260800000,"id":1,"jobNumber":"1","name":"兮兮","phone":"18096749785","position":"Java开发工程师","role":"1","status":"1","updateTime":1757341655000}],"success":true}
+2026-02-21 15:41:53.716 [http-nio-8001-exec-8] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：6 ms -------------
+2026-02-21 15:42:39.711 [http-nio-8001-exec-10] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:42:39.711 [http-nio-8001-exec-10] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/people/count org.apache.catalina.connector.RequestFacade@e3bc07b
+2026-02-21 15:42:39.711 [http-nio-8001-exec-10] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.count
+2026-02-21 15:42:39.711 [http-nio-8001-exec-10] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:42:39.711 [http-nio-8001-exec-10] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: []
+2026-02-21 15:42:39.714 [http-nio-8001-exec-10] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: 4
+2026-02-21 15:42:39.714 [http-nio-8001-exec-10] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：3 ms -------------
+2026-02-21 15:42:39.729 [http-nio-8001-exec-1] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:42:39.729 [http-nio-8001-exec-1] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/people/active/count org.apache.catalina.connector.RequestFacade@512978a5
+2026-02-21 15:42:39.729 [http-nio-8001-exec-1] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.activeCount
+2026-02-21 15:42:39.729 [http-nio-8001-exec-1] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:42:39.729 [http-nio-8001-exec-1] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: []
+2026-02-21 15:42:39.731 [http-nio-8001-exec-1] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: 4
+2026-02-21 15:42:39.731 [http-nio-8001-exec-1] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：2 ms -------------
+2026-02-21 15:42:39.743 [http-nio-8001-exec-3] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:42:39.743 [http-nio-8001-exec-3] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/attendance/todayCount org.apache.catalina.connector.RequestFacade@7ef0bc99
+2026-02-21 15:42:39.743 [http-nio-8001-exec-3] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.AttendanceController.todayCount
+2026-02-21 15:42:39.743 [http-nio-8001-exec-3] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:42:39.743 [http-nio-8001-exec-3] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: []
+2026-02-21 15:42:39.745 [http-nio-8001-exec-3] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: 1
+2026-02-21 15:42:39.745 [http-nio-8001-exec-3] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：2 ms -------------
+2026-02-21 15:42:42.102 [http-nio-8001-exec-5] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:42:42.102 [http-nio-8001-exec-5] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/people/list org.apache.catalina.connector.RequestFacade@5615f502
+2026-02-21 15:42:42.102 [http-nio-8001-exec-5] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.list
+2026-02-21 15:42:42.102 [http-nio-8001-exec-5] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:42:42.102 [http-nio-8001-exec-5] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: [null]
+2026-02-21 15:42:42.105 [http-nio-8001-exec-5] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: {"content":[{"address":"1","createTime":1771659637000,"department":"人事部门","gender":"女","id":4,"jobNumber":"","name":"1","phone":"1","position":"1","role":"1","status":"1","updateTime":1771659637000},{"address":"事件发生分解","age":21,"createTime":1771653591000,"department":"会计部门","email":"3333","gender":"女","hireDate":1757260800000,"id":3,"jobNumber":"3","name":"古茗","phone":"333333","position":"员工","role":"1","status":"1","updateTime":1771653591000},{"address":"安徽省合肥市蜀山区凉亭雅苑","age":21,"createTime":1757341655000,"department":"行政部门","email":"111","gender":"女","hireDate":1757260800000,"id":2,"jobNumber":"2","name":"密码","phone":"22222","position":"人事主管","role":"2","status":"1","updateTime":1757341655000},{"address":"安徽省合肥市肥西县华南大道紫云苑北区3栋1804","age":21,"createTime":1757341646000,"department":"开发部门","gender":"女","hireDate":1757260800000,"id":1,"jobNumber":"1","name":"兮兮","phone":"18096749785","position":"Java开发工程师","role":"1","status":"1","updateTime":1757341655000}],"success":true}
+2026-02-21 15:42:42.105 [http-nio-8001-exec-5] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：3 ms -------------
+2026-02-21 15:43:09.794 [http-nio-8001-exec-4] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:43:09.794 [http-nio-8001-exec-4] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/people org.apache.catalina.connector.RequestFacade@36959b65
+2026-02-21 15:43:09.794 [http-nio-8001-exec-4] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.add
+2026-02-21 15:43:09.794 [http-nio-8001-exec-4] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:43:09.795 [http-nio-8001-exec-4] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: [{"address":"43223532","department":"人事部门","gender":"女","jobNumber":"4","name":"珍珠奶茶","phone":"243243223","position":"员工","role":"2","status":"1"}]
+2026-02-21 15:43:09.802 [http-nio-8001-exec-4] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: {"content":true,"success":true}
+2026-02-21 15:43:09.802 [http-nio-8001-exec-4] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：8 ms -------------
+2026-02-21 15:43:10.160 [http-nio-8001-exec-2] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:43:10.160 [http-nio-8001-exec-2] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/people/list org.apache.catalina.connector.RequestFacade@44603b8c
+2026-02-21 15:43:10.160 [http-nio-8001-exec-2] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.list
+2026-02-21 15:43:10.160 [http-nio-8001-exec-2] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:43:10.160 [http-nio-8001-exec-2] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: [null]
+2026-02-21 15:43:10.163 [http-nio-8001-exec-2] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: {"content":[{"address":"43223532","createTime":1771659789000,"department":"人事部门","gender":"女","id":5,"jobNumber":"4","name":"珍珠奶茶","phone":"243243223","position":"员工","role":"2","status":"1","updateTime":1771659789000},{"address":"1","createTime":1771659637000,"department":"人事部门","gender":"女","id":4,"jobNumber":"","name":"1","phone":"1","position":"1","role":"1","status":"1","updateTime":1771659637000},{"address":"事件发生分解","age":21,"createTime":1771653591000,"department":"会计部门","email":"3333","gender":"女","hireDate":1757260800000,"id":3,"jobNumber":"3","name":"古茗","phone":"333333","position":"员工","role":"1","status":"1","updateTime":1771653591000},{"address":"安徽省合肥市蜀山区凉亭雅苑","age":21,"createTime":1757341655000,"department":"行政部门","email":"111","gender":"女","hireDate":1757260800000,"id":2,"jobNumber":"2","name":"密码","phone":"22222","position":"人事主管","role":"2","status":"1","updateTime":1757341655000},{"address":"安徽省合肥市肥西县华南大道紫云苑北区3栋1804","age":21,"createTime":1757341646000,"department":"开发部门","gender":"女","hireDate":1757260800000,"id":1,"jobNumber":"1","name":"兮兮","phone":"18096749785","position":"Java开发工程师","role":"1","status":"1","updateTime":1757341655000}],"success":true}
+2026-02-21 15:43:10.163 [http-nio-8001-exec-2] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：3 ms -------------
+2026-02-21 15:43:18.960 [http-nio-8001-exec-8] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:43:18.960 [http-nio-8001-exec-8] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/people/4 org.apache.catalina.connector.RequestFacade@2dde9a45
+2026-02-21 15:43:18.960 [http-nio-8001-exec-8] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.update
+2026-02-21 15:43:18.960 [http-nio-8001-exec-8] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:43:18.960 [http-nio-8001-exec-8] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: [4,{"address":"1","department":"人事部门","gender":"女","jobNumber":"5","name":"1","phone":"1","position":"1","role":"1","status":"1"}]
+2026-02-21 15:43:18.972 [http-nio-8001-exec-8] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: {"content":true,"success":true}
+2026-02-21 15:43:18.973 [http-nio-8001-exec-8] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：13 ms -------------
+2026-02-21 15:43:19.320 [http-nio-8001-exec-6] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 开始 -------------
+2026-02-21 15:43:19.321 [http-nio-8001-exec-6] INFO  com.example.employee.common.aspect.LogAspect [] - 请求地址: http://localhost:8001/staff/people/list org.apache.catalina.connector.RequestFacade@1a9888e
+2026-02-21 15:43:19.321 [http-nio-8001-exec-6] INFO  com.example.employee.common.aspect.LogAspect [] - 类名方法: com.example.employee.staff.controller.StaffController.list
+2026-02-21 15:43:19.321 [http-nio-8001-exec-6] INFO  com.example.employee.common.aspect.LogAspect [] - 远程地址：0:0:0:0:0:0:0:1
+2026-02-21 15:43:19.321 [http-nio-8001-exec-6] INFO  com.example.employee.common.aspect.LogAspect [] - 请求参数: [null]
+2026-02-21 15:43:19.324 [http-nio-8001-exec-6] INFO  com.example.employee.common.aspect.LogAspect [] - 返回结果: {"content":[{"address":"43223532","createTime":1771659789000,"department":"人事部门","gender":"女","id":5,"jobNumber":"4","name":"珍珠奶茶","phone":"243243223","position":"员工","role":"2","status":"1","updateTime":1771659789000},{"address":"1","createTime":1771659637000,"department":"人事部门","gender":"女","id":4,"jobNumber":"5","name":"1","phone":"1","position":"1","role":"1","status":"1","updateTime":1771659637000},{"address":"事件发生分解","age":21,"createTime":1771653591000,"department":"会计部门","email":"3333","gender":"女","hireDate":1757260800000,"id":3,"jobNumber":"3","name":"古茗","phone":"333333","position":"员工","role":"1","status":"1","updateTime":1771653591000},{"address":"安徽省合肥市蜀山区凉亭雅苑","age":21,"createTime":1757341655000,"department":"行政部门","email":"111","gender":"女","hireDate":1757260800000,"id":2,"jobNumber":"2","name":"密码","phone":"22222","position":"人事主管","role":"2","status":"1","updateTime":1757341655000},{"address":"安徽省合肥市肥西县华南大道紫云苑北区3栋1804","age":21,"createTime":1757341646000,"department":"开发部门","gender":"女","hireDate":1757260800000,"id":1,"jobNumber":"1","name":"兮兮","phone":"18096749785","position":"Java开发工程师","role":"1","status":"1","updateTime":1757341655000}],"success":true}
+2026-02-21 15:43:19.325 [http-nio-8001-exec-6] INFO  com.example.employee.common.aspect.LogAspect [] - ------------- 结束 耗时：5 ms -------------
+2026-02-21 15:43:26.725 [http-nio-8001-exec-7] ERROR c.e.e.common.controller.ControllerExceptionHandle [] - 系统异常：
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource by-department.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2026-02-21 15:43:26.731 [http-nio-8001-exec-7] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [] - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource by-department.]
+2026-02-21 15:43:27.827 [http-nio-8001-exec-9] ERROR c.e.e.common.controller.ControllerExceptionHandle [] - 系统异常：
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource by-department.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2026-02-21 15:43:27.828 [http-nio-8001-exec-9] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [] - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource by-department.]
+2026-02-21 15:43:29.061 [http-nio-8001-exec-10] ERROR c.e.e.common.controller.ControllerExceptionHandle [] - 系统异常：
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource by-department.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2026-02-21 15:43:29.063 [http-nio-8001-exec-10] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [] - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource by-department.]
+2026-02-21 15:43:29.589 [http-nio-8001-exec-1] ERROR c.e.e.common.controller.ControllerExceptionHandle [] - 系统异常：
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource by-department.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2026-02-21 15:43:29.590 [http-nio-8001-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [] - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource by-department.]
+2026-02-21 15:43:30.730 [http-nio-8001-exec-3] ERROR c.e.e.common.controller.ControllerExceptionHandle [] - 系统异常：
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource by-department.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2026-02-21 15:43:30.732 [http-nio-8001-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [] - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource by-department.]
+2026-02-21 15:50:57.616 [http-nio-8001-exec-4] ERROR c.e.e.common.controller.ControllerExceptionHandle [] - 系统异常：
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource by-department.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2026-02-21 15:50:57.617 [http-nio-8001-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [] - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource by-department.]
+2026-02-21 15:51:08.094 [http-nio-8001-exec-2] ERROR c.e.e.common.controller.ControllerExceptionHandle [] - 系统异常：
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource by-department.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2026-02-21 15:51:08.096 [http-nio-8001-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [] - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource by-department.]
+2026-02-21 15:55:20.523 [http-nio-8001-exec-6] ERROR c.e.e.common.controller.ControllerExceptionHandle [] - 系统异常：
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource by-department.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2026-02-21 15:55:20.524 [http-nio-8001-exec-6] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [] - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource by-department.]
+2026-02-21 15:56:42.279 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [] - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2026-02-21 15:56:42.343 [Thread-6] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-21 15:56:42.352 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Pausing ProtocolHandler ["http-nio-8001"]
+2026-02-21 15:56:42.692 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Graceful shutdown complete
+2026-02-21 15:56:42.694 [Thread-6] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Stopping ProtocolHandler ["http-nio-8001"]
+2026-02-21 15:56:42.726 [Thread-6] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Shutdown initiated...
+2026-02-21 15:56:42.747 [Thread-6] INFO  com.zaxxer.hikari.HikariDataSource [] - HikariPool-1 - Shutdown completed.
+2026-02-21 15:56:43.902 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 14028 (D:\Java\springbootProject\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee)
+2026-02-21 15:56:43.902 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
+2026-02-21 15:56:44.304 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=db56928c-007b-3d43-90ef-5e12f20227b1
+2026-02-21 15:56:44.431 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
+2026-02-21 15:56:44.433 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
+2026-02-21 15:56:44.433 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-02-21 15:56:44.433 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2026-02-21 15:56:44.487 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
+2026-02-21 15:56:44.487 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 580 ms
+2026-02-21 15:56:45.241 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - LiveReload server is running on port 35729
+2026-02-21 15:56:46.101 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Starting ProtocolHandler ["http-nio-8001"]
+2026-02-21 15:56:46.109 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat started on port 8001 (http) with context path '/staff'
+2026-02-21 15:56:46.689 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [] - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-02-21 15:56:46.770 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Started StaffApplication in 3.759 seconds (process running for 1274.346)
+2026-02-21 15:56:46.770 [Thread-9] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-21 15:56:46.771 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Pausing ProtocolHandler ["http-nio-8001"]
+2026-02-21 15:56:46.772 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [] - Condition evaluation unchanged
+2026-02-21 15:56:46.772 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 启动成功！！
+2026-02-21 15:56:46.772 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello
+2026-02-21 15:56:47.071 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Graceful shutdown complete
+2026-02-21 15:56:47.071 [Thread-9] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Stopping ProtocolHandler ["http-nio-8001"]
+2026-02-21 15:56:47.774 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 14028 (D:\Java\springbootProject\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee)
+2026-02-21 15:56:47.774 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
+2026-02-21 15:56:47.971 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=db56928c-007b-3d43-90ef-5e12f20227b1
+2026-02-21 15:56:48.032 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
+2026-02-21 15:56:48.032 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
+2026-02-21 15:56:48.032 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-02-21 15:56:48.032 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2026-02-21 15:56:48.069 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
+2026-02-21 15:56:48.069 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 293 ms
+2026-02-21 15:56:48.353 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - LiveReload server is running on port 35729
+2026-02-21 15:56:48.842 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Starting ProtocolHandler ["http-nio-8001"]
+2026-02-21 15:56:48.845 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat started on port 8001 (http) with context path '/staff'
+2026-02-21 15:56:49.387 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Started StaffApplication in 2.265 seconds (process running for 1276.962)
+2026-02-21 15:56:49.388 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [] - Condition evaluation unchanged
+2026-02-21 15:56:49.388 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 启动成功！！
+2026-02-21 15:56:49.388 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello
+2026-02-21 15:57:08.261 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [] - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2026-02-21 15:57:08.262 [Thread-15] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-21 15:57:08.263 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Pausing ProtocolHandler ["http-nio-8001"]
+2026-02-21 15:57:08.641 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Graceful shutdown complete
+2026-02-21 15:57:08.641 [Thread-15] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Stopping ProtocolHandler ["http-nio-8001"]
+2026-02-21 15:57:09.252 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 14028 (D:\Java\springbootProject\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee)
+2026-02-21 15:57:09.252 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
+2026-02-21 15:57:09.460 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=8106e384-2813-3474-91b8-6f7cf3416231
+2026-02-21 15:57:09.541 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
+2026-02-21 15:57:09.541 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
+2026-02-21 15:57:09.541 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-02-21 15:57:09.541 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2026-02-21 15:57:09.586 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
+2026-02-21 15:57:09.588 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 334 ms
+2026-02-21 15:57:09.991 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - LiveReload server is running on port 35729
+2026-02-21 15:57:10.651 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Starting ProtocolHandler ["http-nio-8001"]
+2026-02-21 15:57:10.656 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat started on port 8001 (http) with context path '/staff'
+2026-02-21 15:57:11.227 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Started StaffApplication in 2.527 seconds (process running for 1298.802)
+2026-02-21 15:57:11.228 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [] - Condition evaluation unchanged
+2026-02-21 15:57:11.228 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 启动成功！！
+2026-02-21 15:57:11.229 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello
+2026-02-21 15:57:11.438 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [] - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-02-21 15:57:11.439 [Thread-21] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-21 15:57:11.440 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Pausing ProtocolHandler ["http-nio-8001"]
+2026-02-21 15:57:11.804 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown [] - Graceful shutdown complete
+2026-02-21 15:57:11.805 [Thread-21] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Stopping ProtocolHandler ["http-nio-8001"]
+2026-02-21 15:57:12.937 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Starting StaffApplication using Java 17.0.11 with PID 14028 (D:\Java\springbootProject\employee\staff\target\classes started by lenovo in D:\Java\springbootProject\employee)
+2026-02-21 15:57:12.937 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - No active profile set, falling back to 1 default profile: "default"
+2026-02-21 15:57:13.113 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope [] - BeanFactory id=db56928c-007b-3d43-90ef-5e12f20227b1
+2026-02-21 15:57:13.177 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat initialized with port 8001 (http)
+2026-02-21 15:57:13.178 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Initializing ProtocolHandler ["http-nio-8001"]
+2026-02-21 15:57:13.178 [restartedMain] INFO  org.apache.catalina.core.StandardService [] - Starting service [Tomcat]
+2026-02-21 15:57:13.178 [restartedMain] INFO  org.apache.catalina.core.StandardEngine [] - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2026-02-21 15:57:13.224 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/staff] [] - Initializing Spring embedded WebApplicationContext
+2026-02-21 15:57:13.224 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] - Root WebApplicationContext: initialization completed in 285 ms
+2026-02-21 15:57:13.488 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer [] - LiveReload server is running on port 35729
+2026-02-21 15:57:13.839 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol [] - Starting ProtocolHandler ["http-nio-8001"]
+2026-02-21 15:57:13.845 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer [] - Tomcat started on port 8001 (http) with context path '/staff'
+2026-02-21 15:57:14.370 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - Started StaffApplication in 2.226 seconds (process running for 1301.946)
+2026-02-21 15:57:14.371 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [] - Condition evaluation unchanged
+2026-02-21 15:57:14.372 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 启动成功！！
+2026-02-21 15:57:14.372 [restartedMain] INFO  c.example.employee.staff.config.StaffApplication [] - 地址: 	http://127.0.0.1:8001/staff/hello

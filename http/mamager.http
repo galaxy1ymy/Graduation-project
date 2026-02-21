@@ -6,3 +6,8 @@ Content-Type: application/json
 ###
 GET http://localhost:8002/manager/departments
 Content-Type: application/json
+
+
+###
+GET http://localhost:8001/staff/people/by-department?department=会计部门
+Content-Type: application/json
