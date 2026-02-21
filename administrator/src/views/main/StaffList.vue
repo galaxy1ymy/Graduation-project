@@ -54,14 +54,17 @@
         </a-select>
       </a-form-item>
 
-      <a-form-item label="部门">
-        <a-select v-model:value="formState.department" >
-          <a-select-option value="会计部门">会计部门</a-select-option>
-          <a-select-option value="人事部门">人事部门</a-select-option>
-          <a-select-option value="运营部门">运营部门</a-select-option>
-          <a-select-option value="研发部门">研发部门</a-select-option>
-        </a-select>
-      </a-form-item>
+    <a-form-item label="部门">
+      <a-select v-model:value="formState.department">
+        <a-select-option
+            v-for="dept in departments"
+            :key="dept.id"
+            :value="dept.name"
+        >
+          {{ dept.name }}
+        </a-select-option>
+      </a-select>
+    </a-form-item>
 
       <a-form-item label="职位">
         <a-input v-model:value="formState.position" />
@@ -295,12 +298,22 @@ export default defineComponent({
       visible.value = true
     }
 
+    const departments = ref([])
 
-
+    const loadDepartments = async () => {
+      try {
+        const res = await request.get('/manager/departments')
+        console.log('部门列表:', res)  // 这里直接打印 res 应该是数组
+        departments.value = res       // 直接赋值
+      } catch (e) {
+        message.error('获取部门列表失败')
+      }
+    }
 
 
     onMounted(() => {
-      loadData()
+      loadData(),
+      loadDepartments()
     })
 
     return {
@@ -314,7 +327,11 @@ export default defineComponent({
       loadData,
       value,
       handleAdd,
-      search
+      search,
+      departments
+
+
+
     }
 
   }

@@ -5,12 +5,14 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.env.Environment;
 
 @SpringBootApplication
 @ComponentScan("com.example")
 @MapperScan("com.example.employee.manager.mapper")
+@EnableFeignClients(basePackages = "com.example.employee.manager.feign")
 public class ManagerApplication {
 
     private static final Logger LOG=LoggerFactory.getLogger(ManagerApplication.class);

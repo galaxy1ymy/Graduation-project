@@ -2,7 +2,7 @@ package com.example.employee.staff.controller;
 
 import com.example.employee.staff.domain.Login;
 import com.example.employee.staff.domain.Staff;
-import com.example.employee.manager.common.resp.CommonResp;
+import com.example.employee.common.resp.CommonResp;
 import com.example.employee.staff.req.StaffLoginReq;
 import com.example.employee.staff.service.LoginService;
 import com.example.employee.staff.service.StaffService;

@@ -1,4 +1,4 @@
-package com.example.employee.manager.common.exception;
+package com.example.employee.common.exception;
 
 public enum BusinessExceptionEnum {
     STAFF_JOBNUMBER_NULL("工号不存在"),

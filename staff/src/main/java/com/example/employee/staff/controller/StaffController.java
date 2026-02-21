@@ -1,7 +1,9 @@
 package com.example.employee.staff.controller;
 
+import com.example.employee.common.resp.CommonResp;
+import com.example.employee.staff.DTO.StaffDTO;
 import com.example.employee.staff.domain.Staff;
-import com.example.employee.manager.common.resp.CommonResp;
+import com.example.employee.staff.mapper.StaffMapper;
 import com.example.employee.staff.service.StaffService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -13,6 +15,8 @@ public class StaffController {
 
     @Autowired
     private StaffService staffService;
+    @Autowired
+    private StaffMapper staffMapper;
 
     @GetMapping("/count")
     public Integer count() {
@@ -65,8 +69,10 @@ public class StaffController {
     }
 
 
-
-
+    @GetMapping("/by-department")
+    public List<StaffDTO> getStaffByDepartment(@RequestParam String department) {
+        return staffService.listDTOByDepartment(department);
+    }
 
 
 

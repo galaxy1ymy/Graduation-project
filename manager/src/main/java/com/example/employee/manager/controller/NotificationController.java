@@ -9,7 +9,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/notifications")
-/*@CrossOrigin(origins = "http://localhost:8080") // 允许前端访问*/
 public class NotificationController {
 
     @Autowired

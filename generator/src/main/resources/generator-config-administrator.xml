@@ -21,8 +21,8 @@
         <!-- 数据库连接配置 -->
         <jdbcConnection
                 driverClass="com.mysql.cj.jdbc.Driver"
-                connectionURL="jdbc:mysql://localhost:3306/employee_admin?characterEncoding=UTF8&amp;autoReconnect=true&amp;serverTimezone=Asia/Shanghai"
-                userId="employee_admin"
+                connectionURL="jdbc:mysql://localhost:3306/employee_staff?characterEncoding=UTF8&amp;autoReconnect=true&amp;serverTimezone=Asia/Shanghai"
+                userId="employee_staff"
                 password="123456">
         </jdbcConnection>
         <!-- 实体类生成配置 -->
@@ -45,7 +45,8 @@
                 targetProject="../manager/src/main/java">
         </javaClientGenerator>
 
-        <table tableName="notification" domainObjectName="Notification"></table>
+       <!-- <table tableName="notification" domainObjectName="Notification"></table>-->
+        <table tableName="department" domainObjectName="Department"></table>
 
 
 

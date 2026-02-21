@@ -1,5 +1,6 @@
 package com.example.employee.staff.service;
 
+import com.example.employee.staff.DTO.StaffDTO;
 import com.example.employee.staff.domain.Staff;
 import com.example.employee.staff.domain.StaffExample;
 import com.example.employee.staff.mapper.StaffMapper;
@@ -72,7 +73,30 @@ public class StaffService {
         return staffMapper.selectByExample(example);
     }
 
+    public List<Staff> listByDepartment(String department) {
+        StaffExample example = new StaffExample();
+        example.createCriteria()
+                .andDepartmentEqualTo(department)
+                .andStatusEqualTo("1"); // 只查在职员工
+        example.setOrderByClause("id desc");
+        return staffMapper.selectByExample(example);
+    }
 
+    public List<StaffDTO> listDTOByDepartment(String department) {
+        List<Staff> staffList = listByDepartment(department);
+        return staffList.stream().map(staff -> {
+            StaffDTO dto = new StaffDTO();
+            dto.setId(staff.getId());
+            dto.setJobNumber(staff.getJobNumber());
+            dto.setName(staff.getName());
+            dto.setGender(staff.getGender());
+            dto.setAge(staff.getAge());
+            dto.setPhone(staff.getPhone());
+            dto.setPosition(staff.getPosition());
+            dto.setDepartment(staff.getDepartment());
+            return dto;
+        }).toList();
+    }
 
 
 

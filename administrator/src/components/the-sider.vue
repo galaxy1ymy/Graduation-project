@@ -26,6 +26,11 @@
           <home-outlined />&nbsp; 通知管理
         </router-link>
       </a-menu-item>
+      <a-menu-item key="departmentManagement">
+        <router-link :to="{ name: 'DepartmentManagement' }" style="color: inherit;">
+          <home-outlined />&nbsp; 部门管理
+        </router-link>
+      </a-menu-item>
 
     </a-menu>
   </a-layout-sider>

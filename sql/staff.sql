@@ -171,3 +171,23 @@ CREATE TABLE `goods` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='物品领取申请表';
 ALTER TABLE goods
     ADD COLUMN employee_name VARCHAR(50) COMMENT '员工姓名';
+
+drop table if exists `notification`;
+CREATE TABLE notification (
+      id INT AUTO_INCREMENT PRIMARY KEY,
+      title VARCHAR(255) NOT NULL,
+      content TEXT NOT NULL,
+      created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+      updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+      is_active BOOLEAN DEFAULT TRUE
+);
+
+DROP TABLE IF EXISTS `department`;
+CREATE TABLE `department` (
+    `id` BIGINT NOT NULL AUTO_INCREMENT COMMENT '序号',
+    `name` VARCHAR(50) NOT NULL COMMENT '部门名称',
+    `create_time` DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+    `update_time` DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+    PRIMARY KEY (`id`),
+    UNIQUE KEY `name_unique` (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='部门';

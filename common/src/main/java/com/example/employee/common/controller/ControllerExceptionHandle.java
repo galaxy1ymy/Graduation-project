@@ -1,7 +1,7 @@
-package com.example.employee.manager.common.controller;
+package com.example.employee.common.controller;
 
-import com.example.employee.manager.common.exception.BusinessException;
-import com.example.employee.manager.common.resp.CommonResp;
+import com.example.employee.common.exception.BusinessException;
+import com.example.employee.common.resp.CommonResp;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.MethodArgumentNotValidException;

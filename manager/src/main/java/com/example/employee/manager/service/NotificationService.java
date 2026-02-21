@@ -14,6 +14,8 @@ public class NotificationService {
     @Autowired
     private NotificationMapper notificationMapper;
 
+
+
     public NotificationService(NotificationMapper notificationMapper) {
         this.notificationMapper = notificationMapper;
     }
@@ -45,11 +47,13 @@ public class NotificationService {
         if (notification.getIsActive() == null) {
             notification.setIsActive(true);
         }
-        notificationMapper.updateByPrimaryKeyWithBLOBs(notification);
+        notificationMapper.updateByPrimaryKeySelective(notification);
     }
 
     // 删除通知
     public void delete(Integer id) {
         notificationMapper.deleteByPrimaryKey(id);
     }
+
+
 }
