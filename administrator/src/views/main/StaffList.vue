@@ -30,7 +30,6 @@
           </a-popconfirm>
         </template>
       </template>
-
     </a-table>
   </div>
 
@@ -42,14 +41,14 @@
       cancel-text="取消"
   >
 
-  <a-form :model="formState" label-col="{ span: 5 }" wrapper-col="{ span: 18 }">
+    <a-form :model="formState" label-col="{ span: 5 }" wrapper-col="{ span: 18 }">
       <a-form-item label="姓名">
         <a-input v-model:value="formState.name" />
       </a-form-item>
 
-    <a-form-item label="员工号">
-      <a-input v-model:value="formState.jobNumber" placeholder="请输入员工号" />
-    </a-form-item>
+      <a-form-item label="员工号">
+        <a-input v-model:value="formState.jobNumber" placeholder="请输入员工号" />
+      </a-form-item>
 
       <a-form-item label="性别">
         <a-select v-model:value="formState.gender">
@@ -58,17 +57,17 @@
         </a-select>
       </a-form-item>
 
-    <a-form-item label="部门">
-      <a-select v-model:value="formState.department">
-        <a-select-option
-            v-for="dept in departments"
-            :key="dept.id"
-            :value="dept.name"
-        >
-          {{ dept.name }}
-        </a-select-option>
-      </a-select>
-    </a-form-item>
+      <a-form-item label="部门">
+        <a-select v-model:value="formState.department">
+          <a-select-option
+              v-for="dept in departments"
+              :key="dept.id"
+              :value="dept.name"
+          >
+            {{ dept.name }}
+          </a-select-option>
+        </a-select>
+      </a-form-item>
 
       <a-form-item label="职位">
         <a-input v-model:value="formState.position" />
@@ -81,25 +80,28 @@
       <a-form-item label="地址">
         <a-input v-model:value="formState.address" />
       </a-form-item>
+      <!-- 新增邮箱字段 -->
+      <a-form-item label="邮箱">
+        <a-input v-model:value="formState.email" />
+      </a-form-item>
 
-    <!-- 权限 -->
-    <a-form-item label="权限">
-      <a-select v-model:value="formState.role">
-        <a-select-option :value="1">管理员</a-select-option>
-        <a-select-option :value="2">员工</a-select-option>
-      </a-select>
-    </a-form-item>
+      <!-- 权限 -->
+      <a-form-item label="权限">
+        <a-select v-model:value="formState.role">
+          <a-select-option :value="1">管理员</a-select-option>
+          <a-select-option :value="2">员工</a-select-option>
+        </a-select>
+      </a-form-item>
 
-    <a-form-item label="是否在职">
-      <a-select v-model:value="formState.status" >
-        <a-select-option :value="1">是</a-select-option>
-        <a-select-option :value="0">否</a-select-option>
-      </a-select>
-    </a-form-item>
+      <a-form-item label="是否在职">
+        <a-select v-model:value="formState.status" >
+          <a-select-option :value="1">是</a-select-option>
+          <a-select-option :value="0">否</a-select-option>
+        </a-select>
+      </a-form-item>
+
     </a-form>
   </a-modal>
-
-
 </template>
 
 <script>
@@ -162,6 +164,12 @@ export default defineComponent({
         width: 200
       },
       {
+        title: '邮箱',
+        dataIndex: 'email',
+        key: 'email',
+        width: 200
+      },
+      {
         title: '是否在职',
         dataIndex: 'status',
         key: 'status',
@@ -205,14 +213,11 @@ export default defineComponent({
       data.value = res.content
     }
 
-
     /** 查询员工列表 */
     const loadData = async () => {
       const res = await request.get('/staff/people/list')
       data.value = res.content
-
     }
-
 
     const formState = reactive({
       id: null,
@@ -225,15 +230,14 @@ export default defineComponent({
       phone: '',
       address: '',
       role:'',
-      status:''
+      status:'',
+      email: ''  // 添加邮箱字段
     })
-
 
     const edit = (record) => {
       Object.assign(formState, record)
       visible.value = true
     }
-
 
     const remove = async (record) => {
       try {
@@ -259,7 +263,8 @@ export default defineComponent({
             phone: formState.phone,
             address: formState.address,
             role: formState.role,
-            status: formState.status
+            status: formState.status,
+            email: formState.email // 更新邮箱
           })
           message.success('修改成功')
         } else {
@@ -274,7 +279,8 @@ export default defineComponent({
             phone: formState.phone,
             address: formState.address,
             role: formState.role,
-            status: formState.status
+            status: formState.status,
+            email: formState.email // 新增邮箱
           })
           message.success('新增成功')
         }
@@ -298,7 +304,8 @@ export default defineComponent({
         phone: '',
         address: '',
         role: '',
-        status: ''
+        status: '',
+        email: ''  // 清空邮箱字段
       })
       visible.value = true
     }
@@ -314,7 +321,6 @@ export default defineComponent({
         message.error('获取部门列表失败')
       }
     }
-
 
     onMounted(() => {
       loadData(),
@@ -334,13 +340,11 @@ export default defineComponent({
       handleAdd,
       search,
       departments
-
     }
 
   }
 })
 </script>
-
 
 <style scoped>
 :deep(.ant-table-cell) {
