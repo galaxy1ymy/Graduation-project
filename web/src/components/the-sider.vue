@@ -26,9 +26,9 @@
           <comment-outlined />&nbsp; 通知与会议
         </router-link>
       </a-menu-item>
-      <a-menu-item key="divisionMgmt">
-        <router-link :to="{ name: 'DivisionMgmt' }" style="color: inherit;">
-          <usergroup-add-outlined />&nbsp; 部门管理
+      <a-menu-item key="myInfo">
+        <router-link :to="{ name: 'MyInfo' }" style="color: inherit;">
+          <usergroup-add-outlined />&nbsp; 我的信息
         </router-link>
       </a-menu-item>
     </a-menu>

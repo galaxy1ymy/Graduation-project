@@ -3,6 +3,7 @@ package com.example.employee.manager.feign;
 import com.example.employee.manager.DTO.StaffDTO;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
@@ -12,4 +13,8 @@ public interface StaffFeign {
 
     @GetMapping("/staff/people/by-department")
     List<StaffDTO> getStaffByDepartment(@RequestParam("department") String department);
+
+    @PutMapping("/staff/people/update-department")
+    void updateDepartmentName(@RequestParam("oldName") String oldName,
+                              @RequestParam("newName") String newName);
 }

@@ -71,6 +71,23 @@ public class StaffController {
         return staffService.listDTOByDepartment(department);
     }
 
+    @PutMapping("/update-department")
+    public CommonResp<Boolean> updateDepartmentName(
+            @RequestParam String oldName,
+            @RequestParam String newName) {
+
+        staffService.updateDepartmentName(oldName, newName);
+        return new CommonResp<>(true);
+    }
+
+    @GetMapping("/me")
+    public CommonResp<Staff> getMyInfo(
+            @RequestHeader("jobNumber") String jobNumber) {
+
+        Staff staff = staffService.getStaffByJobNumber(jobNumber);
+        return new CommonResp<>(staff);
+    }
+
 
 
 }

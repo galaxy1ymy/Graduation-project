@@ -98,6 +98,16 @@ public class StaffService {
         }).toList();
     }
 
+    public void updateDepartmentName(String oldName, String newName) {
+        StaffExample example = new StaffExample();
+        example.createCriteria().andDepartmentEqualTo(oldName);
+
+        Staff staff = new Staff();
+        staff.setDepartment(newName);
+
+        staffMapper.updateByExampleSelective(staff, example);
+    }
+
 
 
 

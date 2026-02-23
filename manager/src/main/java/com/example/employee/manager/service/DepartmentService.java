@@ -6,6 +6,7 @@ import com.example.employee.manager.feign.StaffFeign;
 import com.example.employee.manager.mapper.DepartmentMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -34,8 +35,25 @@ public class DepartmentService {
     }
 
     // 更新部门
+    @Transactional
     public void update(Department department) {
-        departmentMapper.updateByPrimaryKeySelective(department); // 只更新非空字段
+
+        // 1️⃣ 查旧部门
+        Department oldDept = departmentMapper.selectByPrimaryKey(department.getId());
+        if (oldDept == null) {
+            throw new RuntimeException("部门不存在");
+        }
+
+        String oldName = oldDept.getName();
+        String newName = department.getName();
+
+        // 2️⃣ 更新部门
+        departmentMapper.updateByPrimaryKeySelective(department);
+
+        // 3️⃣ 如果名称改变，同步更新员工
+        if (!oldName.equals(newName)) {
+            staffFeign.updateDepartmentName(oldName, newName);
+        }
     }
 
     // 删除部门
@@ -58,5 +76,7 @@ public class DepartmentService {
             return newDto;
         }).toList();
     }
+
+
 
 }
